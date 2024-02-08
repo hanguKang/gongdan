@@ -1,0 +1,247 @@
+<h1>검색어만 있는경우</h1>
+<!-- <script src="/static/jslibrary/ab-datepicker/js/datepicker.js"></script> -->
+<!-- <link rel="stylesheet" href="/static/jslibrary/ab-datepicker/css/datepicker.css"> -->
+<script src="/static/jslibrary/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
+<script src="/static/jslibrary/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ko.min.js"></script>
+<link rel="stylesheet" href="/static/jslibrary/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css">
+<form action="" class="sh" onsubmit="return false">
+	<div class="set">
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+	<div class="shdetailset">
+		<span class="title">기간검색</span>
+		<span class="shDate">
+		<input id="sdate" name="sdate" class="sdate" title="검색기간 시작일" value="" type="text" placeholder="2018-8-15">
+		~
+		<input id="edate" name="edate" class="edate" title="검색기간 종료일" value="" type="text" placeholder="2018-8-15">
+		</span>
+		<button type="button" class="b-sh">검색</button>
+	</div>
+</form>
+
+
+<h1>조건2개</h1>
+<form action="" class="sh-2" onsubmit="return">
+	<div class="set">
+		<span class="select">
+			<select name="" title="검색어 구분1">
+				<option value="">전체</option>
+			</select>
+			<select name="" title="검색어 구분2">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+
+
+
+<h1>검색어 없는 경우</h1>
+<form action="" class="sh line" onsubmit="return">
+	<div class="set">
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select><select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+<h1>조건 1개</h1>
+<form action="" class="sh-1" onsubmit="return">
+	<div class="set">
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+
+<form action="" class="sh multi" onsubmit="return">
+	<div class="set">
+		<div class="title">조건</div>
+		<div class="tal">
+			<select name="" id="">
+				<option value=""></option>
+			</select>
+		</div>
+	</div>
+	<div class="set">
+		<div class="title">조건</div>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+
+<h1>셀렉트가 여러개</h1>
+<form action="" class="sh multi" onsubmit="return">
+	<div class="set">
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+	</div>
+</form>
+
+
+<form action="" class="sh multi" onsubmit="return">
+	<div class="set">
+		<div class="title">조건</div>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+	</div>
+</form>
+<h1>200827 교육일정</h1>
+<form action="" class="sh type-radio" onsubmit="return">
+	<div class="s">
+		<label>
+			<input type="radio" name="" title="지역ㆍ직장 일반대원 1차 보충교육(2~4년차)">
+			<span>지역ㆍ직장 일반대원 1차 보충교육(2~4년차)</span>
+		</label>
+		<label>
+			<input type="radio" name="" title="신규편성대원 2차 보충교육">
+			<span>신규편성대원 2차 보충교육</span>
+		</label>
+		<label>
+			<input type="radio" name="" title="지역ㆍ직장 일반대원 2차 보충교육(2~4년차)">
+			<span>지역ㆍ직장 일반대원 2차 보충교육(2~4년차)</span>
+		</label>
+		<label>
+			<input type="radio" name="" title="3차 보충교육">
+			<span>3차 보충교육</span>
+		</label>
+	</div>
+	<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+</form>
+<h1>200319 - 어린이집ㆍ보육시설</h1>
+<form action="" class="sh multi" onsubmit="return">
+	<div class="set selectlist">
+		<span class="title">행정동</span>
+		<select name="">
+			<option value="">전체</option>
+		</select>
+		<span class="title">평가인증 유무</span>
+		<select name="">
+			<option value="">전체</option>
+		</select>
+		<span class="title">시설유형</span>
+		<select name="">
+			<option value="">전체</option>
+		</select>
+	</div>
+	<div class="set">
+		<span class="title">시설특성</span>
+		<div class="chklist">
+			<label><input type="checkbox" name=""> 서울형어린이집</label>   
+			<label><input type="checkbox" name=""> 장애아통합</label>   
+			<label><input type="checkbox" name=""> 장애아전문</label>   
+			<label><input type="checkbox" name=""> 다문화시설</label>   
+			<label><input type="checkbox" name=""> 영아전담시설</label>   
+			<label><input type="checkbox" name=""> 시간연장</label>  
+			<label><input type="checkbox" name=""> 방과후전담</label>
+		</div>
+	</div>
+	<div class="set">
+		<span class="title">검색조건</span>
+		<span class="select">
+			<select name="" title="검색어 구분">
+				<option value="">전체</option>
+			</select>
+		</span>
+		<span class="keyword"><input title="검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+
+<form action="" class="sh multi" onsubmit="return">
+	<div class="set">
+		<span class="title">지목</span>
+		<div class="tal">
+			<select name="" title="지목">
+				<option value="">지목1</option>
+			</select>
+		</div>
+	</div>
+	<div class="set">
+		<span class="title">지목</span>
+		<div class="select">
+			<select name="" title="지목">
+				<option value="">지목1</option>
+			</select>
+		</div>
+		<span class="title">소재지</span>
+		<span class="keyword"><input title="소재지" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>
+
+<h1>검색 조건 타이틀이 있는 경우 : 별도 타입</h1>
+<form action="" class="sh-facilities" onsubmit="return">
+	<div class="set">
+		<span class="title">검색조건</span>
+		<div class="labelList">
+			<label><input type="checkbox" name="" title="문화시설">문화시설</label>
+			<label><input type="checkbox" name="" title="체육시설">체육시설</label>
+			<label><input type="checkbox" name="" title="공연장">공연장</label>
+			<label><input type="checkbox" name="" title="미술관">미술관</label>
+			<label><input type="checkbox" name="" title="박물관">박물관</label>
+			<label><input type="checkbox" name="" title="도서관">도서관</label>
+			<label><input type="checkbox" name="" title="기타시설">기타시설</label>
+		</div>
+		<span class="btn"><button type="button" class="b-chkAll">전체선택</button></span>
+	</div>
+	<div class="set">
+		<span class="title">기타시설</span>
+		<span class="keyword"><input title="기타시설 검색어" type="text"></span>
+		<span class="btn"><button class="b-sh" type="submit">검색</button></span>
+		<span class="total"><button class="b-detail" type="button">상세보기</button></span>
+	</div>
+</form>

@@ -1,0 +1,61 @@
+@include breakpoint($lg){
+	#header{
+		height:90px;
+		.logo {
+		    left: 0px;
+		    top:23px;
+		    a{width:250px;height:41px;}
+		}
+		.whr{display:none;}
+	}
+	#subtsh{
+		@include breakpoint(max-width 1275px){
+			width:170px;
+		}
+		position: absolute;
+	    width: 250px;
+	    right: 75px;
+	    padding: 0;
+	    fieldset{
+	    	margin:0;
+	    	select{display:none}
+	    }
+	    .favkeyword{
+	    	width:100%;
+	    	position:static;
+	    	dl{
+	    		text-overflow:ellipsis;word-wrap:normal;overflow:hidden;white-space:nowrap;
+	    		dt,
+	    		dd{display:inline}
+	    	}
+	    }
+	}
+	#gnb{
+		padding-top:29px;
+		padding-left: 250px;
+		@include breakpoint($xl){
+			padding-right: 325px;
+		}
+		> ul > li{
+			margin-right:5%;
+			> div{top:90px;}
+		}
+		@include breakpoint(max-width 1275px){
+			> ul > li{
+				width:auto;
+				margin:0 2%;
+				> a{
+					font-size:17px;
+					padding:4px 0;
+				}
+			}
+		}
+	}
+	#subtsh{
+		top:14px;
+		fieldset > select, 
+		fieldset input, 
+		fieldset button{height:40px;}
+	}
+
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* line 60, static/portal/scss/_var.scss */ .ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+
+/*
+대표,보건소를 제외한 기타사이트에서 사용함.
+*/
+@media (min-width: 992px) { /* line 8, static/commons/scss/gnbtype2.scss */ #gnb { display: block; clear: both; position: relative; padding: 15px 0 0; }
+	/* line 76, static/portal/scss/_var.scss */ #gnb:before, #gnb:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	/* line 13, static/commons/scss/gnbtype2.scss */ #gnb.active { border-bottom: 1px solid #dedede; }
+	/* line 15, static/commons/scss/gnbtype2.scss */ #gnb.active > ul > li > div { display: block; }
+	/* line 16, static/commons/scss/gnbtype2.scss */ #gnb.active > ul > li:last-child > div:after { border-right: 1px solid #dedede; }
+	/* line 18, static/commons/scss/gnbtype2.scss */ #gnb > ul { display: table; width: 100%; table-layout: fixed; background-color: #fff; overflow: hidden; }
+	/* line 24, static/commons/scss/gnbtype2.scss */ #gnb > ul > li { display: table-cell; text-align: center; vertical-align: top; position: relative; }
+	/* line 29, static/commons/scss/gnbtype2.scss */ #gnb > ul > li + li:before { content: ''; position: absolute; left: -1px; top: 10px; width: 2px; height: 10px; background-color: #d4d4d4; }
+	/* line 39, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > a { display: inline-block; line-height: 1; color: #333333; font-family: 'Noto-Medium'; font-size: 19px; padding: 4px 8px 11px; border-bottom: 2px solid #fff; position: relative; } }
+
+@media (min-width: 992px) and (min-width: 1140px) { /* line 39, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > a { font-size: 22px; } }
+
+@media (min-width: 992px) { /* line 55, static/commons/scss/gnbtype2.scss */ #gnb > ul > li.hover > div, #gnb > ul > li.on > div { display: block; }
+	/* line 56, static/commons/scss/gnbtype2.scss */ #gnb > ul > li.hover > div:before, #gnb > ul > li.on > div:before { display: block; }
+	/* line 57, static/commons/scss/gnbtype2.scss */ #gnb > ul > li.hover > a, #gnb > ul > li.on > a { color: #0059a9; border-color: #008bce; }
+	/* line 59, static/commons/scss/gnbtype2.scss */ #gnb > ul > li.hover > a:after, #gnb > ul > li.on > a:after { content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #0059a9; position: absolute; left: calc(50% - 5px); bottom: -7px; }
+	/* line 72, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div { display: none; margin-top: 15px; text-align: left; padding: 15px 0 10px 20px; border-top: 1px solid #dedede; position: relative; }
+	/* line 79, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div:before { content: ''; background-color: #f9f9f9; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: calc(100%); height: 500px; display: none; z-index: 1; }
+	/* line 90, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div:after { content: ''; background-color: #f9f9f9; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: calc(100% - 2px); height: 500px; display: none; z-index: 1; display: block; background: none; border-left: 1px solid #dedede; }
+	/* line 105, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet .img { display: none; }
+	/* line 109, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li { margin-bottom: 6px; }
+	/* line 111, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li > a { font-family: 'Noto-Regular'; display: block; margin-left: 13px; font-size: 15px; line-height: 1.6; position: relative; display: inline-block; border-bottom: 1px solid transparent; white-space: nowrap; position: relative; z-index: 2; }
+	/* line 123, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li > a:hover, #gnb > ul > li > div > .dinfoSet > ul > li > a:focus { font-family: 'Noto-Medium'; color: #056a9a; border-bottom-color: #008bce; }
+	/* line 128, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li > a:hover::before, #gnb > ul > li > div > .dinfoSet > ul > li > a:focus::before { background-color: #008bce; }
+	/* line 130, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li > a:before { content: ''; width: 4px; height: 10px; border-radius: 3px; background-color: #e7e7e7; position: absolute; left: -13px; top: calc(50% - 5px); top: 7px; overflow: hidden; font-size: 1px; }
+	/* line 150, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li div > ul { display: none; }
+	/* line 152, static/commons/scss/gnbtype2.scss */ #gnb > ul > li > div > .dinfoSet > ul > li div > ul a { font-family: 'Noto-Regular'; display: block; margin-left: 13px; font-size: 13px; line-height: 1.6; position: relative; display: inline-block; border-bottom: 1px solid transparent; white-space: nowrap; position: relative; z-index: 2; }
+	/* line 173, static/commons/scss/gnbtype2.scss */ #allmenu { display: none; } }
+
+/* line 175, static/commons/scss/gnbtype2.scss */ #allNav { display: none; }
+
+/*# sourceMappingURL=gnbtype2.css.map */

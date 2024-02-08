@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단 통합주차</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+<link rel="stylesheet" href="/static/font/NotoSans/notosans.css">
+<link rel="stylesheet" href="/static/font/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/font/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="/static/font/themify-icons/themify-icons.css">
+
+<link rel="stylesheet" href="/static/park/css/main.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+
+	<div id="content">
+		<main>
+			<div id="visualSet">
+				<div class="visualSlideSet">
+					<div class="ctrl">
+						<button type="button" class="btn b-left visualSlideLt">
+							<i class="la la-angle-left" aria-hidden="true"></i>
+							<span class="hidden">이전 비주얼 보기</span>
+						</button>
+						<button type="button" class="visualSlidePlay">
+							<i class="la la-play"></i>
+							<span class="hidden">비주얼 재생</span>
+						</button>
+						<button type="button" class="visualSlideStop">
+							<i class="la la-pause"></i>
+							<span class="hidden">비주얼 정지</span>
+						</button>
+						<button type="button" class="btn b-left visualSlideRt">
+							<i class="la la-angle-right" aria-hidden="true"></i>
+							<span class="hidden">다음 비주얼 보기</span>
+						</button>
+					</div>
+					<div class="visualSlide slider">
+						<div class="items">
+							<a href=""><span class="bg" style="background-image:url(/static/park/img/main/visual1.jpg);"></span>
+							<span class="hidden">Make your dream 고객섬김, 나눔경영, 고객섬김과 나눔경영으로 고객님과 함께 꿈과 행복을 만들어 가겠습니다.</span>
+							</a>
+						</div>
+						<div class="items">
+							<a href=""><span class="bg" style="background-image:url(/static/park/img/main/visual1.jpg);"></span>
+							<span class="hidden">Make your dream 고객섬김, 나눔경영, 고객섬김과 나눔경영으로 고객님과 함께 꿈과 행복을 만들어 가겠습니다.</span>
+							</a>
+						</div>
+						<div class="items">
+							<a href=""><span class="bg" style="background-image:url(/static/park/img/main/visual1.jpg);"></span>
+							<span class="hidden">Make your dream 고객섬김, 나눔경영, 고객섬김과 나눔경영으로 고객님과 함께 꿈과 행복을 만들어 가겠습니다.</span>
+							</a>
+						</div>
+						<div class="items">
+							<a href=""><span class="bg" style="background-image:url(/static/park/img/main/visual1.jpg);"></span>
+							<span class="hidden">Make your dream 고객섬김, 나눔경영, 고객섬김과 나눔경영으로 고객님과 함께 꿈과 행복을 만들어 가겠습니다.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="parkingProcess">
+				<div class="container">
+					<h2>거주자주차 처리 절차 안내</h2>
+					<ul class="parkingProBg">
+						<li><a href=""><img src="/static/park/img/main/parkingProImg1.png" alt="">
+									<span class="info">
+										<span class="badge round1">1</span>
+										인터넷지도를 이용,<br> 가까운 구간 신청
+									</span>
+							</a>
+						</li>
+						<li><a href=""><img src="/static/park/img/main/parkingProImg2.png" alt="">
+									<span class="info">
+										<span class="badge round1">2</span>
+										거주자우선 주차<br> 배정, 방침에 의한 배정
+									</span>
+							</a>
+						</li>
+						<li><a href=""><img src="/static/park/img/main/parkingProImg3.png" alt="">
+									<span class="info">
+										<span class="badge round1">3</span>
+										지로납부, 무통장입금<br> 신용카드로 주차료 결제
+									</span>
+							</a>
+						</li>
+						<li><a href=""><img src="/static/park/img/main/parkingProImg4.png" alt="">
+									<span class="info">
+										<span class="badge round1">4</span>
+										지로 영수증을<br> 주차증으로 사용
+									</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="lastest1">
+				<div class="container boxList">
+					<!-- noticeTabs -->
+					<div class="box1 noticeTabs">
+						<h2 class="hidden">최근 게시글</h2>
+						<h3><a href="javascript:void(0)" class="on">공지사항</a></h3>
+						<ul class="">
+							<li><a href="">
+								<span class="title">
+									<span class="con">(해오름스포츠팀) 해오름스포츠팀 하반기 장기분실물 처리공지(기한연장)</span>
+									<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-01-16</span></a>
+							</li>
+							<li><a href="">
+								<span class="title">
+									<span class="con">[개운산] 개운산스포츠센터 수영장 수질검사 시험성적서</span>
+									<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-01-16</span></a>
+							</li>
+							<li><a href="">
+								<span class="title">
+									<span class="con">[해오름스포츠팀] 분실물 장기보관 분실물 처리공지</span>
+									<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-01-16</span></a>
+							</li>
+							<li><a href="">
+								<span class="title">
+									<span class="con">"송경서 프로"와 함게하는 원 포인트 클리닉</span>
+									<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-01-16</span></a>
+							</li>
+						</ul>
+						<a href="" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">공지사항 더보기</span>
+						</a>
+					</div>
+					<!-- //noticeTabs -->
+
+					<!-- noticeTabs -->
+					<div class="box1 imgBx">
+						<h3><a href="javascript:void(0)" class="on">FAQ</a></h3>
+						<ul class="on">
+							<li><a href=""><span class="img"><img src="/static/park/img/main/faq1.gif" alt=""/></span><span class="info">공영</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/faq2.gif" alt=""/></span><span class="info">거주자</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/faq3.gif" alt=""/></span><span class="info">견인</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/faq4.gif" alt=""/></span><span class="info">전산시스템</span></a></li>
+						</ul>
+						<a href="" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">FAQ 더보기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="cardBox">
+				<div class="container">
+					<div class="cardBox1 imageBox">
+						<h3><a href="javascript:void(0)" class="on">거주자</a></h3>
+						<ul class="on">
+							<li><a href=""><span class="img"><img src="/static/park/img/main/private1.gif" alt=""/></span><span class="info">구획지도 검색</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/private2.gif" alt=""/></span><span class="info">이용안내</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/private3.gif" alt=""/></span><span class="info">수납및변경</span></a></li>
+						</ul>
+						<a href="" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">거주자 더보기</span>
+						</a>
+					</div>
+					<div class="cardBox2 imageBox">
+						<h3><a href="javascript:void(0)" class="on">공영</a></h3>
+						<ul class="on">
+							<li><a href=""><span class="img"><img src="/static/park/img/main/public1.gif" alt=""/></span><span class="info">현황및위치</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/public2.gif" alt=""/></span><span class="info">운영시간 및 요금</span></a></li>
+							<li><a href=""><span class="img"><img src="/static/park/img/main/public3.gif" alt=""/></span><span class="info">미납차량 조회</span></a></li>
+						</ul>
+						<a href="" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">공영 더보기</span>
+						</a>
+
+					</div>
+					<div class="cardBox3 imageBox">
+						<a href="">
+							<span class="img"><img src="/static/park/img/main/popup1.gif" alt=""></span>
+						</a>
+						<a href=""  class="more"><span class="hidden">브로슈어 더보기</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div id="missing">
+				<div class="container">
+					<h2>실종아동 / 장애인</h2>
+					<p>실종유괴 없는 행복한 세상</p>
+					<ul>
+						<li><span class="img"><img src="/static/park/img/main/missing1.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing2.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing3.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing4.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing5.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing6.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing7.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+						<li><span class="img"><img src="/static/park/img/main/missing8.jpg" alt=""></span>
+							<span class="info">실종아동 | 배성윤 <br>당시 만3세(남)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<!-- //wrap -->
+
+<footer id="footer">
+	<div class="fnavSet">
+		<div class="container">
+			<nav class="fnav">
+				<ul>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</nav>
+			<div class="weSite">
+				<ul>
+					<li><a href="">관련사이트</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footerSet">
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/park/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				서울특별시 성북구 도서관 9길 15 (상월곡동 24 – 248번지)<br>
+				E-mail : home@gongdan.co.kr
+			</p>
+			<em>COPYRIGHT 2019 SEONGBUK-GU MANAGEMENT CORPORATION. ALL RIGHTS RESERVED.</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/park/js/parkmain.js"></script>
+<script src="/static/park/js/common.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

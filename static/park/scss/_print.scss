@@ -1,0 +1,27 @@
+@media print {
+	#topAd,
+	#globalWarp,
+	#header,
+	#subvisual,
+	#gnb,
+	.totalNews,
+	.gnb-wrap,
+	.util,
+	.lnb-empty-wrap,
+	.lnb,
+	#stsfdgForm,
+	#footer,
+	.pg-top,
+	.page-coment2,
+	.utilSet,
+	.util-wp
+	{
+		display:none !important;
+	}
+	#container main,
+	.content-wp{
+		width:auto !important;
+		float:none !important;
+		padding:0 !important;
+	}
+}

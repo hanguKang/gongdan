@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" href="/static/font/NotoSans/notosans.css">
+<link rel="stylesheet" href="/static/font/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/font/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="/static/font/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a aria-selected="true" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>menu1</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<div class="cont_all">
+	<h3>공연장·극장</h3>
+	<div class="sub_ny t_top20">
+		<!-- Main 탭 include -->
+		<!-- //Main 탭 include -->
+		<!-- CGV 군자 -->
+		<div class="tra_tit">CGV 건대입구</div>
+		<div class="mlr10 pContent">
+			<div class="travel3 mt20">
+				<div class="tra_stit">CGV 건대입구</div>
+				<ul>
+					<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12558_body_1_16.bmp" /> </li>
+					<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12558_body_1_19.bmp" /></li>
+				</ul>
+			</div>
+			
+			
+			
+			
+			<div class="clear"> </div>
+			
+			<div class="tra_stit">주소</div>
+			<ul>
+				<li>서울특별시 광진구 아차산로30길 26(화양동)</li>
+			</ul>
+			
+			<div class="tra_stit">문의전화</div>
+			<ul>
+				<li>1544-1122</li>
+			</ul>
+			
+			<div class="tra_stit">상영관</div>
+			<ul>
+				<li>5관, 754석
+				</li>
+			</ul>
+			<div class="tra_stit">위치 및 정보
+				<img alt=""  src="/static/portal/img/boardimg/12558_body_1_20.bmp" />
+				
+				
+			</div>
+			<div class="tra_stit">홈페이지</div>
+			<ul>
+				<li><a href="http://www.cgv.co.kr" target="_blank">http://www.cgv.co.kr </a></li>
+			</ul>
+			<div> </div>
+		</div>
+	</div>
+</div>
+<div class="cont_all">
+	<h3>공연장·극장</h3>
+	<div class="sub_ny t_top20">
+		<!-- Main 탭 include -->
+		<!-- //Main 탭 include -->
+		<!-- CGV 군자 -->
+		<div class="tra_tit">CGV 건대입구</div>
+		<div class="mlr10 pContent">
+			<div class="travel3 mt20">
+				<div class="tra_stit">CGV 건대입구</div>
+				<ul>
+					<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12558_body_1_16.bmp" /> </li>
+					<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12558_body_1_19.bmp" /></li>
+				</ul>
+			</div>
+			
+			
+			
+			
+			<div class="clear"> </div>
+			
+			<div class="tra_stit">주소</div>
+			<ul>
+				<li>서울특별시 광진구 아차산로30길 26(화양동)</li>
+			</ul>
+			
+			<div class="tra_stit">문의전화</div>
+			<ul>
+				<li>1544-1122</li>
+			</ul>
+			
+			<div class="tra_stit">상영관</div>
+			<ul>
+				<li>5관, 754석
+				</li>
+			</ul>
+			<div class="tra_stit">위치 및 정보
+				<img alt=""  src="/static/portal/img/boardimg/12558_body_1_20.bmp" />
+				
+				
+			</div>
+			<div class="tra_stit">홈페이지</div>
+			<ul>
+				<li><a href="http://www.cgv.co.kr" target="_blank">http://www.cgv.co.kr </a></li>
+			</ul>
+			<div> </div>
+		</div>
+	</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div class="tra_tit">유니버설아트센터</div>
+<!-- 유니버설아트센터 -->
+<div class="travel4" style="margin-top: 18px">
+<ul>
+<li><img alt="리틀엔젤스예술단 전통무용 사진"  src="/static/portal/img/boardimg/6543_body_1_9.jpg" />     <img alt="유니버설아트센터 사진"  src="/static/portal/img/boardimg/6543_body_1_10.jpg" /></li>
+</ul>
+<!-- 유니버설아트센터 -->
+<div class="clear"> </div>
+<div style="margin: 0px 10px">
+<div class="universe">
+<ul>
+<li style="margin-bottom: 15px">해맑은 뽀오얀 얼굴로 천사의 음성과 날개짓을 들려주는 작은천사들이 있는 곳. 푸른 숲 우거진 하얀 궁전속에서 살며시 고개를 들고 마치 처음 세상구경을 나온냥 커다란 두눈을 두리번거리는 작은 천사들이 여기 능동 어린이대공원 후문에 살고 있다. 1962년 5월 5일에 창설되어 당시에 활동하였던 귀여운 얼굴들은 지금은 중년의 나이로 그 성숙함을 가지게 되었다. 작은 천사들의 모임인 리틀엔젤스는 그 말에서 금방 떠오르는 이미지처럼 '마음이 고와야 춤과 노래와 얼굴이 곱다'라는 구호로서 하나의 인격체로 한국인의 예술을 가꿔나가고 있다.</li>
+<li style="margin-bottom: 15px">우리 전통의상의 맵시와 민속예술을 유감없이 드러내며 가냘픈 손끝들이 리듬에 맞춰 하나같이 움직이기 위해서는 끊임없는 수련이 필요하였다. 또한 고운 목소리를 내서 하나의 하모니를 이루기 위해서는 끈질긴 노력과 훈련이 앞서야 하였다.</li>
+<li style="margin-bottom: 15px">이러한 훈련을 통해 처음 미국 게티즈버그에서 아이젠하워대통령을 위한 공연이 끝난 뒤 "하늘의 천사들이 너희들 때문에 무색하게 되었구나" 라고 그가 받은 감동을 표현하였고, 이후 영국 여왕의 특별손님으로 혹은 노래하고 춤추는 천사' , '친선과 우정의 작은 대사' 라는 찬사를 받으면서 수없이 많은 활동을 해오고 있다.</li>
+<li style="margin-bottom: 15px">어린이들의 백옥같이 희고 티없는 순결성과 귀여운 몸짓은 작은 천사의 노래로서 모든 이들의 감동을 자아냈던 것이다. 이 자랑스러운 '한국의 얼굴' 인 리틀엔젤스가 항구적인 예술단체로 발전하고 그들이 마음놓고 예능을 연마하고 그 아름다움을 펴보일 그들의 집과 학교가 있어야 하겠다는 꿈과 소망은 8년에 걸친 노력 끝에 1981년 리틀엔젤스 예술회관의 완성으로 이루어졌다. 그리고 이후 리틀엔젤스 예술회관은 전통문화를 꽃피우고 자랑하는 리틀엔젤스의 집인 동시에 동서 문화교류의 매체로서, '예술의 전당'으로서 그 기능을 유감없이 발휘하고 있다. 2006년 유니버설아트센터로 이름을 변경하여 새단장을 함으로써 문화의 장을 열었다.</li>
+<li style="margin-bottom: 15px">머리에 화관을 쓰고 의상은 우아하고 아름다우며 타령조에 맞추어 추는 한국 고유의 자랑스러운 춤인 '화관무'로 시작하여 '처녀총각' , 귀여운 꽃망울들이 무대에 활짝 피어나는 감동이 있는 '부채춤', 신비롭고 황홀한 선녀들이 춤을 추는 '선녀춤', 그 귀여움에 웃음을 자아내게 만드는 '시집가는날' , 독특한 무기무용으로서 '검무' 가 있다. 또한 이렇게 고조되는 분위기 속에서 휘몰아치는 북소리가 있는 '북춤', 보는 이의 흥을 돋궈주는 '장고춤' , 리틀엔젤스의 재롱이 있는 '꼭두각시', 집단 무용의 장엄함과 아름다움이 있는 '강강수월래' 의 군무가 눈 앞에서 펼쳐진다.</li>
+<li>그리고 익살과 유모어가 살아있는 '탈춤', 아리랑,꽃타령, 군밤타령이 가야금과 함께 울려 퍼지는 '가야금병창' , 박꽃의 청초한 시정이 군무로 승화된 '꽃의향연', 농민의 에너지가 한꺼번에 폭발하는 듯한 박력과 통쾌함을 보여주는 '농악' , 그리고 마지막으로 우리의 노래와 세계의 노래인 '합창'을 하면서 감동의 끝을 맺는 리틀엔젤스의 프로그램을 보고나면 아마 모두가 하나의 느낌을 가지게 될 것이다.</li>
+</ul>
+</div>
+<!-- 문의 -->
+<div class="travel2" style="margin-top: 23px">
+<div class="tra_stit">문의</div>
+<ul>
+<li>홈페이지 : <a href="http://www.uac.co.kr/index.asp" target="_blank" title="새창으로 열림">http://www.uac.co.kr/index.asp</a></li>
+</ul>
+</div>
+<!-- // 문의 -->
+<div> </div>
+<!-- // 공연장,극장 --></div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- 워커힐씨어터 -->
+<div class="tra_tit">워커힐씨어터</div>
+<!-- 특징 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>특징</span></strong></p>
+<p class="pSubject_acha_no">워커힐 씨어터는 조명, 음향 등의 최신시설로 다양한 연출이 가능한 무대시설을 완비하고 있습니다. 극장 자체가 전문 공연장으로 기획되어 타 공연장에 비해 무대와 관객의 친밀도가 매우 높으며, 특히 풍부한 조명시설로 워커힐 씨어터만의 환상적인 무대 연출이 가능한 최고의 극장입니다.</p>
+</div>
+<!-- 오시는 길 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>오시는 길</span></strong></p>
+<p class="pSubject3_acha">지하철 이용시</p>
+<p class="pSubject_acha_no">김포공항, 여의도방면 지하철 5호선를 탑승하여 강나루역에서 하차 무료셔틀버스 이용 
+
+도심공항터널, 강남지역 방면 지하철 2호선을 탑승하여 강변역에서 하차 무료셔틀버스를 이용</p>
+</div>
+<!-- 문의 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>문의</span></strong></p>
+<p class="pSubject3_acha">홈페이지 : <a href="http://www.sheratonwalkerhill.co.kr/" target="_blank" title="새창열림">http://www.sheratonwalkerhill.co.kr</a></p>
+<p class="pSubject3_acha">주소 : 서울특별시 광진구 워커힐로 177</p>
+<p class="pSubject3_acha">전화번호 : 455 - 5000</p>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div class="tra_tit">예스24 라이브홀</div>
+<div class="travel4" style="margin-top: 18px">
+<ul>
+<li><img alt="악스 건물 외관 모습(낮전경)"  src="/static/portal/img/boardimg/6546_body_1_4.jpg" /></li>
+<li><img alt="악스 건물 외관 모습(밤전경)"  src="/static/portal/img/boardimg/6546_body_1_5.jpg" /></li>
+</ul>
+</div>
+<!-- 서울 악스 -->
+<div class="clear"> </div>
+<div style="margin: 0px 10px"><!-- 특징 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>특징</span></strong></p>
+<p class="pSubject_acha_no">국내 공연 환경에 최적의 규모, 최고의 시설로 기획된 전문 공연장으로서, 소규모 라이브 극장과 대형 클래식 공연장 위주의 국내 공연장 현실과는 확실히 차별화된 대중음악 전문 스탠딩 공연장</p>
+<p class="pSubject_acha_no">- 객석 : 스탠딩 공연시 2,000명, 좌석공연 841명</p>
+<p class="pSubject_acha_no">- 편의시설 : 매점, 드링크 바, 코인락커, 주차장</p>
+</div>
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>오시는 길</span></strong></p>
+<p class="pSubject3_acha">지하철 이용시</p>
+<p class="pSubject_acha_no">지하철 5호선 광나루역 2번 출구로 나오시면 도보로 5분 거리</p>
+<p class="pSubject_acha_no">2호선 이용시, 강변역 2번 출구로 나오셔서 테크노마트(광진문화원) 앞에서 마을버스(광진 01번)을 타고 광나루 현대아파트에서 하차</p>
+<p class="pSubject3_acha">버스 이용시</p>
+<p class="pSubject_acha_no">간선버스 130, 342, 370 / 광역서브 9301를 타시고 광나루역 하차 후 도보로 5분 거리</p>
+</div>
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>문의</span></strong></p>
+<p class="pSubject3_acha">홈페이지 : 예스24라이브홀 <a href="http://www.axhallkorea.com/" target="_blank" title="새창으로 열림">http://www.axhallkorea.com/</a></p>
+<p class="pSubject3_acha">주소 : 서울특별시 광진구 구면천로20 (광장동)</p>
+<p class="pSubject3_acha">전화번호 : 457 - 5114</p>
+<p class="pSubject3_acha">팩스 : 453 - 9114</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- CGV 군자 -->
+<div class="tra_tit">세종대 학생회관 대공연장</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<div class="tra_stit">세종대 학생회관 대공연장</div>
+<ul>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12557_body_1_19.bmp" /> </li>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12557_body_1_20.bmp" /></li>
+</ul>
+</div>
+
+
+
+
+<div class="clear"> </div>
+
+<div class="tra_stit">주소</div>
+<ul>
+<li>서울특별시 광진구 능동로 209(군자동)</li>
+</ul>
+
+<div class="tra_stit">문의전화</div>
+<ul>
+<li>3408-3114</li>
+</ul>
+
+<div class="tra_stit">상영관</div>
+<ul>
+<li>313석
+
+     </li>
+</ul>
+<div class="tra_stit">위치 및 정보
+<img alt=""  src="/static/portal/img/boardimg/12557_body_1_21.bmp" />
+
+ 
+
+
+ </div>
+<div class="tra_stit">홈페이지</div>
+<ul>
+<li><a href="http://www.sejong.ac.kr" target="_blank">http://www.sejong.ac.kr/ </a></li>
+</ul>
+<div> </div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div class="tra_tit">세종대 대양홀</div>
+<!-- 세종대 대양홀 -->
+<div class="travel4" style="margin-top: 18px">
+<ul>
+<li><img alt="세종대 대양홀"  src="/static/portal/img/boardimg/6545_body_1_3.jpg" /></li>
+<li><img alt="세종대학교 대양홀은 예술행사(무용,음악,연극,영화,거리문화,미술축제)를 대양홀에서 주최하며, 전국 국가 공인 문화예능단체에서 주관하는 각종 경연대회를 유치하여 교육발전하고 있다."  src="/static/portal/img/boardimg/6545_body_1_4.jpg" /></li>
+</ul>
+</div>
+<!-- // 세종대 대양홀 -->
+<div class="clear"> </div>
+<div style="margin: 0px 10px"><!-- 특징 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>특징</span></strong></p>
+<p class="pSubject3_acha">주차시설 : 2,000대</p>
+<p class="pSubject3_acha">교통편 : 전철 7호선(어린이 대공원/세종대 앞)</p>
+<p class="pSubject3_acha">무대시설</p>
+<p class="pSubject_acha_no">- 대형무대, 특수조명, 최신음향장비(녹음) VCR</p>
+<p class="pSubject_acha_no">- (대형)연습장 / 분장실 / 대기실</p>
+<p class="pSubject3_acha">건물안내도</p>
+<p class="pSubject_acha_no">- 5층 연습실</p>
+<p class="pSubject_acha_no">- 4층 공연관리 사무실(409)</p>
+<p class="pSubject_acha_no">- 3층 객석, 영사실</p>
+<p class="pSubject_acha_no">- 2층 객석</p>
+<p class="pSubject_acha_no">- 1층 무대, 객석</p>
+<p class="pSubject_acha_no">- B1 공연예술대학원(B01) / 전기실(B25)</p>
+</div>
+<!-- // 특징 --><!-- 문의 -->
+<div class="pContent">
+<p class="pSubject_acha"><strong><span>문의</span></strong></p>
+<p class="pSubject3_acha">홈페이지 : 세종대학교 <a href="http://www.sejong.ac.kr/sejong/oncampus_02.html?menu_id=5.2" target="_blank" title="새창으로 열림">http://www.sejong.ac.kr/sejong/oncampus_02.html?menu_id=5.2</a></p>
+<p class="pSubject3_acha">주소 : 서울특별시 광진구 능동로 209 세종대학교 예체능대 대양홀 공연부 (우) 05006</p>
+<p class="pSubject3_acha">무대시설</p>
+<p class="pSubject3_acha">전화 : 02) 3408-4458</p>
+<p class="pSubject3_acha">팩스 : 3409 - 3237, 499 - 4573</p>
+<p class="pSubject3_acha">출처 : <a href="http://www.sejong.ac.kr" target="_blank" title="새창으로 열림">세종대학교 http://www.sejong.ac.kr</a></p>
+<p> </p>
+</div>
+<!-- // 문의 --></div>
+<!-- // 공연장,극장 -->
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- CGV 군자 -->
+<div class="tra_tit">서울상상나라극장</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<div class="tra_stit">서울상상나라극장
+
+ </div>
+<ul>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12561_body_1_24.bmp" /> </li>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12561_body_1_25.bmp" /></li>
+</ul>
+</div>
+
+
+
+
+<div class="clear"> </div>
+
+<div class="tra_stit">주소</div>
+<ul>
+<li>서울특별시 광진구 능동로 216, 상상나라 B1(능동)</li>
+</ul>
+
+<div class="tra_stit">문의전화</div>
+<ul>
+<li>456-5080 </li>
+</ul>
+
+<div class="tra_stit">상영관</div>
+<ul>
+<li>220석
+
+     </li>
+</ul>
+<div class="tra_stit">상세정보
+<img alt=""  src="/static/portal/img/boardimg/12561_body_1_26.bmp" />
+
+ 
+
+
+ </div>
+<div class="tra_stit">홈페이지</div>
+<ul>
+<li><a href="http://www.yookyoung.org" target="_blank">http://www.sangsangtheater.com/ </a></li>
+</ul>
+<div> </div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div id="content_wrapper2">
+<h2>새천년관 대공연장</h2>
+<img alt="건국대학교 새천년관은 클래식과 대중음악을 막론해 다양한 문화행사를 소화해낼 수 있는 다목적 공연할 수 있는 시설입니다." src="/static/portal/img/boardimg/6544_body_1_3.jpg"/> 
+<h3>특징</h3>
+<p>1,2층의 구분이 없이 계단형으로 연결된 넓은 내부공간으로 오케스트라, 클래식, 대중음악, 연극, 영화, 뮤지컬등 다양한 문화 행사들을 소화할 수 있는 다국적 공영장 입니다.</p>
+<img alt="새천년관대공연장 내부사진 1" class="new_thousand_hole_img1"  src="/static/portal/img/boardimg/6544_body_1_4.gif" />
+<h3>객석</h3>
+<p>805석(장애우석 11)</p>
+<img alt="새천년관대공연장 내부사진 2" class="new_thousand_hole_img2"  src="/static/portal/img/boardimg/6544_body_1_5.gif" />
+<h3>형태</h3>
+<p>계단형(단층구조)</p>
+<h3>부대시설</h3>
+<ul class="list1_depth4">
+<li>로비, 안내실2,대기실2,연습실,분장실2</li>
+<li>주 조정실, 소도구실</li>
+<li>그랜드피아노(스타인웨이, 삼의)</li>
+<li>보연대, 덧마루, 음향반사판 외</li>
+</ul>
+<h3>무대장치 및 기기</h3>
+<ul class="list1_depth4">
+<li>set batten 3, 조명 batten 4</li>
+<li>FRONT &amp; BORDER</li>
+<li>모형막, 중간막, 인활막</li>
+<li>풀 스크린, 영사막</li>
+<li>조명, 음향 콘솔등</li>
+</ul>
+
+<h3>문의</h3>
+<ul class="list1_depth4">
+<li>홈페이지 : 위니아트(새천년관 운영회사) <a href="http://www.weneart.com" target="_blank" title="새창으로 열림">http://www.weneart.com</a></li>
+<li>주 소 : 서울특별시 광진구 아차산로 263 새천년관 지하2층</li>
+<li>전화번호 : 02) 455-1896-7</li>
+</ul>
+
+<h3>오시는 길</h3>
+<img alt="2호선 건대입구역 2번 출구/7호선 건대입구역 4번 출구/어린이대공원역 3번 출구 : 건국대학교 내 새천년관"  src="/static/portal/img/boardimg/6544_body_1_6.gif" />
+<p class="subject2_depth3">지하철 노선</p>
+<p class="content4_depth4">2호선 건대입구역 2번출구 &amp; 7호선 건대입구역 4번출구</p>
+<p class="content4_depth4">7호선 어린이 대공원역 3번 출구</p>
+<p class="subject2_depth3">버스 노선</p>
+<p class="content4_depth4">건국대병원앞 : 2217, 2222, 3216 (군자역방향), 3217, 4212</p>
+<p class="subject2_depth3">자가용이용시</p>
+<p class="content4_depth4">교내주차장 이용</p>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- CGV 군자 -->
+<div class="tra_tit">무지개극장</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<div class="tra_stit">무지개극장</div>
+<ul>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12559_body_1_22.bmp" /> </li>
+<li><img alt=""  src="/static/portal/img/boardimg/12559_body_1_24.bmp" /></li>
+</ul>
+</div>
+
+
+
+
+<div class="clear"> </div>
+
+<div class="tra_stit">주소</div>
+<ul>
+<li>서울특별시 광진구 광나루로 441(능동)</li>
+</ul>
+
+<div class="tra_stit">문의전화</div>
+<ul>
+<li>2204-6028 </li>
+</ul>
+
+<div class="tra_stit">상영관</div>
+<ul>
+<li>352석
+
+     </li>
+</ul>
+<div class="tra_stit">위치 및 정보
+<img alt=""  src="/static/portal/img/boardimg/12559_body_1_23.bmp" />
+
+ 
+
+
+ </div>
+<div class="tra_stit">홈페이지</div>
+<ul>
+<li><a href="http://www.yookyoung.org" target="_blank">http://www.yookyoung.org/ </a></li>
+</ul>
+<div> </div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div class="tra_tit">롯데시네마</div>
+<div style="margin: 0px 10px"><!-- 멀티플래스 극장 롯데시네마 -->
+<div class="travel3" style="margin-top: 20px">
+<div class="tra_stit">멀티플랙스 극장 롯데시네마</div>
+<ul>
+<li><img alt="롯데시네마1" src="/static/portal/img/boardimg/6547_body_1_1.jpg"/></li>
+<li><img alt="롯데시네마2" src="/static/portal/img/boardimg/6547_body_1_2.jpg"/></li>
+<li><img alt="롯데시네마3" src="/static/portal/img/boardimg/6547_body_1_3.jpg"/></li>
+</ul>
+</div>
+<!-- // 멀티플래스 극장 롯데시네마 -->
+<div class="clear"> </div>
+<!-- 특징 -->
+<div class="travel2" style="margin-top: 23px">
+<div class="tra_stit">특징</div>
+<ul>
+<li>개관일 : 2007년 1월 27일</li>
+<li>주 소 : 서울특별시 광진구 아차산로 272  스타시티몰 2F</li>
+<li>규 모 : 12개관 2,213석 </li>
+</ul>
+</div>
+<!-- // 특징 --><!-- 문의 -->
+<div class="tra_stit" style="margin-top: 18px">문의</div>
+<div class="imgL">
+<p><img alt="2호선 건대입구역 하차 5번 출구" src="/static/portal/img/boardimg/6547_body_1_4.gif"/></p>
+<dl style="">
+<dd>전화번호 : 1544-8855 </dd>
+<dd>홈페이지 : <a href="http://www.lottecinema.co.kr/LHS/LHFS/Contents/CinemaInfo/Cinema.aspx?CinemaGroupCode=0001&amp;CinemaCode=1004&amp;ScreenType=100" target="_blank">롯데시네마(http://www.lottecinema.co.kr)</a> </dd>
+<dd>지하철 : 2호선 건대입구역 하차 5번 출구
+
+                7호선 건대입구역 4번출구 </dd>
+<dd>시내버스
+
+    721, 240, 3217, 3218, 3220, 4212, 2222, 2224번 </dd>
+</dl>
+</div>
+<div class="travel2" style="margin-top: 18px">
+<div class="tra_stit">주차장</div>
+<ul>
+<li><span>2시간 30분(무료)</span> 30분 추가시 500원</li>
+<li>게스트 창구에서 주차증 필히 확인</li>
+</ul>
+</div>
+<!-- // 문의 --></div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- CGV 군자 -->
+<div class="tra_tit">동서울아트홀</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<div class="tra_stit">동서울아트홀</div>
+<ul>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/12560_body_1_24.bmp" /> </li>
+<li> </li>
+</ul>
+</div>
+
+
+
+
+<div class="clear"> </div>
+<div class="tra_stit">소개</div>
+<ul>
+<li>동서울아트홀은 공연예술의 활성화를 위해 2011년에 설립된 공연장으로, 공연예술의 다양한 형식과 가치를 관객들에게 전달하여, 문화적 연결통로가 되는 공연장으로서 공연 문화예술의 가치를 한층 더 높이기 위한 운영 방향과 가치 추구</li>
+</ul>
+
+<div class="tra_stit">주소</div>
+<ul>
+<li>서울특별시 광진구 구의강변로 38, 동서울호텔 B2(구의동)</li>
+</ul>
+
+<div class="tra_stit">문의전화</div>
+<ul>
+<li>3436-7777 </li>
+</ul>
+
+<div class="tra_stit">상영관</div>
+<ul>
+<li>300석
+
+     </li>
+</ul>
+<div class="tra_stit">위치 및 정보
+<img alt=""  src="/static/portal/img/boardimg/12560_body_1_25.bmp" />
+
+ 
+
+
+ </div>
+<div class="tra_stit">홈페이지</div>
+<ul>
+<li><a href="http://www.yookyoung.org" target="_blank">http://www.yookyoung.org/ </a></li>
+</ul>
+<div> </div>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- 광진청소년수련관 대극장 -->
+<div class="tra_tit">광진청소년수련관 대극장</div>
+<div class="pContent">
+<div class="travel3 mt20">
+<ul>
+<li><img alt="광진청소년수련관 대극장 이미지 1" src="/static/portal/img/boardimg/9771_body_1_4.gif"/></li>
+<li><img alt="광진청소년수련관 대극장 이미지 2" src="/static/portal/img/boardimg/9771_body_1_5.gif"/></li>
+</ul>
+</div>
+<div class="clear"> </div>
+<!-- 극장소개 -->
+<div class="travel2 mt23">
+<div class="tra_stit">극장소개</div>
+<ul>
+<li>대극장
+
+    - 각종 발표회와 공연이 가능하도록 넓은 무대와 극장식 의자완비(342석)</li>
+<li>소극장
+
+    - 소규모 발표회, 세미나, 회의 등 다용도로 사용 가능(70석) 
+
+    - 준비실 2개실, 대기실(대극장 2개실, 소극장 1개실), 냉난방완비 
+
+    - 빔프로젝트, 핀조명, 드럼, 신디사이저, 베이스, 기타 엠프 등 공연에 필요한 물품 완비(옵션)</li>
+</ul>
+</div>
+</div>
+<!-- 대관료 -->
+<div class="pContent">
+<div class="tra_stit">대관료</div>
+<div class="pSubject_no">
+<table class="tableT" summary="광진청소년수련관 대극장, 소극장, 주중과 주말 구분에 따른 대관료 정보를 확인하실 수 있습니다">
+<caption>광진청소년수련관 극장 대관료</caption>
+<tbody>
+<tr>
+<th scope="col">구분</th>
+<th scope="col">대극장(3시간 기준)</th>
+<th scope="col">소극장(3시간 기준)</th>
+<th class="noline" scope="col">비고</th>
+</tr>
+<tr>
+<td>대관료(주중)</td>
+<td>40만원</td>
+<td>10만원</td>
+<td class="noline"> </td>
+</tr>
+<tr>
+<td>대관료(주말)</td>
+<td>40만원</td>
+<td>10만원</td>
+<td class="noline">30%할증요금 가산</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 오시는길 -->
+<div class="pContent">
+<div class="tra_stit">오시는길</div>
+<div class="txtCn"><img alt="5호선 광나루역 2번 출구 맞은편 50m"  src="/static/portal/img/boardimg/9771_body_1_7.gif" /></div>
+<div class="pSubject3">대중교통</div>
+<div class="pSubject_no">
+<table class="tableT" summary="지하철, 마을버스, 버스로 오시는 내용 안내">
+<caption>대중교통</caption>
+<tbody>
+<tr>
+<th scope="col">지하철</th>
+<th scope="col">마을버스</th>
+<th class="noline" scope="col">버스</th>
+</tr>
+<tr>
+<td>5호선 광나루역 2번 출구 맞은편 50m</td>
+<td>광진01 (강변역~광진정보도서관)</td>
+<td class="noline">시내(파랑) : 130, 300, 370 
+
+            광역(빨강) : 9301, 1113-1 
+
+            경기도버스 : 1, 1-1, 1-5, 1-6, 9, 9-1, 9-2, 9-3, 9-5, 9-6, 11, 70, 112-3, 1115-3, 2000-1, 2000-2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pSubject3">자가운전</div>
+<div class="pSubject_no">- 천호동에서 :</div>
+<div class="pSubject_no">천호대교 건너 광나루사거리에서 우회전하여 수련관 건물을 끼고 삼거리에서 우회전하면 주차장 입구</div>
+<div class="pSubject_no">- 어린이대공원에서 :</div>
+<div class="pSubject_no">천호대교 건너기 직전 광나루사거리에서 좌회전하여 수련관 건물을 끼고 삼거리에서 우회전하면 주차장 입구</div>
+</div>
+<!-- 주차안내 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>주차안내</span></strong></p>
+<p class="pSubject3">운영시간</p>
+<p class="pSubject_no">평일 오전 6시~22시 토·일/공휴일 오전 9시~19시</p>
+<p class="pSubject3">이용료</p>
+<p class="pSubject_no">일반이용 기본 30분 1,000원 (초과 10분당 500원)
+
+1개 강좌 수강회원 2시간 무료
+
+2개 강좌 수강회원 3시간 무료 
+
+대극장 대관차량 5대 무료 (공연관람차량 3,000원)
+
+소극장 대관차량 2대 무료 (공연관람차량 3,000원)</p>
+</div>
+<!-- 문의 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>문의</span></strong></p>
+<p class="pSubject3">홈페이지 : <a href="http://www.seekle.or.kr" target="_blank" title="새창열림">http://www.seekle.or.kr</a></p>
+<p class="pSubject3">주소 : 서울시 광진구 구천면로 2</p>
+<p class="pSubject3">전화번호 : 02-2204-3100</p>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- KU 시네마테크 -->
+<div class="tra_tit">KU 시네마테크</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<ul>
+<li><img alt="KU 시네마테크 내부 이미지" src="/static/portal/img/boardimg/9767_body_1_10.gif"/></li>
+<li><img alt="KU 시네마테크 외부 이미지" src="/static/portal/img/boardimg/9767_body_1_11.gif"/></li>
+</ul>
+</div>
+<div class="clear"> </div>
+<!-- 극장소개 -->
+<div class="travel2 mt23">
+<div class="tra_stit">극장소개</div>
+<ul>
+<li>KU 씨네마테크가 2011년 1월 새롭게 개관했습니다.</li>
+<li>KU 씨네마테크는 
+
+    · 상영전에 광고가 없습니다.
+
+    · 엔딩크레딧이 끝나기 전 불이 켜지지 않습니다.
+
+    · 영화를 최적의 품질로 볼 수 있습니다.
+
+    · 좋은 영화를 다양하게 볼 수 있습니다.</li>
+<li>KU 씨네마테크는
+
+    · 건대입구역(2호선과 7호선)에서 도보 3분 거리이며 주차가 편리합니다.
+
+    · 좌석간의 거리와 시야를 충분히 확보한 152석의 좌석이 있습니다.
+
+    · 가로12m 세로5m의 영국제 Harkness 대형스크린입니다.
+
+    · 어떠한 영화도 화면이 왜곡되거나 잘리지 않는 듀얼 마스킹 시스템을 구현합니다.
+
+    · 최신 SONY R320 4K디지털 영사기와 크리스티 35mm 필름영사기가 있습니다.
+
+    · JBL 시네마스피커로 촘촘히 구성한 Dolby Ex 서라운드 사운드 시스템을 제공합니다.
+
+    · 디지털 상영소스에 대응하여 다양한 상영포맷을 최적으로 지원합니다.
+
+    · 또한 시네마랩을 통한 디지털시네마 기술인력이 시사 및 다양한 상영요구에 체계적이고 안정된 지원을 준비하고 있습니다.</li>
+</ul>
+</div>
+</div>
+<!-- 문의 -->
+<div class="pContent">
+<div class="tra_stit">문의</div>
+<div id="map" class="daummap" style="width:100%;height:350px;"></div>
+<script> maps('서울특별시 광진구 능동로 120 건국대학교 예술대학'); </script>
+
+<div class="imgL">
+
+<dl>
+<dd>전화번호 : 02-466-6579(사무실) </dd>
+<dd>주소 : 서울특별시 광진구 능동로 120 건국대학교 예술대학 </dd>
+<dd>지하철 : 2호선 건대입구역 2번 출구/7호선 건대입구역 4번 출구/어린이대공원역 3번 출구 </dd>
+<dd>버스 : 건대역 240, 721, 2222, 2223, 2224 
+
+    건국대학교병원 (청담대교 방향) 240, 721, 2222, 3220, 4212
+
+    건국대학교앞 2223, 2224, 3220 
+
+    건대앞 302, 3216 </dd>
+</dl>
+</div>
+</div>
+<!-- 주차안내 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>주차안내</span></strong></p>
+<p class="pSubject3">여유로운 주차 공간</p>
+<p class="pSubject_no">- 관람권 소지시 3시간 1천원, 6시간 3천원</p>
+</div>
+<!-- 상영관정보 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>상영관정보</span></strong></p>
+<div class="pSubject_no">
+<table class="tableT" summary="KU 시네마테크 상영관, 좌석수, 스크린, 음향시설에 대한 정보를 확인하실 수 있습니다">
+<caption>KU 시네마테크 상영관정보</caption>
+<tbody>
+<tr>
+<th scope="col">상영관</th>
+<th scope="col">좌석수</th>
+<th scope="col">스크린</th>
+<th class="noline" scope="col">음향시설</th>
+</tr>
+<tr>
+<td>1관</td>
+<td>152</td>
+<td>가로 12m 세로 5m</td>
+<td class="noline">Dolby Ex 서라운드 사운드 시스템(17개 JBL 시네마 스피커)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 홈페이지 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>홈페이지</span></strong></p>
+<p class="pSubject3"><a href="http://www.kucine.kr/" target="_blank" title="새창열림">http://www.kucine.kr</a></p>
+</div>
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<div class="tra_tit">CGV강변11</div>
+<div style="margin: 0px 10px"><!-- 국내 최초의 멀티플래스 극장 CGV강변 11 -->
+<div class="travel3" style="margin-top: 20px">
+<div class="tra_stit">국내 최초의 멀티플래스 극장 CGV강변 11</div>
+<ul>
+<li><img alt="cgv1" src="/static/portal/img/boardimg/6542_body_1_1.jpg"/></li>
+<li><img alt="cgv2" src="/static/portal/img/boardimg/6542_body_1_2.jpg"/></li>
+<li><img alt="cgv3" src="/static/portal/img/boardimg/6542_body_1_3.jpg"/></li>
+</ul>
+</div>
+<!-- // 국내 최초의 멀티플래스 극장 CGV강변 11 -->
+<div class="clear"> </div>
+<div id="map3" class="daummap" style="width:100%;height:350px;"></div>
+<script>
+var mapContainer = document.getElementById('map3'), // 지도를 표시할 div 
+    mapOption = {
+        center: new daum.maps.LatLng(37.496982408306266,127.04100916915156), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+var map = new daum.maps.Map(mapContainer, mapOption); 
+
+// 주소-좌표 변환 객체를 생성합니다
+var geocoder = new daum.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addressSearch('서울특별시 광진구 광나루로56길 85', function(result, status) {
+
+    // 정상적으로 검색이 완료됐으면 
+     if (status === daum.maps.services.Status.OK) {
+
+        var coords = new daum.maps.LatLng(result[0].y, result[0].x);
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        var marker = new daum.maps.Marker({
+            map: map,
+            position: coords
+        });
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+    } 
+});    
+</script>
+<!-- 특징 -->
+<div class="travel2" style="margin-top: 23px">
+<div class="tra_stit">특징</div>
+<ul>
+<li>전화번호 : 02-1544-1122(사무실). 465-1670(상담실)</li>
+<li>주소 : 서울특별시 광진구 광나루로56길 85</li>
+</ul>
+</div>
+<!-- // 특징 --><!-- 문의 -->
+<div class="tra_stit" style="margin-top: 18px">문의</div>
+<div class="imgL">
+<dl style=" ">
+<dd>전화번호 : 1544-1122 </dd>
+<dd>홈페이지 : <a href="http://www.cgv.co.kr/theater/theater/default.aspx?theaterCode=0001" target="_blank">CGV강변(http://www.cgv.co.kr)</a> </dd>
+<dd>지하철 : 2호선 강변역 하차 1번 출구 </dd>
+<dd>시내버스
+
+    1-1, 9-1, 13, 67, 70-1, 573-1, 500-1, 522, 569-1
+
+    571, 573, 3, 19-1, 112, 112-1, 113, 115, 117 </dd>
+</dl>
+</div>
+<!-- // 문의 --></div>
+<div class="pContent" style="margin-top: 18px">
+<p class="pSubject2"><strong><span>주차장</span></strong></p>
+<p class="pSubject3">지상주차장</p>
+<p class="pSubject_no">- 위치 : 테크노마트와 프라임상가 사이</p>
+<p class="pSubject_no">- 주차가능대수 : 71대</p>
+<p class="pSubject_no">- 운영시간 : 24시간 운영</p>
+<p class="pSubject_no">- 요금 : 20시 이전 4,000원 / 시간</p>
+<p class="pSubject_no">- 20시 이후 2,000원 / 시간</p>
+<p class="pSubject3">지하주차장</p>
+<p class="pSubject_no">- 위치 : 테크노마트 지하 5층 ~ 지하 2층</p>
+<p class="pSubject_no">- 주차가능대수 : 2,113대</p>
+<p class="pSubject_no">- 운영시간 : 평일 05 - 26시 / 주말 05 - 27시</p>
+<p class="pSubject_no">- 요금 : 20시 이전 2,000원 / 시간</p>
+<p class="pSubject_no">- 20시 이후 1,000원 / 시간</p>
+<p class="pSubject_no">- 지하주차장 차량입고는 24:00까지</p>
+</div>
+<div class="pContent">
+<p class="pSubject2"><strong><span>공통사항</span></strong></p>
+<p class="pSubject3">영화관 고객께는 주차요금의 50%를 할인해 드립니다.</p>
+<p class="pSubject3">주차할인권은 영화관람 이전에 구입하시면 편리합니다.(서비스 데스크 이용)</p>
+<p class="pSubject3">24시 이후 할인권 구입은 매점을 이용바랍니다.</p>
+</div>
+<!-- // 공연장,극장 -->
+</div>
+</div>
+<div class="cont_all">
+<h3>공연장·극장</h3>
+<div class="sub_ny t_top20">
+<!-- Main 탭 include -->
+
+<!-- //Main 탭 include -->
+<!-- CGV 군자 -->
+<div class="tra_tit">CGV 군자</div>
+<div class="mlr10 pContent">
+<div class="travel3 mt20">
+<div class="tra_stit">CGV 군자</div>
+<ul>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/9764_body_1_13.jpg" /></li>
+<li><img alt="CGV 군자 이미지"  src="/static/portal/img/boardimg/9764_body_1_14.jpg" /></li>
+</ul>
+</div>
+<div class="clear"> </div>
+<!-- 특징 -->
+<div class="travel2 mt23">
+<div class="tra_stit">특징</div>
+<ul>
+<li>차별화된 서비스 
+
+    · 매표소에서 기다리지 않고 혼자서도 편리하게 이용할 수 있는 티켓판매기
+
+    · 대기 시간을 알려주는 편리한 순번 발권 시스템
+
+    · 어린이를 위한 베이비 시트</li>
+<li>차별화된 인테리어
+
+    · Simple 함 속의 여유를 갖게 해주는 깔끔한 인테리어</li>
+</ul>
+</div>
+</div>
+<!-- 문의 -->
+<div class="pContent">
+<div class="tra_stit">문의</div>
+<div class="imgL">
+<p><img alt="5호선, 7호선 군자역 7번출구에서 직진 도보 5분"  src="/static/portal/img/boardimg/9764_body_1_15.gif" /></p>
+<dl>
+<dd>전화번호 : 02-1544-1122(사무실) </dd>
+<dd>주소 : 서울특별시 광진구 능동로 289 </dd>
+<dd>지하철 : 5호선, 7호선 군자역 하차 7번 출구 </dd>
+</dl>
+</div>
+</div>
+<!-- 주차안내 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>주차안내</span></strong></p>
+<p class="pSubject3">주차장 시설</p>
+<p class="pSubject_no">- 건물 내 기계식 주차장(주차 불가 차량 : 승합, 화물, 각종 리무진, 카니발 이상 RV, 루프캐리어 장착 차량)</p>
+<p class="pSubject_no">- 주차장 : 입차 후 3시간까지 2,000원 이후 10분당 500원</p>
+
+ 
+
+<p class="pSubject3">특이사항</p>
+<p class="pSubject_no">- CGV군자 주차장은 기계식 주차로 입차와 출차 시 오랜 시간이 소요되며 평일 오후/주말의 경우 항시 만차로 운영되어 주차하기에 매우 어려움이 있사오니 가급적 편리한 대중교통을 이용하여 주시기 바랍니다. </p>
+<p class="pSubject_no">- 대중교통안내 지하철 5호선, 7호선 군자역 7번출구를 이용바랍니다.</p>
+</div>
+<!-- 홈페이지 -->
+<div class="pContent">
+<p class="pSubject2"><strong><span>홈페이지</span></strong></p>
+<p class="pSubject3"><a href="http://www.cgv.co.kr/" target="_blank" title="새창열림">http://www.cgv.co.kr</a></p>
+</div>
+</div>
+</div>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

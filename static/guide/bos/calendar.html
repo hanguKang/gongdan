@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>관리자(#번서버)</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" type="text/css" href="/static/jslibrary/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/font/NotoSans/notosans.css" />
+<link rel="stylesheet" type="text/css" href="/static/font/nanumgothic/nanumgothic.css" />
+<link rel="stylesheet" type="text/css" href="/static/bos/css/bossub.css" />
+<link rel="stylesheet" href="/static/font/line-awesome/css/line-awesome.min.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/bootstrap/js/bootstrap.js"></script>
+<script src="/static/bos/js/boscommon.js"></script>
+<script src="/static/commons/commons.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header_wrap">
+			<div class="header">
+				<h1><a href="/bos/main/main.do"><img src="/cmmn/file/getImage.do?atchFileId=FILE_000000000000031&fileSn=1" alt="CMS관리자 로고" height="27"/></a></h1>
+				<div class="user"> <em> 관리자(admin) </em> 님으로 로그인 하셨습니다.<!-- 로그인 접속IP:127.0.0.1 -->
+					<a href="javascript:openPopup();" class="btn btn-xs btn-success"><i class="fa fa-wrench"></i> 내정보수정</a>
+					<a href="/bos/member/admin/logout.do" class="btn btn-xs btn-info"><i class="fa fa-power-off"></i> 로그아웃</a>
+				</div>
+				<div class="util "> <div class="btn-group"> <a href="?menuNo=100085" class='on'><i class="fa fa-cogs"></i> 관리자</a> <a href="/ucms/main/main.do" target="_blank" ><i class="fa "></i> 홈페이지</a> </div> </div>
+			</div>
+			<div id="gnb">
+				<ul class="gnb_width">
+	 			<li class='on'> <a href="?menuNo=100007" >홈페이지 관리자</a> </li>
+	 			<li > <a href="?menuNo=100072" >홈페이지 관리</a> </li>
+	 			<li > <a href="?menuNo=100073" >홈페이지 통계</a> </li>
+	 			<li class='pr0'> <a href="?menuNo=100025" >미인증 메뉴</a> </li>
+				</ul>
+			</div>
+		</div>
+		<div id="container">
+			<div id="lnb">
+				<h2>홈페이지 관리자</h2>
+				<ul class="lnbNav">
+					홈페이지 관리자
+				</ul>
+			</div>
+			<div id="content">
+				<div class="hgroup clearfix">
+					<h1>홈페이지 관리자 권한관리</h1>
+					<div class="fr">
+						<a href="/bos/siteManage/siteHpcm/view.do?pGroupId=auth&amp;pSrvcId=auth&amp;pMethodId=list&amp;viewType=BODY" class="b-help" title="도움말 새창열림" target="_blank" onclick="window.open(this.href, 'siteHpcm', 'resizable=1, scrollbars=1, width=1280,height=800'); return false;">도움말</a>
+						<a class="b-print" href="/cmmn/bosForPrint.jsp" id="print" title="새창" onclick="window.open(this.href, 'printPage', 'width=840,height=640,scrollbars,toolbar,status');return false;">
+						<!-- <i class="fa fa-hover fa-print"></i> -->
+						<span >인쇄하기</span>
+						</a>
+					</div>
+				</div>
+<div class="sh">
+	<div>
+		<label>
+			<span class="w50">상태</span>
+			<select name="" id="">
+				<option value="">전체</option>
+				<option value="">진행중</option>
+				<option value="">종료</option>
+			</select>
+		</label>
+		<label>
+			<span class="w50">검색조건</span>
+			<select name="" id="">
+				<option value="">설문주제</option>
+				<option value="">담당부서</option>
+			</select>
+		</label>
+		<input type="text" class="keyword">
+		<button class="b-sh">검색</button>
+		<button type="button" class="b-reset">전체보기</button>
+	</div>
+</div>
+<i aria-label="회의" class="la la-clipboard"></i>
+<i aria-label="출장" class="la la-briefcase"></i>
+<i aria-label="연가" class="la la-tree"></i>
+<i aria-label="기타" class="la la-map-signs"></i>
+<div class="calendarSet">
+	<div class="ctrl">
+		<button type="button" class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+		<span>2019.03</span>
+		<button type="button" class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+	</div>
+	<div class="infor">
+		<span><i aria-label="회의" class="la la-clipboard"></i> 회의</span> |
+		<span><i aria-label="출장" class="la la-briefcase"></i> 출장</span> |
+		<span><i aria-label="연가" class="la la-tree"></i> 연가</span> |
+		<span><i aria-label="기타" class="la la-map-signs"></i> 기타</span>
+	</div>
+	<div class="ctrlDirect">
+		<select name="" id="">
+			<option value="">2019</option>
+		</select>
+		<select name="" id="">
+			<option value="">01</option>
+		</select>
+		<button type="button" class="b-sh">보기</button>
+	</div>
+</div>
+<div class="calendarTable">
+	<table summary="한달간의 목록">
+		<caption>달력</caption>
+		<thead>
+			<tr>
+				<th class="sun" scope="col">일요일</th>
+				<th scope="col">월요일</th>
+				<th scope="col">화요일</th>
+				<th scope="col">수요일</th>
+				<th scope="col">목요일</th>
+				<th scope="col">금요일</th>
+				<th class="sat" scope="col">토요일</th>
+			</tr>
+		</thead>
+		<tr>
+			<td class="sun"><span class=day>1</span></td>
+			<td>
+				<span class="day today">30</span>
+				<div class="scheduleBtn" role=button>
+					<span><i aria-label="회의" class="la la-clipboard"></i></span>
+					<span><i aria-label="출장" class="la la-briefcase"></i></span>
+				</div>
+				<div class="scheduleInfor">
+					<dl>
+						<dt>2019.03.26 일정</dt>
+						<dd>
+							<p>2019-03-26 14:00 ~ 2019-03-26 15:00 <br> <em>[회의]</em> 주차장 임대 관련 회의</p>
+							<p>2019-03-20 09:00 ~ 2019-03-26 18:00 <br> <em>[출장]</em> 이사장님 외부 출장</p>
+						</dd>
+					</dl>
+				</div>
+			</td>
+			<td><span class=day>3</span></td>
+			<td><span class=day>4</span></td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+		<tr>
+			<td class="sun"><span class=day>2</span></td>
+			<td><span class=day>2</span></td>
+			<td><span class=day>3</span></td>
+			<td>
+
+				<span class="day today">8</span>
+				<div class="scheduleBtn" role=button>
+					<span><i aria-label="출장" class="la la-briefcase"></i></span>
+				</div>
+				<div class="scheduleInfor">
+					<dl>
+						<dt>2019.03.26 일정</dt>
+						<dd>
+							<p>2019-03-26 14:00 ~ 2019-03-26 15:00 <br> <em>[회의]</em> 주차장 임대 관련 회의</p>
+							<p>2019-03-20 09:00 ~ 2019-03-26 18:00 <br> <em>[출장]</em> 이사장님 외부 출장</p>
+						</dd>
+					</dl>
+				</div>
+				
+			</td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+		<tr>
+			<td class="sun"><span class=day>3</span></td>
+			<td><span class=day>2</span></td>
+			<td><span class=day>3</span></td>
+			<td><span class=day>4</span></td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+		<tr>
+			<td class="sun"><span class=day>4</span></td>
+			<td><span class=day>2</span></td>
+			<td><span class=day>3</span></td>
+			<td><span class=day>4</span></td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+		<tr>
+			<td class="sun"><span class=day>5</span></td>
+			<td><span class=day>2</span></td>
+			<td><span class=day>3</span></td>
+			<td><span class=day>4</span></td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+		<tr>
+			<td class="sun"><span class=day>6</span></td>
+			<td><span class=day>2</span></td>
+			<td><span class=day>3</span></td>
+			<td><span class=day>4</span></td>
+			<td><span class=day>5</span></td>
+			<td><span class=day>6</span></td>
+			<td class="sat"><span class=day>7</span></td>
+		</tr>
+	</table>
+	
+</div>
+<script>
+	$('.scheduleBtn').bind('click', function(event) {
+		$(this).parents('tr').siblings().find('.scheduleInfor').hide()
+		$(this).next('.scheduleInfor').toggle().parents('td').siblings('td').find('.scheduleInfor').hide();
+	});
+</script>

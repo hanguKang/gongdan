@@ -1,0 +1,272 @@
+.joinstep-0{
+	&.ptbox{
+		em{font-weight:500;font-size:18px;color:$sitecolor;}
+		&:before {
+			background-image:url(/static/portal/img/sub/joinstep-0.png);			
+		}
+	}
+	@include breakpoint($md){
+		>div+div{border-left:1px solid $bdcolor;}
+	}
+	a{
+		display:block;
+		text-align:center;
+		.t1{
+			display:block;
+			font-size:18px;
+			font-family:'Noto Sans';font-weight: 500;
+			height:60px+45;
+			position:relative;
+			&:after {
+				content: '';
+				display:block;
+				background: url(/static/portal/img/sub/radio_off.png) center center no-repeat;
+				height:50px;
+				position:absolute;
+				bottom:0;
+				left:0;
+				width:100%;
+			}
+		}
+		.t2{
+			display:inline-block;
+			margin: 0 auto;
+			padding:10px 49px;
+			text-align:center;
+			color:#fff;
+			background-color:#0059a9;
+			font-weight:bold;
+		}
+		&:hover,
+		&:focus {
+			.t1:after{background-image:url(/static/portal/img/sub/radio_on.png);}
+		}
+	}
+}
+.ptbox.join-end{
+	&:before {
+		content: '';
+		display:block;
+		width:100%;
+		position:static;
+		background: url(/static/portal/img/sub/join-end.png) center center no-repeat;
+	}
+	text-align:center;
+	padding-left:0;padding-right:0;
+	strong{
+		color:$sitecolor;
+		font-weight:500;
+		display:block;
+		margin:10px 0;
+	}
+}
+.joinStageStep{
+	text-align:center;
+	margin-bottom:20px;
+	@include breakpoint($sm){
+		text-align:left;
+		padding:18px 20px;
+		background-color:#f1f2f7;
+		li{
+			display:none;
+			&.on{
+				display:block;
+				&:after{display:none}
+				span{
+					font-size:18px;
+					color:#f76627;
+					line-height:28px;
+					display:inline-block;
+					&:before {
+						content: '';
+						font-family:'FontAwesome';
+						font-size:28px;
+						margin-right:15px;
+						display:inline-block;
+						vertical-align:top;
+					}
+				}
+			}
+		}
+		li+li{
+			position:relative;
+			&:after {
+				content: '';
+				font-family:'FontAwesome';
+				position:absolute;
+				font-size:18px;
+				left:0;
+				top:50%;
+				margin-top:-7px;
+				line-height:1;
+			}
+		}
+	}
+	@include breakpoint($md){
+		display:table;
+		width:100%;
+		table-layout:fixed;
+		font-size:18px;
+		li{
+			position:relative;
+			display:table-cell;
+			vertical-align:middle;
+			padding:0 5px;
+			&:nth-child(4){width:25%;}
+			span{
+				height:60px;
+				background-color:#f3f3f3;
+				display:block;
+				border:1px solid #dee0e6;
+				font-family:'Noto Sans';font-weight: 400;
+				font-size:20px;
+				padding:10px 0;
+			}
+			&:after,
+			&:before {
+				content: '';
+				height:60px;
+				width:50px;
+				background:url(/static/edu/img/main/) 0 0 no-repeat;
+				background: url(/static/portal/img/sub/joinstep.png) 0 0 no-repeat;
+				position:absolute;
+				top:0px;
+			}
+			&:after {
+				right:-27px;
+			}
+			&:before {
+				left:-25px;
+			}
+			&:first-child:before{display:none;}
+			&:last-child:after{display:none;}
+			&.on{
+				z-index:1;
+				&:after {
+					background-position: right 0;
+					right:-27px;
+				}
+				&:before {
+					left:-25px;
+					width:47px;
+					background-position:-172px 0;
+				}
+				
+				span{
+					background-color:#0059a9;
+					color:#fff;
+					&:before {
+						position:relative;
+						z-index:2;
+						content: '';
+						font-family:'FontAwesome';
+						font-size:20px;
+						margin-right:5px;
+						color:#80acd4;
+					}
+				}
+			}
+		}
+		li+li{
+			&:after {
+				content: '';
+			}
+		}
+	}
+}
+.joinstep-1{
+	margin-bottom:20px;
+	&+p{margin:0 20px;}
+}
+.joinBox-type1{
+	text-align:center;
+	border:1px solid #dee0e6;
+	border-radius:20px;
+	padding:40px 0;
+	h2{
+		margin-bottom:15px;
+		line-height:1;
+		font-size:18px;
+		font-family:'Noto Sans';font-weight: 500;
+		background: url(/static/portal/img/sub/login-phone.png)  center 0 no-repeat;
+		padding-top:57px;
+	}
+	.body{
+		p{margin-bottom:20px;}
+		a{
+			display:inline-block;
+			margin: 0 auto;
+			padding:10px 49px;
+			text-align:center;
+			color:#fff;
+			background-color:#0059a9;
+			font-weight:bold;
+		}
+	}
+}
+.joinBox-type2{
+	@extend .joinBox-type1;
+	h2{
+		background-image:url(/static/portal/img/sub/login-ipin.png);
+		background-position:center 3px;
+	}
+}
+
+.agg-set{
+	margin: 0 0 20px;
+	padding: 30px;
+	border:1px solid #e1e1e1;
+	h2,
+	h3,
+	h4{
+		font-size:1.2em;
+		margin:0 0 16px;
+		font-weight:normal;
+	}
+	.set{
+		height:152px;
+		border:1px solid $bdcolor;
+		overflow:scroll;
+		overflow-x:hidden;
+		padding:20px;
+		background-color:#f1f3f6;
+		margin-bottom:20px;
+		>*{font-size:1em;line-height:1.6;}
+		&.auto{height:auto;overflow:auto;}
+	}
+	label strong{color:$color_orange;}
+}
+.aggtotal{
+	text-align:center;
+	label{
+		font-size:14px;
+		font-weight:bold !important;
+	}
+}
+
+/* 회원가입완료 **************************************************/
+
+.idfind{
+	border:1px solid $bdcolor;
+	padding:40px;
+	p{
+		margin-bottom:15px;
+		strong{
+			font-size:1.2em;
+			font-family:'Noto Sans';font-weight: 500;
+		}
+	}
+}
+.memberUpdate{
+	@extend .idfind;
+	p{
+		background-image:url(/static/portal/img/sub/200914.png);
+		background-size:82px;
+		padding-top:100px;
+	}
+	p+p{
+		border:none;
+		padding:0;
+	}
+
+}

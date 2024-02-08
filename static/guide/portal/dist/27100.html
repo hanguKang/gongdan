@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>고객서비스 헌장</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<ul class="joinStageStep">
+	<li class="on"><div class="sr-only">현재단계</div> <span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li>
+</ul>
+<ul class="joinStageStep">
+	<li><span>회원구분</span></li>
+	<li class="on"><div class="sr-only">현재단계</div><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li> 
+</ul>
+<ul class="joinStageStep">
+	<li><span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li class="on"><div class="sr-only">현재단계</div><span>본인확인</span></li>
+	<li><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li> 
+</ul>
+<ul class="joinStageStep">
+	<li><div class="sr-only">현재단계</div> <span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li class="on"><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li> 
+</ul>
+ 
+<ul class="joinStageStep">
+	<li><div class="sr-only">현재단계</div> <span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li><span>회원정보입력</span></li>
+	<li class="on"><span>가입완료</span></li>
+</ul>
+
+<div class="row joinstep-1">
+	<div class="col-md-6">
+		<div class="joinBox-type1">
+			<h2>일반회원(만 14세 이상) 회원가입</h2>
+			<div class="body">
+				<p>
+					○○○회원은 ○○○ 주민 뿐만 아니라 대한민국국민이면 누구나 회원으로 가입하실 수 있습니다.
+					회원으로 가입하시면 ○○○청에서 제공하는 각종 서비스를 이용할 수 있습니다.
+				</p>
+				<div class="tac"><a href="">일반회원(만 14세 이상) 회원가입</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 ">
+		<div class="joinBox-type2">
+			<h2>어린이(만 14세 미만) 회원가입</h2>
+			<div class="body">
+				<p>
+					만14세 미만 어린이는 부모의 가입동의 절차를 거쳐회원으로 가입할 수 있습니다.
+					어린이 회원이 지속적으로 회원 유지 시, 만14세 이상이 되면 일반회원으로 자동전환됩니다.
+				</p>
+				<div class="tac"><a href="">어린이(만 14세 미만) 회원가입</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<p class="col_orange">
+	○○○청 홈페이지를 이용함에 있어 온라인상에서 제공한 개인정보는 철저히 보호를 받으며, 모든 회원정보는 개인정보보호정책에 의해 보호 받고 있습니다. 
+	회원등록은 무료이고 등록 즉시 서비스를 이용하실 수 있으며, 아래의 이용약관을 반드시 읽고 동의하여 주십시오.
+</p>
+
+<h2>이용약관</h2>
+
+<div class="agg-set">
+	<h3>○○○청  홈페이지 이용약관 동의</h3>
+	<div class="set">
+		
+	</div>
+	<label><input type="checkbox" name=""> 이용약관에 동의합니다. <strong>(필수)</strong></label>
+</div>
+
+<div class="agg-set">
+	<h3>개인정보 수집ㆍ이용동의</h3>
+	<div class="set">
+		
+	</div>
+	<label><input type="checkbox" name=""> 개인정보 수집ㆍ이용에  동의합니다. <strong>(필수)</strong></label>
+</div>
+
+<div class="agg-set">
+	<h3>수집한 개인정보의 제3자 제공 동의</h3>
+	<div class="set">
+		<h4>수집한 개인정보의 제3자 제공 및 취급 위탁 동의</h4>
+		<p>○○○ 홈페이지에서는 아래의 경우 제3자 제공을 하고 있으며, 개인정보의 취급 위탁은 하지 않습니다. 실명확인 및  I-PIN 인증, 디지털원패스, 소셜인증 시에 제공하는 개인정보는 개인정보보호법 제22조 제2항에 따라 정보주체와의 계약체결 등 위하여 정보주체의 동의 없이 처리할 수 있는 개인정보로 지정합니다.</p>
+		<h4>&lt;○○○ 홈페이지 회원 서비스 제공을 위해 개인정보를 제공하는 기관 &gt;</h4>
+		<p>아래에 해당하는 회원가입 시 실명인증 및  I-PIN 인증, 디지털원패스, 소셜인증 시에만 제3자 제공을 하고 있으며 정보주체의 동의 없이는 제공되지 않습니다.</p>
+		<div class="table">
+			<table>
+				<caption>제3자 제공 사항</caption>
+				<thead>
+					<tr>
+						<th scope="col">제공받는    자</th>
+						<th scope="col">제공받는    자의 개인정보 이용목적</th>
+						<th scope="col">제공하는    개인정보의 항목</th>
+						<th scope="col">제공받는    자의 개인정보 보유 및 이용 기간</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>한국모바일인증㈜</td>
+					<td>실명인증</td>
+					<td>이름, 생년월일, 휴대폰번호, 법정대리인(이름, 생년월일, 휴대폰번호)</td>
+					<td>신용평가    기관에서는 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음</td>
+				</tr>
+				<tr>
+					<td>한국모바일인증㈜</td>
+					<td>I-PIN인증</td>
+					<td>I-PIN(개인식별번호), 법정대리인(I-PIN 개인식별번호)</td>
+					<td>신용평가    기관에서는 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음</td>
+				</tr>
+				<tr>
+					<td>행정안전부</td>
+					<td>디지털원패스</td>
+					<td>이름,생년월일, 휴대폰번호</td>
+					<td>디지털원패스에서    이미 보유하고 잇는 개인정보이기 때문에 별도로 저장하지 않음</td>
+				</tr>
+				<tr>
+					<td>소셜업체</td>
+					<td>소셜인증(네이버,카카오톡, 페이스북, 구글)</td>
+					<td>이름</td>
+					<td>소셜업체에서    이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음</td>
+				</tr>
+				<tr>
+					<td>㈜유앤피플</td>
+					<td>홈페이지    유지보수 시</td>
+					<td>아이디,    이름,    주소,    전화번호</td>
+					<td>홈페이지    유지보수 업무    시에만 사용하는    정보로 별도로 저장하지 않음</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<p>단, 다음에 해당하는 경우에는 예외로 제공 할 수 있습니다. [관련근거: 개인정보보호법 제18조 제2항]</p>
+		<p>1. 정보주체로부터 별도의 동의를 받은 경우</p>
+		<p>2. 다른 법률에 특별한 규정이 있는 경우</p>
+		<p>3. 정보주체 또는 그 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</p>
+		<p>4. 통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우</p>
+		<p>5. 개인정보를 목적 외의 용도로 이용하거나 이를 제3자에게 제공하지 아니하면 다른 법률에서 정하는 소관업무를 수행할 수 없는 경우로서 보호위원회의 심의·의결을 거친 경우</p>
+		<p>6. 조약, 그 밖의 국제협정의 이행을 위하여 외국정부 또는 국제기구에 제공하기 위하여 필요한 경우</p>
+		<p>7. 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우</p>
+		<p>8. 법원의 재판업무 수행을 위하여 필요한 경우</p>
+		<p>9. 형(刑) 및 감호, 보호처분의 집행을 위하여 필요한 경우</p>
+		<p>정보주체는 개인정보의 제3자 제공에 대한 동의를 거부할 수 있으며, 동의 거부 시 ○○○ 홈페이지에 회원가입이 되지 않으며, ○○○ 홈페이지에서 제공하는 서비스를 이용할 수 없습니다.</p>
+
+	</div>
+	<label><input type="checkbox" name=""> 개인정보 수집ㆍ이용에  동의합니다. <strong>(필수)</strong></label>
+
+</div>
+
+<div class="agg-set">
+	<h3>이벤트ㆍ홍보성 정보제공 동의</h3>
+	<div class="set">
+		<h4>개인정보 수집 · 이용 동의</h4>
+		<div class="table">
+			<table>
+				<caption>개인정보 수집 · 이용 동의</caption>
+				<thead>
+					<tr>
+						<th scope="col">수집하는 개인정보의 항목</th>
+						<th scope="col">개인정보 수집ㆍ이용목적</th>
+						<th scope="col">개인정보의 보유 및 이용기관</th>
+						
+					</tr>
+				</thead>
+				<tr>
+					<td>성명, 전화번호, 주소, 이메일</td>
+					<td>이벤트/경품 당첨결과 안내 및 상품 배송 등</td>
+					<td>회원탈퇴시까지(2년마다 재동의가 요구됨)</td>
+				</tr>
+			</table>
+
+		</div>
+		<p>
+			정보 주체는 이벤트 및 홍보에 대한 동의를 거부할 수 있으며, 동의 거부시 ○○○ 홈페이지에서 제공하는 이벤트 · 홍보 서비스를 이용할 수 없습니다.
+		</p>
+
+	</div>
+	<label><input type="checkbox" name=""> 이벤트ㆍ홍보 정보 수신에  동의합니다. <strong>(선택)</strong></label>
+
+</div>
+
+<div class="agg-set">
+	<h3>○○○청  홈페이지 이용약관 동의</h3>
+	<div class="set auto">
+		<p>○○○청 홈페이지 회원가입 이용약관, 개인정보 수집 및 이용동의, 수집한 개인정보의 제3자 제공, 이벤트ㆍ홍보성 정보제공에 모두 동의합니다.</p>
+	</div>
+	<label><input type="checkbox" name=""> 모두동의</label>
+</div>
+
+
+<div class="btnSet c">
+	<input type="submit" value="확인" class="b-submit">
+	<a href="" class="b-cancel">취소</a>
+</div>
+
+
+<h2>본인확인</h2>
+<p>○○○청 홈페이지를 이용함에 있어 온라인상에서 제공한 개인정보는 철저히 보호를 받으며, 모든 회원정보는 개인정보보호정책에 의해 보호 받고 있습니다.</p>
+
+<div class="row joinstep-1">
+	<div class="col-md-6">
+		<div class="joinBox-type1">
+			<h2>휴대폰 본인인증</h2>
+			<div class="body">
+				<p>
+					본인명의 휴대폰으로 인증번호를 발송하여 본인인증합니다.
+				</p>
+				<div class="tac"><a href="" target="_blank" title="새창열림">휴대폰 인증하기</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 ">
+		<div class="joinBox-type2">
+			<h2>I-PIN인증</h2>
+			<div class="body">
+				<p>
+					아이핀 ID/PW로 본인인증합니다.
+				</p>
+				<div class="tac"><a href="" target="_blank" title="새창열림">아이핀 인증하기</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>회원정보입력</h2>
+<div class="reqInfor"><span class="req"><span>필수입력</span></span> 표시는 필수적으로 입력하셔야 합니다.</div>
+<div class="reg">
+	<dl>
+		<dt>이름</dt>
+		<dd></dd>
+	</dl>
+	<dl>
+		<dt>생년월일</dt>
+		<dd></dd>
+	</dl>
+	<dl>
+		<dt>아이디<span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<input type="text" title="아이디" class="id">
+			<button type="button" class="b-blue">중복확인</button>
+			<p class="help">※ 8~14자 이하 영문소문자, 숫자조합</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt>비밀번호<span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<input type="password" name="" title="비밀번호" class="password">
+			<p class="help">※ 10 ~ 14자 이하 영문소문자, 숫자조합</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt>비밀번호 확인<span class="req"><span>필수입력</span></span></dt>
+		<dd><input type="password" name="" title="비밀번호 확인" class="password"></dd>
+	</dl>
+	<dl>
+		<dt>휴대전화<span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<div class="telSet">
+				<select name="ntcrMobile1" class="tel" title="휴대전화 연락처 앞 자리">
+					<option value="" selected>선택</option>
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="016">016</option>
+					<option value="017">017</option>
+					<option value="018">018</option>
+					<option value="019">019</option>
+				</select>
+				-
+				<input type="text" name="ntcrMobile2" value="" class="tel" title="휴대전화 연락처 중간 3~4자리" maxlength="4">
+				-
+				<input type="text" name="ntcrMobile3" value="" class="tel" title="휴대전화 연락처 끝 4자리" maxlength="4">
+			</div>
+			<p class="help">※ 회원정보 분실 및 민원답변 알림 기능에 사용됩니다.</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt>이메일</dt>
+		<dd>
+			<div class="emailSet">
+				<input name="ntcrEmail1" id="ntcrEmail1" type="text" title="이메일 아이디" value="" class="emailId">
+				<span>@</span>
+				<input name="ntcrEmail2" id="ntcrEmail2" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm">
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value   ="gmail.com">gmail.com</option>
+					<option value   ="naver.com">naver.com</option>
+					<option value   ="hanmail.net">hanmail.net</option>
+					<option value   ="daum.net">daum.net</option>
+					<option value   ="hotmail.com">hotmail.com</option>
+					<option value   ="nate.com">nate.com</option>
+					<option value   ="yahoo.co.kr">yahoo.co.kr</option>
+					<option value   ="emaildomain_false">직접입력</option>
+				</select>
+				<script>
+				jQuery(function(){
+					jQuery('select.select_email_js').change(function() {
+						if (jQuery(this).val()=='emaildomain_false') {
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val('');
+							jQuery('.emailDomainForm').attr('readonly',false).focus();
+						}else{
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val('');
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val(jQuery(this).val());
+							jQuery('.emailDomainForm').attr('readonly',true)
+						}
+					});
+				});
+				</script>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt>주소</dt>
+		<dd>
+			<div class="postSet">
+				<span>
+				<input type="text" name="" value="" class="post" title="우편번호" readonly>
+				<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+				</span>
+				<span><input type="text" name="" value="" class="w100p" title="주소" readonly></span>
+				<span><input type="text" name="" value="" class="w100p" title="상세주소" placeholder="상세주소"></span>
+			</div>
+		</dd>
+	</dl>
+</div>
+<div class="btnSet c">
+	<input type="submit" value="회원가입" class="b-submit xl">
+</div>
+
+
+<h2>가입완료</h2>
+<div class="joinstep-end">
+	<p>
+		<em>회원가입이 완료되었습니다.</em> <br class="visible-sm"> 로그인 해 주세요.
+	</p>
+	<div class="btnSet c">
+		<a href="" class="b-submit xl">로그인</a>
+		<a href="" class="b-gray xl">메인으로 가기</a>
+	</div>
+</div>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

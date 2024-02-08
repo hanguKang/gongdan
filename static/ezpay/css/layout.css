@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* line 60, static/ezpay/scss/_var.scss */ .ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+
+/* line 3, static/ezpay/scss/layout.scss */ #header .logo a { background-image: url(/static/ezpay/img/common/logo-ezpay.png); width: 244px; height: 40px; margin-top: 20px; }
+
+@media (max-width: 991px) { /* line 3, static/ezpay/scss/layout.scss */ #header .logo a { margin-top: 10px; background-image: url(/static/ezpay/img/common/logo-ezpay@2x.png); background-size: contain; } }
+
+@media (min-width: 992px) { /* line 15, static/ezpay/scss/layout.scss */ .bg_gnb { display: none; width: 100%; height: 148px; background-color: #fff; border-top: 2px solid #a7b784; position: absolute; left: 0; right: 0; top: 130px; border-bottom: 1px solid #e8e9ed; }
+	/* line 26, static/ezpay/scss/layout.scss */ #gnb { display: block; clear: both; position: relative; }
+	/* line 76, static/ezpay/scss/_var.scss */ #gnb:before, #gnb:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	/* line 30, static/ezpay/scss/layout.scss */ #gnb.on > ul div { display: block; }
+	/* line 31, static/ezpay/scss/layout.scss */ #gnb > ul { display: table; table-layout: fixed; width: 100%; }
+	/* line 35, static/ezpay/scss/layout.scss */ #gnb > ul > li { display: table-cell; text-align: center; position: relative; }
+	/* line 39, static/ezpay/scss/layout.scss */ #gnb > ul > li:last-child { margin-right: 0; }
+	/* line 40, static/ezpay/scss/layout.scss */ #gnb > ul > li > a { display: inline-block; line-height: 1; color: #333333; font-family: 'Noto Sans'; font-weight: 350; font-size: 18px; line-height: 48px; }
+	/* line 48, static/ezpay/scss/layout.scss */ #gnb > ul > li > a:after { display: none; content: ""; } }
+
+@media (min-width: 992px) and (min-width: 1140px) { /* line 40, static/ezpay/scss/layout.scss */ #gnb > ul > li > a { font-size: 18px; } }
+
+@media (min-width: 992px) { /* line 53, static/ezpay/scss/layout.scss */ #gnb > ul > li a[target="_blank"]:after { content: ' '; font-family: 'LineAwesome'; }
+	/* line 54, static/ezpay/scss/layout.scss */ #gnb > ul > li.on > div { display: block; }
+	/* line 56, static/ezpay/scss/layout.scss */ #gnb > ul > li.hover > div { display: block; }
+	/* line 57, static/ezpay/scss/layout.scss */ #gnb > ul > li.hover > a { color: #0059a9; border-color: #008bce; }
+	/* line 59, static/ezpay/scss/layout.scss */ #gnb > ul > li > div { display: none; width: 100%; text-align: left; background-color: white; position: absolute; left: 0; top: 52px; width: calc(100% + 1px); z-index: 500; text-align: left; border-left: 1px solid #f3f3f3; border-right: 1px solid #f3f3f3; padding-left: 17%; padding-top: 13px; height: 145px; }
+	/* line 77, static/ezpay/scss/layout.scss */ #gnb > ul > li > div ul li a { display: block; padding: 6px 7px 5px 14px; line-height: 1.2; background: url(/static/ezpay/img/common/gnb2depthbu.png) 0 center no-repeat; font-family: 'Noto Sans'; font-weight: 300; font-size: 16px; }
+	/* line 93, static/ezpay/scss/layout.scss */ #gnb > ul > li.pcActive > div { display: block; }
+	/* line 95, static/ezpay/scss/layout.scss */ #gnb > ul > li.hover > a { color: #0059a9; }
+	/* line 96, static/ezpay/scss/layout.scss */ #gnb > ul > li.hover > a > span { padding-bottom: 7px; border-bottom: 2px solid #ade4ff; }
+	/* line 101, static/ezpay/scss/layout.scss */ #gnb .mypage { display: none; }
+	/* line 104, static/ezpay/scss/layout.scss */ #gnb .members { display: none; } }
+
+/* line 110, static/ezpay/scss/layout.scss */ #container { display: block; max-width: 1140px; margin: 0 auto; padding-bottom: 30px; min-height: calc(100vh - 353px); }
+
+/* line 76, static/ezpay/scss/_var.scss */ #container:before, #container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+@media (min-width: 992px) and (max-width: 1276px) { /* line 110, static/ezpay/scss/layout.scss */ #container { padding-left: 10px; padding-right: 10px; } }
+
+/* line 126, static/ezpay/scss/layout.scss */ #container main { margin-left: 10px; margin-right: 10px; }
+
+@media (min-width: 992px) { /* line 126, static/ezpay/scss/layout.scss */ #container main { margin: 0; float: right; width: calc(100% - 19.82456140350877%); padding-left: 40px; } }
+
+/* line 136, static/ezpay/scss/layout.scss */ #container .hgroup { position: relative; margin-bottom: 16px; }
+
+@media (min-width: 992px) { /* line 136, static/ezpay/scss/layout.scss */ #container .hgroup { margin-bottom: 25px; } }
+
+/* line 142, static/ezpay/scss/layout.scss */ #container .hgroup h1 { font-size: 24px; padding: 30px 0 8px; color: #0059a9; line-height: 1.2; border-bottom: 1px solid #dee0e6; margin-bottom: 16px; }
+
+@media (min-width: 992px) { /* line 142, static/ezpay/scss/layout.scss */ #container .hgroup h1 { font-family: 'Noto-Regular'; font-size: 30px; padding: 30px 0 24px; } }
+
+/* line 155, static/ezpay/scss/layout.scss */ #container .hgroup p { color: #757575; line-height: 1; font-size: 14px; }
+
+@media (min-width: 992px) { /* line 155, static/ezpay/scss/layout.scss */ #container .hgroup p { font-size: 1em; } }
+
+/* line 162, static/ezpay/scss/layout.scss */ #container .hgroup p span { font-family: consolas; vertical-align: middle; display: inline-block; line-height: 1; vertical-align: top; }
+
+/* line 169, static/ezpay/scss/layout.scss */ #container .hgroup p .t { font-family: HelveticaNeue-Light, AppleSDGothicNeo-Light, "맑은고딕", "malgun gothic", "AppleGothic", "돋움", "dotum", sans-serif; }
+
+/* line 171, static/ezpay/scss/layout.scss */ #container .hgroup p .t:last-child { color: #0059a9; font-weight: bold; }
+
+/* line 178, static/ezpay/scss/layout.scss */ #container .hgroup .home:after { content: ''; font-family: 'FontAwesome'; color: #0059a9; }
+
+/* line 185, static/ezpay/scss/layout.scss */ #container .hgroup .utilSet { display: none; position: absolute; right: 0; bottom: -12px; }
+
+@media (min-width: 992px) { /* line 185, static/ezpay/scss/layout.scss */ #container .hgroup .utilSet { display: block; } }
+
+/* line 193, static/ezpay/scss/layout.scss */ #container .hgroup .utilSet .btn-print { background: none; }
+
+/* line 195, static/ezpay/scss/layout.scss */ #container .hgroup .utilSet .btn-print:after { content: "\f2c7"; font-family: "LineAwesome"; font-size: 24px; color: #000000; }
+
+/* line 211, static/ezpay/scss/layout.scss */ #allNav { display: none; background-color: rgba(0, 0, 0, 0.5); position: fixed; left: 0; right: 0; bottom: 0; top: 0; margin: auto; flex-direction: row; justify-content: center; align-items: center; }
+
+@media (min-width: 992px) { /* line 213, static/ezpay/scss/layout.scss */ #allNav.on { display: block; } }
+
+/* line 225, static/ezpay/scss/layout.scss */ #allNav .set { flex: 1; position: relative; background-color: #fff; box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.55); max-width: 1276px; margin: 0 auto; }
+
+/* line 232, static/ezpay/scss/layout.scss */ #allNav .set h2, #allNav .set h1 { color: #0059a9; line-height: 1; border-bottom: 2px solid #0059a9; text-align: center; font-family: 'Noto-Bold'; line-height: 53px; }
+
+/* line 241, static/ezpay/scss/layout.scss */ #allNav .set .allNavClose { position: absolute; right: -1px; top: -1px; right: 0; top: 0; width: 54px; height: 54px; background: #0059a9 url(/static/portal/img/common/allnavclose.png) 50% 50% no-repeat; }
+
+/* line 253, static/ezpay/scss/layout.scss */ #allNav .s > ul { padding: 20px; height: 644px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+
+/* line 259, static/ezpay/scss/layout.scss */ #allNav .s > ul > li > a { display: none; }
+
+/* line 260, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .img { background-color: #f5fcff; text-align: center; font-size: 22px; color: #006da1; font-family: 'Noto-Bold'; line-height: 40px; }
+
+/* line 269, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul { display: block; padding: 20px 10px; }
+
+/* line 76, static/ezpay/scss/_var.scss */ #allNav .s > ul > li .dinfoSet > ul:before, #allNav .s > ul > li .dinfoSet > ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 272, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li { float: left; width: 25%; padding: 0 10px; }
+
+/* line 276, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li:nth-child(4n+1) { clear: both; }
+
+/* line 277, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li > a { font-family: 'Noto-Bold'; font-size: 18px; color: #4f4f4f; display: block; padding-left: 34px; background: #f1f1f1 url(/static/portal/img/common/mNavBu2.png) 10px center no-repeat; background-size: auto 14px; }
+
+/* line 286, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li div > ul { padding: 9px; }
+
+/* line 289, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li div > ul li a { display: block; text-indent: -12px; padding: 8px 0 7px 12px; font-size: 15px; line-height: 1; }
+
+/* line 295, static/ezpay/scss/layout.scss */ #allNav .s > ul > li .dinfoSet > ul > li div > ul li a:before { content: '- '; }
+
+/* line 307, static/ezpay/scss/layout.scss */ #allNav .img::before { content: ''; background: url(/static/portal/img/common/allnav1.png) right center no-repeat; width: 33px; height: 32px; display: inline-block; vertical-align: middle; margin-right: 13px; }
+
+/* line 314, static/ezpay/scss/layout.scss */ #allNav .i2:before { background-image: url(/static/portal/img/common/allnav2.png); }
+
+/* line 315, static/ezpay/scss/layout.scss */ #allNav .i3:before { background-image: url(/static/portal/img/common/allnav3.png); }
+
+/* line 316, static/ezpay/scss/layout.scss */ #allNav .i4:before { background-image: url(/static/portal/img/common/allnav4.png); }
+
+/* line 317, static/ezpay/scss/layout.scss */ #allNav .i5:before { background-image: url(/static/portal/img/common/allnav5.png); }
+
+/*# sourceMappingURL=layout.css.map */

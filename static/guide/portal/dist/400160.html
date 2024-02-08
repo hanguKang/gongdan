@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>고객서비스 헌장</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<h2>레슨프로그램 </h2>
+<ul class="list">
+	<li>미국 잭니클라우스 골프아카데미의 한국지사</li>
+	<li>PGA Class A 의 Chief Instructor와 Nicklaus/Flick Golf School을 이수한 전문강사진</li>
+	<li>모든 레슨 비디오 스윙분석(V1시스템) 및 분석 동영상 제공</li>
+	<li>40여가지의 다양한 골프 티칭 도구 사용 및 레슨 수첩 제공</li>
+	<li>100% 레슨 만족보증제도 시행</li>
+	<li>블로그 운영 (http://blog.naver.com/jngolf)</li>
+	<li>무료공개강좌 진행 : 매주 (토)요일 11시 (단, 동계시즌은 휴강)</li>
+</ul>
+<div class="table">
+	<table>
+		<caption>프로현황</caption>
+		<thead>
+			<tr>
+				<th>프로그램</th>
+				<th>내용</th>
+				<th>레슨비</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tr>
+			<td rowspan="6">개인레슨</td>
+			<td>정기 레슨</td>
+			<td>300,000원</td>
+			<td>30분/월8회</td>
+		</tr>
+		<tr>
+			<td>쿠폰 레슨</td>
+			<td>450,000원</td>
+			<td>30분/10회/2개월</td>
+		</tr>
+		<tr>
+			<td>집중 레슨    A</td>
+			<td>400,000원</td>
+			<td>30분/월12회</td>
+		</tr>
+		<tr>
+			<td>집중 레슨 B</td>
+			<td>500,000원</td>
+			<td>60분/월8회</td>
+		</tr>
+		<tr>
+			<td>원포인트</td>
+			<td>50,000원</td>
+			<td>30분
+				컴퓨터 스윙 분석</td>
+		</tr>
+		<tr>
+			<td>3개월 과정</td>
+			<td><del>900,000원</del>
+				<br>
+				→ 810,000원</td>
+			<td>30분/24회/3개월
+				<br>
+				<strong class="color_red">10%    할인</strong></td>
+		</tr>
+		<tr>
+			<td>커플 레슨</td>
+			<td>2인 (Couple)</td>
+			<td>450,000원</td>
+			<td>50분/월8회</td>
+		</tr>
+		<tr>
+			<td>집중강화반</td>
+			<td>프로, 주니어, 프로지망생</td>
+			<td>1,000,000원</td>
+			<td>60분/주4회</td>
+		</tr>
+	</table>
+</div>
+<h2>프로현황</h2>
+<div class="memberlist">
+	<h3>김회군 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic1.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus/Flick Golf School 수료</li>
+		<li>잭니클라우스 골프아카데미 Technical Advisor</li>
+		<li>USGTF 티칭프로</li>
+		<li>대한민국 100대 골프 교습가 선정</li>
+		<li>2012, 2014년 잭니클라우스 골프아카데미 올해의 지도자상 수상</li>
+		<li>타이틀리스트 퍼포먼스 티칭프로</li>
+		<li>미국 골프아카데미 AGTC 졸업</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>서정진 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic2.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>2005년 APGA 경기이사 역임</li>
+		<li>2002년 부산아시안게임금메달 리스트양성</li>
+		<li>타이틀리스트 TPI 티칭프로</li>
+		<li>사회체육지도자 자격증(골프)</li>
+		<li>명륜 골프클럽 헤드프로 역임</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>이일진 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic3.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 정회원</li>
+		<li>Nicklaus / Flick School 수료</li>
+		<li>뉴질랜드 아마추어 대회 총 12회 우승</li>
+		<li>뉴질랜드 켄터베리 대표</li>
+		<li>뉴질랜드, 호주 도대표</li>
+		<li>SBS Invitational 준우승</li>
+		<li>베어리버 투어 다수 입상</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>김홍미 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic4.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국여자프로골프협회(KLPGA) 회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>타이틀리스트 TPI 회원</li>
+		<li>사회체육지도자 자격증(골프)</li>
+		<li>YAMAHA 골프 교육 프로그램 수료</li>
+		<li>강변스포렉스, 스파박스 레슨프로</li>
+		<li>한국여자골프협회(KLPGA)회원 Tour 활동 중</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>박찬근 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic5.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 정회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>2012년 래미안 커뮤니티 팀장</li>
+		<li>한국 중고연맹 골프대회 다수 입상</li>
+		<li>베어리버투어 다수 상위입상</li>
+		<li>경원대 사회체육학과</li>
+		<li>세화고등학교 골프부 졸업</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>최대룡 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic6.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>JTBC Golf 골프의 정석 ‘올댓스윙’ 시즌 2, 3 출연</li>
+		<li>전 KPGA해외지부(오세아니아주)경기위원</li>
+		<li>NZ ICC GM & 헤드프로</li>
+		<li>NZ Kelston & NZ Golf 아카데미 인스트럭터</li>
+		<li>2003년 NZ OPEN Regional Quilifying 우승</li>
+		<li>2001년 NZ Huapai Open 우승</li>
+		<li>NZ Junior Tournament 다수 우승</li>
+		<li>NEW ZEALAND UNITEC 졸업</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>민선웅 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic7.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>스포츠마사지 2급</li>
+		<li>MFS프로골프구단 3기</li>
+		<li>KJ골프 Yes프로골프구단 2기</li>
+		<li>Callaway Kid 골프단 전담프로</li>
+		<li>서일대학교 사회체육골프학과 졸업</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>전다솔 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic8.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국여자프로골프협회(KLPGA) 회원</li>
+		<li>Nicklaus Flick Golf School 수료</li>
+		<li>美LPGA T&CP 멤버</li>
+		<li>美LPGA ClassA</li>
+		<li>JTBC Golf 골프의 정석 ‘올댓스윙’ 시즌 3 출연</li>
+		<li>한국골프지도자, 피팅협회 회원</li>
+		<li>2010년 태화국제학교 골프수업</li>
+		<li>2004년 경기도협회장배 우승</li>
+		<li>2003년 골프매거진배 종합우승</li>
+		<li>마루망 전담프로</li>
+		<li>용인대학교 골프학과 졸업</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>엄소민 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic9.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus/Flick Golf School 수료</li>
+		<li>월간골프연재</li>
+		<li>국민대학교스포츠산업대학교 수료</li>
+	</ul>
+</div>
+<div class="memberlist">
+	<h3>이재범 <span>프로</span></h3>
+	<div class="img"><img src="/static/portal/img/sub/400160-pic10.jpg" alt=""></div>
+	<ul class="list">
+		<li>한국프로골프협회(KPGA) 회원</li>
+		<li>Nicklaus/Flick Golf School 수료</li>
+		<li>용인대 골프학과</li>
+		<li>PGATOUR CHINA 투어프로</li>
+		<li>베어리버챌린지   우승 외 다수 상위입상</li>
+		<li>2012 아카데미투어 3위</li>
+		<li>2013해솔리아투어 6위</li>
+		<li>KPGA챌린지투어 3,4위</li>
+		<li>2011년 J골프 클리브랜드 루키챔피언쉽 선발</li>
+	</ul>
+</div>
+<h2>무료 공개강좌</h2>
+<div class="ptbox d400160">
+	<p class="subject">무료 공개 레슨  잭니클라우스 북악 골프 아카데미</p>
+	<p>
+		잭니클라우스 프로들의 Know-how를 바탕으로
+		<br>
+		<strong class="color_point">매주 토요일 오전 11시 무료공개레슨</strong>을 진행합니다.
+		회원님들의 많은 참여 바랍니다.
+	</p>
+</div>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

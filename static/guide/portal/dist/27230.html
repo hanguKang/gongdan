@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>menu1</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<ul class="joinStageStep">
+	<li> <span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li class="on"><div class="sr-only">현재단계</div><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li>
+</ul>
+<div class="ptbox">
+	<p>정보는 사실대로 정확하게 입력해야 하며, 주소는 현거주지로 입력해 주십시요.</p>
+	<p>사용자의 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. <br>
+	회원님의 정보는 공개되지 않으며 개인정보보호정책에 의해 보호받고 있습니다. </p>
+</div>
+<form action="">
+	<h2 class="bu1">필수정보</h2>
+	<ul class="list">
+		<li><span class="req"><span>필수입력</span></span>표시 항목은 필수 입력 항목입니다.</li>
+		<li>선택정보(이메일)를 등록하지 않은 경우, 아이디/비밀번호 찾기 및 각종 알림정보 소식 등을 받아보실 수 없습니다.  </li>
+	</ul>
+	<div class="reg">
+		<dl>
+			<dt>이름</dt>
+			<dd></dd>
+		</dl>
+		<dl>
+			<dt>아이디<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" title="아이디" class="id">
+				<button type="button" class="b-blue">아이디중복체크</button>
+			</dd>
+		</dl>
+		<dl>
+			<dt>비밀번호<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="password" name="" title="비밀번호" class="password">
+				<br>
+				<p class="help">
+					10자이상 영문자, 숫자, 특수문자 중 2종류 이상으로 조합해 주시기 바랍니다.
+					<br>
+					※ 사용가능한 특수문자: ?-_=+\|()*&^%$#@!~
+				</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>비밀번호 확인<span class="req"><span>필수입력</span></span></dt>
+			<dd><input type="password" name="" title="비밀번호 확인" class="password"></dd>
+		</dl>
+		<dl>
+			<dt>생년월일</dt>
+			<dd></dd>
+		</dl>
+		<dl>
+			<dt>전화번호</dt>
+			<dd>
+				<input type="text" placeholder="예) 02-1234-5678">
+			</dd>
+		</dl>
+		<dl>
+			<dt>휴대전화<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" placeholder="예) 010-1234-5678">
+				SMS 메세지 수신 여부
+				<label><input type="radio" name="" title="SMS 메세지 수신"> 수신</label>
+				<label><input type="radio" name="" title="SMS 메세지 수신거부"> 수신거부</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>이메일</dt>
+			<dd>
+				<input type="email" title="이메일">
+				<label><input type="radio" name="" title="이메일 수신"> 수신</label>
+				<label><input type="radio" name="" title="이메일 수신거부"> 수신거부</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>주소</dt>
+			<dd>
+				<div class="postSet">
+					<span>
+					<input type="text" name="" value="" class="post" title="우편번호" readonly>
+					<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+					</span>
+					<span><input type="text" name="" value="" class="w100p" title="주소" readonly></span>
+					<span><input type="text" name="" value="" class="w100p" title="상세주소" placeholder="상세주소를 입력하세요"></span>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<h2 class="bu1">추가정보</h2>
+	<p class="bu2">인터넷접수 시스템 사용자는 반드시 입력하여 주시기 바랍니다. </p>
+	<ul class="list">
+		<li>2009년 1월 이후 신규/교체발급한 스포츠센터통합카드만 인증 가능합니다</li>
+		<li>ezpay에서 인터넷수강신청을 하기위한 인증수단입니다.</li>
+		<li>영문으로 시작하는 카드만이 유효합니다.</li>
+		<li>스포츠센터 (성북종합레포츠타운, 개운산스포츠, 성북구민체육관, 성북구민회관, 성북여성회관, 해오름휘트니스센터)</li>
+	</ul>
+	<div class="reg">
+		<dl>
+			<dt>서울시민카드</dt>
+			<dd><input type="text" title="서울시민카드번호"><button type="button" class="b-default">카드번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt> 대표구분<span class="req"><span>필수입력</span></span> </dt>
+			<dd>
+				<select name="" id="" title="대표구분">
+					<option value=""></option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>대표회원번호</dt>
+			<dd><input type="text" title="대표회원번호"><button type="button" class="b-default">대표회원번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt>회원번호</dt>
+			<dd>M2019040001</dd>
+		</dl>
+		<dl>
+			<dt> 회원카드번호<span class="req"><span>필수입력</span></span> </dt>
+			<dd><button type="button" class="b-default" onclick="cardnumberOpen()">회원카드번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt>주소2</dt>
+			<dd>
+				<div class="postSet">
+					<span>
+					<input type="text" name="" value="" class="post" title="우편번호">
+					<a href="#" class="b-sh" title="새창열림">주소2 찾기</a>
+					</span>
+					<span><input type="text" name="" value="" class="w100p" title="주소2"></span>
+					<span><input type="text" name="" value="" class="w100p" title="주소2 상세주소"></span>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>전화번호2<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" placeholder="예) 010-1234-5678">
+				<div class="mt5">
+					SMS 메세지 수신 여부
+					<label><input type="radio" name="" title="전화번호2 SMS 메세지 수신"> 수신</label>
+					<label><input type="radio" name="" title="전화번호2 SMS 메세지 수신거부"> 수신거부</label>
+				</div>
+			</dd>
+		</dl>
+	</div>
+</form>
+<div class="btnSet c">
+	<input type="submit" value="회원가입" class="b-submit xl">
+	<a href="" class="b-cancel">취소</a>
+</div>
+<div class="lpopwrap join-cardnumber" tabindex="0" style="display: none">
+	<div class="set">
+		<h1>회원카드 번호</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert">
+				<label>
+					<span class="title">카드번호</span>
+					<input type="text" title="카드번호">
+				</label>
+			</div>
+			<div class="tac">
+				<button type="button" class="b-default">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function cardnumberOpen(argument) {
+		$('.lpopwrap').show();
+	}
+</script>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

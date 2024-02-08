@@ -1,0 +1,3197 @@
+<!-- 참여마당 / 공단에 바란다 -->
+
+<div class="sh tac">
+		<label for="userTyCd0"><input type="radio" name="userTyCd" value="" id="userTyCd0" checked="checked"  /><i></i> 일반사용자(만 14세 이상) </label>
+		<label for="userTyCd1"><input type="radio" name="userTyCd" value="" id="userTyCd1"  /><i></i> 어린이 이용자(만 14세 미만)</label>
+</div>
+
+<div class="sh tac">
+		<label for="chkType0"><input type="checkbox" name="chkType" value="" id="chkType0" checked="checked"  /><i></i> 일반사용자(만 14세 이상) </label>
+		<label for="chkType1"><input type="checkbox" name="chkType" value="" id="chkType1"  /><i></i> 어린이 이용자(만 14세 미만)</label>
+</div>
+
+
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="red">(*)</span><span class="hidden">별표</span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt>작성자</dt>
+			<dd>홍길동</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="title"><span class="req"><span>필수입력</span></span> 제목</label>
+			</dt>
+			<dd>
+				<input id="title" class="w100p" type="text">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea"><span class="req"><span>필수입력</span></span> 내용</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 개인정보노출피해방지를 위하여 주민등록번호나 계좌번호 등의 개인정보가 노출되어있지는 않은지 확인하시기 바랍니다.</span> </dd>
+		</dl>
+		<dl>
+			<dt>첨부파일</dt>
+			<dd>
+				<input name="" id="" title="첨부파일 1" type="file">
+				<input name="" id="" title="첨부파일 2" type="file">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="등록" type="submit" class="b-save">
+	</div>
+</form>
+
+<!-- step -->
+<div>
+	<ul class="step triangle">
+		<li class="on"><span>회원구분</span></li>
+		<li class="on"><span>약관동의</span></li>
+		<li class="on"><span>본인인증</span></li>
+		<li class="current"><span>회원정보입력 <span class="sr-only">(현재단계)</span></span></li>
+		<li><span>가입완료</span></li>
+	</ul>
+</div>
+<!-- //step -->
+
+<div class="hgroup">
+	<h2>회원정보입력</h2>
+	<div class=" reqInfor"><span class="req"><span>필수입력</span></span> 표시 항목은 필수 입력 항목입니다.</div>
+</div>
+<form action="">
+	<div class="reg type2">
+		<dl>
+			<dt>이름</dt>
+			<dd>홍길동</dd>
+			<dt>생년월일</dt>
+			<dd>2088-02-01</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="USNM"><span class="req"><span>필수입력</span></span> 이름</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="USNM" value="" placeholder="이름을 입력해 주세요." />
+			</dd>
+			<dt>성별</dt>
+			<dd>
+				<label for="SEX0">
+					<input type="radio" class="radio" name="SEX" value="" id="SEX0" />
+					남성 </label>
+				<label for="SEX1">
+					<input type="radio" class="radio" name="SEX" value="" id="SEX1" />
+					여성 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="USID"><span class="req"><span>필수입력</span></span> 아이디</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="USID" value="" placeholder="아이디를 입력해 주세요." />
+				<a href="#self" class="b-btn btn">중복확인</a>
+				<div class="refer dib ml40">8~14자 이하 영문소문자, 숫자조합</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="USPW"><span class="req"><span>필수입력</span></span> 비밀번호</label>
+			</dt>
+			<dd>
+				<input type="password" name="" id="USPW" value="" placeholder="비밀번호를 입력해 주세요." autocomplete="off"/>
+				<div class="refer dib ml40">10 ~ 14자 이하 영무소문자, 숫자조합</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="PWOK"><span class="req"><span>필수입력</span></span> 비밀번호  확인</label>
+			</dt>
+			<dd>
+				<input type="password" name="" id="PWOK" value="" placeholder="비밀번호 재확인키를 입력해 주세요." autocomplete="off"/>
+				<div class="refer dib ml40">10 ~ 14자 이하 영무소문자, 숫자조합</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 휴대전화 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="휴대전화 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="" size="4" maxlength="4" title="휴대전화 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="" size="5" maxlength="4" title="휴대전화 끝자리를 입력해 주세요.">
+				<div class="refer dib ml40">회원정보 분실 및 민원답변 알림 기능에 사용됩니다.</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+					jQuery(function(){
+						jQuery('select.select_email_js').change(function() {
+							if (jQuery(this).val()=='emaildomain_false') {
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm').attr('readonly',false).focus();
+							}else{
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val(jQuery(this).val());
+								jQuery('.emailDomainForm').attr('readonly',true)
+							}
+						});
+					});
+				</script> 
+			</dd>
+		</dl>
+		<dl>
+			<dt>주소</dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="회원가입" type="submit" class="b-reg">
+	</div>
+</form>
+<form action="">
+	<h2>추천인</h2>
+	<div class="reg type2">
+		<dl>
+			<dt>추천자 (단체/기관명)</dt>
+			<dd>홍길동</dd>
+			<dt>
+				<label for="USR">피추천인과의 <span class="req"><span>필수입력</span></span> 관계</label>
+			</dt>
+			<dd>
+				<input type="text" name="USR" id="USR" class="span12" value="" placeholder="피추천인과의 관계를 입력하세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="email_id"><span class="req"><span>필수입력</span></span> 이메일주소 </label>
+			</dt>
+			<dd>
+				<input type="text" name="email_id" id="email_id" class="w20p" title="(필수입력) 이메일 아이디를 입력하세요." placeholder="이메일 아이디">
+				@
+				<input type="text" name="email_domain"  class="w30p" id="email_domain"  placeholder="이메일 도메인" title="(필수입력) 이메일 도메인을 직접입력해 주세요.">
+				<select name="email_domain_sel" id="email_domain_sel" title="(필수입력) 이메일 도메인을 선택해 주세요.">
+					<option selected="selected">직접입력</option>
+					<option value="naver">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="gmail">gmail.com</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+	</div>
+</form>
+<h2>피추천인(표창후보자)</h2>
+<form action="">
+	<div class="reg type2">
+		<dl>
+			<dt>추천타입</dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					개인 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					단체 </label>
+				<label for="BSTC">
+					<input type="checkbox" name="BSTC" id="BSTC" />
+					외국인(국내거주자)</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="GRPNM"><span class="req"><span>필수입력</span></span> 후보자명(단체명)</label>
+			</dt>
+			<dd>
+				<input type="text" name="GRPNM" id="GRPNM" class="span12" value="" placeholder="후보자명(단체명)을 입력하세요." />
+			</dd>
+			<dt>
+				<label for="BIRDAY">생년월일</label>
+			</dt>
+			<dd>
+				<input type="text" name="BIRDAY" id="BIRDAY" class="span6" value="" placeholder="ex)20070625" />
+				<p class="info">※ 단체 인 경우는 등록기관 및 등록번호 기재</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post2" id="input_post2" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="COMNM"><span class="req"><span>필수입력</span></span> 근무처(직업)</label>
+			</dt>
+			<dd>
+				<input type="text" name="COMNM" id="COMNM" class="span12" value="" placeholder="근무처(직업)를 입력하세요." />
+			</dd>
+			<dt>
+				<label for="c_phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="c_phoneN1" id="c_phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="c_phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="c_phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="WRKSDAY"><span class="req"><span>필수입력</span></span> 주요경력(기간)</label>
+			</dt>
+			<dd>
+				<input type="text" name="WRKSDAY" id="WRKSDAY" class="w30p sdate" value="" title="주요경력 시작일" placeholder="근무처(직업) 시작일" />
+				-
+				<input type="text" name="WREKDAY" id="WRKEDAY" class="w30p edate" value="" title="주요경력 종료일" placeholder="근무처(직업)를 종료일" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea"><span class="req"><span>필수입력</span></span> 내용</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 개인정보노출피해방지를 위하여 주민등록번호나 계좌번호 등의 개인정보가 노출되어있지는 않은지 확인하시기 바랍니다.</span> </dd>
+		</dl>
+		<dl>
+			<dt>첨부파일</dt>
+			<dd>
+				<input name="" id="" title="첨부파일 1" type="file">
+				<input name="" id="" title="첨부파일 2" type="file">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+</form>
+<div class="btnSet">
+	<input value="저장" type="submit" class="b-save">
+	<a href="" class="b-cancel">취소</a> </div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 신청구분 </dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					개인 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					단체 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>성 명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="birthday"><span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="birthday" id="birthday" title="생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력" />
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="reqCount"><span class="req"><span>필수입력</span></span> 신청수량</label>
+			</dt>
+			<dd>
+				<select name="reqCount" id="reqCount" class="col-md-3 col-sm-12  col-xs-12" title="신청수량을 선택해 주세요.">
+					<option value="">1 세트</option>
+				</select>
+				※ 개인 2세트 이하, 단체 5세트 이하를 선택할 수 있습니다. </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="reqPlace"><span class="req"><span>필수입력</span></span> 수령지</label>
+			</dt>
+			<dd>
+				<select name="reqPlace" id="reqPlace"  class="col-md-3 col-sm-12  col-xs-12" title="수령지를 선택해 주세요.">
+					<option value="">동주민센터</option>
+				</select>
+				※ 수령받을 동주민세터를 선택해 주세요. </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea">안 내</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 안내정보 확인 메세지입니다.</span> </dd>
+		</dl>
+	</div>
+</form>
+<hr>
+<div class="hgroup">
+	<h2>아이디(ID)정보</h2>
+</div>
+<div class="reg">
+	<dl>
+		<dt>이름</dt>
+		<dd>홍길동
+			<div class="refer dib ml40">8~14자 이하 영문소문자, 숫자조합</div>
+		</dd>
+	</dl>
+</div>
+<div class="hgroup">
+	<h2>개인정보</h2>
+	<div class="reqInfor"><span class="req"><span>필수입력</span></span> 표시 항목은 필수 입력 항목입니다.</div>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 사용자 이름 </dt>
+			<dd>홍길동</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="TEL1"><span class="req"><span>필수입력</span></span> 자택전화 </label>
+			</dt>
+			<dd>
+				<select name="TEL1" id="TEL1" title="자택전화 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="TEL2" value="" size="4" maxlength="4" title="자택전화 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="TEL3" value="" size="5" maxlength="4" title="자택전화 끝자리를 입력해 주세요.">
+				<div class="refer dib ml40">자택전화와 휴대전화 중 하나는 반드시 입력하셔야 합니다.</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="MOBILE1"><span class="req"><span>필수입력</span></span> 휴대전화 </label>
+			</dt>
+			<dd>
+				<select name="MOBILE1" id="MOBILE1" title="휴대전화 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="" size="4" maxlength="4" title="휴대전화 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="" size="5" maxlength="4" title="휴대전화 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>주소</dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+					jQuery(function(){
+						jQuery('select.select_email_js').change(function() {
+							if (jQuery(this).val()=='emaildomain_false') {
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm').attr('readonly',false).focus();
+							}else{
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val(jQuery(this).val());
+								jQuery('.emailDomainForm').attr('readonly',true)
+							}
+						});
+					});
+				</script> 
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="수정하기" type="submit" class="b-reg">
+		<a href="#self" class="b-cancel">수정취소</a> </div>
+</form>
+<div class="hgroup">
+	<h2>신청정보</h2>
+	<div class="reqInfor"><span class="req"><span>필수입력</span></span>  표시 항목은 필수 입력 항목입니다.</div>
+</div>
+<form action="">
+	<div class="view mb30">
+		<dl>
+			<dt>작성자</dt>
+			<dd>홍길동</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea"><span class="req"><span>필수입력</span></span> 광고신청내용 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p" style="min-height:80px"></textarea>
+				<span>※ 개인정보노출피해방지를 위하여 주민등록번호나 계좌번호 등의 개인정보가 노출되어있지는 않은지 확인하시기 바랍니다.</span> </dd>
+		</dl>
+	</div>
+	<h2>우리동네 가게홍보</h2>
+	<div class="reg">
+		<dl>
+			<dt>
+				<label for="COMNM"><span class="req"><span>필수입력</span></span> 상호</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="COMNM" value="" placeholder="상호를 입력해 주세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="JOPPT"><span class="req"><span>필수입력</span></span> 업종</label>
+			</dt>
+			<dd>
+				<select name="JOPPT" id="JOPPT" title="업종을 선택해 주세요.">
+					<option value="">업종 선택</option>
+					<option value="">음식점업</option>
+					<option value="">커피숍/카페</option>
+					<option value="">생활/편의</option>
+					<option value="">유흥/주점</option>
+					<option value="">패션/미용</option>
+					<option value="">스포츠/레저,유통/도소매</option>
+					<option value="">문화/취미</option>
+					<option value="">학원/교육</option>
+					<option value="">의료/건강</option>
+					<option value="">건설/부동산</option>
+					<option value="">정보/통신</option>
+					<option value="">자동차</option>
+					<option value="">관광/여행/숙박업</option>
+					<option value="">금융/보험</option>
+					<option value="">운수</option>
+					<option value="">제조업</option>
+					<option value="">광고기획</option>
+					<option value="">연구 및 개발업</option>
+					<option value="">복권/운세</option>
+					<option value="">법률서비스</option>
+					<option value="">공공기관</option>
+					<option value="">사회서비스</option>
+					<option value="">종교단체</option>
+					<option value="">기타</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="DONG"><span class="req"><span>필수입력</span></span> 동선택</label>
+			</dt>
+			<dd>
+				<select name="DONG" id="DONG" title="업종을 선택해 주세요.">
+					<option value="">동 선택</option>
+					<option value="">노량진수산시장</option>
+					<option value="">노량진1동</option>
+					<option value="">노량진2동</option>
+					<option value="">상도1동</option>
+					<option value="">상도2동</option>
+					<option value="">상도3동</option>
+					<option value="">상도4동</option>
+					<option value="">흑석동</option>
+					<option value="">사당1동</option>
+					<option value="">사당2동</option>
+					<option value="">사당3동</option>
+					<option value="">사당4동</option>
+					<option value="">사당5동</option>
+					<option value="">대방동</option>
+					<option value="">신대방1동</option>
+					<option value="">신대방2동</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>주소</dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="MOBILE1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="MOBILE1" id="MOBILE1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="" size="4" maxlength="4" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+							jQuery(function(){
+								jQuery('select.select_email_js').change(function() {
+									if (jQuery(this).val()=='emaildomain_false') {
+										jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+										jQuery('.emailDomainForm').attr('readonly',false).focus();
+									}else{
+										jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+										jQuery('.emailDomainForm:text[name=EMLADDR]').val(jQuery(this).val());
+										jQuery('.emailDomainForm').attr('readonly',true)
+									}
+								});
+							});
+						</script> 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="UTIME"><span class="req"><span>필수입력</span></span> 이용시간</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="UTIME" value="" placeholder="이용시간을 입력해 주세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="PAYINF"><span class="req"><span>필수입력</span></span> 가격정보 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="PAYINF" cols="30" rows="6" class="w100p" style="min-height:80px"></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea"><span class="req"><span>필수입력</span></span> 가게홍보 간략소개 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p" style="min-height:80px" placeholder="※ 우리동네가게홍보 목록에 노출되는 가게홍보소개영역입니다. "></textarea>
+				<span>가게홍보 간략소개 정보 50자 이내로 입력</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="DETL"><span class="req"><span>필수입력</span></span> 상세정보 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="DETL" cols="30" rows="6" class="w100p" style="min-height:150px"></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="POSTIN"><span class="req"><span>필수입력</span></span> 위치정보 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="POSTIN" cols="30" rows="6" class="w100p" style="min-height:180px"></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>첨부파일</dt>
+			<dd> <a href="" class="btn btn-primary mb5">첨부파일 추가 <i class="fa fa-plus ml10" aria-hidden="true"></i></a> 
+				<!-- roop -->
+				<div class="mb10">
+					<input name="" id="" title="첨부파일 1" type="file" class="fl vt col-md-10 mr10">
+					<a href="" class="btn btn-danger vt"><i class="fa fa-trash" aria-hidden="true"></i><span class="hidden">첨부파일 삭제</span></a>
+					<div class="w100p">
+						<input type="text" name="FILEINFO1" id="FILEINFO1" class="col-md-10 mr10" value="" title="첨부파일 설명을 입력하세요." />
+						: 첨부파일 설명 </div>
+				</div>
+				<!-- //roop --> 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="수정하기" type="submit" class="b-reg">
+		<a href="#self" class="b-cancel">수정취소</a> </div>
+</form>
+<div class="boxTop">
+	<fieldset class="sh">
+		<legend>000 목록 검색</legend>
+		<div class="row">
+			<label for="sdate">신청기간</label>
+			<input id="sdate" name="sdate" class="sdate" title="검색기간 시작일" value="" type="text">
+			<span class="spacer"> ~ </span>
+			<input id="edate" name="edate" class="edate" title="검색기간 종료일" value="" type="text">
+			<label for="GUBN">검색조건</label>
+			<select name="GUBN" id="GUBN" title="구분을 선택해 주세요.">
+				<option>전체</option>
+			</select>
+			<label for="STAT">상태</label>
+			<select name="STAT" id="STAT" title="상태를 선택해 주세요.">
+				<option>전체</option>
+			</select>
+		</div>
+		<div class="row">
+			<label for="SHWD">검색조건</label>
+			<select name="SHWD" id="SHWD" title="검색조건을 선택해 주세요.">
+				<option>프로그램명</option>
+			</select>
+			<input name="" id="" value="" class="keyword" type="text" title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요.">
+			<button type="submit" class="b-sh">검색</button>
+			<a href="#self" class="btn b-total">전체보기</a> </div>
+	</fieldset>
+</div>
+<div class="row-fluid">
+	<div class="col-md-6">
+		<div class="btn-group">
+			<button class="b-title">제목</button>
+			<button class="b-photo on">포토</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(".b-title, .b-photo").on("click", function(){
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+			if($(this).hasClass("b-photo")) {
+				$(".bdList").removeClass("on");
+				$(".gallery2").addClass("on");
+			}else{
+				$(".bdList").addClass("on");
+				$(".gallery2").removeClass("on");
+			}
+		});
+		//]]>
+	</script>
+	<div class="col-md-6">
+		<div class="totalCount"> Total : <strong>190</strong> 개 [<strong class="text-danger">1 / 10</strong> Pages ]
+			<label for="cntList">목록</label>
+			<select name="cntList" id="cntList" title="목록을 선택해 주세요." class="mr10">
+				<option>10</option>
+			</select>
+			<button class="b-go">이동</button>
+		</div>
+	</div>
+</div>
+<div class="tabContent">
+	<div class="gallery2 tabPhoto on">
+		<ul class="row-fluid">
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">원어민 영어캠프</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_1">접수대기</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">원어민 영어캠프</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_2">접수중</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">여름방학 대학생 아르바이트 모집</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_3">현장문의</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">텃밭상자  분양신청</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_4">마감</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">원어민 영어캠프</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_3">현장문의</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+			<li class="col-md-6">
+				<div class="box"> <a href="#self" class="img"><img src="/static/portal/img/common/noimage_w.gif" alt=""/></a>
+					<dl>
+						<dt><a href="#self">원어민 영어캠프</a> </dt>
+						<dd>
+							<ul>
+								<li>구 분  : 행정</li>
+								<li>신청방법 : 온라인 선착순</li>
+								<li>신청기간  : 2017-01-02 09:00 ~ 2017-12-30 24:00</li>
+								<li>담당부서 : 건강관리과</li>
+							</ul>
+							<span class="stat1_3">현장문의</span> </dd>
+					</dl>
+					<a href="#self" class="b-btn btn" title="첨부파일 다운로드"><i class="fa fa-download"></i> PDF</a> </div>
+			</li>
+		</ul>
+	</div>
+	<div class="bdList tabBoard">
+		<table class="table" summary=" ">
+			<caption>
+			000 목록
+			</caption>
+			<colgroup>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">구분</th>
+					<th scope="col">프로그램명</th>
+					<th scope="col">담당부서</th>
+					<th scope="col">신청기간</th>
+					<th scope="col">신청방법</th>
+					<th scope="col">상태</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>행정</td>
+					<td class="title"><a href="#self">2017. 2월 식품접객업소 영업신고 현황</a></td>
+					<td>일자리경제 담당관</td>
+					<td>2017-02-17 09:00 ~ 2017-03-30 00:00</td>
+					<td>온라인 선착순</td>
+					<td>접수대기</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="paging">
+	<div class="paginationSet">
+		<ul class="pagination pagination-centered">
+			<li class="i first disabled"><span class="s"><span>처음 <span class="t">목록으로 이동</span></span></span></li>
+			<li class="i prev disabled"><span class="s"><span>이전 <span class="t">목록으로 이동</span></span></span></li>
+			<li><a href="#self"><span>101</span></a></li>
+			<li><a href="#self"><span>102</span></a></li>
+			<li><a href="#self"><span>103</span></a></li>
+			<li><a href="#self"><span>104</span></a></li>
+			<li><a href="#self"><span>105</span></a></li>
+			<li class="active"><a href="#self"><span>106</span></a></li>
+			<li><a href="#self"><span>107</span></a></li>
+			<li><a href="#self"><span>108</span></a></li>
+			<li><a href="#self"><span>109</span></a></li>
+			<li><a href="#self"><span>110</span></a></li>
+			<li class="i next disabled"><span class="s"><span>다음 <span class="t">목록으로 이동</span></span></span></li>
+			<!-- <li class="i end"><a href="#self"><span class="s"><span>마지막 <span class="t">목록으로 이동</span></span></span></a></li> -->
+			<li class="i end disabled"><span class="s"><span>마지막 <span class="t">목록으로 이동</span></span></span></li>
+		</ul>
+	</div>
+</div>
+
+<!-- pagingScript --> 
+<script type="text/javascript" src="/static/commons/jquery-paging-respones1.1.js"></script> 
+<!-- pagingScript -->
+
+<div class="view boxGray">
+	<p class="subject"> <span class="survey-ing">접수중</span> 텃밭상자 분양 </p>
+	<div class="row-fluid">
+		<div class="col-md-4"> <span class="img"><img src="/static/portal/img/tmp/thumbPhoto-w.jpg" alt="첨부된 이미지가 없습니다."/></span> 
+			<!-- //첨부된 이미지 없을 경우
+							<span class="img"><span class="hidden">첨부된 이미지가 없습니다.</span></span> --> 
+		</div>
+		<div class="col-md-8">
+			<div class="desc">
+				<dl class="dl-horizontal">
+					<dt><i class="fa fa-chevron-circle-right"></i>구 <span class="ml20">분</span></dt>
+					<dd>행정</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>대 <span class="ml20">상</span></dt>
+					<dd>동작구에 주민등록이 되어 있는 자</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>신청방법</dt>
+					<dd>온라인추첨</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>모집인원</dt>
+					<dd>40명 / 예비20명</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>신청인원</dt>
+					<dd>124명</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>프로그램일</dt>
+					<dd>2017-04-01 09:00 ~2017-04-01 00:00</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>신청기간</dt>
+					<dd>2017-03-21 09:00 ~2017-03-30 00:00</dd>
+				</dl>
+				
+				<!-- boxinline -->
+				<div class="boxinline1">
+					<ul class="row">
+						<li class="col-md-7">
+							<p><i class="circle fa fa-phone bgblack"></i> 담당부서 : 일자리경제담당관<br>
+								전화문의 : 일자리경제담당관 / <span class="red">02-820-1111</span> </p>
+						</li>
+						<li class="col-md-5">
+							<p><i class="circle fa fa-floppy-o  bgblack"></i> 첨부파일<br>
+								<a href="#self" class="uline" target="_blank" title="새창열림">장소공지안내.pdf</a> </p>
+						</li>
+					</ul>
+				</div>
+				<!-- //boxinline --> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="btnSet tar mb40"> <a href="#self" class="btn btn-danger"><i class="fa fa-gift"></i> 당첨자정보</a> <a href="#self" class="b-btn btn"><i class="fa fa-file-text-o"></i> 신청내역확인</a> <a href="#self" class="b-btn btn"><i class="fa fa-edit"></i> 신청하기</a> <a href="#self" class="b-list">목록</a> </div>
+
+<!-- tabs -->
+<div class="tabs">
+	<ul>
+		<li class="on"><a href="#self">상세정보</a></li>
+		<li><a href="#self">유의사항</a></li>
+	</ul>
+</div>
+<!--//tabs-->
+
+<div class="view mt20">
+	<h3>상세 내용</h3>
+	<p class="ml25">상세 내용 입력부분</p>
+</div>
+<h1>입력폼</h1>
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="red">(*)</span><span class="hidden">별표</span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 신청구분 </dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					개인 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					단체 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>성 명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="birthday"><span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="birthday" id="birthday" title="생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea">안 내</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 안내정보 확인 메세지입니다.</span> </dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="신청하기" type="submit" class="b-edit">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>
+<h2>행정접수신청자 목록</h2>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1>온라인신청 신청자목록</h1>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt>
+				<label for="USER1"><span class="req"><span>필수입력</span></span> 신청자명</label>
+			</dt>
+			<dd>
+				<input type="text" name="USER1" id="USER1" value="" placeholder="신청자명을 입력하세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="BIRDAY">생년월일</label>
+			</dt>
+			<dd>
+				<input type="text" name="BIRDAY" id="BIRDAY" class="mr10" value="" placeholder="ex)20070625" />
+				<span class="info">※ ex) 20070625</span> </dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="확인" type="submit" class="b-reg">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>
+<h1>온라인신청 신청자목록</h1>
+<div class="reg">
+	<dl>
+		<dt>신청구분</dt>
+		<dd>개인</dd>
+		<dt>상 태</dt>
+		<dd>당첨</dd>
+	</dl>
+	<dl>
+		<dt>성명</dt>
+		<dd>홍길동</dd>
+		<dt>생년월일</dt>
+		<dd>2017-12-23</dd>
+	</dl>
+	<dl>
+		<dt>전화번호</dt>
+		<dd>010-1234-5678</dd>
+	</dl>
+	<dl>
+		<dt>주 소</dt>
+		<dd>경기도 성남시 홍길동 </dd>
+	</dl>
+</div>
+<div class="btnSet">
+	<input value="확인" type="submit" class="b-reg">
+	<a href="" class="b-cancel">취소</a> </div>
+<h2>온라인신청 당첨자목록</h2>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 상자텃밭 분양신청 -->
+<h1>상자텃밭 분양신청</h1>
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="req"><span>필수입력</span></span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 신청구분 </dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					개인 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					단체 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>성 명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="birthday"><span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="birthday" id="birthday" title="생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="reqCount"><span class="req"><span>필수입력</span></span> 신청수량</label>
+			</dt>
+			<dd>
+				<select name="reqCount" id="reqCount" class="col-md-3 col-sm-12  col-xs-12" title="신청수량을 선택해 주세요.">
+					<option selected="selected" value="">선택</option>
+					<option value="1세트">1세트</option>
+					<option value="2세트">2세트</option>
+					<option value="3세트">3세트</option>
+					<option value="4세트">4세트</option>
+					<option value="5세트">5세트</option>
+				</select>
+				※ 개인 2세트 이하, 단체 5세트 이하를 선택할 수 있습니다. </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="reqPlace"><span class="req"><span>필수입력</span></span> 수령지</label>
+			</dt>
+			<dd>
+				<select name="reqPlace" id="reqPlace"  class="col-md-3 col-sm-12  col-xs-12" title="수령지를 선택해 주세요.">
+					<option selected="selected" value="">동주민센터</option>
+					<option value="">노량진1동</option>
+					<option value="">노량진2동</option>
+					<option value="">대방동</option>
+					<option value="">사당1동</option>
+					<option value="">사당2동</option>
+					<option value="">사당3동</option>
+					<option value="">사당4동</option>
+					<option value="">사당5동</option>
+					<option value="">상도1동</option>
+					<option value="">상도2동</option>
+					<option value="">상도3동</option>
+					<option value="">상도4동</option>
+					<option value="">신대방1동</option>
+					<option value="">신대방2동</option>
+					<option value="">흑석동</option>
+				</select>
+				※ 수령받을 동주민세터를 선택해 주세요. </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea">안 내</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 안내정보 확인 메세지입니다.</span> </dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="신청하기" type="submit" class="b-edit">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>
+<!-- //상자텃밭 분양신청 -->
+
+<h2>상자텃밭 분양신청 신청자목록</h2>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청수</th>
+				<th scope="col" class="date">수령지</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+<div class="btnSet">
+	<input value="확인" type="submit" class="b-reg">
+	<a href="" class="b-cancel">취소</a> </div>
+<h2>상자텃밭 분양신청 신청자목록</h2>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청수</th>
+				<th scope="col" class="date">수령지</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="btnSet">
+	<input value="확인" type="submit" class="b-reg">
+	<a href="" class="b-cancel">취소</a> </div>
+
+<!-- 동재기 나눔장터 판매자리 신청 -->
+<h1>동재기 나눔장터 판매자리 신청</h1>
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="red">(*)</span><span class="hidden">별표</span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 신청구분 </dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					동작구민 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					단체 </label>
+				<label for="BST2">
+					<input type="radio" class="radio" name="BST" value="" id="BST2" />
+					타지역민 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>성 명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="birthday"><span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="birthday" id="birthday" title="생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="reqCount"><span class="req"><span>필수입력</span></span> 신청자리수</label>
+			</dt>
+			<dd>
+				<select name="reqCount" id="reqCount" class="col-md-3 col-sm-12  col-xs-12" title="신청수량을 선택해 주세요.">
+					<option selected="selected" value="">선택</option>
+					<option value="1세트">1</option>
+					<option value="2세트">2</option>
+					<option value="3세트">3</option>
+					<option value="4세트">4</option>
+					<option value="5세트">5</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="GOOD1"><span class="req"><span>필수입력</span></span> 판매품목</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="GOOD1" class="w100p" value="" title="판매품목을 입력하세요." />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="PICE1"><span class="req"><span>필수입력</span></span> 좌석번호</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="PICE1" value="" title="좌석번호 자동입력" />
+				<a href="javascript:void(0);" onclick="window.open('/static/view/popup/portal_200216.jsp', 'WINPICE', 'toolbar=no,resizable=yes,scrollbars=yes,status=no,location=no,width=1000,height=700'); return false;" class="b-btn btn" target="_blank" title="새창열림">좌석 선택</a> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea">안 내</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span>※ 안내정보 확인 메세지입니다.</span> </dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="신청하기" type="submit" class="b-edit">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>
+<!-- //동재기 나눔장터 판매자리 신청 -->
+
+<h2>동재기 나눔장터 판매자리 신청자목록</h2>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">구분</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청수</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td>동작구민</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>동작구민</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>타지역구</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>단체</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>타지역구</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h1>동재기 나눔장터 판매자리 신청자목록</h1>
+<div class="reg type2">
+	<dl>
+		<dt>신청구분</dt>
+		<dd>개인</dd>
+		<dt>상 태</dt>
+		<dd>당첨</dd>
+	</dl>
+	<dl>
+		<dt>성명</dt>
+		<dd>홍길동</dd>
+		<dt>생년월일</dt>
+		<dd>2017-12-23</dd>
+	</dl>
+	<dl>
+		<dt>전화번호</dt>
+		<dd>010-1234-5678</dd>
+	</dl>
+	<dl>
+		<dt>주 소</dt>
+		<dd>경기도 성남시 홍길동 </dd>
+	</dl>
+	<dl>
+		<dt>신청수량</dt>
+		<dd>1세트</dd>
+	</dl>
+	<dl>
+		<dt>수령지</dt>
+		<dd>대방동</dd>
+	</dl>
+</div>
+<div class="btnSet">
+	<input value="확인" type="submit" class="b-reg">
+	<a href="" class="b-cancel">취소</a> </div>
+<div class="boxTop">
+	<fieldset class="sh">
+		<legend>000 목록 검색</legend>
+		<div class="row">
+			<label for="SHWD">검색조건</label>
+			<select name="SHWD" id="SHWD" title="검색조건을 선택해 주세요.">
+				<option>프로그램명</option>
+			</select>
+		</div>
+	</fieldset>
+</div>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col" class="namelg">구분</th>
+				<th scope="col" class="namelg">신청인(단체명)</th>
+				<th scope="col" class="phone">전화번호</th>
+				<th scope="col" class="date">신청수</th>
+				<th scope="col" class="date">수령지</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td>동작구민</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>대방동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>동작구민</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>사당2동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>타지역구</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>상도1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>단체</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>타지역구</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>대방동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>사당2동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>상도1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>대방동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>사당2동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>상도1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>&nbsp;</td>
+				<td><a href="#self">홍길**</a></td>
+				<td>010-****-2313</td>
+				<td>1</td>
+				<td>신대방1동</td>
+				<td>2017-02-17</td>
+				<td>당첨</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 원어민 영어캠프 신청 -->
+<h1>원어민 영어캠프 신청</h1>
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="red">(*)</span><span class="hidden">별표</span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt>신청자성명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="CAMPNM"><span class="req"><span>필수입력</span></span> 캠프참여 학생명</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="CAMPNM" value="" title="캠프참여 학생명을 입력하세요." placeholder="캠프참여 학생명" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="birthday"><span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="birthday" id="birthday" title="생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span></dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="SCHONM">학교 / <span class="req"><span>필수입력</span></span> 학년 </label>
+			</dt>
+			<dd>
+				<input type="text" class="w20p" name="SCHONM" id="SCHONM" title="학교명을 입력해 주세요." placeholder="ex) 중앙고등" />
+				학교
+				<input type="text" class="w10p" name="" id="GRAD" title="학년을 입력해 주세요." placeholder="ex) 1" />
+				학년</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 저소득여부 </dt>
+			<dd>
+				<label for="BST0">
+					<input type="radio" class="radio" name="BST" value="" id="BST0" />
+					해당없음 </label>
+				<label for="BST1">
+					<input type="radio" class="radio" name="BST" value="" id="BST1" />
+					기초생활수급자 </label>
+				<label for="BST2">
+					<input type="radio" class="radio" name="BST" value="" id="BST2" />
+					차상위 계층 </label>
+				<label for="BST3">
+					<input type="radio" class="radio" name="BST" value="" id="BST3" />
+					한부모가정 &#8226; 장애인등록 학생</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>셔틀버스 <span class="req"><span>필수입력</span></span> 노선 </dt>
+			<dd>
+				<div class="w100p">
+					<label for="BUSK0" class="w40p">
+						<input type="radio" class="radio" name="BUSK" value="" id="BUSK0" />
+						1호차 </label>
+					<a href="javascript:void(0);" onclick="" class="btn btn-xs">셔틀버스노선 1호차 보기</a> </div>
+				<div class="w100p">
+					<label for="BUSK1" class="w40p">
+						<input type="radio" class="radio" name="BUSK" value="" id="BUSK1" />
+						기초생활수급자 </label>
+					<a href="javascript:void(0);" onclick="" class="btn btn-xs">셔틀버스노선 2호차 보기</a> </div>
+				<div class="w100p">
+					<label for="BUSK2" class="w40p">
+						<input type="radio" class="radio" name="BUSK" value="" id="BUSK2" />
+						차상위 계층 </label>
+					<a href="javascript:void(0);" onclick="" class="btn btn-xs">셔틀버스노선 3호차 보기</a> </div>
+				<div class="w100p">
+					<label for="BUSK3" class="w40p">
+						<input type="radio" class="radio" name="BUSK" value="" id="BUSK3" />
+						한부모가정 &#8226; 장애인등록 학생</label>
+					<a href="javascript:void(0);" onclick="" class="btn btn-xs">셔틀버스노선 4호차 보기</a> </div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="신청하기" type="submit" class="b-edit">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>
+<!-- //원어민 영어캠프 신청 -->
+
+<h1>원어민 영어캠프 신청자 목록</h1>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="no">번호</th>
+				<th scope="col">학교</th>
+				<th scope="col" class="count">학년</th>
+				<th scope="col" class="date">캠프참여 학생명</th>
+				<th scope="col" class="date">신청일</th>
+				<th scope="col">상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>5</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>5</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>5</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>5</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>3</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">서울영동초등학교</a></td>
+				<td>5</td>
+				<td>홍길**</td>
+				<td>2017-02-17</td>
+				<td><a href="#self" class="btn btn-xs">신청수정</a> <a href="#self" class="b-cancel btn-xs">신청취소</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- view -->
+<form action="">
+	<h2>작성자정보</h2>
+	<div class="reg type2">
+		<dl>
+			<dt>신청자명</dt>
+			<dd>홍길동</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+			<dt>
+				<label for="MOBILE1"><span class="req"><span>필수입력</span></span> 휴대전화 </label>
+			</dt>
+			<dd>
+				<select name="MOBILE1" id="MOBILE1" title="휴대전화 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="" size="4" maxlength="4" title="휴대전화 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="" size="5" maxlength="4" title="휴대전화 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+																																		jQuery(function(){
+																																			jQuery('select.select_email_js').change(function() {
+																																				if (jQuery(this).val()=='emaildomain_false') {
+																																					jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+																																					jQuery('.emailDomainForm').attr('readonly',false).focus();
+																																				}else{
+																																					jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+																																					jQuery('.emailDomainForm:text[name=EMLADDR]').val(jQuery(this).val());
+																																					jQuery('.emailDomainForm').attr('readonly',true)
+																																				}
+																																			});
+																																		});
+																																	</script> 
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+	</div>
+	<h2>구민제안</h2>
+	<div class="reg">
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 공개여부 </dt>
+			<dd>
+				<label for="OPENX0">
+					<input type="radio" class="radio" name="OPENX" value="" id="OPENX0" />
+					공개 </label>
+				<label for="OPENX1">
+					<input type="radio" class="radio" name="OPENX" value="" id="OPENX1" />
+					비공개 </label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="title"><span class="req"><span>필수입력</span></span> 제목 </label>
+			</dt>
+			<dd>
+				<input id="title" class="w100p" type="text">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="NOWS"><span class="req"><span>필수입력</span></span> 현황 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="NOWS" cols="30" rows="6" class="w100p" placeholder="한글800자, 영문1,600자 이하로 입력하셔야 합니다."></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="PROB1"><span class="req"><span>필수입력</span></span> 문제점 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="PROB1" cols="30" rows="6" class="w100p" placeholder="한글800자, 영문1,600자 이하로 입력하셔야 합니다."></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="IMPROV"><span class="req"><span>필수입력</span></span> 개선방안 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="IMPROV" cols="30" rows="6" class="w100p" placeholder="한글800자, 영문1,600자 이하로 입력하셔야 합니다."></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="BENEFIT"><span class="req"><span>필수입력</span></span> 기대효과 </label>
+			</dt>
+			<dd>
+				<textarea name="" id="BENEFIT" cols="30" rows="6" class="w100p" placeholder="한글800자, 영문1,600자 이하로 입력하셔야 합니다."></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="addFile1">첨부파일</label>
+			</dt>
+			<dd>
+				<input name="" id="addFile1" title="첨부파일 1" type="file" class="w100p">
+				(최대크기 30MB)</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<input value="제안하기" type="submit" class="b-save">
+	</div>
+</form>
+<p class="refer">구민제안내용은 처리현황이 접수대기 상태에서만 수정이 가능하므로 다시 확인하시고 신청해 주시기 바랍니다.</p>
+<div class="boxTop">
+	<div class="row">
+		<label for="sdate">신청기간</label>
+		<input id="sdate" name="sdate" class="sdate" title="검색기간 시작일" value="" type="text">
+		<span class="spacer"> ~ </span>
+		<input id="edate" name="edate" class="edate" title="검색기간 종료일" value="" type="text">
+		<label for="GUBN">처리현황</label>
+		<select name="GUBN" id="GUBN" title="처리현황을 선택해 주세요.">
+			<option>전체</option>
+		</select>
+	</div>
+	<div class="row">
+		<label for="SHWD">검색조건</label>
+		<select name="SHWD" id="SHWD" title="검색조건을 선택해 주세요.">
+			<option>프로그램명</option>
+		</select>
+		<input name="" id="" value="" class="keyword" type="text" title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요.">
+		<button type="submit" class="b-sh">검색</button>
+		<a href="#self" class="btn b-total">전체보기</a> </div>
+</div>
+<div class="bdList">
+	<table class="table">
+		<caption>
+		000 목록
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col" class="count">번호</th>
+				<th scope="col">프로그램명 | 장소</th>
+				<th scope="col"  class="namelg">교육일</th>
+				<th scope="col" class="time">시간</th>
+				<th scope="col" class="count">처리현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(5차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(4차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(3차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(5차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(4차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(3차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(5차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(4차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(5차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(4차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td class="title"><a href="#self">아빠와 함께하는 어린이 응급수영교실(3차)</a> <span class="db">장소 : 서울여성플라자 스포츠센터</span></td>
+				<td>2017.05.13(토)</td>
+				<td>15:00 ~ 18:00</td>
+				<td>접수대기</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="paging">
+	<div class="paginationSet">
+		<ul class="pagination pagination-centered">
+			<li class="i first disabled"><span class="s"><span>처음 <span class="t">목록으로 이동</span></span></span></li>
+			<li class="i prev disabled"><span class="s"><span>이전 <span class="t">목록으로 이동</span></span></span></li>
+			<li><a href="#self"><span>101</span></a></li>
+			<li><a href="#self"><span>102</span></a></li>
+			<li><a href="#self"><span>103</span></a></li>
+			<li><a href="#self"><span>104</span></a></li>
+			<li><a href="#self"><span>105</span></a></li>
+			<li class="active"><a href="#self"><span>106</span></a></li>
+			<li><a href="#self"><span>107</span></a></li>
+			<li><a href="#self"><span>108</span></a></li>
+			<li><a href="#self"><span>109</span></a></li>
+			<li><a href="#self"><span>110</span></a></li>
+			<li class="i next disabled"><span class="s"><span>다음 <span class="t">목록으로 이동</span></span></span></li>
+			<!-- <li class="i end"><a href="#self"><span class="s"><span>마지막 <span class="t">목록으로 이동</span></span></span></a></li> -->
+			<li class="i end disabled"><span class="s"><span>마지막 <span class="t">목록으로 이동</span></span></span></li>
+		</ul>
+	</div>
+</div>
+<div class="view boxGray">
+	<p class="subject"> <span class="survey-ing">접수중</span> 아빠와 함께하는 어린이 응급수영교실(5차)</p>
+	<div class="row-fluid">
+		<div class="col-md-4"> <span class="img"><img src="/static/portal/img/tmp/thumbPhoto-w.jpg" alt="첨부된 이미지가 없습니다."/></span> </div>
+		<div class="col-md-8">
+			<div class="desc">
+				<dl class="dl-horizontal">
+					<dt><i class="fa fa-chevron-circle-right"></i>모집구분</dt>
+					<dd>행정</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>대 <span class="ml20">상</span></dt>
+					<dd>아빠 및 초등학생 자녀(2인1조) </dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>모집방법</dt>
+					<dd>인터넷접수 (<strong class="red">100</strong>/50)</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>신청기간</dt>
+					<dd>2017-03-21 09:00 ~2017-03-30 00:00</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>행 사 일</dt>
+					<dd>2017-04-01 09:00 ~2017-04-01 00:00</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>선정방식</dt>
+					<dd>선착순</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>비 <span class="ml20">용</span></dt>
+					<dd>무료</dd>
+					<dt><i class="fa fa-chevron-circle-right"></i>장 <span class="ml20">소</span></dt>
+					<dd>서울여성플라자 스포츠센터</dd>
+				</dl>
+				
+				<!-- boxinline -->
+				<div class="boxinline1">
+					<ul class="row">
+						<li class="col-md-7">
+							<p><i class="circle fa fa-phone bgblack"></i> 담당부서 : 일자리경제담당관<br>
+								전화문의 : <span class="red">02-820-1111</span> </p>
+						</li>
+						<li class="col-md-5">
+							<p><i class="circle fa fa-floppy-o  bgblack"></i> 첨부파일<br>
+								<a href="#self" class="uline" target="_blank" title="새창열림">장소공지안내.pdf</a> </p>
+						</li>
+					</ul>
+				</div>
+				<!-- //boxinline --> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="btnSet tar mb40"> <a href="#self" class="b-btn btn"><i class="fa fa-edit"></i> 신청하기</a> <a href="#self" class="b-list">목록</a> </div>
+
+<!-- tabs -->
+<div class="tabs mb20">
+	<ul class="tabsli_2">
+		<li class="on"><a href="javascript:void(0);" id="tab1" role="tab" aria-controls="section1">상세정보</a></li>
+		<li><a href="javascript:void(0);" id="tab2" role="tab" aria-controls="section2">유의사항</a></li>
+	</ul>
+</div>
+<!--//tabs--> 
+
+<!-- tab-contents -->
+<div class="tab-contents"> 
+	<!-- tab Contents1 -->
+	<div class="tabCon on" id="tabContent01" role="tabpanel" aria-labelledby="tab1">
+		<ul class="list">
+			<li>주소 : 서울시 동작구 문화길47(대방동503) 주공아파트 내</li>
+			<li>전화번호 : ☎02-826-2900~3</li>
+			<li>FAX : ☎02-814-1691</li>
+		</ul>
+	</div>
+	<!-- //tab Contents1 --> 
+	
+	<!-- tab Contents2 -->
+	<div class="tabCon" id="tabContent02" role="tabpanel" aria-labelledby="tab2">
+		<div>
+			<div>
+				<dl>
+					<dt>대방종합사회복지관 위치 안내</dt>
+					<dd>지하철이용 : 지하철1호선 대방역 하차하여 2번출구로 나와 e-편한세상아파트를 통과한 후 주공아파트 단지내 위치(도보 8분거리)</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!-- //tab Contents2 --> 
+</div>
+<!-- //tab-contents --> 
+
+<!-- 어린이 응급수영교실 -->
+<h1>어린이 응급수영교실</h1>
+<div class="boxTop">
+	<p class="info">※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="red">(*)</span><span class="hidden">별표</span>로 표시되어 있는 부분은 반드시 입력하여야 합니다. </p>
+</div>
+<form action="">
+	<h2>신청인</h2>
+	<div class="view mb10">
+		<dl>
+			<dt>성 명</dt>
+			<dd>남창우</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="041" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="565" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+	</div>
+	<h2>교육참여대상</h2>
+	<div class="reg type2">
+		<dl>
+			<dt>
+				<label for="PARENT"><span class="req"><span>필수입력</span></span> 부모성명</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="PARENT" value="" title="부모성명을 입력하세요." placeholder="부모성명" />
+			</dd>
+			<dt>
+				<label for="P_SEX"><span class="req"><span>필수입력</span></span> 부모성별 </label>
+			</dt>
+			<dd>
+				<select id="P_SEX" name="" class="input_select w100" title="성별" >
+					<option value="" selected="selected">남자</option>
+					<option value="">여자</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="CHILD"><span class="req"><span>필수입력</span></span> 자녀성명</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="CHILD" value="" title="자녀성명을 입력하세요." placeholder="자녀성명" />
+			</dd>
+			<dt>
+				<label for="C_SEX"><span class="req"><span>필수입력</span></span> 자녀성별 </label>
+			</dt>
+			<dd>
+				<select id="C_SEX" name="" class="input_select w100" title="자녀성별" >
+					<option value="" selected="selected">남자</option>
+					<option value="">여자</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="P_BIRTH">부모 <span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="" id="P_BIRTH" title="부모 생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span></dd>
+			<dt>
+				<label for="S_BIRTH">자녀 <span class="req"><span>필수입력</span></span> 생년월일 </label>
+			</dt>
+			<dd>
+				<input type="text" class="" name="" id="S_BIRTH" title="자녀 생년월일" placeholder="ex)19731021" />
+				<span class="help">ex)19731021</span></dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="SCHONM">학교 / <span class="req"><span>필수입력</span></span> 학년 </label>
+			</dt>
+			<dd>
+				<input type="text" class="w20p" name="SCHONM" id="SCHONM" title="학교명을 입력해 주세요." placeholder="ex) 중앙고등" />
+				학교
+				<input type="text" class="w10p" name="" id="GRAD" title="학년을 입력해 주세요." placeholder="ex) 1" />
+				학년</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="TELNUM1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="" id="TELNUM1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="TELNUM2" value="" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="TELNUM3" value="" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="MOBITEL1"><span class="req"><span>필수입력</span></span> 휴대전화 </label>
+			</dt>
+			<dd>
+				<select name="" id="MOBITEL1" title="통신사 앞 3자리" >
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="016">016</option>
+					<option value="017">017</option>
+					<option value="018">018</option>
+					<option value="019">019</option>
+				</select>
+				-
+				<input type="text" value="" name="" size="4" maxlength="4"  title="휴대전화 중간4자리" />
+				-
+				<input type="text" value="" name="" size="4" maxlength="4"  title="휴대전화 끝4자리" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="EMLDOMN" class="hidden">이메일 도메인 선택</label>
+				<select id="EMLDOMN" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+									$(function(){
+										$('select.select_email_js').change(function() {
+											if ($(this).val()=='emaildomain_false') {
+												$('.emailDomainForm:text[name=EMLADDR]').val('');
+												$('.emailDomainForm').attr('readonly',false).focus();
+											}else{
+												$('.emailDomainForm:text[name=EMLADDR]').val('');
+												$('.emailDomainForm:text[name=EMLADDR]').val($(this).val());
+												$('.emailDomainForm').attr('readonly',true)
+											}
+										});
+									});
+								</script> 
+			</dd>
+		</dl>
+		<dl>
+			<dt><span class="req"><span>필수입력</span></span> 주소 </dt>
+			<dd>
+				<div class="mb5"> <a href="#" title="새창열림" class="b-btn btn">우편번호 검색</a>
+					<input type="text" name="input_post1" id="input_post1" class="w20p" disabled="disabled" title="(필수입력) 우편번호" placeholder="우편번호">
+				</div>
+				<input name="" type="text" class="w100p" disabled="disabled" title="(필수입력) 기본주소" placeholder="기본주소 자동입력">
+				<input name="" type="text" class="w100p" title="(필수입력) 상세주소를 입력해 주세요." placeholder="상세 주소를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="TEAMNM"><span class="req"><span>필수입력</span></span> 팀명</label>
+			</dt>
+			<dd>
+				<input type="text" name="" id="TEAMNM" value="" title="팀명을 입력하세요." placeholder="팀명" />
+				<span class="help ml20">※ 교육진행을 위해, 아빠와 자녀(2인1조) 팀명을 꼭 정하여 기재해주시기 바랍니다.</span> </dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="incaptcha"><span class="req"><span>필수입력</span></span> 자동입력방지</label>
+			</dt>
+			<dd>
+				<div>
+					<input type="text" id="captcha" class="w30p" title="자동입력방지 문자 입니다.">
+					<button class="b-sound btn">음성듣기</button>
+					<button class="b-refresh btn">새로고침</button>
+				</div>
+				<input type="text" id="incaptcha" class="w30p" title="상단의 자동입력방지 문자나 음성의 문자를 입력해 주세요. ">
+				※ 자동입력방지 문자를 입력해 주세요 
+			</dd>
+		</dl>
+	</div>
+	<h3>동작구 개인정보 수집ㆍ이용(제공) 동의서</h3>
+	<!-- 동작구 개인정보 수집ㆍ이용(제공) 동의서 -->
+	<div class="scrollY border1" tabindex="0">
+		<h3>1. 개인정보의 수집항목 및 수집방법</h3>
+		<p>동작구 홈페이지에서는 기본적인 회원 서비스 제공을 위한 필수정보와 정보주체 각각의 기호와 필요에 맞는 서비스를 제공하기 위한 선택정보로 구분하여 다음의 정보를 수집하고 있습니다. 선택정보를 입력하지 않은 경우에도 서비스 이용에는 제한이 없습니다.<br>
+			가. 수집하는 개인정보의 항목</p>
+		<div class="table" style="margin-left:0;">
+			<table>
+				<caption>
+				<strong>수집하는 개인정보의 항목</strong>
+				<details>
+					<summary>설명</summary>
+					<p>회원구분(실명인증), 수집하는 필수항목(가입정보), 선택항목 정보를 포함하는 표</p>
+				</details>
+				</caption>
+				<colgroup>
+				<col width="25%">
+				<col width="25%">
+				<col width="25%">
+				<col width="25%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" rowspan="2">회원구분</th>
+						<th scope="col" colspan="2">수집하는 필수항목</th>
+						<th scope="col" class="end" rowspan="2">선택항목</th>
+					</tr>
+					<tr>
+						<th scope="col">실명인증</th>
+						<th scope="col">가입정보</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>일반회원<br>
+							(14세 이상 내국인)</td>
+						<td>이름, 휴대폰번호 또는 I-PIN(개인식별번호)</td>
+						<td rowspan="3">아이디, 비밀번호,
+							비밀번호 변경열쇠(질문/답), 연락처(집/직장/휴대폰 중 택 1), 거주지 주소, 성별, 연령, 지역구분, 직업</td>
+						<td class="end" rowspan="3">이메일, 직업</td>
+					</tr>
+					<tr>
+						<td>어린이회원<br>
+							(14세 미만 내국인)</td>
+						<td>이름, 휴대폰번호 또는 I-PIN(개인식별번호), 법정대리인(이름, 휴대폰번호)</td>
+					</tr>
+					<tr>
+						<td>외국인회원<br>
+							(국내거주)</td>
+						<td>이름, 휴대폰번호 또는 I-PIN(개인식별번호)</td>
+					</tr>
+					<tr>
+						<td>기업회원</td>
+						<td>기업명,
+							사업자등록번호,
+							대표자명</td>
+						<td>아이디, 비밀번호,
+							비밀번호 변경열쇠(질문/답), 연락처(집/직장/휴대폰 중 택 1), 거주지 주소, 성별, 연령, 지역구분, 직업</td>
+						<td class="end">이메일, 직업</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<dl>
+			<dt>&lt;컴퓨터에 의해 자동으로 수집되는 정보&gt;</dt>
+			<dd>○ 홈페이지를 이용할 경우 다음의 정보는 로그인 기록을 통하여 자동적으로 수집 · 저장됩니다.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;- 접속 로그, 쿠키, 접속 IP 정보, 홈페이지 접근경로</dd>
+		</dl>
+		<p>나. 개인정보 수집방법</p>
+		<p class="pb10">○ 홈페이지 회원가입을 통한 수집</p>
+		<h3>2. 개인정보의 수집 · 이용목적 및 보유 · 이용기간</h3>
+		<p>동작구 홈페이지에서는 정보주체의 회원 가입일로부터 서비스를 제공하는 기간 동안에 한하여 동작구 홈페이지 서비스를 이용하기 위한 최소한의 개인정보를 보유 및 이용하게 됩니다. 회원가입 등을 통해 개인정보의 수집 · 이용, 제공 등에 대해 동의하신 내용은 언제든지 철회하실 수 있습니다. 회원 탈퇴를 요청하거나 수집 · 이용목적을 달성하거나 보유 · 이용기간이 종료한 경우, 사업 폐지 등의 사유발생 시 당해 개인정보를 지체 없이 파기합니다.</p>
+		<div class="table pb10 ml0">
+			<table>
+				<caption>
+				<strong> 개인정보의 수집 </strong>
+				<details>
+					<summary>설명</summary>
+					<p>수집하는 정보, 이용목적 및 보유, 이용기간 정보를 포함하는 표</p>
+				</details>
+				</caption>
+				<colgroup>
+				<col width="30%">
+				<col width="40%">
+				<col width="30%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">수집하는 정보</th>
+						<th scope="col">이용목적 및 보유</th>
+						<th scope="col" class="end">이용기간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>이름, 휴대폰번호 또는 I-PIN(개인식별번호), 법정대리인(이름, 휴대폰번호, 또는 I-PIN(개인식별번호)), 기업명, 사업자등록번호, 대표자명</td>
+						<td>- 홈페이지 이용에 따른 본인 식별/인증 절차에 이용<br>
+							- 만14세 미만 아동의 개인정보 수집 시 법정    대리인의 동의 여부 확인</td>
+						<td class="end">휴대폰번호/I-PIN(개인식별번호)은 별도로 저장하지 않으며 실명인증용으로만 이용</td>
+					</tr>
+					<tr>
+						<td>아이디, 비밀번호, 가입인증정보,
+							이름/가입자명/기업명, 생년월일/사업자등록번호, 연락처(집/직장/휴대폰 중 택 1), 거주지 주소, 이메일주소</td>
+						<td>홈페이지 서비스 이용 및 회원관리, 불량회원의 부정 이용 방지,
+							비인가 사용방지, 민원 신청 및 처리, 고시사항 전달, 게시물 등록,
+							자료 다운로드,
+							시설물 예약 및 교육강좌 신청결과의 안내, 전자민원 경품 당첨결과 안내 및 상품 배송, 본인 의사 확인, 원활한 의소소통 경로의 확보, 정기간행물 발송, 도서대출,
+							공공행사 및 공공서비스 이용 안내,
+							설문 등의 목적으로 동작구 운영 사이트에서 공동이용</td>
+						<td class="end" rowspan="2">회원 탈퇴 시까지</td>
+					</tr>
+					<tr>
+						<td>생년월일, 결혼여부, 학력, 직업, 닉네임, 메일 수신설정</td>
+						<td>고객 관심사에 부합하는 웹서비스 제공
+							(이 정보는 선택적 기입 정보로서 고객께서 입력하지 않으셔도 서비스 이용 제한은 없음)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>정보주체는 개인정보의 수집 · 이용 목적에 대한 동의를 거부할 수 있으며, 동의 거부 시 동작구 홈페이지에 회원가입이 되지 않고 당 사이트에서 제공하는 서비스를 이용할 수 없습니다.</p>
+	</div>
+	<p class="tac">
+		<label for="confirm1Yn1">
+			<input type="radio" class="radio" name="confirm1Yn" value="Y" id="confirm1Yn1" />
+			동의합니다.(필수체크)</label>
+		<label for="confirm1Yn2">
+			<input type="radio" class="radio" name="confirm1Yn" value="N" id="confirm1Yn2" />
+			동의 하지 않습니다.</label>
+	</p>
+	
+	<div class="btnSet">
+		<input value="신청하기" type="submit" class="b-edit">
+		<a href="" class="b-cancel">취소</a> </div>
+</form>

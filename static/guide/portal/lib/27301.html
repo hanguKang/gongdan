@@ -1,0 +1,62 @@
+<h2>아이디 찾기 </h2>
+<p class="bu2">입력하신 정보와 일치하는 아이디는 아래와 같습니다.</p>
+<div class="idfind">
+	<p><strong>이주경님 아이디는 “witcha**”</strong></p>
+	<p>
+		개인정보 도용에 따른 피해방지를 위해 끝2자리는 '*'로 표시합니다.
+		<br>
+		‘*’ 처리된 부분을 확인하시려면, 아래 버튼을 눌러 가입당시의 핸드폰이나 이메일을 통해 받으시면 됩니다. 가입당 시 이메일이나 핸드폰번호중 누락된것이 있으면 아래의 승인 전송용 버튼이 동작이 안될 수 있습니다.</p>
+	<p>동작이 되지 않을 경우 관리자에게 문의 바랍니다.</p>
+</div>
+<div class="btnSet c">
+	<button type="button" class="b-default lg" id="btnOpenemail">이메일로 전송</button>
+	<button type="button" class="b-gray lg" id="btnOpensms">SMS 전송</button>
+</div>
+<div class="lpopwrap sm" style="display: none" id="lpopOpenemail">
+	<div class="set">
+		<h1>아이디찾기</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert">
+				회원가입시 입력한 이메일로 아이디가 전송되었습니다.
+			</div>
+			<div class="tac"><button type="button" class="b-close">확인</button></div>
+		</div>
+	</div>
+</div>
+<div class="lpopwrap sm" style="display: none" id="lpopOpensms">
+	<div class="set">
+		<h1>아이디찾기</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert">
+				회원가입시 입력한 휴대전호번호로 아이디가 전송되었습니다.
+			</div>
+			<div class="tac"><button type="button" class="b-close">확인</button></div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#btnOpenemail').click(function(event) {
+		/* Act on the event */
+		$('#lpopOpenemail').show();
+	});
+	$('#btnOpensms').click(function(event) {
+		/* Act on the event */
+		$('#lpopOpensms').show();
+	});
+</script>
+<h2>비밀번호 찾기 </h2>
+<div class="idfind">
+	
+	<p>
+		<strong>이주경님 </strong>
+		의 변경된 비밀번호는 해당 발송방법으로 변경 처리됩니다.
+		<br>
+		확인 후 개인정보수정에서 비밀 번호를 변경하시기 바랍니다.
+	</p>
+</div>
+<div class="btnSet c">
+	<button type="button" class="b-default lg">이메일로 전송</button>
+	<button type="button" class="b-gray lg">SMS 전송</button>
+</div>

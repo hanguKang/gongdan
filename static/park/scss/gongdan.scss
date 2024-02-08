@@ -1,0 +1,56 @@
+@import "static/bos/scss/breakpoint";
+@import "var";
+
+/*
+광진 공용 스타일
+tab
+table
+btn
+photo
+survey
+persnalinformation
+catpcha
+login
+join
+bdsh
+bdList
+view
+view2
+viewt
+bdViewNav
+thumList
+thumnailView
+downloadList
+facilitiesList
+style
+pagedeco
+print
+*/
+@import "form";//폼 관련 input,select
+@import "paging";//페이징
+@import "heading";
+// @import "layout";//레이아웃은 각 사이트별로 다르므로 별도 관리
+// @import "layout-sub";
+@import "tab";//콘텐츠 탭
+@import "table";//테이블 : 게시물 목록, 콘텐츠 테이블
+@import "btn";//버튼
+@import "photo";//사진게시판
+@import "survey";//설문조사
+@import "persnalinformation";//목록타입 ol ul
+@import "catpcha";//캡차
+@import "static/commons/scss/tooltips";//마우스 오버 툴팁 사용된곳은 없음
+@import "login"; //로그인
+@import "join";//회원가입
+@import "bdsh";//게시물 검색
+@import "bdList";//게시물 목록
+@import "view";//  게시물 뷰타입
+@import "view2";// 겔러리 뷰타입 /static/guide/pagesample.html
+@import "viewt";// 게시물 display:table 뷰
+@import "bdViewNav";//이전다음
+@import "thumList";//썸네일 목록
+@import "thumnailView";//썸네일 뷰
+@import "downloadList";//첨부파일 다운로드 스타일
+@import "facilitiesList";//포토 + 텍스트 목록
+@import "style";//기타 공용 스타일
+@import "pagedeco";//콘텐츠 상단 박스 디자인 
+@import "print";//출력

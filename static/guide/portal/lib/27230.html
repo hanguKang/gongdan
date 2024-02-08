@@ -1,0 +1,172 @@
+<ul class="joinStageStep">
+	<li> <span>회원구분</span></li>
+	<li><span>약관동의</span></li>
+	<li><span>본인확인</span></li>
+	<li class="on"><div class="sr-only">현재단계</div><span>회원정보입력</span></li>
+	<li><span>가입완료</span></li>
+</ul>
+<div class="ptbox">
+	<p>정보는 사실대로 정확하게 입력해야 하며, 주소는 현거주지로 입력해 주십시요.</p>
+	<p>사용자의 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. <br>
+	회원님의 정보는 공개되지 않으며 개인정보보호정책에 의해 보호받고 있습니다. </p>
+</div>
+<form action="">
+	<h2 class="bu1">필수정보</h2>
+	<ul class="list">
+		<li><span class="req"><span>필수입력</span></span>표시 항목은 필수 입력 항목입니다.</li>
+		<li>선택정보(이메일)를 등록하지 않은 경우, 아이디/비밀번호 찾기 및 각종 알림정보 소식 등을 받아보실 수 없습니다.  </li>
+	</ul>
+	<div class="reg">
+		<dl>
+			<dt>이름</dt>
+			<dd></dd>
+		</dl>
+		<dl>
+			<dt>아이디<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" title="아이디" class="id">
+				<button type="button" class="b-blue">아이디중복체크</button>
+			</dd>
+		</dl>
+		<dl>
+			<dt>비밀번호<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="password" name="" title="비밀번호" class="password">
+				<br>
+				<p class="help">
+					10자이상 영문자, 숫자, 특수문자 중 2종류 이상으로 조합해 주시기 바랍니다.
+					<br>
+					※ 사용가능한 특수문자: ?-_=+\|()*&^%$#@!~
+				</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>비밀번호 확인<span class="req"><span>필수입력</span></span></dt>
+			<dd><input type="password" name="" title="비밀번호 확인" class="password"></dd>
+		</dl>
+		<dl>
+			<dt>생년월일</dt>
+			<dd></dd>
+		</dl>
+		<dl>
+			<dt>전화번호</dt>
+			<dd>
+				<input type="text" placeholder="예) 02-1234-5678">
+			</dd>
+		</dl>
+		<dl>
+			<dt>휴대전화<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" placeholder="예) 010-1234-5678">
+				SMS 메세지 수신 여부
+				<label><input type="radio" name="" title="SMS 메세지 수신"> 수신</label>
+				<label><input type="radio" name="" title="SMS 메세지 수신거부"> 수신거부</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>이메일</dt>
+			<dd>
+				<input type="email" title="이메일">
+				<label><input type="radio" name="" title="이메일 수신"> 수신</label>
+				<label><input type="radio" name="" title="이메일 수신거부"> 수신거부</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>주소</dt>
+			<dd>
+				<div class="postSet">
+					<span>
+					<input type="text" name="" value="" class="post" title="우편번호" readonly>
+					<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+					</span>
+					<span><input type="text" name="" value="" class="w100p" title="주소" readonly></span>
+					<span><input type="text" name="" value="" class="w100p" title="상세주소" placeholder="상세주소를 입력하세요"></span>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<h2 class="bu1">추가정보</h2>
+	<p class="bu2">인터넷접수 시스템 사용자는 반드시 입력하여 주시기 바랍니다. </p>
+	<ul class="list">
+		<li>2009년 1월 이후 신규/교체발급한 스포츠센터통합카드만 인증 가능합니다</li>
+		<li>ezpay에서 인터넷수강신청을 하기위한 인증수단입니다.</li>
+		<li>영문으로 시작하는 카드만이 유효합니다.</li>
+		<li>스포츠센터 (성북종합레포츠타운, 개운산스포츠, 성북구민체육관, 성북구민회관, 성북여성회관, 해오름휘트니스센터)</li>
+	</ul>
+	<div class="reg">
+		<dl>
+			<dt>서울시민카드</dt>
+			<dd><input type="text" title="서울시민카드번호"><button type="button" class="b-default">카드번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt> 대표구분<span class="req"><span>필수입력</span></span> </dt>
+			<dd>
+				<select name="" id="" title="대표구분">
+					<option value=""></option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>대표회원번호</dt>
+			<dd><input type="text" title="대표회원번호"><button type="button" class="b-default">대표회원번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt>회원번호</dt>
+			<dd>M2019040001</dd>
+		</dl>
+		<dl>
+			<dt> 회원카드번호<span class="req"><span>필수입력</span></span> </dt>
+			<dd><button type="button" class="b-default" onclick="cardnumberOpen()">회원카드번호 확인</button></dd>
+		</dl>
+		<dl>
+			<dt>주소2</dt>
+			<dd>
+				<div class="postSet">
+					<span>
+					<input type="text" name="" value="" class="post" title="우편번호">
+					<a href="#" class="b-sh" title="새창열림">주소2 찾기</a>
+					</span>
+					<span><input type="text" name="" value="" class="w100p" title="주소2"></span>
+					<span><input type="text" name="" value="" class="w100p" title="주소2 상세주소"></span>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>전화번호2<span class="req"><span>필수입력</span></span></dt>
+			<dd>
+				<input type="text" placeholder="예) 010-1234-5678">
+				<div class="mt5">
+					SMS 메세지 수신 여부
+					<label><input type="radio" name="" title="전화번호2 SMS 메세지 수신"> 수신</label>
+					<label><input type="radio" name="" title="전화번호2 SMS 메세지 수신거부"> 수신거부</label>
+				</div>
+			</dd>
+		</dl>
+	</div>
+</form>
+<div class="btnSet c">
+	<input type="submit" value="회원가입" class="b-submit xl">
+	<a href="" class="b-cancel">취소</a>
+</div>
+<div class="lpopwrap join-cardnumber" tabindex="0" style="display: none">
+	<div class="set">
+		<h1>회원카드 번호</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert">
+				<label>
+					<span class="title">카드번호</span>
+					<input type="text" title="카드번호">
+				</label>
+			</div>
+			<div class="tac">
+				<button type="button" class="b-default">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function cardnumberOpen(argument) {
+		$('.lpopwrap').show();
+	}
+</script>

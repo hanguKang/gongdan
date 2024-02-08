@@ -1,0 +1,60 @@
+<div class="ptbox">
+	<p>
+		회원탈퇴를 하시면, 도시관리공단에 회원님의 모든 정보가 삭제되며 
+		해당 아이디로는 추후 재가입을 할 수 없으니 이점 유의하여 주시기 바랍니다.
+	</p>
+
+	<p>
+		<em class="color_point">
+			단, 공공적 성격의 게시물은 탈퇴 후에도 삭제되지 않습니다.
+			<br>
+			게시물 등의 삭제를 원하시는 경우에는 반드시 게시물을 삭제하신 후, 
+			탈퇴를 신청하시기 바랍니다.
+		</em>
+	</p>
+
+</div>
+<div class="btnSet c">
+	<button type="button" class="b-default lg" id="btnMemberout1">탈퇴하기</button>
+</div>
+<div class="lpopwrap sm" id="memberout1" style="display: none">
+	<div class="set">
+		<h1>회원탈퇴</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert q">정말로 탈퇴하시겠습니까? <br>회원탈퇴 신청 즉시 탈퇴 처리됩니다.</div>
+			<div class="tac">
+				<button type="button" class="b-default" id="btnMemberout">확인</button>
+				<button type="button" class="b-cancel">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="lpopwrap sm" id="memberout" style="display: none">
+	<div class="set">
+		<h1>회원탈퇴</h1>
+		<button type="button" class="lpopwrapClose"><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			<div class="alert">
+				회원탈퇴 처리가 완료되었습니다. <br>
+				이용해주셔서 대단히 감사합니다.
+			</div>
+			<div class="tac">
+				<button type="button" class="b-default closelpop">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+
+	$('#btnMemberout1').click(function(event) {
+		$('#memberout1').show();
+	});
+	$('.closelpop').click(function(event) {
+		$('.lpopwrap').hide()
+	});
+	$('#btnMemberout').click(function(event) {
+		$('.lpopwrap').hide()
+		$('#memberout').show();
+	});
+</script>

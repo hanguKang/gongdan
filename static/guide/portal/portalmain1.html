@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" href="/static/font/NotoSans/notosans.css">
+<link rel="stylesheet" href="/static/font/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/font/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="/static/font/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="/static/portal/css/main.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<script>
+function getCookie(cookieName) {
+  	var cookie = document.cookie;
+  	if(cookie.length > 0) {
+   		startIndex = cookie.indexOf(cookieName);
+   		if(startIndex != -1) {
+    		startIndex += cookieName.length;
+    		endIndex = cookie.indexOf(";", startIndex);
+    		if(endIndex == -1) endIndex = cookie.length;
+    		return unescape(cookie.substring(startIndex + 1, endIndex));
+   		} else {
+    		return false;
+   		}
+  	} else {
+   		return false;
+  	}
+}
+$(function() {
+
+});
+</script>
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="globalWarp">
+	<div class="container">
+		<div class="familySet">
+			<ul>
+
+					<li class="f1 on"><a href="/portal/main/main.do">성북구도시관리공단</a></li>
+					<li class="f2"><a href="/sbpay/main/main.do">온라인예약</a></li>
+					<!-- <li class="f3"><a href="">통합주차</a></li> -->
+
+
+			</ul>
+		</div>
+		<div class="global">
+			<ul class="mynav">
+
+
+
+
+					<li><a href="http://sbtest.gongdan.go.kr/portal/member/user/forLogin.do?menuNo=400474">로그인</a></li>
+					<li><a href="http://sbtest.gongdan.go.kr/portal/member/user/joinSelect.do?menuNo=400475">회원가입</a></li>
+
+
+
+
+
+
+
+
+				<li><a href="/portal/singl/siteMap/list.do?menuNo=400491" >사이트맵</a></li>
+
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<header id="header">
+	<div class="top">
+		<div class="container">
+			<p class="logo"><a href="/portal/main/main.do"><span class="sr-only">성북구도시관리공단</span></a></p>
+			<div id="subtsh">
+				<script>
+				//<![CDATA[
+					function checkSearchForm(frm) {
+						if (frm.q.value == "") {
+							alert("검색어를 입력하세요.");
+							frm.q.focus();
+							return false;
+						}
+						document.frm.submit();
+					}
+				//]]>
+				</script>
+				<form name="frmSearch" id="frmSearch" method="post" action="/portal/singl/search/list.do" onsubmit="return checkSearchForm(this);">
+					<fieldset>
+						<legend class="sr-only">통합검색</legend>
+						<select name="rangeView" id="rangeView1" title="검색어 구분">
+							<option value="">통합검색</option>
+
+						</select>
+						<input type="text" name="q" id="q2" value="" title="통합 검색어" class="keyword" placeholder="검색어를 입력하세요.">
+						<button><span class="sr-only">검색</span></button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<i class="bg_gnb"></i>
+	<div class="container">
+		<nav id="gnb">
+			<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+			<ul>
+
+
+
+
+
+					<li class="m_1 "><a href="/portal/main/contents.do?menuNo=400463" >정보공개</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/main/contents.do?menuNo=400463" >정보공개안내</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="/portal/bbs/B0000026/list.do?menuNo=400464" >정보목록공개</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="/portal/main/contents.do?menuNo=400466" >비공개세부기준</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="/portal/bbs/B0000027/list.do?menuNo=400468" >사전정보공표</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="https://www.open.go.kr/search/list/govm_org.do" target="_blank">정보공개청구</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_6 "><a href="/portal/bbs/B0000001/list.do?menuNo=400007" >경영공시</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_7 "><a href="/portal/main/contents.do?menuNo=400011" >재무제표</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400011"  >재무상태표</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400015"  >손익계산서</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400019"  >예산결산내역</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_8 "><a href="/portal/bbs/B0000040/list.do?menuNo=400005" >이사회 회의록</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+
+
+
+
+					<li class="m_2 "><a href="/portal/main/contents.do?menuNo=400266" >문화‧체육</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/main/contents.do?menuNo=400266" >성북종합레포츠타운</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400266"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400270"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=08&amp;menuNo=400277"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=08&amp;menuNo=400284"  >참여마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400499"  >유아체능단</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="/portal/main/contents.do?menuNo=400192" >개운산스포츠센터</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400192"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400196"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=04&amp;menuNo=400203"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=04&amp;menuNo=400210"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="/portal/main/contents.do?menuNo=400153" >북악골프연습장</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400153"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400157"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=05&amp;menuNo=400166"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=05&amp;menuNo=400173"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="/portal/main/contents.do?menuNo=400116" >성북구민체육관</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400116"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400120"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=10&amp;menuNo=400127"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=10&amp;menuNo=400134"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="/portal/main/contents.do?menuNo=400229" >월곡실내배드민턴장</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400229"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400233"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=12&amp;menuNo=400240"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=12&amp;menuNo=400247"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_6 "><a href="/portal/main/contents.do?menuNo=400303" >해오름휘트니스</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400303"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400307"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=11&amp;menuNo=400314"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=11&amp;menuNo=400321"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_7 "><a href="/portal/main/contents.do?menuNo=400079" >성북구민회관</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400079"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400083"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=09&amp;menuNo=400495"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=09&amp;menuNo=400097"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_8 "><a href="/portal/main/contents.do?menuNo=400340" >성북펜싱체육관</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400340"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400344"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="https://sbtest.gongdan.go.kr/sbpay/main/main.do" target="_blank" >온라인수강/대관신청</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=13&amp;menuNo=400351"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000035/list.do?optn1=13&amp;menuNo=400358"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_9 "><a href="http://sbep.gongdan.go.kr/" target="_blank">운동처방센터</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+
+
+
+
+					<li class="m_3 "><a href="/portal/main/contents.do?menuNo=400378" >주차‧복지</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/main/contents.do?menuNo=400378" >아름다운빨래방</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400378"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=21&amp;menuNo=400384"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000036/list.do?optn1=21&amp;menuNo=400391"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="http://ijoa.gongdan.go.kr/" target="_blank">아이조아</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="http://bomun.gongdan.go.kr/" target="_blank">부모지원센터</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="http://park.gongdan.go.kr/" target="_blank">주차사업팀</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="/portal/main/contents.do?menuNo=400413" >환승주차장</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400413"  >시설소개</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400509"  >이용안내</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000021/list.do?optn1=03&amp;menuNo=400419"  >열린마당</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000036/list.do?optn1=03&amp;menuNo=400426"  >참여마당</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+
+
+
+
+					<li class="m_4 "><a href="/portal/singl/contents/ready.do?menuNo=400030" >참여마당</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/bbs/B0000028/list.do?menuNo=400031" >공단에 바란다</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="/portal/main/contents.do?&amp;menuNo=400034" >이사장과의 대화</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="/portal/bbs/B0000031/list.do?menuNo=400045" >친절/불친절</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="/portal/bbs/B0000013/list.do?menuNo=400040" >유실물센터</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="/portal/bbs/B0000012/list.do?menuNo=400039" >FAQ</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_6 "><a href="/portal/bbs/B0000030/list.do?menuNo=400042" >Q&A</a>
+
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_7 "><a href="/portal/bbs/B0000048/list.do?menuNo=400534" >주민참여예산</a>
+
+
+
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+
+
+
+
+					<li class="m_5 "><a href="/portal/bbs/B0000014/list.do?menuNo=400052" >알림마당</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/bbs/B0000014/list.do?menuNo=400052" >공지사항</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="/portal/bbs/B0000015/list.do?menuNo=400055" >계약정보</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000015/list.do?menuNo=400055"  >수의계약</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400057"  >입찰정보</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/singl/openAPI/listOrderNotice.do?menuNo=400528"  >입찰현황</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="/portal/bbs/B0000016/list.do?menuNo=400494" >채용공고</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="/portal/bbs/B0000017/list.do?menuNo=400063" >공시송달</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="/portal/bbs/B0000018/list.do?menuNo=400065" >보도자료</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_6 "><a href="/portal/bbs/B0000041/list.do?menuNo=400520" >홍보자료</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000041/list.do?menuNo=400520"  >영상자료</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000042/list.do?menuNo=400521"  >브로슈어</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_7 "><a href="/portal/bbs/B0000019/list.do?menuNo=400067" >보건소식</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_8 "><a href="/portal/main/contents.do?menuNo=400070" >개인정보</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400070"  >개인정보처리방침</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400071"  >영상정보처리기지침</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400532"  >영상정보처리기기관리방침</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400073"  >이메일추출방지정책</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000020/list.do?menuNo=400074"  >자료실</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+
+
+
+
+					<li class="m_6 "><a href="/portal/main/contents.do?menuNo=400451" >공단소개</a>
+
+
+
+							<div>
+							<div class="depth2">
+								<ul>
+
+
+
+
+
+										<li class="s_1 "><a href="/portal/main/contents.do?menuNo=400451" >인사말</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_2 "><a href="/portal/main/contents.do?menuNo=400452" >공단연혁</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_3 "><a href="/portal/member/user/searchEmpList.do?menuNo=400453" >조직현황</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_4 "><a href="/portal/main/contents.do?menuNo=400003" >열린경영</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400003"  >설립목적 및 목표</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400004"  >비전/미션</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400006"  >이사장 성과계약</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400022"  >경영혁신</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400023"  >추진방향</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400025"  >윤리경영</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_5 "><a href="/portal/main/contents.do?menuNo=400454" >공단 CI 및 슬로건</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+
+
+
+
+										<li class="s_6 "><a href="/portal/main/contents.do?menuNo=400457" >고객과의 약속</a>
+
+
+
+
+
+													<div class="depth3">
+														<ul>
+
+
+
+
+
+																<li class=""><a href="/portal/main/contents.do?menuNo=400457"  >고객서비스 헌장</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000024/list.do?menuNo=400458"  >서비스이행기준</a></li>
+
+
+
+
+
+																<li class=""><a href="/portal/bbs/B0000025/list.do?menuNo=400460"  >서비스이행기준 추진실적</a></li>
+
+														</ul>
+													</div>
+
+
+
+										</li>
+
+
+
+
+
+										<li class="s_7 "><a href="/portal/main/contents.do?menuNo=400455" >오시는길</a>
+
+
+
+
+
+												<span class="empty"></span>
+
+										</li>
+
+								</ul>
+							</div>
+							</div>
+
+					</li>
+
+			</ul>
+			<div id="allmenu">
+				<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+			</div>
+		</nav>
+	</div>
+	<script>
+		$('.gnbOpen').click(function(event) {
+			$('#gnb').addClass('mobileOn')
+		});
+		$('.gnbClose').click(function(event) {
+			$('#gnb').removeClass('mobileOn')
+		});
+		var gnbDepth1=$('#gnb>ul a')
+		gnbDepth1.click(function(event) {
+			if ($(window).size()>992) {
+				if ($(this).next().has('ul').length){
+					$(this).parent().toggleClass('on');
+					event.preventDefault();
+				}
+			}
+		});
+		$('.familySetOpen').click(function(event) {
+			$('.familySet').addClass('mobileOn')
+		});
+		$('.familySetClose').click(function(event) {
+			$('.familySet').removeClass('mobileOn')
+		});
+	</script>
+</header><!-- //header --><div id="content">
+		<main>
+			<div id="visualSet">
+				<div class="visualSlideSet">
+					<div class="ctrl">
+						<button type="button" class="btn b-left visualSlideLt">
+							<i class="la la-angle-left" aria-hidden="true"></i>
+							<span class="hidden">이전 비주얼 보기</span>
+						</button>
+						<button type="button" class="visualSlidePlay" style="display: none">
+							<i class="la la-play" ></i>
+							<span class="hidden">비주얼 재생</span>
+						</button>
+						<button type="button" class="visualSlideStop">
+							<i class="la la-pause" ></i>
+							<span class="hidden">비주얼 정지</span>
+						</button>
+						<button type="button" class="btn b-left visualSlideRt">
+							<i class="la la-angle-right" aria-hidden="true"></i>
+							<span class="hidden">다음 비주얼 보기</span>
+						</button>
+					</div>
+					<div class="visualSlide slider">
+					<div class="items">
+							<a href=""><span class="bg"
+							style='background-image:url("/cmmn/file/imageSrc.do?fileStreCours=82a7d2849358353ab677cbf401b56be5&streFileNm=62aa8e9d112ce3d722683dd4c4c0616b39140131461b1ec4fbc79f9f1d2d9b11")'></span>
+							<span class="hidden">Parking welfare 구민 모두 행복한 사람중심 공기업, 이웃과의 신뢰회복과 가족행복을 추구하는 사람 중심 공기업</span>
+							</a>
+						</div>
+					<div class="items">
+							<a href=""><span class="bg"
+							style='background-image:url("/cmmn/file/imageSrc.do?fileStreCours=82a7d2849358353ab677cbf401b56be5&streFileNm=094123218229ddd431daa631381c84a06a7ff77472074eb1dad6fba65becd736")'></span>
+							<span class="hidden">culture sports 다양한 문화/체육시설 운영으로 구민의 건강과 삶의 질 향상에 기여합니다.</span>
+							</a>
+						</div>
+					<div class="items">
+							<a href=""><span class="bg"
+							style='background-image:url("/cmmn/file/imageSrc.do?fileStreCours=82a7d2849358353ab677cbf401b56be5&streFileNm=c48bc443c87e930516d3d364ff95e3834200ca52209836814279c2c87fbc6042")'></span>
+							<span class="hidden">make your dream 풍요로운 성북, 살기좋은 성북 구민편의를 최우선으로 하는 현장중심 공기업</span>
+							</a>
+						</div>
+					<div class="items">
+							<a href=""><span class="bg"
+							style='background-image:url("/cmmn/file/imageSrc.do?fileStreCours=82a7d2849358353ab677cbf401b56be5&streFileNm=6cc8eafde103f3a964ad9d7ef0f5f9464200ca52209836814279c2c87fbc6042")'></span>
+							<span class="hidden">MAKE YOUR DREAM 고객섬김, 나눔경영 - 고객섬김과 누눔경영으로 고객님과 함께 꿈과 행복을 만들어 가겠습니다.</span>
+							</a>
+						</div>
+					<div class="items">
+							<a href=""><span class="bg"
+							style='background-image:url("/cmmn/file/imageSrc.do?fileStreCours=f6988545631c779548d3664f68e6f795&streFileNm=c2d71f7909f0a4a6a6965a59264f4f2824078277cccf491c8dad44ed96e373b4")'></span>
+							<span class="hidden">2019년 7월, 성북구도시관리공단 홈페이지가 새롭게 단장되었습니다. 더 나은 서비스와 고객님의 편의를 위해 최선을 다하겠습니다.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="serviceLink">
+				<div class="container">
+					<ul>
+						<li><a href="/portal/bbs/B0000001/list.do?menuNo=400007"><img src="/static/portal/img/main/serviceLink1.png" alt="">경영공시</a></li>
+						<li><a href="/portal/bbs/B0000016/list.do?menuNo=400494"><img src="/static/portal/img/main/serviceLink2.png" alt="">인재채용</a></li>
+						<li><a class="btnEmergencyBox" href="javascript:void(0)"><img src="/static/portal/img/main/serviceLink3.png" alt="">재난시 행동요령</a>
+							<div class="emergency_box">
+								<div class="em_head">
+									<strong>재난시 행동요령</strong>
+									<button type="button" class="em_btn_close"><span class="sr-only">닫기</span></button>
+								</div>
+								<div class="em_cont">
+									<div> <strong>자연재난<br>
+										행동요령</strong>
+										<ul>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent02.html?menuSeq=126" target="_blank" title="새창열림">태풍·호우</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent03.html?menuSeq=126" target="_blank" title="새창열림">낙뢰</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent04.html?menuSeq=126" target="_blank" title="새창열림">강풍·풍랑</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent05.html?menuSeq=126" target="_blank" title="새창열림">대설</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent06.html?menuSeq=126" target="_blank" title="새창열림">한파</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent07.html?menuSeq=126" target="_blank" title="새창열림">폭염</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent09.html?menuSeq=126" target="_blank" title="새창열림">지진</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent10.html?menuSeq=126" target="_blank" title="새창열림">해일</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent16.html?menuSeq=126" target="_blank" title="새창열림">지진해일</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent11.html?menuSeq=126" target="_blank" title="새창열림">화산폭발</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent12.html?menuSeq=126" target="_blank" title="새창열림">가뭄</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent13.html?menuSeq=126" target="_blank" title="새창열림">홍수</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent08.html?menuSeq=126" target="_blank" title="새창열림">황사</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent17.html?menuSeq=126" target="_blank" title="새창열림">해수면 상승</a></li>
+											<li class="line2"><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/sfc/htw/htweaiList.jsp?menuSeq=108" target="_blank" title="새창열림">※ 폭염 시 '전국 무더위 쉼터' 찾기</a></li>
+										</ul>
+									</div>
+									<div> <strong>사회재난<br>
+										행동요령</strong>
+										<ul>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5116.html?menuSeq=127" target="_blank" title="새창열림">화재</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5117.html?menuSeq=127" target="_blank" title="새창열림">산불</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5118.html?menuSeq=127" target="_blank" title="새창열림">붕괴</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5119.html?menuSeq=127" target="_blank" title="새창열림">폭발</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5120.html?menuSeq=127" target="_blank" title="새창열림">교통사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5121.html?menuSeq=127" target="_blank" title="새창열림">전기·가스 사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5122.html?menuSeq=127" target="_blank" title="새창열림">승강기 안전사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5123.html?menuSeq=127" target="_blank" title="새창열림">어린이 안전사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5124.html?menuSeq=127" target="_blank" title="새창열림">유·도선 사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5125.html?menuSeq=127" target="_blank" title="새창열림">수난사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5126.html?menuSeq=127" target="_blank" title="새창열림">식용수</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5127.html?menuSeq=127" target="_blank" title="새창열림">철도사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5128.html?menuSeq=127" target="_blank" title="새창열림">원전사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5129.html?menuSeq=127" target="_blank" title="새창열림">공동구 재난</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5130.html?menuSeq=127" target="_blank" title="새창열림">대규모 수질오염</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5131.html?menuSeq=127" target="_blank" title="새창열림">가축질병</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5132.html?menuSeq=127" target="_blank" title="새창열림">댐 붕괴</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5133.html?menuSeq=127" target="_blank" title="새창열림">전력분야</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5134.html?menuSeq=127" target="_blank" title="새창열림">금융전산</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5135.html?menuSeq=127" target="_blank" title="새창열림">감염병  예방</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5136.html?menuSeq=127" target="_blank" title="새창열림">해양오염 사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5137.html?menuSeq=127" target="_blank" title="새창열림">화학물질 사고</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5139.html?menuSeq=127" target="_blank" title="새창열림">인공우주물체추락</a></li>
+										</ul>
+									</div>
+									<div> <strong>생활안전<br>
+										행동요령</strong>
+										<ul>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=28&cd2=999&pagecd=SDIJK139.28&menuSeq=128" target="_blank" title="새창열림">여름철 물놀이</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=29&cd2=999&pagecd=SDIJK140.29&menuSeq=128" target="_blank" title="새창열림">가을철 산행</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=33&cd2=999&pagecd=SDIJK144.33&menuSeq=128" target="_blank" title="새창열림">응급처치법</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=34&cd2=999&pagecd=SDIJK145.34&menuSeq=128" target="_blank" title="새창열림">소화기 사용법</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=38&cd2=999&pagecd=SDIJK146.38&menuSeq=128" target="_blank" title="새창열림">해파리피해 대처법</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5138.html?cd1=39&cd2=999&pagecd=SDIJK147.39&menuSeq=128" target="_blank" title="새창열림">심폐소생술</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent14.html?cd1=40&cd2=999&pagecd=SDIJK148.40&menuSeq=128" target="_blank" title="새창열림">미세먼지</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent14.html?cd1=41&cd2=999&pagecd=SDIJK149.41&menuSeq=128" target="_blank" title="새창열림">붉은불개미</a></li>
+										</ul>
+									</div>
+									<div> <strong>비상대비<br>
+										행동요령</strong>
+										<ul>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5101.html?menuSeq=374" target="_blank" title="새창열림">전쟁발발 이전</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5102.html?menuSeq=375" target="_blank" title="새창열림">전쟁발발 시</a></li>
+											<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/SDIJKM5103.html?menuSeq=728" target="_blank" title="새창열림">테러상황 시</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<script>
+								$('.btnEmergencyBox').click(function(event) {
+									$('.emergency_box').toggle()
+									event.preventDefault();
+								});
+								$('.em_btn_close').click(function(event) {
+									$('.emergency_box').hide();
+									event.preventDefault();
+								});
+							</script>
+						</li>
+						<li><a href="http://www.safekorea.go.kr/idsiSFK/neo/main/main.html" target="_blank" title="새창열림"><img src="/static/portal/img/main/serviceLink4.png" alt="">재난안전포털</a></li>
+						<li><a href="/portal/member/user/searchEmpList.do?menuNo=400453"><img src="/static/portal/img/main/serviceLink5.png" alt="">전화번호 안내</a></li>
+						<li><a href="/portal/main/contents.do?menuNo=400455"><img src="/static/portal/img/main/serviceLink6.png" alt="">오시는길</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="facility">
+				<div class="container">
+					<div class="sportSet">
+						<h3>문화‧체육</h3>
+						<div class="sportsSlideSet sliderSet">
+							<div class="ctrl">
+								<button type="button" class="btn b-left sportsSlideLt">
+									<i class="la la-angle-left" aria-hidden="true"></i>
+									<span class="hidden">이전 문화체육 보기</span>
+								</button>
+								<button type="button" class="btn b-left sportsSlideRt">
+									<i class="la la-angle-right" aria-hidden="true"></i>
+									<span class="hidden">다음 문화체육 보기</span>
+								</button>
+							</div>
+							<div class="sportsSlide slider">
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400266"><img src="/static/portal/img/main/sportsSlide1.png" alt=""><span class="txt">성북종합레포츠타운</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400192"><img src="/static/portal/img/main/sportsSlide2.png" alt=""><span class="txt">개운산스포츠센터</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400153"><img src="/static/portal/img/main/sportsSlide3.png" alt=""><span class="txt">북악골프연습장</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400116"><img src="/static/portal/img/main/sportsSlide4.png" alt=""><span class="txt">성북구민체육관</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400229"><img src="/static/portal/img/main/sportsSlide5.png" alt=""><span class="txt">월곡실내배드민턴장</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400303"><img src="/static/portal/img/main/sportsSlide6.png" alt=""><span class="txt">해오름휘트니스</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400079"><img src="/static/portal/img/main/sportsSlide7.png" alt=""><span class="txt">성북구민회관</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400340"><img src="/static/portal/img/main/sportsSlide8.png" alt=""><span class="txt">성북펜싱체육관</span></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="welfare">
+						<h3>주차‧복지</h3>
+						<div class="welfareSlideSet sliderSet">
+							<div class="ctrl">
+								<button type="button" class="btn b-left welfareSlideLt">
+									<i class="la la-angle-left" aria-hidden="true"></i>
+									<span class="hidden">이전 주차복지 보기</span>
+								</button>
+								<button type="button" class="btn b-left welfareSlideRt">
+									<i class="la la-angle-right" aria-hidden="true"></i>
+									<span class="hidden">다음 주차복지 보기</span>
+								</button>
+							</div>
+							<div class="welfareSlide slider">
+								<div class="items"><a target="_blank" title="새창열림" href="http://park.gongdan.go.kr/"><img src="/static/portal/img/main/welfareSlide1.png" alt="">    <span class="txt"> 주차사업팀</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400413"><img src="/static/portal/img/main/welfareSlide2.png" alt="">                         <span class="txt"> 환승주차장</span></a></div>
+								<div class="items"><a target="_blank" title="새창열림" href="http://ijoa.gongdan.go.kr/"><img src="/static/portal/img/main/welfareSlide3.png" alt="">    <span class="txt"> 아이조아</span></a></div>
+								<div class="items"><a href="/portal/main/contents.do?menuNo=400378"><img src="/static/portal/img/main/welfareSlide4.png" alt="">                         <span class="txt"> 아름다운 빨래방</span></a></div>
+								<div class="items"><a target="_blank" title="새창열림" href="https://blog.naver.com/sb-toy"><img src="/static/portal/img/main/welfareSlide5.png" alt=""> <span class="txt"> sb장남감도서관</span></a></div>
+								<div class="items"><a target="_blank" title="새창열림" href="http://bomun.gongdan.go.kr/"><img src="/static/portal/img/main/welfareSlide6.png" alt="">   <span class="txt"> 부모아이지원센터</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="lastest1">
+				<div class="container boxList">
+					<!-- senterTab -->
+					<div class="box1 noticeTabs">
+						<h2 class="hidden">최근 게시글</h2>
+
+						<h3><a href="javascript:void(0);" class="on">공지사항</a></h3>
+						<ul class="">
+						<!-- 알림마당 > 공지사항 menuNo -->
+							<!-- 센터명 -->
+							<li><a href="/portal/bbs/B0000014/view.do?nttId=300382&menuNo=400052">
+								<span class="title">
+									<span class="con">[공단] 2020년 예산편성 주민참여예산제 의견 접수</span>
+								<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-07-05</span></a>
+							</li>
+						<!-- 알림마당 > 공지사항 menuNo -->
+							<!-- 센터명 -->
+							<li><a href="/portal/bbs/B0000014/view.do?nttId=300376&menuNo=400052">
+								<span class="title">
+									<span class="con">[공단] 공단 홈페이지 서비스 일시 중단 안내</span>
+								<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-07-04</span></a>
+							</li>
+						<!-- 알림마당 > 공지사항 menuNo -->
+							<!-- 센터명 -->
+							<li><a href="/portal/bbs/B0000035/view.do?nttId=300375&menuNo=400210">
+								<span class="title">
+									<span class="con">[개운산스포츠] 2019년 5월 시험성적서(수영장 수질) </span>
+								<span class="new"><span class="hidden">새 글</span></span>
+								</span><span class="date">2019-07-04</span></a>
+							</li>
+						<!-- 알림마당 > 공지사항 menuNo -->
+							<!-- 센터명 -->
+							<li><a href="/portal/bbs/B0000035/view.do?nttId=300373&menuNo=400284">
+								<span class="title">
+									<span class="con">[성북레포츠타운] 2019년 시험성적서(수영장 수질,공기질) </span>
+								</span><span class="date">2019-07-04</span></a>
+							</li>
+						</ul>
+						<a href="/portal/bbs/B0000014/list.do?menuNo=400052" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">공지사항 더보기</span>
+						</a>
+
+						<h3><a href="javascript:void(0);">보도자료</a></h3>
+						<ul class="">
+						</ul>
+						<a href="/portal/bbs/B0000018/list.do?menuNo=400065" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">보도자료 더보기</span>
+						</a>
+
+						<h3><a href="javascript:void(0);">계약정보</a></h3>
+						<ul class="">
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=124731&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약 공개내역서(03월)</span>
+								</span><span class="date">2019-04-09</span></a>
+							</li>
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=124336&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약 공개내역서(2월)</span>
+								</span><span class="date">2019-03-07</span></a>
+							</li>
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=124218&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약공개 내역서(2019년1월)</span>
+								</span><span class="date">2019-02-01</span></a>
+							</li>
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=124069&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약 공개내역서(12월)</span>
+								</span><span class="date">2018-12-28</span></a>
+							</li>
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=123980&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약 공개내역서(11월)</span>
+								</span><span class="date">2018-12-04</span></a>
+							</li>
+						<li><a href="/portal/bbs/B0000015/view.do?nttId=123852&menuNo=400055">
+								<span class="title">
+									<span class="con">수의계약 공개내역서(10월)</span>
+								</span><span class="date">2018-11-05</span></a>
+							</li>
+						</ul>
+						<a href="/portal/bbs/B0000015/list.do?menuNo=400055" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">계약정보 더보기</span>
+						</a>
+
+						<h3><a href="javascript:void(0);">채용공고</a></h3>
+						<ul class="">
+						</ul>
+						<a href="/portal/bbs/B0000016/list.do?menuNo=400494" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">채용공고 더보기</span>
+						</a>
+
+						<h3><a href="javascript:void(0);">공시송달</a></h3>
+						<ul class="">
+						</ul>
+						<a href="/portal/bbs/B0000017/list.do?menuNo=400063" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">공시송달 더보기</span>
+						</a>
+					</div>
+
+					<!-- //senterTab -->
+					<div class="infomation">
+						<div class="conversation">
+							<a href="/portal/main/contents.do?&menuNo=400034">
+								<h3>이사장과의 대화</h3>
+								<p>
+									고객의 서비스 향상과
+									<br>
+									구민의 행복을 위해
+									 <br>늘
+									함께 하겠습니다.
+								</p>
+								<span class="more">바로가기</span>
+							</a>
+
+						</div>
+						<!-- popupZoneSet -->
+						<div class="popupZoneSet">
+							<h3 class="hidden">팝업존 안내</h3>
+							<div class="ctrl">
+								<button type="button" class="btn b-left popupZoneLt">
+									<i class="la la-arrow-left" aria-hidden="true"></i>
+									<span class="hidden">이전 팝업존 보기</span>
+								</button>
+								<button type="button" class="btn b-left popupZoneRt">
+									<i class="la la-arrow-right" aria-hidden="true"></i>
+									<span class="hidden">다음 팝업존 보기</span>
+								</button>
+							</div>
+							<div class="popupZone">
+							<div class="items">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=652ec238a75e32c5425ccd0c8362b0df&streFileNm=cc2c1ccf9b768332ae9a811c7879182ead9dfc36288f971a5bacb5e178aa54a2" alt="더 나은 서비스와 고객님의 편의를 위해 최선을 다하겠습니다. 2019년 7월, 성북구도시관리공단 홈페이지가 새롭게 단장되었습니다.">
+										</div>
+							<div class="items">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=5921733d166e38fe3246fcb5a60d3eee&streFileNm=31ce356d1b8ecd72733f7226148c846852e2f1440befb29c34155b70a7ef77fe" alt="소중한 정치후원금 정치후원금 기부하고, 좋은 정치로 돌려 받으세요. - 중앙선거관리위원회">
+										</div>
+							<div class="items">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=5921733d166e38fe3246fcb5a60d3eee&streFileNm=f0ecf4be412311c21cba7cc0cadbc34cad9dfc36288f971a5bacb5e178aa54a2" alt="I SEOUL U, 모바일로 즐기는 서울 서울시민카드 하나면 공공시설 이용이 편리해요">
+										</div>
+							</div>
+						</div>
+						<!-- popupZoneSet -->
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="lastest2" style="display:none;">
+				<div class="container boxList">
+					<!-- senterTab -->
+					<div class="box1 senterTabs">
+						<h2 class="hidden">주요센터</h2>
+						<h3><a href="javascript:void(0)" class="on">문화체육센터</a></h3>
+						<ul class="on">
+						</ul>
+						<a href="/portal/bbs/B0000035/list.do?optn1=08&menuNo=400284" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">문화체육센터 더보기</span>
+						</a>
+						<h3><a href="javascript:void(0)">주차복지센터</a></h3>
+						<ul>
+						</ul>
+						<a href="/portal/bbs/B0000036/list.do?optn1=21&menuNo=400391" class="more"><i class="la la-plus" aria-hidden="true"></i>
+							<span class="hidden">주차복지센터 더보기</span>
+						</a>
+					</div>
+					<!-- //senterTab -->
+					<div class="infomation infomationLink">
+						<div class="sportInfo">
+
+							<h3>문화체육센터 안내</h3>
+							<span class="bg" aria-hidden="true"></span>
+							<div class="form-group">
+								<select name="AGES" title="시설안내를 선택해 주세요.">
+									<option value="">시설안내</option>
+									<option value="/portal/main/contents.do?menuNo=400266">성북종합레포츠타운</option>
+									<option value="/portal/main/contents.do?menuNo=400192">개운산스포츠센터</option>
+									<option value="/portal/main/contents.do?menuNo=400153">북악골프연습장</option>
+									<option value="/portal/main/contents.do?menuNo=400116">성북구민체육관</option>
+									<option value="/portal/main/contents.do?menuNo=400229">월곡실내배드민턴장</option>
+									<option value="/portal/main/contents.do?menuNo=400303">해오름휘트니스</option>
+									<option value="/portal/main/contents.do?menuNo=400079">성북구민회관</option>
+									<option value="/portal/main/contents.do?menuNo=400340">성북펜싱체육관</option>
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+							<div class="form-group">
+								<select name="AGES" title="시설소개를 선택해 주세요.">
+									<option value="">시설소개</option>
+									<option value="/portal/main/contents.do?menuNo=400267">성북종합레포츠타운</option>
+									<option value="/portal/main/contents.do?menuNo=400193">개운산스포츠센터</option>
+									<option value="/portal/main/contents.do?menuNo=400154">북악골프연습장</option>
+									<option value="/portal/main/contents.do?menuNo=400117">성북구민체육관</option>
+									<option value="/portal/main/contents.do?menuNo=400230">월곡실내배드민턴장</option>
+									<option value="/portal/main/contents.do?menuNo=400304">해오름휘트니스</option>
+									<option value="/portal/main/contents.do?menuNo=400080">성북구민회관</option>
+									<option value="/portal/main/contents.do?menuNo=400341">성북펜싱체육관</option>
+
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+							<div class="form-group">
+								<select name="AGES" title="프로그램안내를 선택해 주세요.">
+									<option value="">프로그램안내</option>
+									<option value="/portal/main/contents.do?menuNo=400270">성북종합레포츠타운</option>
+									<option value="/portal/main/contents.do?menuNo=400196">개운산스포츠센터</option>
+									<option value="/portal/main/contents.do?menuNo=400157">북악골프연습장</option>
+									<option value="/portal/main/contents.do?menuNo=400120">성북구민체육관</option>
+									<option value="/portal/main/contents.do?menuNo=400233">월곡실내배드민턴장</option>
+									<option value="/portal/main/contents.do?menuNo=400307">해오름휘트니스</option>
+									<option value="/portal/main/contents.do?menuNo=400083">성북구민회관</option>
+									<option value="/portal/main/contents.do?menuNo=400344">성북펜싱체육관</option>
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+						</div>
+						<div class="welfareInfo">
+							<h3>주차복지센터 안내</h3>
+							<span class="bg" aria-hidden="true"></span>
+							<div class="form-group">
+								<select name="AGES" title="시설안내를 선택해 주세요.">
+									<option value="">시설안내</option>
+									<option value="/portal/main/contents.do?menuNo=400379">아름다운빨래방</option>
+									<option value="/portal/main/contents.do?menuNo=400414">환승주차장</option>
+									<option value="http://ijoa.gongdan.go.kr/guide/guide.asp">아이조아</option>
+									<option value="http://bomun.gongdan.go.kr/" title="새창열림">부모지원센터</option>
+									<option value="http://park.gongdan.go.kr/living/01_use.asp">주차사업팀</option>
+									<option value="http://sbep.gongdan.go.kr/center/center-facility.do">운동처방센터</option>
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+							<div class="form-group">
+								<select name="AGES" title="시설소개를 선택해 주세요.">
+									<option value="">시설소개</option>
+									<option value="/portal/main/contents.do?menuNo=400378">아름다운빨래방</option>
+									<option value="/portal/main/contents.do?menuNo=400413">환승주차장</option>
+									<option value="http://ijoa.gongdan.go.kr/intro/introduce.asp">아이조아</option>
+									<option value="http://bomun.gongdan.go.kr/">부모지원센터</option>
+									<option value="http://park.gongdan.go.kr/soge/01_guide.asp">주차사업팀</option>
+									<option value="http://sbep.gongdan.go.kr/center/center-welcome.do">운동처방센터</option>
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+							<div class="form-group">
+								<select name="AGES" title="위치안내를 선택해 주세요.">
+									<option value="">위치안내</option>
+									<option value="/portal/main/contents.do?menuNo=400380">아름다운빨래방</option>
+									<option value="/portal/main/contents.do?menuNo=400415">환승주차장</option>
+									<option value="http://ijoa.gongdan.go.kr/guide/guide_map.asp">아이조아</option>
+									<option value="http://bomun.gongdan.go.kr/">부모지원센터</option>
+									<option value="http://park.gongdan.go.kr/soge/03_loca.asp">주차사업팀</option>
+									<option value="http://sbep.gongdan.go.kr/center/center-place.do">운동처방센터</option>
+								</select>
+								<button class="btn" type="button">이동</button>
+							</div>
+						</div>
+						<script>
+							$('.infomationLink button').on('click', function(event) {
+								event.preventDefault();
+								var _url = $(this).prev('select')[0].value;
+								if (_url == '') {
+									alert("선택된 정보가 없습니다.");
+									 $(this).prev('select')[0].focus();
+									return false;
+								}
+								if (_url != '') {
+									console.log(_url.indexOf('http'))
+									if (_url.indexOf('http')==0) {
+										var openNewWindow = window.open("about:blank");
+										openNewWindow.location.href = _url;
+									}else{
+										location.href = _url;
+									}
+								}
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+
+			<div id="goLinkSet">
+				<div class="container">
+					<ul>
+						<li class="goLink1"><a href="/sbpay/main/main.do" target="_blank" title="새창열림">스포츠 강좌 바로가기</a></li>
+						<li class="goLink2"><a href="http://park.gongdan.go.kr/" target="_blank" title="새창열림">거주자 주차신청 바로가기</a></li>
+						<li class="goLink3"><a href="http://sbep.gongdan.go.kr/" target="_blank" title="새창열림">운동처방센터 바로가기</a></li>
+						<li class="goLink4"><a href="http://ijoa.gongdan.go.kr/" target="_blank" title="새창열림">아이조아 교육 바로가기</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="cardBox">
+				<div class="container">
+					<div class="cardBox1">
+						<h3>고객서비스</h3>
+						<p>자주찾는 서비스를 선택하실 수 있습니다.</p>
+						<ul>
+							<li><a href="https://www.data.go.kr" target="_blank" title="새창열림"><i class="ico1" ></i><span>공공데이터</span></a></li>
+							<li><a href="http://gongdan.uriad.com" target="_blank" title="새창열림"><i class="ico2" ></i><span>현수막</span></a></li>
+							<li><a href="/portal/bbs/B0000013/list.do?menuNo=400040"><i class="ico3" ></i><span>유실물센터</span></a></li>
+							<li><a href="/portal/bbs/B0000019/list.do?menuNo=400067"><i class="ico4" ></i><span>보건소식</span></a></li>
+							<li><a href="/portal/bbs/B0000015/list.do?menuNo=400055"><i class="ico5" ></i><span>수의계약</span></a></li>
+							<li><a href="/portal/main/contents.do?menuNo=400058"><i class="ico6" ></i><span>입찰정보</span></a></li>
+							<li><a href="/portal/main/contents.do?menuNo=400029"><i class="ico7" ></i><span>부패행위신고</span></a></li>
+							<li><a href="/portal/bbs/B0000027/list.do?menuNo=400468"><i class="ico8" ></i><span>사전정보공표</span></a></li>
+						</ul>
+					</div>
+					<div class="cardBox2">
+						<div class="gallerySlideSet">
+							<div class="ctrl">
+								<button type="button" class="gallerySlide_pre"><i class="la la-angle-left" ></i>
+									<span class="hidden">배너 이전보기</span>
+								</button>
+								<button type="button" class="gallerySlide_play"><i class="la la-play" ></i>
+									<span class="hidden">배너 재생</span>
+								</button>
+								<button type="button" class="gallerySlide_stop"><i class="la la-pause" ></i>
+									<span class="hidden">배너 정지</span>
+								</button>
+								<button type="button" class="gallerySlide_next"><i class="la la-angle-right" ></i>
+									<span class="hidden">배너 다음보기</span>
+								</button>
+							</div>
+							<!-- gallerySlide -->
+							<div class="gallerySlide">
+							<div class="items">
+									<a href="/portal/bbs/B0000041/view.do?nttId=300354&menuNo=400520">
+										<h3>홍보동영상</h3>
+										<p class="title">인권경영</p>
+										<p class="date">2019-07-01</p>
+										<div class="img">
+											<img src="/cmmn/file/imageSrc.do?fileStreCours=b7eb0be501a0d34d5ac47ea1a3a9aaca&streFileNm=f185ac7f504b92a215aa443dff2dda892657b980fbf690d891fc361941a10452&thumb=Y" alt="">
+										</div>
+									</a>
+								</div>
+							</div>
+							<!-- gallerySlide -->
+						</div>
+
+					</div>
+					<div class="cardBox3">
+						<a href="/portal/bbs/B0000042/view.do?nttId=300150&menuNo=400521">
+							<span class="img"><img src="/cmmn/file/imageSrc.do?fileStreCours=0dfbacb7a5a7f5c91cea430e541cadce&streFileNm=28ff1248176ea2cb4d2e019255a0d74f2657b980fbf690d891fc361941a10452" alt=""></span>
+							<h3>브로슈어</h3>
+							<p class="title">성북구도시관리공단 </p>
+							<span class="desc">
+								<p>성북구도시관리공단 홍보 브로슈어<br></p>
+</span>
+						</a>
+						<a href="/portal/bbs/B0000042/list.do?menuNo=400521"  class="more"><span class="hidden">브로슈어 더보기</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div id="fBannerSet">
+				<div class="fbanner">
+					<div id="footerAd">
+						<div class="footerAd-ctrl">
+							<button type="button" class="footerAd_pre"><i class="la la-angle-left" ></i>
+								<span class="hidden">배너 이전보기</span>
+							</button>
+							<button type="button" class="footerAd_play"><i class="la la-play" ></i>
+								<span class="hidden">배너 재생</span>
+							</button>
+							<button type="button" class="footerAd_stop"><i class="la la-pause" ></i>
+								<span class="hidden">배너 정지</span>
+							</button>
+							<button type="button" class="footerAd_next"><i class="la la-angle-right" ></i>
+								<span class="hidden">배너 다음보기</span>
+							</button>
+						</div>
+						<div class="footerAd-list">
+						<div class="item">
+							<a href="http://www.sb.go.kr/main/mainPage.do" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=5686b205ca65b91ae7612035f317cfe6&streFileNm=3320a930f5fb3e40f6c74b1a55a872557a360aa288841cbeee985e32b0df450c" alt="SB성북구청" />
+									</a>
+								</div>
+						<div class="item">
+							<a href="https://www.open.go.kr/" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=5686b205ca65b91ae7612035f317cfe6&streFileNm=da51f59bf09657214b2c87ca4275aaf22657b980fbf690d891fc361941a10452" alt="open.go.kr 정보공개" />
+									</a>
+								</div>
+						<div class="item">
+							<a href="https://www.mois.go.kr" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=c2a3e37ce0f9e77a4fc62a00fc16b73a&streFileNm=afe93846fbee3d9a6d7ce91e5f2f65ef105a88e48b4a41c25de6345c10121caa" alt="행정안전부" />
+									</a>
+								</div>
+						<div class="item">
+							<a href="http://www.missingchild.or.kr" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=c2a3e37ce0f9e77a4fc62a00fc16b73a&streFileNm=e6a389a737e64c964dc9154c2d5f8ab6f91317191ed56d5d878495e687f379bf" alt="중앙입양원 실종아동전문기관" />
+									</a>
+								</div>
+						<div class="item">
+							<a href="http://hi.nhic.or.kr" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=c2a3e37ce0f9e77a4fc62a00fc16b73a&streFileNm=19d43e8128f0f5e330cf3613b91c1c9f0c8d946569b5661bd8f39fcb4984adcf" alt="건강인" />
+									</a>
+								</div>
+						<div class="item">
+							<a href="http://www.acrc.go.kr" target="_blank" title="새창열림">
+									<img src="/cmmn/file/imageSrc.do?fileStreCours=c2a3e37ce0f9e77a4fc62a00fc16b73a&streFileNm=368a7d5ee03c34ae1a06b222ab750c606b282f86938c50d6fe3b0091cf980903" alt="국민권익위원회" />
+									</a>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="flinkList">
+					<div class="container">
+						<div class="serviceList">
+							<h3>주요서비스</h3>
+							<div class="ctrl">
+								<button type="button" class="btn b-left serviceListLt"><span class="hidden">이전 주요서비스 보기</span></button>
+								<button type="button" class="btn b-right serviceListRt"><span class="hidden">다음 주요서비스 보기</span></button>
+							</div>
+							<div id="serviceSlide">
+								<div class="items"><a href="http://park.gongdan.go.kr/" target="_blank" title="새창열림">거주자주차</a></div>
+								<div class="items"><a href="/sbpay/main/main.do" target="_blank" title="새창열림">강좌온라인예약</a></div>
+								<div class="items"><a href="http://bomun.gongdan.go.kr/" target="_blank" title="새창열림">월곡육아종합지원센터</a></div>
+								<div class="items"><a href="http://sbep.gongdan.go.kr/" target="_blank" title="새창열림">운동처방센터</a></div>
+							</div>
+					<script>
+						$(function(){
+							var visualSlide = $("#serviceSlide").slick({
+								accessibility : true,
+								autoplay: false,
+								autoplaySpeed:4000,
+								//speed:500,
+								//dots: true,
+								touchMove:false,
+								slidesToShow: 3,
+								variableWidth: true,
+								slidesToScroll: 1,
+								arrows:true,
+								prevArrow  : '.serviceListLt',
+								nextArrow : '.serviceListRt',
+								//slickPlay : '.b-play',
+								//slickStop : '.b-stop',
+								pauseOnFocus: true,
+								pauseOnHover : true,
+								responsive: [
+									 {
+										breakpoint: 1023,
+										settings: {
+											slidesToShow: 3
+										}
+									},
+									{
+										breakpoint: 767,
+										settings: {
+											slidesToShow: 2
+										}
+									},
+									{
+										breakpoint: 480,
+										settings: {
+											slidesToShow: 1
+										}
+									}
+								//fade : true
+								// draggable: false,
+								//focusOnSelect: true
+								]
+							});
+
+							/*$(".b-play").click(function(){
+								visualSlide.slick('slickPlay');
+								$(this).hide();
+								$(".b-stop").show();
+							})
+							$(".b-stop").click(function(){
+								visualSlide.slick('slickPause');
+								$(this).hide();
+								$(".b-play").show();
+							})*/
+						});
+						</script>
+
+						</div>
+						<div class="weSite">
+							<ul>
+								<li><a href="javascript:void(0)">패밀리사이트</a>
+									<ul>
+										<li><a href="http://park.gongdan.go.kr" target="_blank" title="새창열림">성북구주차통합홈페이지</a></li>
+										<li><a href="http://ijoa.gongdan.go.kr" target="_blank" title="새창열림">아이조아 홈페이지</a></li>
+										<li><a href="http://bomun.gongdan.go.kr" target="_blank" title="새창열림">부모지원센터 홈페이지</a></li>
+										<li><a href="http://sbep.gongdan.go.kr" target="_blank" title="새창열림">운동처방센터 홈페이지</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0)">관련사이트</a>
+									<ul>
+										<li><a href="http://www.mois.go.kr" target="_blank" title="새창열림">행정안전부</a></li>
+										<li><a href="http://www.seoul.go.kr" target="_blank" title="새창열림">서울특별시청</a></li>
+										<li><a href="http://www.seongbuk.go.kr" target="_blank" title="새창열림">성북구청</a></li>
+										<li><a href="http://www.sbc.go.kr/" target="_blank" title="새창열림">성북구의회</a></li>
+
+									</ul>
+								</li>
+								<li><a href="javascript:void(0)">유용한사이트</a>
+									<ul>
+										<li><a href="http://www.cleaneye.go.kr" target="_blank" title="새창열림">클린아이</a></li>
+										<li><a href="http://www.alio.go.kr" target="_blank" title="새창열림">공공기관 알리오</a></li>
+										<li><a href="https://www.data.go.kr" target="_blank" title="새창열림">공공데이터포털</a></li>
+										<li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개</a></li>
+									</ul>
+								</li>
+							</ul>
+							<script>
+								$('.weSite>ul>li>a').each(function(index, el) {
+									$(this).bind('touchstart focus mouseenter', function(event) {
+										if (event.type == 'focus' || event.type == 'mouseenter') {
+											$(this).parent().addClass('on').siblings().removeClass('on');
+										}else if(event.type == 'touchstart'){
+											$(this).parent().toggleClass('on').siblings().removeClass('on');
+										}
+										event.preventDefault();
+									});
+								});
+								$('.weSite').mouseleave(function(event) {
+									$(this).find('li').removeClass('on')
+								}).find('a:last').focusout(function(event) {
+									$(this).parents('li').removeClass('on')
+								});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<!-- //wrap -->
+
+
+
+
+
+
+
+
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="/portal/main/contents.do?menuNo=400070">개인정보처리방침</a></li>
+				<!-- <li><a href="/portal/main/contents.do?menuNo=">배너광장</a></li> -->
+				<li><a href="/portal/main/contents.do?menuNo=400512">회원약관</a></li>
+				<li><a href="/portal/main/contents.do?menuNo=400073">이메일추출방지정책</a></li>
+				<li><a href="/portal/main/contents.do?menuNo=400457">고객서비스헌장</a></li>
+				<li><a href="/portal/main/contents.do?menuNo=400492">뷰어다운로드</a></li>
+				<li><a href="/portal/main/contents.do?menuNo=400455">오시는길</a></li>
+			</ul>
+		</nav>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 구민체육관팀 02-909-3497, 해오름휘트니스센터 02-6925-7009, 북악골프연습장 02-919-4040 <br>
+				성북펜싱체육관 02-2241-0681, 거주자주차팀 02-914-2008, 공영주차장팀 02-6925-0023, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+		</address>
+		<div class="bottomset">
+			<div class="copyright">
+				<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. jeonsan@gongdan.go.kr</em>
+			</div>
+			<div class="markSet">
+				<ul>
+					<li class="wamark" style="display:none;"><img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크"></li>
+					<li class="i1"><span class="sr-only">지식경제부 인증 한국서비스품질 우수기업</span></li>
+					<li class="i2"><span class="sr-only">MSA ISO 9001:2008 품질경영시스템 인증</span></li>
+					<li class="i3"><span class="sr-only">날씨경영인증 기성청 인증 날씨경영기관 인증</span></li>
+					<li class="i4"><span class="sr-only">정보보호인증 개인정보우수사이트</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer><!-- 로그기록  -->
+<script src="/static/portal/js/portalmain.js"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

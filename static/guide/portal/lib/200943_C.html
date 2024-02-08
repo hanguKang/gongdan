@@ -1,0 +1,93 @@
+<div class="reg">
+	<dl>
+		<dt>성명</dt>
+		<dd></dd>
+	</dl>
+	<dl>
+		<dt>생년월일 <span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<input type="number" placeholder="ex)990404" title="생년월일" size="8">
+		</dd>
+	</dl>
+	<dl>
+		<dt>연락처 <span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<div class="telSet">
+				<select name="ntcrMobile1" title="연락처 앞 자리" >
+					<option value="" selected>선택</option>
+					<option value="010" >010</option>
+					<option value="011" >011</option>
+					<option value="016" >016</option>
+					<option value="017" >017</option>
+					<option value="018" >018</option>
+					<option value="019" >019</option>
+					<option value="02"  >02</option>
+					<option value="070" >070</option>
+					<option value="051" >051</option>
+					<option value="053" >053</option>
+					<option value="032" >032</option>
+					<option value="062" >062</option>
+					<option value="042" >042</option>
+					<option value="052" >052</option>
+					<option value="044" >044</option>
+					<option value="031" >031</option>
+					<option value="033" >033</option>
+					<option value="043" >043</option>
+					<option value="041" >041</option>
+					<option value="063" >063</option>
+					<option value="061" >061</option>
+					<option value="054" >054</option>
+					<option value="055" >055</option>
+					<option value="064" >064</option>
+				</select>
+				-
+				<input type="text" name="ntcrMobile2" class="tel" title="연락처 중간 3~4자리" maxlength="4" />
+				-
+				<input type="text" name="ntcrMobile3" class="tel" title="연락처 끝 4자리" maxlength="4" />
+			</div>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt>주소</dt>
+		<dd>
+			<div class="postSet">
+				<span>
+				<input type="text" name="" value="" class="post" title="우편번호" />
+				<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+				</span>
+				<span><input type="text" name="" value="" class="w100p" title="주소" /></span>
+				<span><input type="text" name="" value="" class="w100p" title="상세주소" /></span>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt>회차선택 <span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<select name="" title="회차선택">
+				<option value="">회차를 선택하세요</option>
+			</select>
+		</dd>
+	</dl>
+	<dl>
+		<dt>신청인원수 <span class="req"><span>필수입력</span></span></dt>
+		<dd>
+			<select name="" title="신청인원수">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			명    ※ 본인포함 최대 3명
+		</dd>
+	</dl>
+</div>
+<div class="agg-set">
+	<h3>개인정보 수집ㆍ이용 동의</h3>
+	<div class="set">
+	</div>
+	<label><input type="checkbox" name=""> 개인정보 수집ㆍ이용에 동의합니다. <strong>(필수)</strong></label>
+</div>
+<div class="btnSet">
+	<input type="submit" value="확인" class="b-submit">
+	<a href="" class="b-cancel">취소</a>
+</div>

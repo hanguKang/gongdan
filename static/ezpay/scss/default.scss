@@ -1,0 +1,17 @@
+body{font-size:15px;}
+@import url(/static/font/NotoSans/notosans.css);
+@import url(/static/font/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(/static/font/line-awesome/css/line-awesome.min.css);
+@import url(/static/font/themify-icons/themify-icons.css);
+@import url(/static/commons/css/grids.css);
+// @import url(/static/font/NanumSquare/nanumsquare.css);
+@import url(/static/commons/css/common.css);
+@import url(/static/ezpay/css/global.css);
+@import url(/static/portal/css/mobileNav.css);
+@import url(/static/ezpay/css/layout.css);
+@import url(/static/portal/css/gongdan.css);
+@import url(/static/portal/css/footer.css);
+
+@import "static/bos/scss/breakpoint";
+@import "static/portal/scss/var"; 
+@import "sub";

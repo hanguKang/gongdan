@@ -1,0 +1,465 @@
+.sitemap{
+	>ul{
+		overflow:hidden;
+		margin:0 -10px;
+		>li{
+			@include breakpoint($md){
+				float:left;
+				width:calc(100% / 3);
+			}
+			padding:0 10px;
+			@include breakpoint($sm){
+				margin-bottom:15px;
+			}
+			>a{
+				@include bu1;
+				font-size:22px;
+				background-color:#f2f7fb;
+				margin:0;
+				padding:15px 10px 15px 50px;
+				display:block;
+				background-position:31px center;
+			}
+			>div{
+				padding-top:10px;
+				@include breakpoint($md){
+					height:150px;
+				}
+			}
+			.dinfoSet{
+				>ul{
+					margin:0 10px 0 35px;
+					>li{
+						margin-bottom:5px;
+						a{
+							@include bu-arr();
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+.u06001{
+	border-top:2px solid #399bda;
+	table{width:100%;}
+	td,th{border-bottom:1px solid $bdcolor;padding-top:35px;padding-bottom:35px;}
+	.bu-arr{font-size:17px;color:#399bda;margin-left:0;}
+	a.b-sitego{border-radius:4px;background-color:#399bda;}
+	@include breakpoint($sm){
+		tr,th,td{display:block;border-bottom:none;padding:5px 0;text-align:left;}
+		tr{padding:15px 0 10px;border-bottom:1px solid $bdcolor;}
+	}
+}
+.u02002{
+	position:relative;
+	background:url(/static/portal/img/common/blueline_pt.png) 0 0 repeat;
+	padding:20px;
+	border:1px solid #99bddd;
+	border-radius:15px;
+	margin-bottom:20px;
+	@include breakpoint($md){
+		padding:110px 100px 110px 410px;
+		&:before {
+			content: '';
+			background:url(/static/ezpay/img/sub/u02002-ico.png) 0 0 no-repeat;
+			position:absolute;
+			width:355px;
+			height:223px;
+			left:0;top:0;
+		}
+		div{
+			z-index:1;
+			position:relative;
+			padding-right:102px;
+			select{
+				height:39px;
+				width:100%;
+			}
+			button{
+				position:absolute;
+				right:0;top:0;
+				background-color:#0059a9;
+				color:#fff;
+				font-weight:bold;
+				text-align:center;
+				height:39px;
+				width:100px;
+			}
+		}
+	}
+}
+.u003set{
+	a{
+		background-color:#399bda;
+		color:#fff;
+		padding:8px 18px;
+		display:inline-block;
+		line-height:1;
+		font-size:14px;
+		border-radius:5px;
+		margin-top:-3px;
+		vertical-align:top;
+	}
+	.bu1{margin-top:0;}
+	p{margin-bottom:20px;}
+	@include clearfix();
+	@include breakpoint($md){
+		.left{
+			float:left;
+			width:43%;
+			padding-right:40px;
+		}
+		ul{
+			float:right;
+			width:57%;
+		}
+
+		padding-bottom:40px;
+
+		&+div{
+			padding-top:40px;
+			@include dotx5;
+			background-position:0 0;
+		}
+	}
+}
+.u01001{
+	background:#eceff5 url(/static/ezpay/img/sub/001.png) right 0 no-repeat;
+	border-radius:15px;
+	background-size:contain;
+	min-height:420px;
+	padding:100px 30px 50px 77px;
+	@include breakpoint($sm){
+
+	}
+	.t1{
+		font-size:28px;
+		font-family:'Noto Sans';font-weight: 300;
+		line-height:1.2;
+		display:inline-block;
+		position:relative;
+		em{font-weight:400;color:$sitecolor;}
+		span{
+			font-size:60px;line-height:1;
+			font-family:'Noto Sans';
+			font-weight:500;
+			position:absolute;
+			color:$sitecolor;
+			&:first-child{left:-32px;top:-13px;}
+			&:last-child{right:-34px;bottom:-36px;}
+		}
+	}
+	.t2{
+		margin-top:15px;
+		font-family:'Noto Sans';font-weight: 400;
+		font-size:18px;
+		line-height:1.56;
+		strong{color:$sitecolor;font-weight:400;}
+	}
+	.t3{
+		margin-top:20px;
+		line-height:1.87;
+	}
+	@include breakpoint($sm){
+		padding:30px 30px 25px;
+		.t1{font-size:21px;
+			span{font-size:50px;
+				&:first-child{left:-25px;top:-13px;}
+				&:last-child{right:-25px;bottom:-13px;}
+			}
+		}
+	}
+}
+.shapp{
+	border:1px solid $bdcolor;
+	padding:10px;
+	@include breakpoint($md){
+		padding:30px;
+	}
+	.step1{
+		@include clearfix();
+		margin:0 -9px;
+		label{
+			display:block;
+			float:left;
+			margin:4px 8px;
+			width: calc((100% / 4) - 16px);
+			@include breakpoint($md){
+				margin:0 8px;
+				width: calc((100% / 9) - 16px);
+			}
+			input{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+			input:checked + span{
+				border-width:3px;
+				border-color:#399bda;
+				font-weight:bold;
+				color:#399bda;
+				&:before {
+					content: '';
+					width:0;
+					height:0;
+					border-left:7px solid transparent;
+					border-right:7px solid transparent;
+					border-top:10px solid #399bda;
+					position:absolute;
+					left:calc(50% - 7px);
+					top:0;
+				}
+				&:after {
+					// left:-2px;
+				}
+				&.i1:after{background-position:-3px    0;}
+				&.i2:after{background-position:-103px 0;}
+				&.i3:after{background-position:-207px 0;}
+				&.i4:after{background-position:-311px 0;}
+				&.i5:after{background-position:-414px 0;}
+				&.i6:after{background-position:-518px 0;}
+				&.i7:after{background-position:-621px 0;}
+				&.i8:after{background-position:-723px 0;}
+				&.i9:after{background-position:-840px 0;}
+				&.i10:after{background-position:-951px 0;}
+			}
+			span{
+				position:relative;
+				display:block;
+				border:1px solid $bdcolor;
+				border-radius:10px;
+				height:120px;
+				padding-top:74px;
+				text-align:center;
+				font-size:16px;
+				line-height:1.2;
+				&.h{padding-top:67px;}
+				&:after {
+					content: '';
+					background: url(/static/ezpay/img/common/shcateiconset.png) -3px -129px no-repeat;
+					@include breakpoint($smd){
+						background-image:url(/static/ezpay/img/common/shcateiconset@2x.png);
+						background-size:813px;
+					}
+					position:absolute;
+					left:calc(50% - 42px);
+					top:0;
+					// width:100%;
+					width:80px;
+					height:67px;
+
+				}
+				&.i2:after{background-position:-103px -129px;}
+				&.i3:after{background-position:-207px -129px;}
+				&.i4:after{background-position:-311px -129px;}
+				&.i5:after{background-position:-414px -129px;}
+				&.i6:after{background-position:-518px -129px;}
+				&.i7:after{background-position:-621px -129px;}
+				&.i8:after{background-position:-723px -129px;}
+				&.i9:after{background-position:-840px -129px;}
+				&.i10:after{background-position:-951px -129;}
+			}
+		}
+	}
+	.step2{
+		margin-top:20px;
+		padding-top:21px;
+		@include clearfix();
+		@include dotx5();
+		background-position:0 0;
+		button{
+			float:left;
+			margin:0 8px 10px;
+			width: calc((100% / 3) - 16px);
+			@include breakpoint($md){
+				width: calc((100% / 8) - 16px);
+			}
+			border:1px solid #399bda;
+			text-align:center;
+			border-radius:10px;
+			height:50px;
+			color:#399bda;
+			font-size:16px;
+			&.active{
+				background-color:#399bda;
+				color:#fff;
+				font-weight:bold;
+			}
+		}
+	}
+}
+.areaInfor{
+	@include breakpoint($md){
+		@include clearfix();
+		.imgbox{
+			float:left;width:220px;
+			margin-bottom:0;
+		}
+		.reg{
+			float:right;
+			width: calc(100% - 250px);
+			margin:0;
+			dl{min-height:60px;}
+		}
+	}
+}
+.imgbox{
+	border:1px solid #c4c3b3;
+	padding:9px;
+	border-radius:5px;
+	background-color:#f3f2ed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	img{border:1px solid #c4c3b3;border-radius:6px;}
+}
+
+.classList{
+	border-top:3px solid $sitecolor;
+	ul{}
+	>ul>li{
+		padding:20px;
+		border-bottom:1px solid $bdcolor;
+	}
+	a{
+		display:block;
+		margin-bottom:6px;
+		.tit{font-size:17px;font-weight:bold;color:#666;}
+	}
+	i{font-size:15px;}
+	.vline{border-left:1px solid #999999;width:15px;margin-left:15px;vertical-align:middle;height:14px;overflow:hidden;}
+
+	.set{
+		line-height:1.6;
+		>span{
+			// white-space:nowrap;
+			// border:1px solid #000;
+			vertical-align:top;
+			display:inline-block;
+			a{display:inline;}
+			@include breakpoint($sm){
+				display:block;
+				.visible-xs{display:inline-block !important;}
+				// .vline{border-left:none;padding-left:0;width:0;margin-left:13px;}
+			}
+		}
+	}
+	.bset{
+		@include clearfix();
+		margin:-5px 0 ;
+		a{
+			border:1px solid #399bda;
+			color:#399bda;
+			font-size:16px;
+			font-family:'Noto Sans';font-weight: 500;
+			display:block;
+			padding:8px 0;
+			text-align:center;
+			margin:5px;
+			float:left;
+			border-radius:5px;
+			width: calc(50% - 10px);
+			&.on{
+				color:#fff;
+				background-color:#399bda;
+			}
+		}
+	}
+
+	@include breakpoint($md){
+		ul{}
+		li{@include clearfix();}
+		a{}
+		.set{
+			float:left;
+			width: 63.12%;
+		}
+		.bset{
+			float:right;
+			width:36.88%;
+		}
+	}
+	.classView{
+		@include clearfix();
+		@include dotx5;
+		clear:both;
+		padding-top:40px;
+		background-position:0 20px;
+		display:none;
+		.img{
+			float:left;
+			width:150px;
+			border:1px solid $bdcolor;
+		}
+		>dl{
+			float:left;
+			padding-left:20px;
+			width: calc(100% - 150px);
+			>dt{font-weight:bold;margin-bottom:8px;}
+		}
+	}
+}
+.calendar{
+	font-family:'Noto Sans';font-weight: 400;
+	.ctrl{
+		background-color:#399bda;
+		border-radius:5px 5px 0 0;
+		font-size:26px;
+		font-family:'Noto Sans';font-weight: 400;
+		text-align:center;
+		color:#fff;
+		border:1px solid #3275ba;
+		padding:10px 0;
+		span{display:inline-block;padding:0 25px;}
+		button{
+			width:26px;
+			height:26px;
+			background: url(/static/ezpay/img/common/calendar_ctrl.png) 7px center no-repeat;
+			display:inline-block;
+			&:focus{
+				border:1px dotted #000;
+			}
+			&.next{background-position:-181px center;}
+		}
+	}
+	table{width:100%;font-size:17px;}
+	th{height:50px;}
+	td{background-color:#f0f0f0;text-align:center;
+		border-right:2px solid #fff;
+		border-bottom:2px solid #fff;
+		&.select{
+			background-color:#c9f1cd;
+			a{color:#fff;}
+		}
+	}
+	a{display:block;padding:18px 0;line-height:1;}
+	.sun,
+	.sun a{color:#f0669c;}
+	.sat,
+	.sat a{color:#399bda;}
+}
+.choiceTime{
+	.ctrl{
+		height:60px;
+		background-color:#f5f6fa;
+		border-radius:5px 5px 0 0;
+		text-align:center;
+		padding-top:10px;
+		border-bottom:1px solid #399bda;
+		overflow-y:auto;
+	}
+	label{font-weight:bold; font-size: 14px; padding-left: 5px;padding-right: 5px; margin-bottom: 3px;}
+	.table{
+
+		margin:0;
+		max-height: 429px-54;
+		overflow-y:auto;
+		table{
+			min-width:0;
+			th{height:50px;background-color:#fff;color:#000;border-bottom:1px solid $bdcolor;}
+			td{height:54px;padding-top:0;padding-bottom:0;}
+
+		}
+
+	}
+}

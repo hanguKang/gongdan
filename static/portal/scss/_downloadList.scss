@@ -1,0 +1,46 @@
+.downloadList{
+	border-top:2px solid $bdtopcolor;
+	border-bottom:1px solid $bdcolor;
+	ul{
+		overflow:hidden;
+		@include breakpoint($md){
+			padding:10px 0;
+			margin:0 -10px;
+		}
+	}
+	li{
+		margin:20px 0;
+		@include breakpoint($md){
+			float:left;
+			width:50%;
+			padding:0 10px;
+			margin:10px 0;
+		}
+		@include breakpoint($lg){
+			width:25%;
+		}
+	}
+	a{
+		border:1px solid $bdcolor;
+		padding:17px;
+		display:block;
+		text-align:right;
+		.tit{
+			font-size:18px;
+			display:block;
+			text-align:left;
+			text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+		}
+		.ico-date{
+			display:block;
+			text-align:left;
+			margin-bottom:40px;
+		}
+		.b-blue{
+			font-size:14px;
+			background-color:#6e7aa9;
+			padding-left:22px;
+			padding-right:22px;
+		}
+	}
+}

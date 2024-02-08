@@ -1,0 +1,145 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$btnalllist-name: 'btnalllist';
+$btnalllist-x: 0px;
+$btnalllist-y: 0px;
+$btnalllist-offset-x: 0px;
+$btnalllist-offset-y: 0px;
+$btnalllist-width: 25px;
+$btnalllist-height: 25px;
+$btnalllist-total-width: 102px;
+$btnalllist-total-height: 62px;
+$btnalllist-image: '/static/portal/img/sprite1.png';
+$btnalllist: (0px, 0px, 0px, 0px, 25px, 25px, 102px, 62px, '/static/portal/img/sprite1.png', 'btnalllist', );
+$mayorico1-name: 'mayorico1';
+$mayorico1-x: 45px;
+$mayorico1-y: 0px;
+$mayorico1-offset-x: -45px;
+$mayorico1-offset-y: 0px;
+$mayorico1-width: 21px;
+$mayorico1-height: 18px;
+$mayorico1-total-width: 102px;
+$mayorico1-total-height: 62px;
+$mayorico1-image: '/static/portal/img/sprite1.png';
+$mayorico1: (45px, 0px, -45px, 0px, 21px, 18px, 102px, 62px, '/static/portal/img/sprite1.png', 'mayorico1', );
+$mayorico2-name: 'mayorico2';
+$mayorico2-x: 86px;
+$mayorico2-y: 38px;
+$mayorico2-offset-x: -86px;
+$mayorico2-offset-y: -38px;
+$mayorico2-width: 12px;
+$mayorico2-height: 18px;
+$mayorico2-total-width: 102px;
+$mayorico2-total-height: 62px;
+$mayorico2-image: '/static/portal/img/sprite1.png';
+$mayorico2: (86px, 38px, -86px, -38px, 12px, 18px, 102px, 62px, '/static/portal/img/sprite1.png', 'mayorico2', );
+$mayorico3-name: 'mayorico3';
+$mayorico3-x: 37px;
+$mayorico3-y: 45px;
+$mayorico3-offset-x: -37px;
+$mayorico3-offset-y: -45px;
+$mayorico3-width: 13px;
+$mayorico3-height: 16px;
+$mayorico3-total-width: 102px;
+$mayorico3-total-height: 62px;
+$mayorico3-image: '/static/portal/img/sprite1.png';
+$mayorico3: (37px, 45px, -37px, -45px, 13px, 16px, 102px, 62px, '/static/portal/img/sprite1.png', 'mayorico3', );
+$mayorico4-name: 'mayorico4';
+$mayorico4-x: 86px;
+$mayorico4-y: 0px;
+$mayorico4-offset-x: -86px;
+$mayorico4-offset-y: 0px;
+$mayorico4-width: 16px;
+$mayorico4-height: 18px;
+$mayorico4-total-width: 102px;
+$mayorico4-total-height: 62px;
+$mayorico4-image: '/static/portal/img/sprite1.png';
+$mayorico4: (86px, 0px, -86px, 0px, 16px, 18px, 102px, 62px, '/static/portal/img/sprite1.png', 'mayorico4', );
+$notice-more-name: 'noticeMore';
+$notice-more-x: 0px;
+$notice-more-y: 45px;
+$notice-more-offset-x: 0px;
+$notice-more-offset-y: -45px;
+$notice-more-width: 17px;
+$notice-more-height: 17px;
+$notice-more-total-width: 102px;
+$notice-more-total-height: 62px;
+$notice-more-image: '/static/portal/img/sprite1.png';
+$notice-more: (0px, 45px, 0px, -45px, 17px, 17px, 102px, 62px, '/static/portal/img/sprite1.png', 'noticeMore', );
+$spritesheet-width: 102px;
+$spritesheet-height: 62px;
+$spritesheet-image: '/static/portal/img/sprite1.png';
+$spritesheet-sprites: ($btnalllist, $mayorico1, $mayorico2, $mayorico3, $mayorico4, $notice-more, );
+$spritesheet: (102px, 62px, '/static/portal/img/sprite1.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

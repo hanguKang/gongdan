@@ -1,0 +1,166 @@
+.tab2{
+	ul{
+		overflow:hidden;
+		li{
+			float:left;
+			@include breakpoint($lg){
+				min-width:200px;
+				padding-right:1px;
+				margin-bottom:1px;
+			}
+			a{
+				display:block;
+				background-color:#ebeff8;
+				border:1px solid #dee0e6;
+				padding:10px;
+				text-align:center;
+				line-height:1.2;
+				color:#000;
+			}
+			&.on{
+				a{
+					border-color:#344891;
+					background-color:#344891;
+					color:#fff;
+				}
+			}
+		}
+	}
+	& ~ .tab2-body .bu2{margin-top:20px;}
+	&.wide{
+		ul{
+			li{
+				width:50%;
+			}
+		}
+	}
+}
+
+.tab2-body{
+	border-bottom:1px solid $bdcolor;
+	padding-bottom:10px;
+}
+
+.tab{
+	display:none;
+	@include breakpoint($md){
+		display:block;
+		margin-bottom:20px;
+		margin-bottom:30px;
+		.tab-list{
+			@include clearfix();
+
+			border-bottom:1px solid #0059a9;
+			height: 48px;
+			&.len7 .item{
+				min-width: 14.285%;
+				width: 14.285%;
+			}
+			&.len5 .item{
+				width:auto;
+				// min-width:calc(100% / 5);
+				@include breakpoint($xl){
+				width:calc(100% / 5);
+				}
+			}
+			.item{
+				margin-top:-1px;
+				float:left;
+				width: 33.333%;
+				@include breakpoint($lg){
+					width:25%;
+				}
+				margin-bottom:2px;
+				a{
+					display:block;
+					// background-color:#ebeff8;
+					border-top:1px solid #dee0e6;
+					border-left:1px solid #dee0e6;
+					padding:15px 10px;
+					text-align:center;
+					line-height:1.2;
+
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+				}
+				&:last-child a{
+					border-right:1px solid #dee0e6;
+				}
+				&.on{
+					a{
+						border-top:2px solid $viewbdtopcolor;
+						border-right:1px solid $viewbdtopcolor;
+						border-color:$viewbdtopcolor;
+						background-color: #fff;
+						color:$viewbdtopcolor;
+						padding-bottom: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+.mobiletab{
+	display:none;
+	@include breakpoint($sm){
+		display:block;
+		margin-bottom:15px;
+	}
+	position:relative;
+	padding-right:100px;
+	select{
+		// font-size:17px;
+		width:100%;
+		height:40px;
+		padding:0 5px;
+	}
+	button{
+		position:absolute;
+		right:0;top:0;
+		font-size:17px;
+		width:90px;
+		height:40px;
+	}
+	@include breakpoint(max-width 350px){
+		padding-right:90px;
+	}
+}
+
+.tabt{
+	ul{
+		display:table;
+		width:100%;
+		table-layout:fixed;
+		li{
+			float:left;
+			padding:1px;
+			@include breakpoint($md){
+				float:none;
+				display:table-cell;
+				padding:0 0 0 1px;
+			}
+			a{
+				display:block;
+				background-color:#ebeff8;
+				border:1px solid #dee0e6;
+				padding:10px;
+				text-align:center;
+				line-height:1.2;
+				color:#000;
+			}
+			&.on{
+				a{
+					border-color:#344891;
+					background-color:#344891;
+					color:#fff;
+				}
+			}
+		}
+	}
+	&.auto{
+		ul{table-layout:auto;}
+	}
+}
+

@@ -1,0 +1,967 @@
+@import url(/static/font/NotoSans/notosans.css);
+@import url(/static/font/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(/static/font/line-awesome/css/line-awesome.min.css);
+@import url(/static/font/themify-icons/themify-icons.css);
+@import url(/static/commons/css/grids.css);
+// @import url(/static/font/NanumSquare/nanumsquare.css);
+@import url(/static/commons/css/common.css);
+@import url(/static/ezpay/css/global.css);
+@import url(/static/ezpay/css/mobileNav.css);
+@import url(/static/ezpay/css/layout.css);
+@import url(/static/portal/css/gongdan.css);
+@import url(/static/portal/css/footer.css);
+
+@import "static/bos/scss/breakpoint";
+@import "var";
+
+// @import "layout";
+// @import "sprite1";
+// @include sprites($spritesheet-sprites);
+// .icon {
+//   display: inline-block;
+// }
+@mixin mw() {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#content {
+	// max-width:1140px;
+	margin-bottom: 50px;
+}
+
+#visualSet {
+	background-color: #d6dde5;
+
+	@include breakpoint($smd) {
+		// height:200px;
+	}
+
+	@include breakpoint($md) {
+		height: 270px;
+	}
+
+	@include breakpoint($lg) {
+		height: 420px;
+	}
+
+	@include breakpoint(992px 1276px) {
+		height: 320px;
+	}
+
+	position: relative;
+	overflow: hidden;
+
+	.ctrl {
+		position: absolute;
+		z-index: 1;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -570px;
+
+		@include breakpoint($sm) {
+			margin-left: 0px;
+			left: 2%;
+		}
+
+		@include breakpoint($md) {
+			margin-left: -360px;
+		}
+
+		@include breakpoint($lg) {
+			margin-left: -570px;
+		}
+
+		@include breakpoint(992px 1276px) {
+			margin-left: -470px;
+		}
+
+		button {
+			color: #fff;
+			font-size: 24px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			background-color: $btnbgcolor;
+			margin-right: -3px;
+		}
+	}
+
+	.visualSlide {
+		.items {
+			@include breakpoint($sm) {
+				.bg {
+					display: block;
+					background-position: -100px 0;
+					height: 200px;
+					background-size: auto 100%;
+					background-repeat: no-repeat;
+				}
+			}
+
+			@include breakpoint($md) {
+				display: inline-block;
+				float: left;
+
+				width: 100%;
+				height: 320px;
+
+				@include breakpoint($md) {
+					height: 420px;
+				}
+
+				a {
+					display: inline-block;
+					height: 420px;
+					width: 100%;
+				}
+
+				.bg {
+					display: block;
+					width: 100%;
+					background-repeat: no-repeat;
+					height: 320px;
+
+					@include breakpoint($md) {
+						height: 300px;
+						background-position: 50% 0;
+					}
+
+					@include breakpoint($lg) {
+						width: 100%;
+						height: 100%;
+					}
+
+					@include breakpoint($md) {
+						background-size: auto 100%;
+					}
+
+					@include breakpoint(992px 1276px) {
+						background-size: auto 320px;
+					}
+				}
+			}
+		}
+	}
+}
+
+#mainquickSet {
+	@include mw;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	@include breakpoint($lg) {
+		height: 60px;
+	}
+
+	margin-bottom: 30px;
+
+	>ul {
+		position: relative;
+	}
+
+	>ul>li {
+		display: inline-block;
+		float: left;
+		border-left: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		width: 16.66666%;
+
+		@include breakpoint($sm) {
+			width: 50%;
+			margin-top: -1px;
+
+			&:nth-child(2n) {
+				border-right: 1px solid #ddd;
+			}
+		}
+
+		@include breakpoint($smd) {
+			width: 33.33333%;
+
+			&:nth-child(3) {
+				border-right: 1px solid #ddd;
+			}
+		}
+
+		@include breakpoint($lg) {
+			width: 16.66666%;
+		}
+
+		&:last-child {
+			border-right: 1px solid #ddd;
+		}
+
+		>a {
+			display: block;
+
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 10px;
+				max-width: 28px;
+			}
+
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 58px;
+			text-align: center;
+			letter-spacing:-1px;
+		}
+	}
+
+
+	
+	/* ul{
+		@include clearfix();
+	}
+	li{
+		float:left;
+		width:calc(100% / 3);
+		@include breakpoint($md){
+			width:calc(100% / 6);
+		}
+	}
+	a.i{
+		font-family:'Noto Sans';font-weight: 500;
+		font-size:18px;
+		text-align:center;
+		background: url(/static/ezpay/img/main/quickmenuico_1.png) center 0 no-repeat;
+		display:block;
+		padding:80px 0 0 0;
+		height:120px;
+		text-align:center;
+		&.i2{background-image:url(/static/ezpay/img/main/quickmenuico_2.png);}
+		&.i3{background-image:url(/static/ezpay/img/main/quickmenuico_3.png);}
+		&.i4{background-image:url(/static/ezpay/img/main/quickmenuico_4.png);}
+		&.i5{background-image:url(/static/ezpay/img/main/quickmenuico_5.png);}
+		&.i6{background-image:url(/static/ezpay/img/main/quickmenuico_6.png);}
+	} */
+}
+
+
+#reservationSet {
+	@include mw;
+	margin-bottom: 40px;
+
+	.ico {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 12px;
+
+		&.ico1 {
+			background: url(/static/ezpay/img/main/ico1.png) 0 0 no-repeat;
+			width: 34px;
+			height: 26px;
+		}
+
+		&.ico2 {
+			background: url(/static/ezpay/img/main/ico2.png) 0 0 no-repeat;
+			width: 38px;
+			height: 26px;
+		}
+	}
+
+	.ctrl {
+		@include clearfix();
+		border: 1px solid #cbceda;
+		border-bottom: none;
+		border-top: none;
+
+		button {
+			float: left;
+			width: 50%;
+			font-family: 'Noto Sans';
+			font-weight: 500;
+			font-size: 18px;
+
+			@include breakpoint($md) {
+				font-size: 22px;
+			}
+
+			background-color:#f5f6fa;
+			padding:13px 0 19px;
+			text-align:center;
+			border-top:1px solid #cbceda;
+			border-bottom:1px solid #cbceda;
+			line-height:26px;
+
+			&.on {
+				background-color: #fff;
+				border-top: 3px solid #399bda;
+				border-bottom: none;
+
+			}
+
+			&+button {
+				border-left: 1px solid #cbceda;
+			}
+		}
+	}
+}
+
+.shapp {
+	border: 1px solid $bdcolor;
+	border-top: none;
+	padding: 10px;
+
+	@include breakpoint($md) {
+		padding: 10px;
+	}
+
+	@include breakpoint($lg) {
+		padding: 30px;
+	}
+
+	.step1 {
+		@include clearfix();
+		margin: 0 -9px;
+
+		label {
+			display: block;
+			float: left;
+			margin: 4px 3px;
+			width: calc((100% / 4) - 6px);
+
+			@include breakpoint($md) {
+				margin: 0 4px;
+				width: calc((100% / 9) - 8px);
+			}
+
+			@include breakpoint($lg) {
+				margin: 0 6px;
+				width: calc((100% / 9) - 12px);
+			}
+
+			input {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				margin: -1px;
+				padding: 0;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				border: 0;
+			}
+
+			input:checked+span {
+				border-width: 2px;
+				border-color: #399bda;
+				color: #399bda;
+
+				@include breakpoint($lg) {
+					border-width: 3px;
+					font-weight: bold;
+				}
+
+				&:before {
+					content: '';
+					width: 0;
+					height: 0;
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-top: 10px solid #399bda;
+					position: absolute;
+					left: calc(50% - 7px);
+					top: 0;
+				}
+
+				&:after {
+					// left:-2px;
+				}
+
+				&.i1:after {
+					background-position: -3px 0;
+				}
+
+				&.i2:after {
+					background-position: -103px 0;
+				}
+
+				&.i3:after {
+					background-position: -207px 0;
+				}
+
+				&.i4:after {
+					background-position: -311px 0;
+				}
+
+				&.i5:after {
+					background-position: -414px 0;
+				}
+
+				&.i6:after {
+					background-position: -518px 0;
+				}
+
+				&.i7:after {
+					background-position: -621px 0;
+				}
+
+				&.i8:after {
+					background-position: -723px 0;
+				}
+				&.i9:after {
+					background-position: -840px 0;
+				}
+				&.i10:after {
+					background-position: -951px 0;
+				}
+			}
+
+			span {
+				position: relative;
+				display: block;
+				border: 1px solid $bdcolor;
+				border-radius: 10px;
+				height: 100px;
+				padding-top: 69px;
+				text-align: center;
+				font-size: 13px;
+
+				@include breakpoint($lg) {
+					font-size: 15px;
+				}
+
+				line-height:1.2;
+				letter-spacing:-1.5px;
+				font-family:'Noto Sans';
+				font-weight: 500;
+				color:#757575;
+
+				&:after {
+					content: '';
+					background: url(/static/ezpay/img/common/shcateiconset.png) -3px -129px no-repeat;
+
+					@include breakpoint($smd) {
+						background-image: url(/static/ezpay/img/common/shcateiconset@2x.png);
+						background-size: 813px;
+					}
+
+					position:absolute;
+					left:calc(50% - 42px);
+					top:0;
+					// width:100%;
+					width:80px;
+					height:67px;
+
+				}
+
+				&.i2:after {
+					background-position: -103px -129px;
+				}
+
+				&.i3:after {
+					background-position: -207px -129px;
+				}
+
+				&.i4:after {
+					background-position: -311px -129px;
+				}
+
+				&.i5:after {
+					background-position: -414px -129px;
+				}
+
+				&.i6:after {
+					background-position: -518px -129px;
+				}
+
+				&.i7:after {
+					background-position: -621px -129px;
+				}
+
+				&.i8:after {
+					background-position: -723px -129px;
+				}
+				&.i9:after {
+					background-position: -840px -129px;
+				}
+				&.i10:after {
+					background-position: -951px -129px;
+				}
+			}
+		}
+	}
+
+	.step2 {
+		margin: 0 -8px;
+		margin-top: 10px;
+		padding-top: 11px;
+
+		@include breakpoint($lg) {
+			margin-top: 20px;
+			padding-top: 21px;
+		}
+
+		@include dotx5();
+		background-position:0 0;
+		@include clearfix();
+
+		button {
+			float: left;
+			margin: 0 3px 10px;
+			width: calc((100% / 3) - 6px);
+
+			@include breakpoint($md) {
+				margin: 4px;
+				width: calc((100% / 8) - 8px);
+			}
+
+			@include breakpoint($lg) {
+				width: calc((100% / 8) - 16px);
+			}
+
+			border:1px solid #399bda;
+			text-align:center;
+			border-radius:10px;
+			height:50px;
+			color:#399bda;
+			font-size:16px;
+
+			&.active {
+				background-color: #399bda;
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.mainbottomSet {
+	@include mw;
+	@include clearfix();
+
+	@include breakpoint($sm) {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	>div {
+		@include breakpoint($smd) {
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint($lg) {
+			// float:left;
+			// width: calc((68.94736842105263% / 2) - 40px);
+		}
+
+		@include breakpoint(1024px) {
+			float: left;
+			width: calc((68.94736842105263% / 2) - 20px);
+
+			@include breakpoint($xl) {
+				width: calc((68.94736842105263% / 2) - 40px);
+			}
+		}
+	}
+
+	h2 {
+		padding-bottom: 15px;
+		line-height: 1;
+		color: #495564;
+		border-bottom: 2px solid #495564;
+		font-size: 20px;
+
+		@include breakpoint($md) {
+			padding-bottom: 0;
+			font-family: 'Noto Sans';
+			font-weight: 500;
+			font-size: 25px;
+			height: 59px;
+		}
+	}
+}
+
+#telinfors {
+	@include breakpoint(768px 991px) {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	@include breakpoint(1024px) {
+		margin-right: 20px;
+
+		@include breakpoint($xl) {
+			margin-right: 40px;
+		}
+	}
+
+	border-bottom:1px solid #e5e6ec;
+
+	ul {
+		overflow: hidden;
+		background: url(/static/ezpay/img/main/vdotline6.png) 50% 0 repeat-y;
+
+		@include breakpoint(768px 991px) {
+			background: none;
+		}
+	}
+
+	li {
+		float: left;
+		width: 50%;
+		margin-bottom: -1px;
+		@include dotx5();
+		padding: 15px 5px 0 20px;
+		min-height: 77px;
+		color: rgb(73, 85, 100);
+
+		@include breakpoint(768px 991px) {
+			width: calc(100% / 4);
+			background:
+				url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x,
+				url(/static/ezpay/img/main/vdotline6.png) 0 0 repeat-y;
+			margin-left: -1px;
+		}
+
+		span {
+			display: block;
+
+			&.title {
+				font-size: 18px;
+				font-family: 'Noto Sans';
+				font-weight: 500;
+			}
+
+			&.telnumber {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+#notice {
+	position: relative;
+
+	@include breakpoint(768px 991px) {
+		float: left;
+		width: calc(50% - 15px);
+		margin-left: 10px;
+	}
+
+	a.noticemore {
+		background: url(/static/ezpay/img/main/noticemore.png) center center no-repeat;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@include breakpoint($sm) {
+			width: 25px;
+			height: 25px;
+			background-size: contain;
+		}
+	}
+
+	li {
+		border-bottom: 1px solid #e5e6ec;
+
+		a {
+			display: block;
+			@include clearfix();
+
+			span {
+				padding-top: 11px;
+				padding-bottom: 12px;
+			}
+
+			.txt {
+				width: calc(100% - 100px);
+				padding-left: 20px;
+				float: left;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				font-size: 18px;
+				font-family: 'Noto Sans';
+				font-weight: 400;
+				color: rgb(73, 85, 100);
+			}
+
+			.date {
+				float: right;
+				width: 100px;
+				font-size: 16px;
+				color: rgb(73, 85, 100);
+			}
+		}
+	}
+
+
+}
+
+div.popupZoneSet {
+	position: relative;
+	overflow: hidden;
+
+	@include breakpoint(768px 991px) {
+		float: right;
+		width: calc(50% - 15px);
+		margin-right: 10px;
+	}
+
+	.ctrl {
+		button {
+			padding: 0;
+			position: absolute;
+			z-index: 10;
+			bottom: 0;
+			width: 50px;
+			height: 50px;
+			color: #fff;
+			font-size: 24px;
+			background-color: #495564;
+			color: #bdc0c7;
+
+			&.popupZoneStop {
+				background: url(/static/ezpay/img/main/popupzonestop.png) 0 0 no-repeat;
+				left: 51px;
+			}
+
+			&.popupZonePlay {
+				background: url(/static/ezpay/img/main/popupzoneplay.png) 0 0 no-repeat;
+				left: 51px;
+			}
+
+			&.popupZoneRt {
+				left: 102px;
+			}
+		}
+	}
+
+	.popupZone {
+
+		.items {
+			float: left;
+			width: 100%;
+
+			a {
+				display: block;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	@include breakpoint($lg) {
+		position: relative;
+		overflow: hidden;
+		float: right !important;
+		width: 31.05263157894737%;
+
+		.ctrl {
+			button {
+				position: absolute;
+				z-index: 10;
+				bottom: 0;
+				width: 50px;
+				height: 50px;
+				color: #fff;
+				font-size: 24px;
+				background-color: #495564;
+				color: #bdc0c7;
+
+				&.popupZoneStop {
+					background: url(/static/ezpay/img/main/popupzonestop.png) 0 0 no-repeat;
+					left: 51px;
+				}
+
+				&.popupZoneRt {
+					left: 102px;
+				}
+			}
+		}
+
+		.popupZone {
+
+			.items {
+				float: left;
+				max-width: 354px;
+			}
+		}
+	}
+}
+
+
+.emergency_box {
+	display: none;
+	margin: 0 auto;
+	position: absolute;
+	max-width: 1140px;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 999;
+	border: 1px solid #dbdbdb;
+
+	&.on {
+		display: block;
+	}
+
+	.em_head {
+		height: 54px;
+		border-bottom: 2px solid #061d45;
+		padding-left: 39px;
+
+		strong {
+			@include bu1;
+			background-position: 0 center;
+			font-weight: 500;
+			color: #061d45;
+			line-height: 54px;
+		}
+	}
+
+	.em_btn_close {
+		background: #061d45 url(/static/portal/img/main/btn-lpopclose.png) center center no-repeat;
+		width: 54px;
+		height: 54px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		// 		C:\sbgongdan\00_MAIN_포털\main-assets\icon04.png
+		// C:\sbgongdan\00_MAIN_포털\main-assets\
+		// C:\sbgongdan\00_MAIN_포털\main-assets\icobg.png
+		// C:\sbgongdan\00_MAIN_포털\main-assets\icon02.png
+		// C:\sbgongdan\00_MAIN_포털\main-assets\icon03.png
+
+	}
+
+	.em_cont {
+		overflow: hidden;
+		padding: 10px;
+		padding: 10px 19px 20px 1px;
+
+		@include breakpoint($md) {
+			padding: 38px;
+		}
+
+		>div {
+			@include dotx5;
+			padding: 20px 0;
+			overflow: hidden;
+			clear: both;
+		}
+
+		>div:last-child {
+			background: none;
+		}
+
+		strong {
+			width: 140px;
+			height: 140px;
+			padding: 28px 0 0 0;
+			display: block;
+			background: url(/static/portal/img/main/icobg.png) center center no-repeat;
+			text-align: center;
+			font-size: 15px;
+			color: $sitecolor;
+			margin: 0 auto 20px;
+
+			@include breakpoint($md) {
+				margin: 0;
+				float: left;
+
+			}
+
+			&:before {
+				content: '';
+				width: 40px;
+				height: 40px;
+				display: block;
+				background: url(/static/portal/img/main/icon01.png) center center no-repeat;
+				margin: 0 auto 7px;
+			}
+		}
+
+		>div:first-child+div strong:before {
+			background-image: url(/static/portal/img/main/icon02.png);
+		}
+
+		>div:first-child+div+div strong:before {
+			background-image: url(/static/portal/img/main/icon03.png);
+		}
+
+		>div:first-child+div+div+div strong:before {
+			background-image: url(/static/portal/img/main/icon04.png);
+		}
+
+		ul {
+			@include breakpoint($md) {
+				float: right;
+				width: calc(100% - 140px);
+				padding-left: 10px;
+			}
+		}
+
+		li {
+			float: left;
+			margin: 0 0 10px 19px;
+			width: calc(50% - 19px);
+
+			@include breakpoint($md) {
+				width: calc(100% / 3 - 19px);
+			}
+
+			@include breakpoint($lg) {
+				width: calc(25% - 19px);
+			}
+
+		}
+
+		li.line2 {
+			width: calc(100% - 19px);
+
+			@include breakpoint($lg) {
+				width: calc(50% - 19px);
+			}
+		}
+
+		li a {
+			display: block;
+			height: 40px;
+			border: 1px solid $bdcolor;
+			position: relative;
+			line-height: 38px;
+			padding-left: 17px;
+			padding-right: 20px;
+			letter-spacing: -1px;
+
+			&:before {
+				content: '\f054';
+				display: inline;
+				font-family: 'FontAwesome';
+				position: absolute;
+				right: 19px;
+				top: 0;
+				font-size: 9px;
+			}
+
+			&:hover,
+			&:focus {
+				color: $sitecolor;
+			}
+
+			@include breakpoint($sm) {
+				font-size: 15px;
+				padding: 0 0 0 10px;
+				text-align: center;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+}

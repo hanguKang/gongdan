@@ -1,0 +1,318 @@
+@import url(/static/font/NotoSans/notosans.css);
+@import url(/static/font/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(/static/font/line-awesome/css/line-awesome.min.css);
+@import url(/static/font/themify-icons/themify-icons.css);
+@import url(/static/commons/css/grids.css);
+@import url(/static/commons/css/common.css);
+@import url(/static/ezpay/css/global.css);
+@import url(/static/ezpay/css/mobileNav.css);
+@import url(/static/ezpay/css/layout.css);
+@import url(/static/portal/css/gongdan.css);
+@import url(/static/portal/css/footer.css);
+/* line 60, static/ezpay/scss/_var.scss */ .ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+
+/* line 27, static/ezpay/scss/main.scss */ body { overflow-x: hidden; }
+
+/* line 30, static/ezpay/scss/main.scss */ #content { margin-bottom: 50px; }
+
+/* line 34, static/ezpay/scss/main.scss */ #visualSet { background-color: #d6dde5; position: relative; overflow: hidden; }
+
+@media (min-width: 768px) { /* line 34, static/ezpay/scss/main.scss */ #visualSet { height: 270px; } }
+
+@media (min-width: 992px) { /* line 34, static/ezpay/scss/main.scss */ #visualSet { height: 420px; } }
+
+@media (min-width: 992px) and (max-width: 1276px) { /* line 34, static/ezpay/scss/main.scss */ #visualSet { height: 320px; } }
+
+/* line 44, static/ezpay/scss/main.scss */ #visualSet .ctrl { position: absolute; z-index: 1; bottom: 30px; left: 50%; margin-left: -570px; }
+
+@media (max-width: 767px) { /* line 44, static/ezpay/scss/main.scss */ #visualSet .ctrl { margin-left: 0px; left: 2%; } }
+
+@media (min-width: 768px) { /* line 44, static/ezpay/scss/main.scss */ #visualSet .ctrl { margin-left: -360px; } }
+
+@media (min-width: 992px) { /* line 44, static/ezpay/scss/main.scss */ #visualSet .ctrl { margin-left: -570px; } }
+
+@media (min-width: 992px) and (max-width: 1276px) { /* line 44, static/ezpay/scss/main.scss */ #visualSet .ctrl { margin-left: -470px; } }
+
+/* line 54, static/ezpay/scss/main.scss */ #visualSet .ctrl button { color: #fff; font-size: 24px; width: 50px; height: 50px; line-height: 50px; background-color: #0059a9; margin-right: -3px; }
+
+@media (max-width: 767px) { /* line 67, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { display: block; background-position: -100px 0; height: 200px; background-size: auto 100%; background-repeat: no-repeat; } }
+
+@media (min-width: 768px) { /* line 65, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items { display: inline-block; float: left; width: 100%; height: 320px; } }
+
+@media (min-width: 768px) and (min-width: 768px) { /* line 65, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items { height: 420px; } }
+
+@media (min-width: 768px) { /* line 84, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items a { display: inline-block; height: 420px; width: 100%; }
+	/* line 89, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { display: block; width: 100%; background-repeat: no-repeat; height: 320px; } }
+
+@media (min-width: 768px) and (min-width: 768px) { /* line 89, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { height: 300px; background-position: 50% 0; } }
+
+@media (min-width: 768px) and (min-width: 992px) { /* line 89, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { width: 100%; height: 100%; } }
+
+@media (min-width: 768px) and (min-width: 768px) { /* line 89, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { background-size: auto 100%; } }
+
+@media (min-width: 768px) and (min-width: 992px) and (max-width: 1276px) { /* line 89, static/ezpay/scss/main.scss */ #visualSet .visualSlide .items .bg { background-size: auto 320px; } }
+
+/* line 107, static/ezpay/scss/main.scss */ #mainquickSet { max-width: 1140px; margin: 0 auto; margin-top: 10px; margin-bottom: 10px; margin-bottom: 30px; /* ul{ @include clearfix(); } li{ float:left; width:calc(100% / 3); @include breakpoint($md){ width:calc(100% / 6); } } a.i{ font-family:'Noto Sans';font-weight: 500; font-size:18px; text-align:center; background: url(/static/ezpay/img/main/quickmenuico_1.png) center 0 no-repeat; display:block; padding:80px 0 0 0; height:120px; text-align:center; &.i2{background-image:url(/static/ezpay/img/main/quickmenuico_2.png);} &.i3{background-image:url(/static/ezpay/img/main/quickmenuico_3.png);} &.i4{background-image:url(/static/ezpay/img/main/quickmenuico_4.png);} &.i5{background-image:url(/static/ezpay/img/main/quickmenuico_5.png);} &.i6{background-image:url(/static/ezpay/img/main/quickmenuico_6.png);} } */ }
+
+@media (min-width: 992px) { /* line 107, static/ezpay/scss/main.scss */ #mainquickSet { height: 60px; } }
+
+/* line 113, static/ezpay/scss/main.scss */ #mainquickSet > ul { position: relative; }
+
+/* line 116, static/ezpay/scss/main.scss */ #mainquickSet > ul > li { display: inline-block; float: left; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; width: 16.66666%; }
+
+@media (max-width: 767px) { /* line 116, static/ezpay/scss/main.scss */ #mainquickSet > ul > li { width: 50%; margin-top: -1px; }
+	/* line 126, static/ezpay/scss/main.scss */ #mainquickSet > ul > li:nth-child(2n) { border-right: 1px solid #ddd; } }
+
+@media (max-width: 991px) { /* line 116, static/ezpay/scss/main.scss */ #mainquickSet > ul > li { width: 33.33333%; }
+	/* line 132, static/ezpay/scss/main.scss */ #mainquickSet > ul > li:nth-child(3) { border-right: 1px solid #ddd; } }
+
+@media (min-width: 992px) { /* line 116, static/ezpay/scss/main.scss */ #mainquickSet > ul > li { width: 16.66666%; } }
+
+/* line 139, static/ezpay/scss/main.scss */ #mainquickSet > ul > li:last-child { border-right: 1px solid #ddd; }
+
+/* line 142, static/ezpay/scss/main.scss */ #mainquickSet > ul > li > a { display: block; font-size: 16px; font-weight: 400; line-height: 58px; text-align: center; letter-spacing: -1px; }
+
+/* line 144, static/ezpay/scss/main.scss */ #mainquickSet > ul > li > a img { display: inline-block; vertical-align: middle; margin-right: 10px; max-width: 28px; }
+
+/* line 185, static/ezpay/scss/main.scss */ #reservationSet { max-width: 1140px; margin: 0 auto; margin-bottom: 40px; }
+
+/* line 188, static/ezpay/scss/main.scss */ #reservationSet .ico { display: inline-block; vertical-align: top; margin-right: 12px; }
+
+/* line 192, static/ezpay/scss/main.scss */ #reservationSet .ico.ico1 { background: url(/static/ezpay/img/main/ico1.png) 0 0 no-repeat; width: 34px; height: 26px; }
+
+/* line 196, static/ezpay/scss/main.scss */ #reservationSet .ico.ico2 { background: url(/static/ezpay/img/main/ico2.png) 0 0 no-repeat; width: 38px; height: 26px; }
+
+/* line 202, static/ezpay/scss/main.scss */ #reservationSet .ctrl { display: block; border: 1px solid #cbceda; border-bottom: none; border-top: none; }
+
+/* line 76, static/ezpay/scss/_var.scss */ #reservationSet .ctrl:before, #reservationSet .ctrl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 207, static/ezpay/scss/main.scss */ #reservationSet .ctrl button { float: left; width: 50%; font-family: 'Noto Sans'; font-weight: 500; font-size: 18px; background-color: #f5f6fa; padding: 13px 0 19px; text-align: center; border-top: 1px solid #cbceda; border-bottom: 1px solid #cbceda; line-height: 26px; }
+
+@media (min-width: 768px) { /* line 207, static/ezpay/scss/main.scss */ #reservationSet .ctrl button { font-size: 22px; } }
+
+/* line 220, static/ezpay/scss/main.scss */ #reservationSet .ctrl button.on { background-color: #fff; border-top: 3px solid #399bda; border-bottom: none; }
+
+/* line 226, static/ezpay/scss/main.scss */ #reservationSet .ctrl button + button { border-left: 1px solid #cbceda; }
+
+/* line 230, static/ezpay/scss/main.scss */ .shapp { border: 1px solid #dedede; border-top: none; padding: 10px; }
+
+@media (min-width: 768px) { /* line 230, static/ezpay/scss/main.scss */ .shapp { padding: 10px; } }
+
+@media (min-width: 992px) { /* line 230, static/ezpay/scss/main.scss */ .shapp { padding: 30px; } }
+
+/* line 236, static/ezpay/scss/main.scss */ .shapp .step1 { display: block; margin: 0 -8px; }
+
+/* line 76, static/ezpay/scss/_var.scss */ .shapp .step1:before, .shapp .step1:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 239, static/ezpay/scss/main.scss */ .shapp .step1 label { display: block; float: left; margin: 4px 3px; width: calc((100% / 4) - 6px); }
+
+@media (min-width: 768px) { /* line 239, static/ezpay/scss/main.scss */ .shapp .step1 label { margin:4px; width: calc((100% / 9) - 8px); } }
+
+@media (min-width: 992px) { /* line 239, static/ezpay/scss/main.scss */ .shapp .step1 label { margin: 0 6px; width: calc((100% / 9) - 12px); } }
+
+/* line 252, static/ezpay/scss/main.scss */ .shapp .step1 label input { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+/* line 253, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span { border-width: 2px; border-color: #399bda; color: #399bda; }
+
+@media (min-width: 992px) { /* line 253, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span { border-width: 3px; font-weight: bold; } }
+
+
+
+/* line 261, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span:before { content: ''; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 10px solid #399bda; position: absolute; left: calc(50% - 7px); top: 0; }
+
+/* line 275, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i1:after { background-position: -3px   0; }
+
+/* line 276, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i2:after { background-position: -103px 0; }
+
+/* line 277, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i3:after { background-position: -207px 0; }
+
+/* line 278, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i4:after { background-position: -311px 0; }
+
+/* line 279, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i5:after { background-position: -414px 0; }
+
+/* line 280, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i6:after { background-position: -518px 0; }
+
+/* line 281, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i7:after { background-position: -621px 0; }
+
+/* line 282, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i8:after { background-position: -723px 0; }
+
+/* line 283, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i9:after { background-position: -840px 0; }
+
+/* line 284, static/ezpay/scss/main.scss */ .shapp .step1 label input:checked + span.i10:after { background-position: -951px 0; }
+
+/* line 284, static/ezpay/scss/main.scss */ .shapp .step1 label span { position: relative; display: block; border: 1px solid #dedede; border-radius: 10px; height: 100px; padding-top: 69px; text-align: center; font-size: 13px; line-height: 1.2; letter-spacing: -1.5px; font-family: 'Noto Sans'; font-weight: 500; color: #757575; }
+
+@media (min-width: 992px) { /* line 284, static/ezpay/scss/main.scss */ .shapp .step1 label span { font-size: 15px; } }
+
+/* line 298, static/ezpay/scss/main.scss */ .shapp .step1 label span:after { content: ''; background: url(/static/ezpay/img/common/shcateiconset.png) -3px -129px no-repeat; position: absolute; left: calc(50% - 42px); top: 0; width: 80px; height: 67px; }
+
+/* @media (max-width: 991px) { line 298, static/ezpay/scss/main.scss .shapp .step1 label span:after { background-image: url(/static/ezpay/img/common/shcateiconset@2x.png); background-size: 813px; } } */
+
+/* line 313, static/ezpay/scss/main.scss */ .shapp .step1 label span.i2:after { background-position: -103px -129px; }
+
+/* line 314, static/ezpay/scss/main.scss */ .shapp .step1 label span.i3:after { background-position: -207px -129px; }
+
+/* line 315, static/ezpay/scss/main.scss */ .shapp .step1 label span.i4:after { background-position: -311px -129px; }
+
+/* line 316, static/ezpay/scss/main.scss */ .shapp .step1 label span.i5:after { background-position: -414px -129px; }
+
+/* line 317, static/ezpay/scss/main.scss */ .shapp .step1 label span.i6:after { background-position: -518px -129px; }
+
+/* line 318, static/ezpay/scss/main.scss */ .shapp .step1 label span.i7:after { background-position: -621px -129px; }
+
+/* line 319, static/ezpay/scss/main.scss */ .shapp .step1 label span.i8:after { background-position: -723px -129px; }
+
+/* line 320, static/ezpay/scss/main.scss */ .shapp .step1 label span.i9:after { background-position: -840px -129px; }
+
+/* line 321, static/ezpay/scss/main.scss */ .shapp .step1 label span.i10:after { background-position: -951px -129px; }
+
+/* line 323, static/ezpay/scss/main.scss */ .shapp .step2 { margin: 0 -8px; margin-top: 10px; padding-top: 11px; background: url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x; background-position: 0 0; display: block; }
+
+@media (min-width: 992px) { /* line 323, static/ezpay/scss/main.scss */ .shapp .step2 { margin-top: 20px; padding-top: 21px; } }
+
+/* line 76, static/ezpay/scss/_var.scss */ .shapp .step2:before, .shapp .step2:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 333, static/ezpay/scss/main.scss */ .shapp .step2 button { float: left; margin: 0 3px 10px; width: calc((100% / 3) - 6px); border: 1px solid #399bda; text-align: center; border-radius: 10px; height: 50px; color: #399bda; font-size: 16px; }
+
+@media (min-width: 768px) { /* line 333, static/ezpay/scss/main.scss */ .shapp .step2 button { margin: 4px; width: calc((100% / 8) - 8px); } }
+
+@media (min-width: 992px) { /* line 333, static/ezpay/scss/main.scss */ .shapp .step2 button { width: calc((100% / 8) - 16px); } }
+
+/* line 350, static/ezpay/scss/main.scss */ .shapp .step2 button.active { background-color: #399bda; color: #fff; font-weight: bold; }
+
+/* line 359, static/ezpay/scss/main.scss */ .mainbottomSet { max-width: 1140px; margin: 0 auto; display: block; }
+
+/* line 76, static/ezpay/scss/_var.scss */ .mainbottomSet:before, .mainbottomSet:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+@media (max-width: 767px) { /* line 359, static/ezpay/scss/main.scss */ .mainbottomSet { margin-left: 5px; margin-right: 5px; } }
+
+@media (max-width: 991px) { /* line 366, static/ezpay/scss/main.scss */ .mainbottomSet > div { margin-bottom: 20px; } }
+
+@media (min-width: 1024px) { /* line 366, static/ezpay/scss/main.scss */ .mainbottomSet > div { float: left; width: calc((68.94736842105263% / 2) - 20px); } }
+
+@media (min-width: 1024px) and (min-width: 1140px) { /* line 366, static/ezpay/scss/main.scss */ .mainbottomSet > div { width: calc((68.94736842105263% / 2) - 40px); } }
+
+/* line 382, static/ezpay/scss/main.scss */ .mainbottomSet h2 { padding-bottom: 15px; line-height: 1; color: #495564; border-bottom: 2px solid #495564; font-size: 20px; }
+
+@media (min-width: 768px) { /* line 382, static/ezpay/scss/main.scss */ .mainbottomSet h2 { padding-bottom: 0; font-family: 'Noto Sans'; font-weight: 500; font-size: 25px; height: 59px; } }
+
+/* line 396, static/ezpay/scss/main.scss */ #telinfors { border-bottom: 1px solid #e5e6ec; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* line 396, static/ezpay/scss/main.scss */ #telinfors { margin-left: 10px; margin-right: 10px; } }
+
+@media (min-width: 1024px) { /* line 396, static/ezpay/scss/main.scss */ #telinfors { margin-right: 20px; } }
+
+@media (min-width: 1024px) and (min-width: 1140px) { /* line 396, static/ezpay/scss/main.scss */ #telinfors { margin-right: 40px; } }
+
+/* line 408, static/ezpay/scss/main.scss */ #telinfors ul { overflow: hidden; background: url(/static/ezpay/img/main/vdotline6.png) 50% 0 repeat-y; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* line 408, static/ezpay/scss/main.scss */ #telinfors ul { background: none; } }
+
+/* line 413, static/ezpay/scss/main.scss */ #telinfors li { float: left; width: 50%; margin-bottom: -1px; background: url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x; padding: 15px 5px 0 20px; min-height: 77px; color: #495564; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* line 413, static/ezpay/scss/main.scss */ #telinfors li { width: calc(100% / 4); background: url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x, url(/static/ezpay/img/main/vdotline6.png) 0 0 repeat-y; margin-left: -1px; } }
+
+/* line 429, static/ezpay/scss/main.scss */ #telinfors li span { display: block; }
+
+/* line 431, static/ezpay/scss/main.scss */ #telinfors li span.title { font-size: 18px; font-family: 'Noto Sans'; font-weight: 500; }
+
+/* line 435, static/ezpay/scss/main.scss */ #telinfors li span.telnumber { font-size: 16px; }
+
+/* line 439, static/ezpay/scss/main.scss */ #notice { position: relative; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* line 439, static/ezpay/scss/main.scss */ #notice { float: left; width: calc(50% - 15px); margin-left: 10px; } }
+
+/* line 446, static/ezpay/scss/main.scss */ #notice a.noticemore { background: url(/static/ezpay/img/main/noticemore.png) center center no-repeat; width: 40px; height: 40px; position: absolute; right: 0; top: 0; }
+
+@media (max-width: 767px) { /* line 446, static/ezpay/scss/main.scss */ #notice a.noticemore { width: 25px; height: 25px; background-size: contain; } }
+
+/* line 459, static/ezpay/scss/main.scss */ #notice li { border-bottom: 1px solid #e5e6ec; }
+
+/* line 461, static/ezpay/scss/main.scss */ #notice li a { display: block; display: block; }
+
+/* line 76, static/ezpay/scss/_var.scss */ #notice li a:before, #notice li a:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 464, static/ezpay/scss/main.scss */ #notice li a span { padding-top: 11px; padding-bottom: 12px; }
+
+/* line 468, static/ezpay/scss/main.scss */ #notice li a .txt { width: calc(100% - 100px); padding-left: 20px; float: left; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-size: 18px; font-family: 'Noto Sans'; font-weight: 400; color: #495564; }
+
+/* line 478, static/ezpay/scss/main.scss */ #notice li a .date { float: right; width: 100px; font-size: 16px; color: #495564; }
+
+/* line 488, static/ezpay/scss/main.scss */ div.popupZoneSet { position: relative; overflow: hidden; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* line 488, static/ezpay/scss/main.scss */ div.popupZoneSet { float: right; width: calc(50% - 15px); margin-right: 10px; } }
+
+/* line 497, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button { padding: 0; position: absolute; z-index: 10; bottom: 0; width: 50px; height: 50px; color: #fff; font-size: 24px; background-color: #495564; color: #bdc0c7; }
+
+/* line 502, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button.popupZoneStop { background: url(/static/ezpay/img/main/popupzonestop.png) 0 0 no-repeat; left: 51px; }
+
+/* line 506, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button.popupZonePlay { background: url(/static/ezpay/img/main/popupzoneplay.png) 0 0 no-repeat; left: 51px; }
+
+/* line 510, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button.popupZoneRt { left: 102px; }
+
+/* line 517, static/ezpay/scss/main.scss */ div.popupZoneSet .popupZone .items { float: left; width: 100%; }
+
+/* line 520, static/ezpay/scss/main.scss */ div.popupZoneSet .popupZone .items a { display: block; }
+
+/* line 521, static/ezpay/scss/main.scss */ div.popupZoneSet .popupZone .items img { width: 100%; }
+
+@media (min-width: 992px) { /* line 488, static/ezpay/scss/main.scss */ div.popupZoneSet { position: relative; overflow: hidden; float: right !important; width: 31.05263157894737%; }
+	/* line 530, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button { position: absolute; z-index: 10; bottom: 0; width: 50px; height: 50px; color: #fff; font-size: 24px; background-color: #495564; color: #bdc0c7; }
+	/* line 534, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button.popupZoneStop { background: url(/static/ezpay/img/main/popupzonestop.png) 0 0 no-repeat; left: 51px; }
+	/* line 538, static/ezpay/scss/main.scss */ div.popupZoneSet .ctrl button.popupZoneRt { left: 102px; }
+	/* line 545, static/ezpay/scss/main.scss */ div.popupZoneSet .popupZone .items { float: left; max-width: 354px; } }
+
+/* line 554, static/ezpay/scss/main.scss */ .emergency_box { display: none; margin: 0 auto; position: absolute; max-width: 1140px; left: 0; right: 0; background-color: #fff; z-index: 999; border: 1px solid #dbdbdb; }
+
+/* line 564, static/ezpay/scss/main.scss */ .emergency_box.on { display: block; }
+
+/* line 565, static/ezpay/scss/main.scss */ .emergency_box .em_head { height: 54px; border-bottom: 2px solid #061d45; padding-left: 39px; }
+
+/* line 569, static/ezpay/scss/main.scss */ .emergency_box .em_head strong { background: url("/static/portal/img/common/bu1.png") 0 0 no-repeat; padding-left: 20px; font-size: 22px; font-family: 'Noto Sans'; font-weight: 400; line-height: 1; margin: 40px 0 20px; color: #061d45; background-position: 0 center; font-weight: 500; color: #061d45; line-height: 54px; }
+
+@media (max-width: 767px) { /* line 569, static/ezpay/scss/main.scss */ .emergency_box .em_head strong { background-image: url("/static/portal/img/common/bu1@2x.png"); background-size: 10px 21px; } }
+
+/* line 577, static/ezpay/scss/main.scss */ .emergency_box .em_btn_close { background: #061d45 url(/static/portal/img/main/btn-lpopclose.png) center center no-repeat; width: 54px; height: 54px; position: absolute; right: 0; top: 0; }
+
+/* line 590, static/ezpay/scss/main.scss */ .emergency_box .em_cont { overflow: hidden; padding: 10px; padding: 10px 19px 20px 1px; }
+
+@media (min-width: 768px) { /* line 590, static/ezpay/scss/main.scss */ .emergency_box .em_cont { padding: 38px; } }
+
+/* line 597, static/ezpay/scss/main.scss */ .emergency_box .em_cont > div { background: url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x; padding: 20px 0; overflow: hidden; clear: both; }
+
+/* line 598, static/ezpay/scss/main.scss */ .emergency_box .em_cont > div:last-child { background: none; }
+
+/* line 599, static/ezpay/scss/main.scss */ .emergency_box .em_cont strong { width: 140px; height: 140px; padding: 28px 0  0 0; display: block; background: url(/static/portal/img/main/icobg.png) center center no-repeat; text-align: center; font-size: 15px; color: #0059a9; margin: 0 auto 20px; }
+
+@media (min-width: 768px) { /* line 599, static/ezpay/scss/main.scss */ .emergency_box .em_cont strong { margin: 0; float: left; } }
+
+/* line 614, static/ezpay/scss/main.scss */ .emergency_box .em_cont strong:before { content: ''; width: 40px; height: 40px; display: block; background: url(/static/portal/img/main/icon01.png) center center no-repeat; margin: 0 auto 7px; }
+
+/* line 624, static/ezpay/scss/main.scss */ .emergency_box .em_cont > div:first-child + div strong:before { background-image: url(/static/portal/img/main/icon02.png); }
+
+/* line 625, static/ezpay/scss/main.scss */ .emergency_box .em_cont > div:first-child + div + div strong:before { background-image: url(/static/portal/img/main/icon03.png); }
+
+/* line 626, static/ezpay/scss/main.scss */ .emergency_box .em_cont > div:first-child + div + div + div strong:before { background-image: url(/static/portal/img/main/icon04.png); }
+
+@media (min-width: 768px) { /* line 627, static/ezpay/scss/main.scss */ .emergency_box .em_cont ul { float: right; width: calc(100% - 140px); padding-left: 10px; } }
+
+/* line 634, static/ezpay/scss/main.scss */ .emergency_box .em_cont li { float: left; margin: 0 0 10px 19px; width: calc(50% - 19px); }
+
+@media (min-width: 768px) { /* line 634, static/ezpay/scss/main.scss */ .emergency_box .em_cont li { width: calc(100% / 3 - 19px); } }
+
+@media (min-width: 992px) { /* line 634, static/ezpay/scss/main.scss */ .emergency_box .em_cont li { width: calc(25% - 19px); } }
+
+/* line 645, static/ezpay/scss/main.scss */ .emergency_box .em_cont li.line2 { width: calc(100% - 19px); }
+
+@media (min-width: 992px) { /* line 645, static/ezpay/scss/main.scss */ .emergency_box .em_cont li.line2 { width: calc(50% - 19px); } }
+
+/* line 649, static/ezpay/scss/main.scss */ .emergency_box .em_cont li a { display: block; height: 40px; border: 1px solid #dedede; position: relative; line-height: 38px; padding-left: 17px; padding-right: 20px; letter-spacing: -1px; }
+
+/* line 658, static/ezpay/scss/main.scss */ .emergency_box .em_cont li a:before { content: '\f054'; display: inline; font-family: 'FontAwesome'; position: absolute; right: 19px; top: 0; font-size: 9px; }
+
+/* line 667, static/ezpay/scss/main.scss */ .emergency_box .em_cont li a:hover, .emergency_box .em_cont li a:focus { color: #0059a9; }
+
+@media (max-width: 767px) { /* line 649, static/ezpay/scss/main.scss */ .emergency_box .em_cont li a { font-size: 15px; padding: 0 0 0 10px; text-align: center; }
+	/* line 673, static/ezpay/scss/main.scss */ .emergency_box .em_cont li a:before { display: none; } }
+
+/*# sourceMappingURL=main.css.map */

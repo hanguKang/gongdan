@@ -1,0 +1,384 @@
+.datepicker{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	background-clip: padding-box;
+	@include breakpoint($smd){
+		display:none !important;
+	}
+}
+.shdetailset{
+	.detailon &{display:block;}
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	padding:18px;
+	width:calc(100% + 2px);
+	left:-1px;
+	bottom:-100px;
+	border:2px solid #e0e1e4;
+	text-align:right;
+	z-index:1;
+	@include breakpoint($sm){
+		text-align:left;
+		position:static;
+		padding:10px;
+		margin-top:10px;
+
+	}
+	.b-sh{
+		&:before {content: '';font-family:'FontAwesome';display:inline-block;margin-right:10px; }
+	}
+}
+.shDate{
+	display:block;margin-bottom:5px;
+	// line-height:0;
+	font-size:0;
+	span{display:inline-block;width:20px;text-align:center;font-size:12px;}
+}
+.sdate,
+.edate{
+	// text-align:right;
+	// width:120px;
+	width: calc(50% - 10.5px);
+	padding-left:5px;
+	text-indent:0;
+	background:#fff url(/static/commons/img/icodate.png) right center no-repeat;
+	background-size:auto 13px;
+	font-size:15px;
+	@include breakpoint($sm){
+		
+	}
+}
+.sh{
+	position:relative;
+	background-color:#f0f2f7;
+	padding:15px;
+	@include breakpoint($md){
+	padding:19px;
+	}
+	.set{
+		display:table;
+		width:100%;
+		>*{
+			display:block;
+			padding:5px 0;
+			vertical-align:middle;
+			@include breakpoint($sm){
+				padding:0;
+				margin:5px 0;
+				&.btn,
+				&.total{display:inline;margin-right:5px;
+					button{
+						padding-left:14px;
+						padding-right:14px;
+					}
+				}
+
+			}
+			@include breakpoint($md){
+				vertical-align:top;
+				display:table-cell;
+				padding:0 1px;
+				&.shDate{
+					span{width:20px;}
+					.sdate,
+					.edate{
+						width: calc(50% - 10.5px);
+					}
+				}
+			}
+		}
+		>span>*{
+			@include breakpoint($md){
+				width:100%;
+			}
+		}
+	}
+	&.line .set{
+		.select{width:auto;select{width:auto;min-width:120px;margin-left:10px;}}
+	}
+	.select{
+		@include breakpoint($md){
+			width:150px
+		}
+	}
+	.keyword{
+		input[type=text]{width:100%;}
+	}
+	.btn{
+		// width:100%;
+		@include breakpoint($md){
+			width:100px;
+		}
+	}
+	.total{width:100px;}
+	.b-detail{
+		/* &:after {
+			content: '';font-family:'FontAwesome';position:absolute;
+		}
+		&.on:after{
+			transform:rotate(180deg);
+		} */
+	}
+	&.multi{
+		.set{
+			>.title{
+				@include breakpoint($md){
+					width:100px;
+					line-height:40px;
+					text-align:center;
+				}
+			}
+			>.select {
+				@include breakpoint($md){
+					max-width:120px;
+					width:auto;
+					width:12%;
+				}
+				select{width:100%;}
+			}
+			>.wa{
+				input{
+					width:auto;
+				}
+			}
+			&+.set{
+				margin-top:5px;
+			}
+
+			.chklist{
+				line-height:40px;
+				label{
+					display:block;width:50%;float:left;
+					@include breakpoint($md){
+						display:inline-block;width:auto;float:none;
+						min-width:140px;
+					}
+					@include breakpoint($xl){
+						min-width:inherit;
+						&+label{margin-left:5px;}
+					}
+				}
+			}
+			&.selectlist{
+				@include breakpoint($md){
+					width:auto;
+					>select+.title{padding-left:20px;width:auto;padding-right:20px;}
+
+				}
+			}
+		}
+	}
+	&.type-radio{
+		position:relative;
+		label{
+			display:block;
+			position:relative;
+			padding-left:30px;
+			input{position:absolute;left:0;top:3px;}
+		}
+		.btn{
+			width:auto;
+			display:block;
+			margin-top:10px;
+			text-align:center;
+			.b-sh{width:130px;}
+		}
+		@include breakpoint($md){
+			.s{
+				overflow:hidden;
+				label{
+					float:left;width:50%;
+				}
+			}
+		}
+		@include breakpoint($xl){
+			.s{
+				padding-right:120px;
+				margin-bottom:-3px;
+				label{margin-bottom:3px;}
+			}
+			.btn{
+				position:absolute;
+				right:20px;
+				top:50%;
+				margin-top:-20px;
+			}
+		}
+	}
+}
+.type-e1{
+	@extend .sh;
+	// 바뀐 지번 찾기
+	@include breakpoint($sm){
+		>div>div>label{
+			display:block;
+			padding-left:25px;
+			position:relative;
+			input[type=radio]{
+				position:absolute;
+				left:0;
+			}
+
+		}
+		>div{@include clearfix();}
+		>div>
+		label{
+			display:block;
+			position:relative;
+			min-height:44px;
+			line-height:44px;
+			input[type=text]{
+				position:absolute;
+				right:0;
+				top:0;
+				width:calc(100% - 80px);
+			}
+		}
+		button.b-sh{}
+	}
+	@include breakpoint($md){
+		input[type=text]{width:120px;}
+	}
+
+}
+
+.sh-1{
+	@extend .sh;
+	@include breakpoint($md){
+		.select{
+			width:15%;
+		}
+	}
+}
+.sh-2{
+	@extend .sh;
+	@include breakpoint($md){
+		.select{
+			width:40%;
+			position:relative;
+			select{
+				float:left;
+				width:calc(50% - 1px);
+			}
+			select+select{margin-left:2px;}
+		}
+	}
+}
+.sh-facilities{
+	@extend .sh;
+	.set{
+		.title{
+			display:none;
+			@include breakpoint($md){
+				display:table-cell;
+				width:83px;
+				vertical-align:middle;
+			}
+		}
+		.labelList{
+			line-height:40px;
+			margin-top:-10px;
+			@include breakpoint($md){
+				margin-top:0;
+			}
+			label{
+				white-space:nowrap;
+				min-width:102px;
+				input{margin-right:8px;}
+				@include breakpoint($md){
+					margin-right:22px;
+					&:last-child{margin-right:0;}
+				}
+			}
+		}
+		&+.set{
+			margin-top:5px;
+			@include breakpoint($md){
+				margin-top:10px;
+			}
+		}
+	}
+}
+.sh-s{
+	@extend .sh;
+	.set{
+		width:auto;
+		@include breakpoint($sm){
+			.select{
+				display:inline-block;
+				margin:0 5px;
+				vertical-align:top;
+			}
+		}
+		>*{}
+	}
+}
+
+.sh-cal{background:$color_blue;padding:5px 10px;overflow:hidden;
+	.set{float:none;text-align:center;
+		select{width:90px}
+		.btn .b-cal{background:#5e5f64;color:#fff;text-align:center;}
+		@include breakpoint($md){
+			float:right;
+			select{width:120px}
+		}
+	}
+	.cal-type{float:none;text-align:center;padding:5px 0;font-size:18px;font-family:"Noto-Regular";
+		@include breakpoint($md){
+				float:left;text-align:left;margin-left:20px;
+			}
+		span{display:inline-block;margin-left:10px;color:#fff;}
+		.t1{
+			&:before {
+				font-size:17px;
+				content:"\f073";
+				font-family:'FontAwesome';
+				padding-right:5px;
+			}
+		}
+		.t2{
+			&:before {
+				font-size:17px;
+				content:"\f19c";
+				font-family:'FontAwesome';
+				padding-right:5px;
+			}
+		}
+	}
+	.cal-date{float:none;text-align:center;color:#fff;
+		@include breakpoint($md){
+				float:left;text-align:left;padding:2px 0 0 20px;
+			}
+		span{font-size:19px;display:inline-block;padding:0 10px;}
+		.cal-prev{
+			&:before {
+				font-size:13px;
+				content:"\f053";
+				font-family:'FontAwesome';
+				color:#fff;	
+			}
+		}
+		.cal-next{
+			&:before {
+				font-size:13px;
+				content:"\f054";
+				font-family:'FontAwesome';
+				color:#fff;	
+			}
+		}
+	}
+}

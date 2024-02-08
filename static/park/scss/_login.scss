@@ -1,0 +1,219 @@
+.loginSet{
+	margin-bottom:20px;
+	h2{font-size:18px;color:#fff;padding:22px 0;text-align:center;}
+	>*>*{
+		border:1px solid $bdcolor;
+		@include breakpoint($lg){
+			min-height:540px;
+		}
+	}
+	.memberLogin{
+		h2{background-color:#424f88;}
+		i{
+			display:block;
+			background: url(/static/portal/img/sub/login-i1.png) center 38px no-repeat;
+			height:108px;
+		}
+		.set{
+			position:relative;
+			padding:0 0 30px 0;
+			margin:0 30px 0 30px;
+			position:relative;
+			@include breakpoint($md){
+				padding-right:130px;
+			}
+			span{
+				position:relative;
+				display:block;
+				margin-bottom:5px;
+				overflow:hidden;
+				padding-left:74px;
+				label{
+					position:absolute;
+					left:0;
+					padding:0;
+					width:74px;
+					line-height:30px;
+				}
+				input{
+					width:100%;
+					height:30px;
+					text-indent:10px;
+				}
+			}
+			>input{
+				width:100%;
+				height:50px;
+				@include breakpoint($md){
+					position:absolute;
+					right:0;
+					top:0;
+					width:120px;
+					height:65px;
+				}
+				color:#fff;
+				background-color:#424f88;
+				border:none;
+
+			}
+		}
+	}
+	.loginAdm{
+		padding-top:20px;
+		border-top:1px solid $bdcolor;
+		margin:0 20px;
+		h3{
+			font-size:18px;
+		}
+		ul{
+			@include clearfix();
+			text-align:center;
+			margin:0 -10px;
+			li{
+				border:1px solid $bdcolor;
+				padding:10px;
+				margin-bottom:5px;
+				@include breakpoint($md){
+					float:left;
+					margin:10px 2%;
+					width:46%;
+					padding:10px;
+				}
+				p{
+					margin-bottom:5px;
+					font-size:14px;
+				}
+				a{
+					padding:13px 18px;
+					line-height:1;
+					display:inline-block;
+					background-color:#6e7aa9;
+					color:#fff;
+				}
+			}
+		}
+	}
+	.nonememberLogin{
+		h2{background-color:#7b7f90;}
+		.set{
+			padding:0 20px;
+			.t{
+				margin:20px 0;
+				font-family:'Noto Sans';font-weight: 300;
+			}
+			.aggr{
+				overflow:hidden;
+				margin-bottom:20px;
+				padding-right:10px;
+				label{
+					font-size:18px;
+					padding:9px 0;
+					float:left;
+				}
+				a{
+					float:right;
+					width:130px;
+					background-color:#7d7f8b;
+					text-align:center;
+					color:#fff;
+					padding:13px 0;
+					line-height:1;
+				}
+			}
+			.phone,
+			.ipin{
+				padding:10px 10px 10px 76px;
+				background:#f1f3f6 url(/static/portal/img/sub/login-phone.png) 30px center no-repeat;
+				background-size:27px;
+				margin-bottom:10px;
+				@include clearfix();
+				.s{
+					float:left;
+					h3{
+						font-size:18px;
+						
+						margin-top:8px;
+						margin-bottom:2px;
+					}
+					p{
+						letter-spacing:-1px;						
+					}
+				}
+				
+				button{
+					float:right;
+					width:77px;
+					height:65px;
+					background-color:#5e5f64;
+					text-align:center;
+					color:#fff;
+				}
+			}
+			.ipin{
+				background-image:url(/static/portal/img/sub/login-ipin.png);
+				background-size:41px;
+				background-position:20px center;
+			}
+			.sns{
+				padding:20px 10px 25px 30px;
+				background-color:#f1f3f6;
+				@include clearfix;
+				.s{
+					float:left;
+					h3{}
+				}
+				.snsWrap{
+					float:right;
+					a{}
+				}
+			}
+			.onepass{
+				margin-top:30px;
+				h3{
+					font-size:18px;
+					
+				}
+				p.t{
+					margin:20px 0;
+				}
+				button{
+					width:290px;
+					padding:18px 0;
+					text-align:center;
+					background-color:#5e5f64;
+					color:#fff;
+				}
+				.t2{
+					margin-top:20px;
+					color:#ee7d5e;
+				}
+			}
+		}
+	}	
+}
+.t-star{
+	text-indent:-18px;
+	padding-left:18px;
+	color:#f76627;
+}
+.snsWrap{
+	a{
+		float:left;margin-left:4px;
+		width:45px;
+		height:45px;
+		background-repeat:no-repeat;
+		background-size:45px;
+		&.sns-naver{
+			background-image:url(/static/portal/img/common/sns-naver.png);
+		}
+		&.sns-facebook{
+			background-image:url(/static/portal/img/common/sns-facebook.png);
+		}
+		&.sns-google{
+			background-image:url(/static/portal/img/common/sns-google.png);
+		}
+		&.sns-kakaotalk{
+			background-image:url(/static/portal/img/common/sns-kakao.png);
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./footer.scss ../css/footer.css --output-style compact --source-comments --source-map-root file://${PWD}/ --source-map-embed true"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

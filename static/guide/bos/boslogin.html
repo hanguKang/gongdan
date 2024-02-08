@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title> UCMS 관리자페이지 로그인</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="/static/jslibrary/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/static/bos/css/bossub.css" />
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/bootstrap/js/bootstrap.js"></script>
+<script src="/static/jslibrary/bootstrap/respond.min.js"></script>
+<script src="/static/jslibrary/jquery-ui/jquery-ui.js"></script>
+<script src="/static/jslibrary/jquery.maskedinput.min.js"></script>
+<script src="/static/jslibrary/jquery.cookie.js"></script>
+<!-- <script src="/static/jslibrary/base64.js"></script> -->
+<script src="/static/jslibrary/miya_validator.js"></script>
+<script src="/static/bos/js/boscommon.js"></script>
+<script src="/static/commons/commons.js"></script>
+<script src="/static/jslibrary/ssl.js"></script>
+</head>
+<body class="login">
+	<script>
+	$(function(){
+		var linkgo=$(".bg_mng_main li a");
+		linkgo.each(function(){
+		$(this).bind('click' , function(){
+			var imgo = $('.bg_mng_main li').find('a');
+			var imgo2 = $('.bg_mng_main').find('div');
+			imgOff(imgo);
+			imgOn($(this));
+			var linkgo2 = $(this).parent().index();
+			$(imgo2).removeClass("on");
+			$(imgo2[linkgo2]).addClass("on");
+			return false;
+			});
+		});
+		var val = $.cookie('username');
+		if( val ) {
+			$("#username").val(val);
+			$("#_spring_security_remember_me").attr("checked",true);
+		}
+	});
+	function saveid(form) {
+		if ($("#username").val() == "") {
+			alert("아이디를 입력 하신 후 체크해주세요.");
+			$("#username").focus();
+			return;
+		}
+		if ($("#_spring_security_remember_me").is(":checked")){
+			$.cookie('username', form.username.value, { expires: 300 });
+		} else {
+			$.cookie('username', "", { expires: 300 });
+		}
+	}
+	function actionLogin2()
+	{
+		var form = document.loginForm;
+		var v = new MiyaValidator(form);
+		v.add("username", {
+			required: true
+		});
+		v.add("password", {
+			required: true
+		});
+		var result = v.validate();
+		if (!result) {
+			alert(v.getErrorMessage());
+			v.getErrorElement().focus();
+			return;
+		}
+		else
+		{
+			saveid(form);
+			form.submit();
+		}
+	}
+</script>
+<div id="header_wrap">
+	<div class="header">
+		<h1><img src="http://192.168.0.23:8143/cmmn/file/imageSrc.do?fileStreCours=501a6b771f794238907b9c8bcf393f74&amp;streFileNm=0d168da5692cb40a94faf6a1990316bcb2fa694870fdd576e19e9940600dca11" alt="관리자"></h1>
+	</div>
+</div>
+<form name="loginForm" action ="/bos/member/admin/toLogin.do" method="post">
+<input type="hidden" name="siteName" value="bos" />
+<input type="hidden" name="loginFlag" value="" />
+	<div class="bg_mng_main">
+		<!-- <p class="logo"><img src="/static/bos/img/logo.png" alt="UCMS" /></p> -->
+		<h1 class="titles"><img src="/static/bos/img/login-title.png" alt="login"></h1>
+		<div class="tab2_main on">
+			<div>
+				<label for="username">아이디</label>
+				<input id="username" name="username"  type="text"  value="" title="아이디" class="poab01">
+			</div>
+			<div>
+				<label for="password">비밀번호</label>
+				<input autocomplete="off" name="password" type="password"  value="" title="비밀번호" onkeydown="javascript:if (event.keyCode == 13) { actionLogin2(); }" class="poab02">
+			</div>
+			<div class="idsave">
+				<label for="_spring_security_remember_me"><input type="checkbox" name="_spring_security_remember_me" id="_spring_security_remember_me" value="true"> ID저장</label>
+			</div>
+			<a href="javascript:actionLogin2();" class="poab03"><img src="/static/bos/img/btn_mnglogin.png" alt="로그인"></a>
+			<!--가상키보드 실행 버튼 생성태그 -->
+			<span id="usafeon_passwd" class="poab05"></span>
+			<!--//가상키보드 실행 버튼 생성태그 -->
+		</div>
+	</div>
+<p></p>
+</form>
+<div id="footer">
+		<p><strong>유-씨엠에스 v2.0 (U-CMS v2.0)</strong></p>
+		<p >[08301]서울 구로구 가마산로25길 9-9 (구로동)  KM타워 3층,9층 (주)유앤피플 , TEL : 02)0000-0000 </p>
+		<em>Copyright 2016. UNPEOPLE all rights reserved.</em>
+</div>
+<!--[if lte IE 7]>
+<script>
+//<![CDATA[
+	$('*').each(function(index) {
+		if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+		if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+	});
+//]]>
+</script>
+<![endif]-->
+</body>
+</html>

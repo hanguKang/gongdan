@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" href="/static/font/NotoSans/notosans.css">
+<link rel="stylesheet" href="/static/font/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/font/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="/static/font/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a aria-selected="true" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>menu1</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+
+<h2>기타안내</h2>
+<div class="table">
+<table>
+	<caption> 회원규정 </caption>
+	
+	<thead>
+		<tr>
+			<th style="width: 15%"> 구분</th>
+			<th> 회원규정</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<th > 회원등록</th>
+			<td class="tal">- 기존회원: 재등록기간(15~25일) 매월/신규회원: 매월 27일~익월7일/중간등록: 08일~25일<br>
+				<b>※ 특이사항</b><br>
+				- 기존회원은 현재 이용 중인 회원을 말함(중간 퇴회자 신규접수기간 접수)<br>
+				- 헬스종목은 내부방침에 따라 중간접수 가능함(사전문의 필)<br>
+				<b>접수기간은 공휴일, 휴일 등의 사유로 변동될 수 있음</b></td>
+		</tr>
+		<tr>
+			<th > 기타</th>
+			<td class="tal">- 락카키 분실금(5,000원) / 회원카드 분실금(1,000원) 배상<br>
+				- 사물함 보증금(10,000원) / 사용료(2,000원)<br>
+				<b>※ 사물함 보증금은 현금선불(카드불가)이며, 장기연체 시 임의회수 처리(75일)</b></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>환불 규정<span> - 소비자분쟁해결기준(공정거래위원회 고시 제2016-15호)</span></h2>
+<div class="table w">
+<table>
+	<caption> 세부사항 </caption>
+	<thead>
+		<tr>
+			<th colspan="2" > 세부사항</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<th style="width: 15%"> 프로그램<br> 개시일 이전</th>
+			<td class="tal"><b>- 프로그램 개시일(1일) 이전</b> 계약해지 시 납입요금 <b>전액 환불</b><br>
+				<b>※수납시간: 평일 06:00~21:00 / 토요일 09:00~17:00 / 일, 공휴일 접수 불가</b></td>
+		</tr>
+		<tr>
+			<th > 프로그램<br> 개시일 이후</th>
+			<td class="tal">① (주 3회 이상 강습 프로그램) 일자계산처리<br>
+				<b>환불액: 수강료-[개시일부터 해지일까지 일수X(납입요금/30일)] - 환불수수료(납입금액의 10%)</b><br>
+				② (주 2회 이하 강습 프로그램) 횟수계산처리<br>
+				<b>환불액: 수강료-[이용횟수X(수강료/총 이용횟수)] - 환불수수료(납입금액의 10%)</b></td>
+		</tr>
+		<tr>
+			<th> 특　　례</th>
+			<td class="tal">- 자연재해, 사고 등 불가항력적 사유 발생 시 위약금 공제 없이 일자계산 후 환불<br>
+				(개인적 사고 포함되지 않음)<br>
+				※ 위 경우에 해당되며, 진단서 및 입원확인서 제출 시 적용 </td>
+		</tr>
+		<tr>
+			<th > 구비서류</th>
+			<td class="tal">환불신청서(본인 및 대리인 자필작성) / 통장사본 </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h2>할인제도(중복할인 불가) <span>※ 증빙서류는 생년월일만(주민번호 뒷자리 미포함) 표기된 것으로 지참</span></h2>
+<div class="table">
+
+<table>
+	<caption> 할인제도 </caption>
+		<thead>
+			<tr>
+				<th style="width: 15%"> 구분</th>
+				<th style="width: 25%"> 할인구분</th>
+				<th style="width: 10%"> 할인율</th>
+				<th > 제출서류 및 대상자 기준</th>
+			</tr>
+		</thead>
+	<tbody>
+		<tr>
+			<th  rowspan="10"> 특별<br>
+				할인</th>
+			<td >6개월 할인<br>
+				(장기할인)</td>
+			<td> 5%</td>
+			<td class="tal">- <b>6개월 단위 이상</b> 등록 시(등록시 바로 처리) </td>
+		</tr>
+		<tr>
+			<td >3개월 할인<br>
+				(사물함 무료)</td>
+			<td></td>
+			<td class="tal">- 1개월 단위의 헬스이용료 <b>3개월 등록 시 사용 중인 사물함 무료</b></td>
+		</tr>
+		<tr>
+			<td >가족할인<br>
+				(2촌 이내의 가족 2인 이상)</td>
+			<td> 5%</td>
+			<td class="tal"><p> - 2촌 이내의 가족 2인 이상 등록 시 할인<br>
+					<b>3개월 이내의 등본 또는 가족관계증명서</b><br>
+					<b>2인 모두 동일한 수강 월에 한하여 할인 적용</b></p>
+				<p> <b> (중간등록해당 안 됨)</b><br>
+					 가족관계 서류 해당월 15일전까지 제출 후 할인</p>
+				<p>  (선할인 적용 불가) </p></td>
+		</tr>
+		<tr>
+			<td >대학생할인</td>
+			<td> 17%</td>
+			<td class="tal">- 국내 대학교 <b>해당학기 재학증명서</b> + 신분증<br>
+				매년 3, 9월 관련서류 제출 필수 </td>
+		</tr>
+		<tr>
+			<td >경로우대할인</td>
+			<td> 20%</td>
+			<td class="tal">- 신분증, 만 65세 이상(신분증상 생일 해당 월 익월부터 적용) </td>
+		</tr>
+		<tr>
+			<td >체육시설을 이용하는<br>
+				200시간 이상 봉사자 할인</td>
+			<td> 30%</td>
+			<td class="tal">- 신분증 및 <b>자원봉사실적확인서, 자원봉사증</b> 접수 시 제출<br>
+				(성북구 자원봉사 활동지원 조례 제 16조 근거) </td>
+		</tr>
+		<tr>
+			<td >다둥이카드할인<br>
+				(만 18세 이하의 3자녀)</td>
+			<td> 50%</td>
+			<td class="tal">
+				- <b>다둥이카드 + 해당 월의 등본 + 신분증 등록 시 제출</b><br>
+				 <b>다둥이카드</b> 소지자 및 자녀 모두 성북구민<br>
+				<b>만 18세 이하의 자녀가 3인 이상인 자 및 그 자녀에 한함</b><br>
+				- 매년 3, 6, 9, 12월 마다 관련 서류 제출 필수 </td>
+		</tr>
+		<tr>
+			<td >국가유공자(배우자)할인<br>
+				(단, 유족증은 본인만 해당)</td>
+			<td> 50%</td>
+			<td class="tal">- 유공자증과 신분증 접수 시 제출, 배우자(유공자증, 배우  자본인신분증, 3개월 이내의 가족관계증명서 또는 등본) </td>
+		</tr>
+		<tr>
+			<td >장애인<br>
+				(3급 이상 동반자 포함)</td>
+			<td> 50%</td>
+			<td class="tal"><p> - 복지카드와 신분증 등록 시 제출 </p>
+				<p>  (단, 3급이상 동반자 할인은 장애3급 동반 등록 시</p>
+				<p>  할인 가능함)</p></td>
+		</tr>
+		<tr>
+			<td >국민기초생활수급자할인</td>
+			<td> 100%</td>
+			<td class="tal"><p> - 국민기초생활수급자 또는 그 가족</p>
+				<p>  (성북구에 주소를 둔 자에 한함), </p>
+				<p>  수급자증명서(성북구도시관리공단 내 1인/1종목에 한함) </p></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+<p class="color_red">※ 타 회원에게 불폄함을 초래하거나 공공질서 문란 시 회원자격이 상실됩니다.</p>
+			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

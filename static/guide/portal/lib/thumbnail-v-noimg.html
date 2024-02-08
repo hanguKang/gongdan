@@ -1,0 +1,93 @@
+<div class="thumnailViewSet">
+	<div class="left">
+		<div class="itemlist owl-carousel">
+			<div class="item"  data-hash="1"><span class="noimg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora ex, facere totam vel nesciunt pariatur esse dicta aperiam aliquam impedit molestias iure dolore id nemo, explicabo officia mollitia. Repellat.</span></div>
+			<div class="item"  data-hash="2">2<span class="noimg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora ex, facere totam vel nesciunt pariatur esse dicta aperiam aliquam impedit molestias iure dolore id nemo, explicabo officia mollitia. Repellat.</span></div>
+		</div>
+		<div class="thumCtrl">
+			<div class="ctrl">
+				<button type="button" class="pop-prev"><span class="sr-only">이전 팝업존</span></button>
+				<button type="button" class="pop-next"><span class="sr-only">다음 팝업존</span></button>
+			</div>
+			<div class="thumCtrlList owl-carousel">
+				<div class="item"  data-current="1"><a href="#1"><span class="noimg"></span></a></div>
+				<div class="item"  data-current="1"><a href="#2"><span class="noimg"></span></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<h2 class="subject">20170308 지방정부협의회 간담회</h2>
+		<ul class="list">
+			<li><em>장소 :</em> ○○○청</li>
+			<li><em>일시 :</em> 2017-03-08</li>
+			<li><em>주제 :</em> 지방정부협의회 간담회</li>
+			<li><em>장소 :</em> ○○○청</li>
+			<li><em>일시 :</em> 2017-03-08</li>
+			<li><em>주제 :</em> 지방정부협의회 간담회</li>
+		</ul>
+	</div>
+</div>
+<script>
+	var _opner;
+	function thumnailViewSetting(argument) {
+		var thumnailView = $('.itemlist');
+		thumnailView.owlCarousel({
+			items: 1,
+			loop: false,
+			nav: false,
+			dots: false,
+			margin: 10,
+			autoplay: false,
+			URLhashListener:true,
+			autoplayHoverPause:false,
+			startPosition: 'URLHash'
+		});
+		var thumnailViewCtrl = $('.thumCtrlList');
+		thumnailViewCtrl.owlCarousel({
+			margin:10,
+			// loop:true,
+			autoWidth:true,
+			items:1
+
+		});
+		$('.pop-prev').click(function(event) {
+			thumnailViewCtrl.trigger('prev.owl.carousel');
+		});
+		$('.pop-next').click(function(event) {
+			thumnailViewCtrl.trigger('next.owl.carousel');
+		});
+
+		$('.owl-item').not('.cloned').find("a[rel^='prettyPhoto[pp_gal]']").prettyPhoto({
+			social_tools:false
+		}).click(function(event) {
+			_opner=$(this)
+			$('.pp_pic_holder').focus();
+		});
+	}
+	thumnailViewSetting();
+	$(function() {
+		$(".thumCtrlList img:first").one("load", function() {
+			thumnailViewSetting();
+		}).each(function() {
+			if(this.complete) $(this).load();
+		});
+	});
+</script>
+<div class="dbData2">
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다. <br>
+상세내용이 표시됩니다.
+</div>
+<div class="btnSet">
+	<a href="" class="b-list">목록</a>
+</div>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script>
+	
+</script>

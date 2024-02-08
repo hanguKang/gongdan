@@ -1,0 +1,250 @@
+.thumnailViewSet{
+	overflow:hidden;
+	position:relative;
+	@include clearfix();
+	.noimg{
+		// display:block;
+		// width:100px;
+		height:100px;
+		// border:1px solid #000;
+		background-color:#fff;
+		min-width:140px;
+		&:before {
+			content: '';
+			display:block;
+			height:0;
+			padding-top:60%;
+			
+		}
+	}
+	.thumCtrl{
+		.noimg{background-size:80px;}
+	}
+	.left{
+		@include breakpoint($md){
+			float:left;
+			width:40%;
+		}
+		.active a{
+			display:block;
+			// display: flex;
+			// flex-direction: row;
+			// justify-content: center;
+			// align-items: center;
+			border:1px solid $bdcolor;
+			display:inline-block;
+			height:100%;
+			display:block;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			display:table;
+			span{
+				display:table-cell;
+				vertical-align:middle;
+				// border:1px solid #000;
+			}
+			img{
+				// width:auto;
+				width:100%;
+				// max-width:100%;
+				// display:inline-block;
+				// display:inline !important;
+				vertical-align:middle;
+				// border:1px solid #000;
+			}
+		}
+		.itemlist .active a{
+			@include breakpoint($xl){
+				// min-height: 258px;
+			}
+		}
+		.thumCtrl{
+			position:relative;
+			padding:0 40px;
+			margin:10px 0;
+			@include breakpoint($md){
+				margin:0;
+				width:56%;
+				position:absolute;
+				right:0;
+				bottom:0;
+			}
+			.pop-prev,
+			.pop-next{
+				position:absolute;
+				top:50%;
+				font-size:36px;
+				line-height:1;
+				padding:0;
+				margin:0;
+				margin-top:-20px;
+			}
+			.pop-prev{
+				left:-3px;
+				background-color:transparent;
+				&:before {
+					content: '';
+					font-size:36px;
+					font-family:'LineAwesome';
+					color:#344891;
+				}
+			}
+			.pop-next{
+				right:-3px;
+				background-color:transparent;
+				&:before {
+					content: '';
+					font-size:36px;
+					font-family:'LineAwesome';
+					color:#344891;
+				}
+			}
+		}
+	}
+	.right{
+		@include breakpoint($md){
+			float:right;
+			width:56%;
+			padding-bottom:96px+10;
+		}
+		.subject{
+			font-size:22px;
+			padding-top:10px;
+		}
+		.list{
+			margin-left:0;
+			>li{
+				margin-top:10px;
+			}
+		}
+	}
+	&.noctrl{
+		@include breakpoint($sm){
+			.left{margin-bottom:10px;}
+		}
+		@include breakpoint($md){
+			.left{width:50%;}
+			.right{width:50%;padding-left:30px;}
+		}
+		.right{padding-bottom:0;}
+	}
+}
+.thumnailViewSet.type-mayorphoto{
+	margin-bottom:20px;
+	.right{
+		padding-bottom:0;
+		.list{
+			>li{
+				text-indent:-50px !important;
+				padding-left:64px !important;
+				em{font-weight:bold;color:#344891;text-indent:0;}
+			}
+		}
+	}
+		
+}
+.navertvIframe{
+	position:relative;
+	max-width:720px;
+	margin: 0 auto 25px;
+	&:before {
+		content: '';
+		display:block;height:0;
+		padding-top:56.25%;
+	}
+	iframe{
+		position:absolute;
+		top:0;left:0;
+		width:100%;
+		height:100%;
+	}
+}
+.navertv{
+	@include clearfix();
+	@include breakpoint($md){
+		.left{
+			float:left;
+			width:425px;
+			// iframe{width:100% !important;}
+		}
+		.right{
+			float:right;
+			width:calc(100% - 425px);
+			padding-left:20px;
+		}
+	}
+	.subject{
+		font-size:22px;
+		padding-top:10px;
+	}
+	.list{margin-left:0;}
+}
+
+.thumCtrlList{
+	height:96px;
+	.owl-item{
+		a{
+			display:block;
+			width:150px;
+			border:1px solid $bdcolor;
+			// overflow:hidden;
+			display:table;
+			// height:96px !important;
+			border:1px solid #000;
+			>span{
+				display:table-cell;
+				vertical-align:middle;
+				img{
+					width:auto;
+					height:auto;
+					max-width:100%;
+					max-height: 96px
+				}
+			}
+		}
+
+
+	}
+	.owl-dots{display:none;}
+}
+.lageImg{
+	display:block;
+	position:relative;
+	img{vertical-align:top;}
+	&:after{
+		content: '';
+		font-family:'LineAwesome';
+		display:block;
+		position:absolute;
+		right:0;
+		bottom:0;
+		width:60px;
+		height:60px;
+		text-align:center;
+		background-color:rgba(0,0,0, 0.75);
+		color:#fff;
+		padding-top:7px;
+		font-size:30px;
+		line-height:1;
+		vertical-align:top;
+		
+	}
+	&:before{
+		content: '크게';
+		text-align:center;
+		position:absolute;
+		right:0;
+		bottom:9px;
+		width:60px;
+		text-align:center;
+		z-index:2;
+		color:#fff;
+	}
+}
+.div.pp_default .pp_expand{
+	@include breakpoint($sm){
+		display:none;
+	}
+}

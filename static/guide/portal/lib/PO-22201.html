@@ -1,0 +1,125 @@
+<!-- 참여마당 / 공단에 바란다 -->
+
+
+<div class="boxTop">
+	<p class="info">
+		※ 글쓰기 시간이 <span class="red">20분이 초과되는 경우 글</span>이 등록되지 않으니 참고하시기 바랍니다.<br>
+		<span class="req"><span>필수입력</span></span>표시 항목은 필수 입력 항목입니다.
+	</p>
+</div>
+
+<form action="">
+	<div class="reg">
+		<dl>
+			<dt>작성자</dt>
+			<dd>홍길동</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1">휴대전화 </label>
+			</dt>
+			<dd>
+				010-1234-5678
+				<span class="refer dib ml40">※ 입력하신 휴대폰 번호로 민원처리 결과를 문자메세지로 알려드립니다.</span>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="phoneN1"><span class="req"><span>필수입력</span></span> 전화번호 </label>
+			</dt>
+			<dd>
+				<select name="phoneN1" id="phoneN1" title="전화번호 앞자리번호를 선택해 주세요.">
+					<option value="">선택</option>
+				</select>
+				-
+				<input type="text" name="phoneN2" value="" size="4" maxlength="3" title="전화번호 중간자리를 입력해 주세요.">
+				-
+				<input type="text" name="phoneN3" value="" size="5" maxlength="4" title="전화번호 끝자리를 입력해 주세요.">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="EMLID"><span class="req"><span>필수입력</span></span> 이메일</label>
+			</dt>
+			<dd>
+				<input name="EMLID" id="EMLID" type="text" title="이메일 아이디" value="" class="emailId" />
+				@
+				<input name="EMLADDR" id="EMLADDR" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm" />
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="nate.com">nate.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="emaildomain_false">직접입력</option>
+				</select>
+				<script type="text/javascript">
+					jQuery(function(){
+						jQuery('select.select_email_js').change(function() {
+							if (jQuery(this).val()=='emaildomain_false') {
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm').attr('readonly',false).focus();
+							}else{
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val('');
+								jQuery('.emailDomainForm:text[name=EMLADDR]').val(jQuery(this).val());
+								jQuery('.emailDomainForm').attr('readonly',true)
+							}
+						});
+					});
+				</script> 
+				<div class="refer"> ※ 민원처리결과 알림을 위해 정확한 정보를 입력해주세요.</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="title"><span class="req"><span>필수입력</span></span> 제목</label>
+			</dt>
+			<dd>
+				<input id="title" class="w100p" type="text">
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="contentArea"><span class="req"><span>필수입력</span></span> 내용</label>
+			</dt>
+			<dd>
+				<textarea name="" id="contentArea" cols="30" rows="6" class="w100p"></textarea>
+				<span class="refer2">※ 개인정보노출피해방지를 위하여 주민등록번호나 계좌번호 등의 개인정보가 노출되어있지는 않은지 확인하시기 바랍니다.</span>
+			</dd>
+		</dl>
+		<dl>
+			<dt>첨부파일</dt>
+			<dd> 
+				<!-- roop -->
+				<div class="mb5">
+					<input name="" id="" title="첨부파일 1" type="file" class="fl vt mr10">
+					<a href="" class="b-add">추가</a> 
+					<a href="" class="b-del">삭제</a>
+				</div>
+				<div class="mb5">
+					<input name="" id="" title="첨부파일 1" type="file" class="fl vt mr10">
+					<a href="" class="b-add">추가</a> 
+					<a href="" class="b-del">삭제</a>
+				</div>
+				<!-- //roop --> 
+			</dd>
+		</dl>
+		<dl>
+			<dt>답변방식</dt>
+			<dd>
+				<label for="RECER0"><input type="radio" class="radio" name="RECER" value="" id="RECER0" /> 게시판 </label>
+				<label for="RECER1"><input type="radio" class="radio" name="RECER" value="" id="RECER1" /> 이메일</label>
+				<label for="RECER2"><input type="radio" class="radio" name="RECER" value="" id="RECER2" /> 이메일 + 문자메세지</label>
+			</dd>
+		</dl>
+	</div>
+	<div class="btnSet">
+		<a href="" class="b-list" role="button">확인</a>
+		<a href="" class="b-cancel" role="button">취소</a>
+	</div>
+</form>
+

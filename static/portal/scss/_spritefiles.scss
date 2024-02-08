@@ -1,0 +1,346 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icodownload-name: 'icodownload';
+$icodownload-x: 84px;
+$icodownload-y: 92px;
+$icodownload-offset-x: -84px;
+$icodownload-offset-y: -92px;
+$icodownload-width: 15px;
+$icodownload-height: 15px;
+$icodownload-total-width: 114px;
+$icodownload-total-height: 114px;
+$icodownload-image: '/static/portal/img/spritefiles.png';
+$icodownload: (84px, 92px, -84px, -92px, 15px, 15px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icodownload', );
+$icofiles-name: 'icofiles';
+$icofiles-x: 0px;
+$icofiles-y: 0px;
+$icofiles-offset-x: 0px;
+$icofiles-offset-y: 0px;
+$icofiles-width: 30px;
+$icofiles-height: 30px;
+$icofiles-total-width: 114px;
+$icofiles-total-height: 114px;
+$icofiles-image: '/static/portal/img/spritefiles.png';
+$icofiles: (0px, 0px, 0px, 0px, 30px, 30px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icofiles', );
+$icofolder-name: 'icofolder';
+$icofolder-x: 50px;
+$icofolder-y: 0px;
+$icofolder-offset-x: -50px;
+$icofolder-offset-y: 0px;
+$icofolder-width: 22px;
+$icofolder-height: 22px;
+$icofolder-total-width: 114px;
+$icofolder-total-height: 114px;
+$icofolder-image: '/static/portal/img/spritefiles.png';
+$icofolder: (50px, 0px, -50px, 0px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icofolder', );
+$icohwp-name: 'icohwp';
+$icohwp-x: 0px;
+$icohwp-y: 50px;
+$icohwp-offset-x: 0px;
+$icohwp-offset-y: -50px;
+$icohwp-width: 22px;
+$icohwp-height: 22px;
+$icohwp-total-width: 114px;
+$icohwp-total-height: 114px;
+$icohwp-image: '/static/portal/img/spritefiles.png';
+$icohwp: (0px, 50px, 0px, -50px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icohwp', );
+$icoimg-name: 'icoimg';
+$icoimg-x: 42px;
+$icoimg-y: 50px;
+$icoimg-offset-x: -42px;
+$icoimg-offset-y: -50px;
+$icoimg-width: 22px;
+$icoimg-height: 22px;
+$icoimg-total-width: 114px;
+$icoimg-total-height: 114px;
+$icoimg-image: '/static/portal/img/spritefiles.png';
+$icoimg: (42px, 50px, -42px, -50px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icoimg', );
+$icopdf-name: 'icopdf';
+$icopdf-x: 92px;
+$icopdf-y: 0px;
+$icopdf-offset-x: -92px;
+$icopdf-offset-y: 0px;
+$icopdf-width: 22px;
+$icopdf-height: 22px;
+$icopdf-total-width: 114px;
+$icopdf-total-height: 114px;
+$icopdf-image: '/static/portal/img/spritefiles.png';
+$icopdf: (92px, 0px, -92px, 0px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icopdf', );
+$icoppt-name: 'icoppt';
+$icoppt-x: 92px;
+$icoppt-y: 42px;
+$icoppt-offset-x: -92px;
+$icoppt-offset-y: -42px;
+$icoppt-width: 22px;
+$icoppt-height: 22px;
+$icoppt-total-width: 114px;
+$icoppt-total-height: 114px;
+$icoppt-image: '/static/portal/img/spritefiles.png';
+$icoppt: (92px, 42px, -92px, -42px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icoppt', );
+$icoword-name: 'icoword';
+$icoword-x: 0px;
+$icoword-y: 92px;
+$icoword-offset-x: 0px;
+$icoword-offset-y: -92px;
+$icoword-width: 22px;
+$icoword-height: 22px;
+$icoword-total-width: 114px;
+$icoword-total-height: 114px;
+$icoword-image: '/static/portal/img/spritefiles.png';
+$icoword: (0px, 92px, 0px, -92px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icoword', );
+$icoxls-name: 'icoxls';
+$icoxls-x: 42px;
+$icoxls-y: 92px;
+$icoxls-offset-x: -42px;
+$icoxls-offset-y: -92px;
+$icoxls-width: 22px;
+$icoxls-height: 22px;
+$icoxls-total-width: 114px;
+$icoxls-total-height: 114px;
+$icoxls-image: '/static/portal/img/spritefiles.png';
+$icoxls: (42px, 92px, -42px, -92px, 22px, 22px, 114px, 114px, '/static/portal/img/spritefiles.png', 'icoxls', );
+$icodownload-2x-name: 'icodownload@2x';
+$icodownload-2x-x: 168px;
+$icodownload-2x-y: 184px;
+$icodownload-2x-offset-x: -168px;
+$icodownload-2x-offset-y: -184px;
+$icodownload-2x-width: 30px;
+$icodownload-2x-height: 30px;
+$icodownload-2x-total-width: 228px;
+$icodownload-2x-total-height: 228px;
+$icodownload-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icodownload-2x: (168px, 184px, -168px, -184px, 30px, 30px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icodownload@2x', );
+$icofiles-2x-name: 'icofiles@2x';
+$icofiles-2x-x: 0px;
+$icofiles-2x-y: 0px;
+$icofiles-2x-offset-x: 0px;
+$icofiles-2x-offset-y: 0px;
+$icofiles-2x-width: 60px;
+$icofiles-2x-height: 60px;
+$icofiles-2x-total-width: 228px;
+$icofiles-2x-total-height: 228px;
+$icofiles-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icofiles-2x: (0px, 0px, 0px, 0px, 60px, 60px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icofiles@2x', );
+$icofolder-2x-name: 'icofolder@2x';
+$icofolder-2x-x: 100px;
+$icofolder-2x-y: 0px;
+$icofolder-2x-offset-x: -100px;
+$icofolder-2x-offset-y: 0px;
+$icofolder-2x-width: 44px;
+$icofolder-2x-height: 44px;
+$icofolder-2x-total-width: 228px;
+$icofolder-2x-total-height: 228px;
+$icofolder-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icofolder-2x: (100px, 0px, -100px, 0px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icofolder@2x', );
+$icohwp-2x-name: 'icohwp@2x';
+$icohwp-2x-x: 0px;
+$icohwp-2x-y: 100px;
+$icohwp-2x-offset-x: 0px;
+$icohwp-2x-offset-y: -100px;
+$icohwp-2x-width: 44px;
+$icohwp-2x-height: 44px;
+$icohwp-2x-total-width: 228px;
+$icohwp-2x-total-height: 228px;
+$icohwp-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icohwp-2x: (0px, 100px, 0px, -100px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icohwp@2x', );
+$icoimg-2x-name: 'icoimg@2x';
+$icoimg-2x-x: 84px;
+$icoimg-2x-y: 100px;
+$icoimg-2x-offset-x: -84px;
+$icoimg-2x-offset-y: -100px;
+$icoimg-2x-width: 44px;
+$icoimg-2x-height: 44px;
+$icoimg-2x-total-width: 228px;
+$icoimg-2x-total-height: 228px;
+$icoimg-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icoimg-2x: (84px, 100px, -84px, -100px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icoimg@2x', );
+$icopdf-2x-name: 'icopdf@2x';
+$icopdf-2x-x: 184px;
+$icopdf-2x-y: 0px;
+$icopdf-2x-offset-x: -184px;
+$icopdf-2x-offset-y: 0px;
+$icopdf-2x-width: 44px;
+$icopdf-2x-height: 44px;
+$icopdf-2x-total-width: 228px;
+$icopdf-2x-total-height: 228px;
+$icopdf-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icopdf-2x: (184px, 0px, -184px, 0px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icopdf@2x', );
+$icoppt-2x-name: 'icoppt@2x';
+$icoppt-2x-x: 184px;
+$icoppt-2x-y: 84px;
+$icoppt-2x-offset-x: -184px;
+$icoppt-2x-offset-y: -84px;
+$icoppt-2x-width: 44px;
+$icoppt-2x-height: 44px;
+$icoppt-2x-total-width: 228px;
+$icoppt-2x-total-height: 228px;
+$icoppt-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icoppt-2x: (184px, 84px, -184px, -84px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icoppt@2x', );
+$icoword-2x-name: 'icoword@2x';
+$icoword-2x-x: 0px;
+$icoword-2x-y: 184px;
+$icoword-2x-offset-x: 0px;
+$icoword-2x-offset-y: -184px;
+$icoword-2x-width: 44px;
+$icoword-2x-height: 44px;
+$icoword-2x-total-width: 228px;
+$icoword-2x-total-height: 228px;
+$icoword-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icoword-2x: (0px, 184px, 0px, -184px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icoword@2x', );
+$icoxls-2x-name: 'icoxls@2x';
+$icoxls-2x-x: 84px;
+$icoxls-2x-y: 184px;
+$icoxls-2x-offset-x: -84px;
+$icoxls-2x-offset-y: -184px;
+$icoxls-2x-width: 44px;
+$icoxls-2x-height: 44px;
+$icoxls-2x-total-width: 228px;
+$icoxls-2x-total-height: 228px;
+$icoxls-2x-image: '/static/portal/img/spritefiles@2x.png';
+$icoxls-2x: (84px, 184px, -84px, -184px, 44px, 44px, 228px, 228px, '/static/portal/img/spritefiles@2x.png', 'icoxls@2x', );
+$spritesheet-width: 114px;
+$spritesheet-height: 114px;
+$spritesheet-image: '/static/portal/img/spritefiles.png';
+$spritesheet-sprites: ($icodownload, $icofiles, $icofolder, $icohwp, $icoimg, $icopdf, $icoppt, $icoword, $icoxls, );
+$spritesheet: (114px, 114px, '/static/portal/img/spritefiles.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 228px;
+$retina-spritesheet-height: 228px;
+$retina-spritesheet-image: '/static/portal/img/spritefiles@2x.png';
+$retina-spritesheet-sprites: ($icodownload-2x, $icofiles-2x, $icofolder-2x, $icohwp-2x, $icoimg-2x, $icopdf-2x, $icoppt-2x, $icoword-2x, $icoxls-2x, );
+$retina-spritesheet: (228px, 228px, '/static/portal/img/spritefiles@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$icodownload-group-name: 'icodownload';
+$icodownload-group: ('icodownload', $icodownload, $icodownload-2x, );
+$icofiles-group-name: 'icofiles';
+$icofiles-group: ('icofiles', $icofiles, $icofiles-2x, );
+$icofolder-group-name: 'icofolder';
+$icofolder-group: ('icofolder', $icofolder, $icofolder-2x, );
+$icohwp-group-name: 'icohwp';
+$icohwp-group: ('icohwp', $icohwp, $icohwp-2x, );
+$icoimg-group-name: 'icoimg';
+$icoimg-group: ('icoimg', $icoimg, $icoimg-2x, );
+$icopdf-group-name: 'icopdf';
+$icopdf-group: ('icopdf', $icopdf, $icopdf-2x, );
+$icoppt-group-name: 'icoppt';
+$icoppt-group: ('icoppt', $icoppt, $icoppt-2x, );
+$icoword-group-name: 'icoword';
+$icoword-group: ('icoword', $icoword, $icoword-2x, );
+$icoxls-group-name: 'icoxls';
+$icoxls-group: ('icoxls', $icoxls, $icoxls-2x, );
+$retina-groups: ($icodownload-group, $icofiles-group, $icofolder-group, $icohwp-group, $icoimg-group, $icopdf-group, $icoppt-group, $icoword-group, $icoxls-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

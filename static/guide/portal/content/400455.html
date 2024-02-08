@@ -1,0 +1,115 @@
+<div id="map2" class="daummap" data-location="서울 성북구 화랑로18자길 13" style="width:100%;height:350px;"></div>
+<div class="traffic">
+	<h2 class="car">자가용</h2>
+	<dl>
+		<dt>태릉 → 월곡역(동덕여대)방향</dt>
+		<dd>월곡중학교 앞 삼거리 U턴(보행 신호시) ▶ 상월곡 동사무소에서 우측 길로 진입 ▶ 50m전방 도서관 이정표 ▶ 150m전방 도서관</dd>
+	</dl>
+	<dl>
+		<dt>월곡역(동덕여대)방향 → 태릉</dt>
+		<dd>지하철 6호선 상월곡역 ▶ 상월곡 동사무소에서 우측 길로 진입 ▶ 50m전방 도서관 이정표 ▶ 150m전방 도서관</dd>
+	</dl>
+	<h2 class="subway">지하철</h2>
+	<dl>
+		<dt>6호선 상월곡역 4번 출구(반대방향)</dt>
+		<dd>상월곡 동사무소에서 우측 길로 진입 ▶ 50m전방 도서관 이정표 ▶150m전방 도서관</dd>
+	</dl>
+	<h2 class="bus">버스</h2>
+	<dl>
+		<dt>월곡중학교 앞 하차</dt>
+		<dd>마을버스 - 성북12번(초록)</dd>
+	</dl>
+	<dl>
+		<dt>월곡중학교 앞 하차</dt>
+		<dd>파랑버스(간선) - 120,163번</dd>
+		<dd>초록버스(지선) - 1220, 1411번</dd>
+	</dl>
+	<dl>
+		<dt>상월곡역 하차</dt>
+		<dd>파랑버스(간선) - 120,163번</dd>
+		<dd>초록버스(지선) - 1113, 1114, 1117, 1220, 1411번</dd>
+	</dl>
+</div>
+<div class="tab">
+  <div class="tab-list stv">
+    <div class="item on "><a href="#con1" title="선택됨"><span>체육시설</span> </a> </div>
+    <div class="item"><a href="#con2"><span>복지시설</span></a></div>
+  </div>
+</div>
+<div id="con1">
+	<div class="tab2">
+		<ul>
+			<!-- <li><a href="400081.html">성북구민회관</a></li> -->
+			<li><a href="/portal/main/contents.do?menuNo=400081">성북구민회관</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400118">성북구민체육관</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400155">북악골프연습장</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400194">개운산스포츠센터</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400231">월곡실내배드민턴장</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400268">성북종합레포츠타운</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400305">해오름휘트니스</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400342">성북펜싱체육관</a></li>
+		</ul>
+	</div>
+	<div id="mapload1"></div>
+</div>
+<div id="con2" style="display: none;">
+	<div class="tab2">
+		<ul>
+			<li><a href="/portal/main/contents.do?menuNo=400380">아름다운빨래방</a></li>
+			<li><a href="/portal/main/contents.do?menuNo=400415">환승주차장</a></li>
+			<li><a href="http://ijoa.gongdan.go.kr/guide/guide_map.asp"    target="_blank" title="새창열림">아이조아<i class="la la-external-link"></i></a></li>
+			<li><a href="http://bomun.gongdan.go.kr/"                      target="_blank" title="새창열림">부모지원센터<i class="la la-external-link"></i></a></li>
+			<li><a href="http://park.gongdan.go.kr/soge/03_loca.asp"       target="_blank" title="새창열림">주차사업팀<i class="la la-external-link"></i></a></li>
+			<li><a href="http://sbep.gongdan.go.kr/center/center-place.do" target="_blank" title="새창열림">운동처방센터<i class="la la-external-link"></i></a></li>
+		</ul>
+	</div>
+	<div id="mapload2"></div>
+</div>
+<script>
+	$(function() {
+		$('.stv a').each(function(index, el) {
+			$(this).click(function(event) {
+				if ($('#con'+ (index + 1) +' .tab2 .on a').length > 0) {
+					$('#con'+ (index + 1) +' .tab2 .on a').trigger('click')
+				}else{
+					$('#con'+ (index + 1) +' .tab2 a').eq(0).trigger('click')
+				}
+			});
+		});
+		var mapload  = $('#mapload1')
+		var mapload2 = $('#mapload2')
+		var loadLocationHtml
+		$('#con1 .tab2 a').click(function(event) {
+			mapload2.empty();
+			mapload.empty();
+			$.get($(this).attr('href'), function(data, status){
+			  if (status = 'success') {
+				  loadLocationHtml = $(data).find('#content').find('.satisfactionSet').remove().end().html()
+				  mapload.html(loadLocationHtml)
+				  $('.daummap').each(function(index, el) {
+				  	maps($(this).data().location)
+				  });
+			  }
+			});
+			$(this).attr('title', '선택됨').parent().addClass('on').siblings().removeClass('on').find('a').removeAttr('title')
+			event.preventDefault();
+		});
+		$('#con2 .tab2 a[href^="/portal/"]').click(function(event) {
+			mapload.empty()
+			mapload2.empty()
+			$.get($(this).attr('href'), function(data, status){
+				if (status = 'success') {
+				  loadLocationHtml = $(data).find('#content').find('.satisfactionSet').remove().end().html()
+				  mapload2.html(loadLocationHtml)
+				  $('.daummap').each(function(index, el) {
+				  	maps($(this).data().location)
+				  });
+				}
+			});
+			$(this).attr('title', '선택됨').parent().addClass('on').siblings().removeClass('on').find('a').removeAttr('title')
+			event.preventDefault();
+		});
+
+		$('#con1 .tab2 a').eq(0).trigger('click')
+	});
+</script>

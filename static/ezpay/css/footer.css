@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* line 60, static/ezpay/scss/_var.scss */ .ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+
+/* line 5, static/ezpay/scss/footer.scss */ #fBannerSet .fbanner { max-width: 1140px; margin: 0 auto; }
+
+/* line 10, static/ezpay/scss/footer.scss */ .flinkList { background-color: #5c6979; clear: both; color: #fff; }
+
+/* line 13, static/ezpay/scss/footer.scss */ .flinkList .container > div { width: 50%; float: left; }
+
+@media (max-width: 991px) { /* line 13, static/ezpay/scss/footer.scss */ .flinkList .container > div { width: 100%; } }
+
+/* line 21, static/ezpay/scss/footer.scss */ .flinkList a { color: #fff; line-height: 52px; }
+
+/* line 25, static/ezpay/scss/footer.scss */ .flinkList .serviceList { position: relative; background-color: #495564; }
+
+/* line 28, static/ezpay/scss/footer.scss */ .flinkList .serviceList button { position: absolute; width: 45px; height: 52px; }
+
+/* line 29, static/ezpay/scss/footer.scss */ .flinkList .serviceList button.b-left { left: 18%; }
+
+/* line 30, static/ezpay/scss/footer.scss */ .flinkList .serviceList button.b-left:before { content: "\f111"; font-family: "LineAwesome"; font-size: 24px; }
+
+/* line 36, static/ezpay/scss/footer.scss */ .flinkList .serviceList button.b-right { right: 0; }
+
+/* line 37, static/ezpay/scss/footer.scss */ .flinkList .serviceList button.b-right:before { content: "\f112"; font-family: "LineAwesome"; font-size: 24px; }
+
+/* line 45, static/ezpay/scss/footer.scss */ .flinkList h3 { display: inline-block; font-size: 1em; font-weight: normal; float: left; line-height: 52px; padding-left: 20px; width: 18%; }
+
+/* line 47, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li { display: inline-block; width: 33.33333%; float: left; position: relative; }
+
+/* line 52, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li > a { display: block; padding-left: 20px; }
+
+/* line 55, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li > a:after { content: "\f113"; font-family: "LineAwesome"; float: right; display: inline-block; }
+
+/* line 62, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li.on ul { display: block; }
+
+/* line 63, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li ul { position: absolute; bottom: 0; left: 0; width: 100%; display: none; }
+
+/* line 70, static/ezpay/scss/footer.scss */ .flinkList .weSite ul > li ul li a { display: block; }
+
+/* line 78, static/ezpay/scss/footer.scss */ .flinkList #serviceSlide a { color: #BEC0C2; }
+
+/* line 79, static/ezpay/scss/footer.scss */ #serviceSlide { margin: 0 8%; float: left; width: 66%; overflow: hidden; text-align: center; color: #BEC0C2; }
+
+/* line 86, static/ezpay/scss/footer.scss */ #serviceSlide .items { display: inline-block; float: left; }
+
+/* line 90, static/ezpay/scss/footer.scss */ #footerAd { padding: 60px 10px 10px; position: relative; width: 100%; }
+
+@media (min-width: 768px) { /* line 90, static/ezpay/scss/footer.scss */ #footerAd { height: 80px; padding: 0 90px 0 0; } }
+
+/* line 98, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl { position: absolute; z-index: 2; right: 0; top: 10px; }
+
+/* line 107, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl a { float: left; }
+
+/* line 107, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl a img { vertical-align: top; }
+
+/* line 108, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl button { width: 30px; height: 60px; float: left; background: none; font-size: 28px; }
+
+/* line 115, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl button span { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+/* line 117, static/ezpay/scss/footer.scss */ #footerAd .footerAd-ctrl button.footerAd_play { display: none; }
+
+/* line 122, static/ezpay/scss/footer.scss */ #footerAd .footerAd-list { overflow: hidden; width: 100%; height: 80px; }
+
+/* line 126, static/ezpay/scss/footer.scss */ #footerAd .footerAd-list .item { text-align: center; float: left; height: 80px; }
+
+/* line 130, static/ezpay/scss/footer.scss */ #footerAd .footerAd-list .item a { display: block; height: 80px; text-align: center; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+/* line 140, static/ezpay/scss/footer.scss */ #footerAd .footerAd-list .item a img { width: auto; display: inline; max-width: 100%; }
+
+/* line 150, static/ezpay/scss/footer.scss */ #footer { clear: both; color: #BEC0C2; background-color: #364150; }
+
+/* line 154, static/ezpay/scss/footer.scss */ #footer .favSiteServiceSet { text-align: center; margin-top: 45px; margin-bottom: 20px; }
+
+/* line 158, static/ezpay/scss/footer.scss */ #footer .favSiteServiceSet .toggle { display: inline-block; margin: 0 auto; }
+
+/* line 161, static/ezpay/scss/footer.scss */ #footer .favSiteServiceSet .toggle:after { content: ''; font-family: 'FontAwesome'; font-size: 24px; width: 39px; text-align: right; display: inline-block; }
+
+/* line 171, static/ezpay/scss/footer.scss */ #footer .ft { padding: 0; }
+
+/* line 173, static/ezpay/scss/footer.scss */ #footer .ft .set { margin: 0 auto; max-width: 1140px; }
+
+/* line 177, static/ezpay/scss/footer.scss */ #footer .ft .fsite { margin: 11px; margin-bottom: 0; }
+
+/* line 180, static/ezpay/scss/footer.scss */ #footer .ft .fsite div { margin-bottom: 2px; position: relative; padding-right: 102px; }
+
+/* line 184, static/ezpay/scss/footer.scss */ #footer .ft .fsite div select { width: 100%; height: 40px; border: 1px solid #b8c4e4; line-height: 40px; padding-left: 20px; background-color: #fff; position: relative; }
+
+/* line 193, static/ezpay/scss/footer.scss */ #footer .ft .fsite div button { position: absolute; right: 0; top: 0; margin-left: 2px; height: 40px; width: 100px; background-color: #20409a; color: #fff; text-align: center; }
+
+@media (min-width: 992px) { /* line 177, static/ezpay/scss/footer.scss */ #footer .ft .fsite { margin: 0; float: right; }
+	/* line 208, static/ezpay/scss/footer.scss */ #footer .ft .fsite div { float: left; padding-right: 0; margin-left: 2px; }
+	/* line 212, static/ezpay/scss/footer.scss */ #footer .ft .fsite div select { width: 170px; float: left; }
+	/* line 216, static/ezpay/scss/footer.scss */ #footer .ft .fsite div button { position: static; margin-left: -1px; } }
+
+/* line 222, static/ezpay/scss/footer.scss */ #footer .ft .fsite * { vertical-align: top; }
+
+/* line 225, static/ezpay/scss/footer.scss */ #footer .footerSet { position: relative; max-width: 1140px; min-height: 180px; margin: 0 11px; padding: 20px 0 0 0; }
+
+@media (min-width: 992px) { /* line 225, static/ezpay/scss/footer.scss */ #footer .footerSet { margin: 0 auto; padding: 0 20px 0 20px; } }
+
+@media (min-width: 1140px) { /* line 225, static/ezpay/scss/footer.scss */ #footer .footerSet { padding: 0 120px 0 20px; } }
+
+/* line 238, static/ezpay/scss/footer.scss */ #footer .footerSet nav { padding-top: 10px; display: block; }
+
+/* line 76, static/ezpay/scss/_var.scss */ #footer .footerSet nav:before, #footer .footerSet nav:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 244, static/ezpay/scss/footer.scss */ #footer .footerSet nav ul > li:first-child a { color: #fdaa8d; padding-left: 0; }
+
+/* line 248, static/ezpay/scss/footer.scss */ #footer .footerSet nav a { float: left; position: relative; color: #fff; padding: 0 15px; font-size: 15px; line-height: 46px; }
+
+@media (min-width: 992px) { /* line 248, static/ezpay/scss/footer.scss */ #footer .footerSet nav a { line-height: 46px; } }
+
+/* line 258, static/ezpay/scss/footer.scss */ #footer .footerSet nav a::before { content: ''; position: absolute; left: 0; top: 16px; height: 15px; border-left: 1px solid #555d69; }
+
+/* line 267, static/ezpay/scss/footer.scss */ #footer .footerSet nav li:first-child a:before { display: none; }
+
+/* line 269, static/ezpay/scss/footer.scss */ #footer .footerSet address { line-height: 1.71; font-size: 0.93em; font-style: normal; letter-spacing: -0.8px; padding-bottom: 25px; display: block; clear: both; }
+
+/* line 275, static/ezpay/scss/footer.scss */ #footer .footerSet address p { margin-bottom: 10px; }
+
+/* line 281, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset { position: inherit; top: inherit; right: inherit; width: 100%; }
+
+@media (min-width: 1140px) { /* line 281, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset { position: absolute; top: 80px; right: 0; width: 120px; } }
+
+@media (min-width: 768px) { /* line 292, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset .ftcon { float: right; } }
+
+@media (min-width: 1140px) { /* line 292, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset .ftcon { float: right; } }
+
+/* line 300, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset .ftcon .markset #qrcode { float: left; margin-right: 10px; }
+
+/* line 301, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset .ftcon .markset img { float: left; height: 70px; }
+
+/* line 302, static/ezpay/scss/footer.scss */ #footer .footerSet .ftset .ftcon .markset img + img { margin-left: 10px; }
+
+/*# sourceMappingURL=footer.css.map */

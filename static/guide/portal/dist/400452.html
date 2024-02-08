@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>고객서비스 헌장</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<div class="d26200">
+	<div>
+		<h2>2018</h2>
+		<ol>
+			<li><span class="date">04.24</span> 성북운동처방센터 개관</li>
+			<li><span class="date">06.21</span> 성북펜싱체육관 개관</li>
+			<li><span class="date">07.01</span> 행정안전부 주관 지방공기업 고객만족도 평가 우수기관 선정</li>
+			<li><span class="date">10.06</span> 기술봉사단 제11회 치매극복의날 기념 서울특별시장상 수상</li>
+			<li><span class="date">11.12</span> 부패방지 경영시스템 인증 취득</li>
+			<li><span class="date">12.01</span> 공단 홈페이지 개인정보보호 우수사이트 e-Privacy 인증 획득</li>
+		</ol>
+	</div>
+	<div>
+		<h2>2017</h2>
+		<ol>
+			<li><span class="date">04.06</span> 안전보건공단 SAFE 업무협약 체결</li>
+			<li><span class="date">09.26</span> 인천시시설관리공단 정보화 업무협약 체결</li>
+			<li><span class="date">11.08</span> 국가품질경영대회 서비스품질분야 산통부장관 표창 수상</li>
+		</ol>
+	</div>
+	<div>
+	<h2>2016</h2>
+	<ol>
+		<li><span class="date">06.24</span>   행정자치부 주관 지방공기업 고객만족도 서비스 평가 전국 1위 (338개 중 1위)</li>
+		<li><span class="date">08.16</span>    2016년도 지방공기업 경영평가 우수기업 선정</li>
+		<li><span class="date">11.18</span>    저먼서트 안전보건경영시스템(OHSAS 18001:2007) 인증 획득</li>
+		<li><span class="date">12.01</span>    개인정보보호 협회 홈페이지 부문 e-Privacy 인증 획득</li>
+		<li><span class="date">12.01</span>    한국 서비스품질 우수기업 인증 획득</li>
+		<li><span class="date">12.08</span>    성북구육아종합지원센터 보건복지부 장관상 수상</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2015</h2>
+	 <ol>
+	 	<li><span class="date">02.07</span>   구립월곡배드민터전용체육관 개관</li>
+	 	<li><span class="date">04.24</span>    행정자치부 지방공기업 정부 3.0 평가 우수 지방공기업 선정</li>
+	 	<li><span class="date">05.11</span>    한국체육산업개발과 상호교류 업무협약 체결</li>
+	 	<li><span class="date">05.28</span>    국민대학교와 상호교류 업무협약 체결</li>
+	 	<li><span class="date">06.02</span>    육아종합지원센터(보문)·부모지원센터 개관</li>
+	 	<li><span class="date">06.24</span>    2015년 지방공기업 경영혁신 우수사례 우수상 수상</li>
+	 	<li><span class="date">07.10</span>    제7대 권혁소 이사장 취임</li>
+	 	<li><span class="date">10.20</span>    행정자치부 정부3.0 평가 국무총리표창 수상</li>
+	 </ol>
+		</div>
+	 <div>
+	<h2>2014</h2>
+	<ol>
+		<li><span class="date">02.19</span>   인천광역시 부평구 시설관리공단과 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">07.18</span>    성북구 자원봉사센터와 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">07.24</span>    경기도 가평군 시설관리공단과 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">07.31</span>    2014년도 지방공기업 경영평가 고객만족도 최상위기관 선정 (326개 중 1위)</li>
+		<li><span class="date">08.06</span>    2014년도 지방공기업 경영평가 우수기업 선정</li>
+		<li><span class="date">09.04</span>    2014년도 제38회 국가생산성 대상 고객만족 부문 협회장 수상</li>
+		<li><span class="date">09.24</span>    서울메디케어와 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">10.01</span>    ㈜다니엘,건화와 연료전지 신재생에너지 발전사업 상호협력 협약 체결</li>
+		<li><span class="date">10.10</span>    도농상생과 나눔가치실현을 위한 양평군 단월면 명성1리마을 1사1촌 협약 체결</li>
+		<li><span class="date">12.04</span>    2014년 전국육아종합지원센터 운영평가 우수기관 장관 표창</li>
+		<li><span class="date">12.15</span>    성북구 육아종합지원센터 서울시 표창 수여</li>
+		<li><span class="date">12.19</span>    여성가족부주관 가족친화우수기업 선정</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2013</h2>
+	<ol>
+		<li><span class="date">02.01</span>   종로구 시설관리공단과 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">03.21</span>    ISO 9001 품질경영인증 취득</li>
+		<li><span class="date">04.23</span>    기상청 주관 날씨기관 인증 취득</li>
+		<li><span class="date">04.24</span>    제3회 연속 한국서비스품질 우수기업 선정</li>
+		<li><span class="date">06.04</span>    정선군 및 속초시 시설관리공단과 협약체결</li>
+		<li><span class="date">06.20</span>    신안종합리조트 윌리힐리파크와 협약체결</li>
+		<li><span class="date">07.13</span>    2013년 다둥이 행복카드 우수협력업체 서울시장 표창</li>
+		<li><span class="date">07.17</span>    레이크힐스 리조트그룹과 협약체결</li>
+		<li><span class="date">11.08</span>    2012년도 전국지방공기업 경영평가 '우수공기업'</li>
+		<li><span class="date">11.24</span>    제39회 국가품질경연대회 서비스혁신 '우수기업'선정</li>
+		<li><span class="date">12.20</span>    여주시 시설관리공단과 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">12.26</span>    2013년 성북레포츠타운 우수공공체육시설 선정</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2012</h2>
+	<ol>
+		<li><span class="date">09.01</span>   사업2본부 사업팀 성북문화재단으로 이관</li>
+		<li><span class="date">09.21</span>    조직개편[2본부 9팀 17개 사업장]</li>
+		<li><span class="date">11.05</span>    2012년 품질경쟁력 '우수공기업' 선정</li>
+		<li><span class="date">12.06</span>    포천시 시설관리공단과 상호교류 업무협력 협약 체결</li>
+		<li><span class="date">12.07</span>    영월군 시설관리공단과 상호교류 업무협력 협약 체결</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2011</h2>
+	<ol><li><span class="date">02.12</span>   종암동 새날어린이도서관 운영</li></ol>
+	</div>
+	<div>
+	<h2>2010</h2>
+	<ol>
+		<li><span class="date">01.01</span>   견인차량보관소 운영</li>
+		<li><span class="date">10.01</span>   북악 어린이집 위탁관리 운영</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2008</h2>
+	<ol>
+		<li><span class="date">01.01</span>    아리랑아트홀 위탁관리 운영</li>
+		<li><span class="date">03.01</span>    성북구청사 위탁관리 운영</li>
+		<li><span class="date">07.01</span>    영유아프라자 "아이조아" 개관 및 운영개시<br> 해오름휘트니스센터 개관 및 운영개시<br> 해오름어린이도서관 개관 및 운영개시</li>
+		<li><span class="date">07.20</span>    성북보건소청사 위탁운영 개시</li>
+		<li><span class="date">10.05</span>    유건봉 제4대 이사장 취임</li>
+		<li><span class="date">11.05</span>    2009년도 전국지방공기업 경영평가 '우수'</li>
+		<li><span class="date">11.29</span>    성북구립미술관 개관 <br> 조직개편[2본부 13팀]</li>
+		<li><span class="date">04.01</span>    옥외시설물위탁관리인수 </li>
+		<li><span class="date">09.01</span>    길음1동어린이집 위탁관리 운영 </li>
+		<li><span class="date">12.26</span>    조직개편 [2본부 12팀제], 영유아프라자 1본부 편제, 북악골프장 2           본부 편제, 시설관리팀 1본부 편제 </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2007</h2>
+	<ol>
+		<li><span class="date">11.06</span>    2007년도 전국지방공기업 경영평가 '최우수공기업'</li>
+	</ol>
+	</div>
+	<div>
+	<h2>2006</h2>
+	<ol>
+		<li><span class="date">08.21</span>    제3대 이사장 취임 </li>
+		<li><span class="date">08.11</span>    2006년도 전국지방공기업 경영평가 '최우수공기업' </li>
+		<li><span class="date">12.21</span>    조직개편 [2본부 10팀제 ▶ 2본부 11팀제] </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2005</h2>
+	<ol>
+		<li><span class="date">04.29</span>    조직개편[1부12팀 ▶ 1부15팀] </li>
+		<li><span class="date">05.10</span>    아름다운 빨래방 개관 </li>
+		<li><span class="date">09.27</span>    조직개편 [2본부 10팀제] </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2004</h2>
+	<ol>
+		<li><span class="date">05.04</span>    아리랑시네센터, 아리랑정보도서관 개관 </li>
+		<li><span class="date">06.24</span>    조직개편[1부5팀 ▶ 1부12팀] </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2003</h2>
+	<ol><li><span class="date">06.05</span>    제2대 이사장 공개채용</li></ol>
+	</div>
+	<div>
+	<h2>2002</h2>
+	<ol>
+		<li><span class="date">03.11</span>    북악골프연습장 현대화시설로 개·보수(2001.12.1~) </li>
+		<li><span class="date">03.19</span>    성북정보도서관 개관 </li>
+		<li><span class="date">06.15</span>    영화기념관부설주차장 위탁관리 인수  </li>
+		<li><span class="date">08.29</span>    정릉북악생활체육시설 위탁관리 인수  </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2001</h2>
+	<ol>
+		<li><span class="date">01.01</span>    성북여성회관 개관(구민회관 내) </li>
+		<li><span class="date">06.01</span>    성북종합레포츠타운 개관 </li>
+		<li><span class="date">09.15</span>    북악골프장 민간위탁(공개경쟁입찰) </li>
+		<li><span class="date">09.26</span>    장위동 청소년공부방 개관(주민"김용기"기부채납 주택 개조) </li>
+		<li><span class="date">11.20</span>    구민회관 위탁관리 인수 </li>
+		<li><span class="date">12.15</span>    공단본부 이전(트리즘빌딩 ▶ 성북정보도서관) </li>
+		<li><span class="date">12.28</span>    2000년도 전국지방공기업 경영평가 "우수공기업"으로 선정 </li>
+	</ol>
+	</div>
+	<div>
+	<h2>2000</h2>
+	<ol>
+		<li><span class="date">01.23</span>    초대 이사장 공개채용 </li>
+		<li><span class="date">01.24</span>    공단 설립등기(서울시 성북구 월곡동 46-1,트리즘빌딩 5층)</li>
+		<li><span class="date">02.01</span>    공단 업무 개시(트리즘 빌딩, 길음환승주차빌딩, 구민체육관, 공영ㆍ부설ㆍ거주자 주차관리, 북악골프연습장 민간위탁 관리)</li>
+		<li><span class="date">07.01</span>    개운산스포츠센터 개관</li>
+	</ol>
+	</div>
+	<div>
+	<h2>1999</h2>
+	<ol>
+		<li><span class="date">11.25</span>    설립인가(지방공기업법 제 76 조 성북구도시관리공단 설치조례)</li>
+	</ol>
+	</div>
+</div>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

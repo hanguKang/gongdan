@@ -1,0 +1,263 @@
+$mw:1140px;
+
+$m1:20px;
+$m2:34px;
+
+$xs                 : max-width 480px;
+$sm                 : max-width 767px;
+$smd                : max-width 991px;
+$md                 : 768px;
+$lg                 : 1140px;
+$lg                 : 992px;
+$xl                 : 1140px;
+
+// board list color
+$bdcolor            : #dedede;
+$bdtopcolor         : #0059a9;
+$linkColor          : #000;
+$cellhovercolor		: #f0f2f7;
+
+// board view color
+$viewbdColor    : #dedede;
+$viewbdtopcolor : #0059a9;
+$viewheadBgcolor : #f3fdff;
+$viewheadcolor : #000000; 
+
+// input
+$formHeight         : 40px;
+// button
+$btnHeight          : $formHeight;
+//$btnbgColor		: #707685;
+
+$color_default      : #181818;
+$color_point        : #2c4a9e;
+$color_black        : #000;
+$color_deepgray     : #333;
+$color_lightgray     : #BEC0C2;
+$color_orange       : #f76627;
+$color_blue         : #0059a9;
+$color_cobalt       : #02728D;
+$color_red          : #e43b00;
+$color_green        : #3A7525;
+
+$btnbgcolor:#0059a9;
+$sitecolor:#0059a9;
+$hovercolor:#0059a9;
+
+$defaultfontsize : 15px;
+
+
+
+$fontSet            : "맑은고딕","malgun gothic","AppleGothic","돋움","dotum",Helvetica,Arial,sans-serif;
+$fontSet            : 'Noto-Regular';
+$fontSet            : HelveticaNeue-Light,AppleSDGothicNeo-Light,"맑은고딕","malgun gothic","AppleGothic","돋움","dotum",sans-serif;
+$fontSet            : "Noto Sans","HelveticaNeue-Light","AppleSDGothicNeo-Light","맑은고딕","malgun gothic","AppleGothic","돋움","dotum",sans-serif;
+//"Nanum Gothic",
+//h1~h6
+$headingFont        : "Noto Sans","맑은고딕","malgun gothic";
+
+
+@mixin ellipsis(){ overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:block; }
+
+@mixin fa() {
+  font-family:"fontAwesome";
+}
+
+@mixin ti() {
+  font-family:"themify";
+}
+
+@mixin la() {
+  font-family:"LineAwesome";
+}
+
+@mixin clearfix() {
+	display:block;
+	&:before,
+	&:after{content:"."; display:block; height:0; clear:both; visibility:hidden }
+}
+@mixin dib() {
+	display:inline-block;
+	width:auto;
+	height:auto;
+	margin:0;
+	position:static;
+	overflow:visible;
+	clip:inherit;	
+}
+@mixin bgpt() {
+	background:url(/static/portal/img/sub/pagedeco-pt.png) 0 0 repeat;
+	background-size:6px;
+}
+@mixin bgpt-trans() {
+	background:url(/static/portal/img/common/bgpt-transparent.gif) 0 0 repeat;
+	background-size:8px;
+}
+@mixin dltable() {
+	dl{
+		dt{
+			border-right:1px solid $bdcolor;
+			text-align:center;
+			width:34%;
+			background-color:#f0f2f7;
+		}
+		dd{}
+	}
+	dl{
+		display:table;
+		width:100%;
+		table-layout:fixed;
+		>*{
+			padding:9px 20px;
+			display:table-cell;
+			float:none;
+			vertical-align:middle;
+			border-bottom:1px solid $bdcolor;
+		}
+		&:last-child >*{border-bottom:none;}
+	}
+}
+@mixin maw() {
+	max-width:1276px;
+	margin: 0 auto;
+};
+@mixin dotx5() {
+	background:url(/static/portal/img/common/dotx5.png) 0 bottom repeat-x;	
+};
+
+@mixin bu-dot() {
+	background: url(/static/portal/img/common/bu3.png) 0 10px no-repeat;
+	background-size:5px;
+	padding-left:13px;
+}
+@mixin bu-dot2() {
+	background:url(/static/portal/img/common/bu-dot2.png) 0 8px no-repeat;
+	background-size:6px;
+	padding-left:17px;
+}
+@mixin bu0() {
+	&:before {
+		content: '';
+		width:19px;
+		height:19px;
+		background:#f76627 url(/static/portal/img/common/bu0mask.png) center center no-repeat;
+		display:inline-block;
+		vertical-align:top;
+		margin-right:7px;
+	}
+	font-size       : 18px;
+	font-family     : 'Noto-Regular';
+	font-family:'Noto-Medium';
+	font-weight:normal;
+	line-height     : 1;
+	margin          : 30px 0 20px;
+	color           : #000; 
+}
+@mixin bu1() {
+	background: url('/static/portal/img/common/bu1.png') 0 0 no-repeat;
+	@include breakpoint($sm){
+		background-image:url('/static/portal/img/common/bu1@2x.png');
+		background-size:10px 21px;
+	}
+	padding-left    : $m1;
+	font-size       : 22px;
+	// font-family     : 'Noto-Regular';
+	// font-weight 	: normal;
+	font-family:'Noto Sans';
+	font-weight:400;
+	line-height     : 1;
+	margin          : 40px 0 20px;
+	color           : #061d45;
+}
+@mixin bu2() {
+	background: url(/static/portal/img/common/bu2.png) 0 0 no-repeat;
+	// background-size:6px;
+	padding-left:$m1;
+	line-height:1.3;
+	font-size:18px;
+	font-family:'Noto Sans';
+	font-weight:400;
+	margin:30px 0 17px 0;
+	color:#0059a9;
+}
+@mixin bu3() {
+	background: url(/static/portal/img/common/bu3.png) 0 10px no-repeat;
+	background-size:5px;
+	padding-left:13px;
+	text-indent:0 !important;
+	position:relative;
+}
+@mixin bu4() {
+	position:relative;
+	padding-left:20px;
+	text-indent:0;
+	&:before {
+		content: '';
+		width:6px;
+		height:6px;
+		background-color:#f76627;
+		position:absolute;
+		left:0;
+		top:50%;
+		margin-top:-3px;
+	}
+}
+@mixin bu-arr() {
+	background: url(/static/portal/img/common/bu-arr.png) 0 6px no-repeat;
+	@include breakpoint($sm){
+		background-image:url(/static/portal/img/common/bu-arr@2x.png);
+		background-size:7px 11px;
+	}
+	padding-left:$m1;
+	line-height:1.6;
+	margin-left:5px;
+	font-weight:normal;
+}
+@mixin bu-dash() {
+	text-indent:-12px;
+	padding-left:12px;
+	&:before {
+		content: '- ';
+	}
+}
+@mixin m1(){
+	@include breakpoint($md){
+		margin-left:$m1;
+	}
+}
+
+// Update: September 2016, after a lot of grumbling, decided to simplify this. Cons: The color accuracy has gone down and mostly works on very dark or very light backgrounds. Pros: The code is far simpler and doesn't require doubling-up the text.
+// @include gradient-text('linear-gradient(80deg , #0059a9 , #399bd8)', 'light');
+@mixin gradient-text($gradient, $bg : 'light') {
+  @supports(mix-blend-mode: lighten) {
+    display: inline-block;
+    position: relative;
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: unquote($gradient);
+      pointer-events: none;
+    }
+
+    @if ($bg == 'light') {
+      color: #000;
+      background: #fff;
+      mix-blend-mode: multiply;
+
+      &::before {
+        mix-blend-mode: screen;
+      }
+    } @else {
+      color: #fff;
+      background: #000;
+      mix-blend-mode: lighten;
+
+      &::before {
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+#mapservice{
+	input[type=radio]{margin-right:6px;}
+	>h1{
+		font-size:15px;
+		color:#fff;
+		background-color:#20409a;
+		padding:10px 21px;
+		font-weight:normal;
+		position:relative;
+		z-index:100;
+	}
+	.navsh{
+		@include breakpoint($lg){
+			position:absolute;
+			width:280px;
+			height:100vh;
+			margin-top:-45px;
+			padding-top:45px;
+		}
+		top:45px;
+		left:0;
+		border-right:1px solid #dedede;
+		padding:0 20px;
+		
+		>h1{font-size:18px;line-height:1;padding:16px 0;text-align:center;@include breakpoint($sm){text-align:left;}}
+		.shtype{
+			// text-align:center;
+			margin-bottom:20px;
+			button{width:116px;line-height:1;padding:13px 0;text-align:center;font-weight:bold;border:1px solid #dee0e6;background-color:#ebeff8;}
+			.on{border-color:#20409a;background-color:#20409a;color:#fff;}
+		}
+		.c1{
+			.chkall{width:116px;line-height:1;padding:13px 0;text-align:center;font-weight:bold;border:1px solid #dee0e6;border-top:2px solid #20409a;border-bottom:none;}
+			.chk{
+				margin-bottom:20px;
+				ul{
+					li{
+						border:1px solid $bdcolor;
+						margin-top:-1px;
+					}
+					label{
+						display:block;
+						padding:10px;
+					}
+					@include breakpoint($smd){
+						li{display:inline-block;border:none;}
+
+						border:1px solid $bdcolor;
+					}
+				}
+			}
+			.chk2{
+				ul{
+					border:1px solid $bdcolor;
+					padding:22px;
+					overflow-y:auto;
+					@include breakpoint($lg){
+						height:319px;
+					}
+					li{
+						position:relative;
+						// padding-left:17px;
+						&:before {
+							content: '';
+							font-family:'LineAwesome';color:#20409a;font-size:13px;font-weight:bold;
+							position:absolute;left:0;top:9px;
+							transform:rotate(-90deg);
+						}
+						background:url(/static/portal/img/sub/dotx6.png) 0 bottom repeat-x;
+					}
+					label{
+						display:block;
+						position:relative;
+						padding:7px 0;
+						// input{width:100%;position:absolute;left:0;top:0;opacity:0;}
+
+						input:checked+span{font-weight:bold;color:#20409a;}
+					}
+				}
+			}
+		}
+		.c2{
+			input{width:100%;}
+		}
+		.shtypesubmit{
+			margin-top:20px;
+			text-align:center;
+			input[type=submit]{
+				width:116px;line-height:1;padding:13px 0;text-align:center;font-weight:bold;border:none;
+				color:#fff;background-color:#20409a;
+			}
+		}
+	}
+
+	.service{
+		padding:0 10px;
+		@include breakpoint($lg){
+			padding:0 10px 0 300px;
+		}
+		@include breakpoint($xl){
+			// padding-right:320px;
+		}
+	    transition: all .25s ease-out;
+		>.infor{
+			ul{overflow:hidden;padding:15px 0;}
+			li{
+				float:left;
+				min-width:170px;
+				padding-right:10px;
+				input[type=checkbox]{margin-top:-4px;margin-right:2px;}
+				span:before {
+					content: '';
+					width:13px;height:16px;
+					background:url(/static/portal/img/sub/map-icon.png) -25px -17px no-repeat;
+					background-size:860px 90px;
+					display:inline-block;vertical-align:top;margin-top:3px;margin-right:6px;
+				}
+				span.i2:before {background-position:-158px -17px;}
+				span.i3:before {background-position:-291px -17px;}
+				span.i4:before {background-position:-424px -17px;}
+				span.i5:before {background-position:-557px -17px;}
+				span.i6:before {background-position:-25px -48px;}
+				span.i7:before {background-position:-158px -48px;}
+				span.i8:before {background-position:-291px -48px;}
+				span.i9:before {background-position:-424px -48px;}
+				span.i10:before {background-position:-557px -48px;}
+			}
+		}
+		.daummapSet{border:1px solid $bdcolor;}
+	}
+	.mapdetailinforOff{
+		// padding-right:10px;
+		@include breakpoint($lg){
+			// padding-right:0;
+		}
+	}
+	.mapdetailinfor{
+		&.off{
+			width:0;
+			>*{display:none;}
+			>.mapdetailinforClose{display:block;
+				transform:rotate(-90deg);
+				left:0;
+			}
+		}
+		margin:20px;
+		@include breakpoint($lg){
+			margin:0;
+			width:300px;
+			padding-left:20px;
+			padding-right:20px;
+			border-left:1px solid $bdcolor;
+			border-bottom:1px solid $bdcolor;
+			position:absolute;
+			right:11px;
+			top:101px;
+			z-index:10;
+		}
+		background-color:#fff;
+		h1{font-size:18px;font-weight:bold;text-align:center;padding:15px 0;line-height:1;}
+		.mapdetailinforClose{
+	        transition: all .25s ease-out;
+			width:30px;height:30px;position:absolute;left:-1px;top:0;color:#fff;font-size:18px;background-color:#22b24c;text-align:center;
+			font-family:'FontAwesome';
+			transform:rotate(90deg);
+			}
+			.thumnailViewSet{
+				overflow:visible;
+				.left{
+					@include breakpoint($md){
+						float:none;
+						width:100%;
+					}
+					.thumCtrl{
+							position:relative;
+							padding:0 20px;
+							margin:10px 0;
+						@include breakpoint($md){
+							width:auto;
+							position:relative;
+						}
+						.pop-prev,
+						.pop-next{
+							position:absolute;
+							top:50%;
+							font-size:22px;
+							line-height:1;
+							padding:0;
+							margin:0;
+							margin-top:-20px;
+						}
+						.pop-prev{
+							left:-5px;
+							background-color:transparent;
+							&:before {
+								content: '';
+								font-size:22px;
+								font-family:'LineAwesome';
+								color:#344891;
+							}
+						}
+						.pop-next{
+							right:-5px;
+							background-color:transparent;
+							&:before {
+								content: '';
+								font-size:22px;
+								font-family:'LineAwesome';
+								color:#344891;
+							}
+						}
+					}
+				}
+				.right{
+					@include breakpoint($md){
+						float:none;
+						width:auto;
+						padding-bottom:20px;
+					}
+					.subject{
+						font-size:22px;
+					}
+					.list{margin-left:0;}
+				}
+			}
+			.thumCtrlList{
+				.owl-item{
+					a{
+						display:block;
+						width:97px;
+						height:70px;
+						border:1px solid $bdcolor;
+						overflow:hidden;
+					}
+				}
+			}
+			.lageImg{
+				display:block;
+				position:relative;
+				img{vertical-align:top;}
+				&:after{
+					width:40px;
+					height:40px;
+					line-height:40px;
+					padding:0;
+					font-size:21px;
+					right:10px;
+					top:10px;
+					border-radius:50%;
+				}
+				&:before{display:none}
+			}
+		.div.pp_default .pp_expand{
+			@include breakpoint($sm){
+				display:none;
+			}
+		}
+		h2{
+			font-size:15px;padding:4px 22px;
+			// color:#fff;background-color:#6274b2;
+			// display:inline-block;
+			text-align:center;
+			margin-bottom:15px;
+			@include breakpoint($smd){
+				@include bu0;
+				text-align:left;
+				padding-left:0;
+			}
+			@include breakpoint($lg){}
+		}
+		.list{
+			margin-left:0;
+			line-height:1.2;
+			li+li{margin-top:4px;}
+		}
+	}
+	.inforbox{padding:20px;}
+}
+.mapList{
+	.bdList{
+		max-height:500px;
+		overflow-y:auto;
+	}	
+}

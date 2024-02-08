@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>코딩 목록</title>
+<link rel="stylesheet" type="text/css" href="/static/jslibrary/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/jslibrary/bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="/static/jslibrary/jquery-ui/jquery-ui.css">
+<style type="text/css">
+	.c1{background-color:darkred;color:#fff;}
+	body{width:auto;padding:0;}
+	ol {margin: 20px; list-style-type: decimal; }
+	li a {display: block;padding: 2px 6px}
+	td{height:100%;}
+	td a{display:block;display:-webkit-box;padding:2px 6px;}
+	td.e{background-color:#0f0;}
+	a:hover {background-color: red; color: #fff; }
+	a{-webkit-transition:all 0.2s linear; -moz-transition  :all 0.2s linear; -ms-transition  :all 0.2s linear; -o-transition  :all 0.2s linear; transition  :all 0.2s linear; }
+	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{padding: 0 4px;}
+	td>p{margin: 0;}
+	tr:hover{background-color: #eee;}
+	caption{visibility: visible;width: auto;height: auto; position: static;  clip: rect(0, 0, 0, 0); border: 0; font-size: 16px; }
+	.leftnav{width:37%;float:left;height:100vh;overflow:auto;}
+	.frame{border:1px solid #000;overflow:hidden;}
+	.frame iframe{width:100%;height:99vh;}
+	a.active{font-weight:bold;color:darkorange;}
+</style>
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+			 
+<script>
+jQuery(document).ready(function() {
+  frameTarget = jQuery('.frame iframe')
+	if (window.location.hash!='') {
+		frameTarget.attr({
+			'src': window.location.hash.substring(1)
+		});
+	}
+	var targetHref = window.location.hash.substring(1)
+	jQuery('a[href="'+targetHref+'"]').focus().addClass('active')
+  var randomLinks = jQuery('a');
+  randomLinks.each(function(index, el) {
+	jQuery(this).click(function (e) {
+		e.preventDefault();
+		randomLinks.removeClass('active')
+		jQuery(this).addClass('active')
+		frameTarget.attr({
+			'src': jQuery(this).attr('href')
+		});
+		window.location.hash = jQuery(this).attr('href')
+	});
+  });
+});
+</script>
+</head>
+<body>
+<div class="leftnav">
+	<table cellspacing="0" cellpadding="0" class="table">
+		<tr>
+			<th>1 Depth</th>
+			<th>2Depth</th>
+			<th>팝업(레이어) 및 기타</th>
+			<th>화면구분</th>
+			<th>화면ID</th>
+		</tr>
+		<tr>
+			<td>MAIN</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td><a href="main.html">main.html</a></td>
+		</tr>
+		<tr>
+			<td>sublayout</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td><a href="sublayout.html">sublayout.html</a></td>
+		</tr>
+		<tr>
+			<td>교육안내</td>
+			<td>소개</td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-01-001.html">U-01-001</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>모집안내</td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-01-002.html">U-01-002</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>교육기관별안내</td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-01-003.html">U-01-003</a></td>
+		</tr>
+		<tr>
+			<td>접수안내</td>
+			<td>인터넷접수안내</td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-02-001.html">U-02-001</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>E-전단보기</td>
+			<td> </td>
+			<td>조회</td>
+			<td><a href="dist/U-02-002_view.html">U-02-002_view</a></td>
+		</tr>
+		<tr>
+			<td>강좌신청</td>
+			<td> </td>
+			<td> </td>
+			<td>목록</td>
+			<td><a href="dist/U-03_list.html">U-03_list</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>결제정보창</td>
+			<td><a href="dist/U-03_info.html">U-03_info</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td>감면서비스    신청 레이어</td>
+			<td>감면서비스    신청창</td>
+			<td><a href="dist/U-03_service.html">U-03_service</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>결제창</td>
+			<td><a href="dist/U-03_pay.html">U-03_pay</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>결제완료창</td>
+			<td><a href="dist/U-03_payok.html">U-03_payok</a></td>
+		</tr>
+		<tr>
+			<td>대관신청</td>
+			<td> </td>
+			<td> </td>
+			<td>목록</td>
+			<td><a href="dist/U-04_list.html">U-04_list</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>정보입력결제정보창</td>
+			<td><a href="dist/U-04_info.html">U-04_info</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td>감면서비스    신청 레이어</td>
+			<td>감면서비스    신청창</td>
+			<td><a href="dist/U-04_service.html">U-04_service</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>결제창</td>
+			<td><a href="dist/U-04_pay.html">U-04_pay</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>결제완료창</td>
+			<td><a href="dist/U-04_payok.html">U-04_payok</a></td>
+		</tr>
+		<tr>
+			<td>고객센터</td>
+			<td>공지사항</td>
+			<td> </td>
+			<td>목록</td>
+			<td><a href="dist/U-05-001_list.html">U-05-001_list</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-05-002.html">U-05-002</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Q&amp;A</td>
+			<td> </td>
+			<td>목록</td>
+			<td><a href="dist/U-06-001_list.html">U-06-001_list</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>FAQ</td>
+			<td> </td>
+			<td>목록</td>
+			<td><a href="dist/U-07-001_list.html">U-07-001_list</a></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>사이트맵</td>
+			<td> </td>
+			<td> </td>
+			<td><a href="dist/U-08-001.html">U-08-001</a></td>
+		</tr>
+		<tr>
+			<td> 마이페이지</td>
+			<td></td>
+			<td> </td>
+			<td>
+				<p>수강 이용 정보 1</p>
+				<p>수강 이용 정보 2</p>
+				<p>대관 사용 정보 1</p>
+				<p>대관 사용 정보 2</p>
+			</td>
+			<td>
+				<a href="dist/U-09-001.html">U-09-001.html</a>
+				<a href="dist/U-09-002.html">U-09-002.html</a>
+				<a href="dist/U-09-003.html">U-09-003.html</a>
+				<a href="dist/U-09-004.html">U-09-004.html</a>
+			</td>
+		</tr>
+		
+	</table>
+<div class="infor">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">업데이트 정보</h3>
+		</div>
+		<div class="panel-body">
+			<p>
+				/static/guide/ezpay/lib/
+				소스 위치
+			</p>
+			<a href="#" class="btn panelClose">닫기</a>
+		</div>
+	</div>
+	<script>
+		jQuery('.panelClose').click(function(event) {
+			jQuery('.infor').slideUp()
+			event.preventDefault();
+		});
+	</script>
+	<style>
+		.infor{position:absolute;left:50px;top:150px;}
+	</style>
+</div>
+</div>
+<div class="frame">
+	<iframe src="about:_blank"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단 통합검색</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="/static/portal/css/tsh.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+	<a href="#gnb">주메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="set">
+			<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+			<div id="tsh">
+				<form action="">
+					<fieldset>
+						<div class="s">
+							<legend class="sr-only">통합검색</legend>
+							<select name="">
+								<option value="">통합검색</option>
+								<option value="">웹페이지</option>
+								<option value="">게시판</option>
+								<option value="">첨부문서</option>
+								<option value="">강좌</option>
+							</select>
+							<input type="text" title="검색어">
+							<label class="shkeywordfilter"><input type="checkbox" name=""> 결과 내 재검색</label>
+							<button class="tshsubmit"><span class="sr-only">검색</span></button>
+						</div>
+						<button type="button" class="detailSearchOpen">상세검색</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<script>
+			$('.detailSearchOpen').click(function(event) {
+				$('.hottagToggle').removeClass('on');
+				$(this).toggleClass('on');
+				$('.box-tsh').toggleClass('on');
+			});
+		</script>
+		<!-- searchForm -->
+		<div class="detailSearch">
+			<form name="" action="">
+			<div class="box-tsh">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4">
+							<strong class="labelTit">검색정렬</strong>
+							<label for="SORT1"><input  type="radio" name="" value="" id="SORT1"> 정확도</label>
+							<label for="SORT2"><input  type="radio" name="" value="" id="SORT2"> 최신순</label>
+						</div>
+						<div class="col-md-8">
+							<strong class="labelTit">영역</strong>
+							<label or="field1"><input  type="checkbox" name="" id="field1" value=""> 전체</label>
+							<label or="field2"><input  type="checkbox" name="" id="field2" value=""> 제목</label>
+							<label or="field3"><input  type="checkbox" name="" id="field3" value=""> 내용</label>
+							<label or="field4"><input  type="checkbox" name="" id="field4" value=""> 작성자</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><strong class="labelTit">검색기간</strong>
+							<label For="period1"><input  type="radio" name="searchPeriod" id="period1" value=""> 전체</label>
+							<label for="period2"><input  type="radio" name="searchPeriod" id="period2" value=""> 1주일</label>
+							<label for="period3"><input  type="radio" name="searchPeriod" id="period3" value=""> 1개월</label>
+							<label for="period4"><input  type="radio" name="searchPeriod" id="period4" value=""> 1년</label>
+						</div>
+						<div class="col-md-6">
+							<input id="searchStartDate" name="searchStartDate" title="검색 시작일자" class="sdate" type="date"  value=""> ~
+							<input id="searchEndDate"   name="searchEndDate"   title="검색 종료일자" class="edate" type="date"  value="">
+							<input type="submit" id="btnSearch" name="btnSearch" value="검색" class="btn">
+						</div>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+		<!-- //searchForm -->
+	</header>
+	<!-- 2018-11-27 태그 이동 및 추가 -->
+	<div class="tabsSet">
+		<div class="tabs">
+			<ul>
+				<li class="on"><a href=""><span>통합검색</span><span class="black">[ 0 ]</span> </a></li>
+				<li><a href=""><span>메뉴 검색</span><span class="black">[ 0 ]</span></a></li>
+				<li><a href=""><span>웹페이지</span><span class="black">[ 0 ]</span></a></li>
+				<li><a href=""><span>게시판</span><span class="black">[ 0 ]</span></a></li>
+				<li><a href=""><span>첨부문서</span><span class="black">[ 0 ]</span></a></li>
+				<li><a href=""><span>강좌</span><span class="black">[ 0 ]</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- // -->
+	<div id="container">
+		<div class="totalSearch">
+			<div class="ctsleft">
+				<div class="hgroup">
+					<h2>[ 페기물 ]<span class="txt">에 대한 검색 결과 [ 총 <strong>2</strong> 건 ]</span> </h2>
+				</div>
+				<!-- 메뉴검색 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>메뉴검색<span class="txt">[ 총 <strong>180</strong> 건 ]</span> </h3>
+					</div>
+					<ul class="list">
+						<li><a href="" target="_blank">대표포털 &gt; 종합<span class="mark">민원</span> &gt; 종합<span class="mark">민원</span>안내 &gt; <span class="mark">민원</span>실안내 &gt; <span class="mark">민원</span>여권과(행정지원동1층)</a></li>
+						<li><a href="" target="_blank">대표포털 &gt; 종합<span class="mark">민원</span> &gt; 종합<span class="mark">민원</span>안내 &gt; <span class="mark">민원</span>실안내 &gt; 부동산정보과(행정지원동1층)</a></li>
+						<li><a href="" target="_blank">대표포털 &gt; 종합<span class="mark">민원</span> &gt; 종합<span class="mark">민원</span>안내 &gt; <span class="mark">민원</span>실안내 &gt; 세무종합<span class="mark">민원</span>실(행정지원동2층)</a></li>
+						<li><a href="" target="_blank">대표포털 &gt; 종합<span class="mark">민원</span> &gt; 종합<span class="mark">민원</span>안내 &gt; <span class="mark">민원</span>실안내 &gt; 교통종합<span class="mark">민원</span>실(별관1층)</a></li>
+					</ul>
+					<p><a href="" title="메뉴검색 더보기 " class="btnMore"> 더보기 </a></p>
+				</div>
+				<!-- //메뉴검색 -->
+				<hr>
+				<!-- 웹페이지 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>웹페이지<span class="txt">[ 총 <strong>788</strong> 건 ]</span> </h3>
+					</div>
+					<ul class="list">
+						<li>
+							<a href="" class="linker" target="_blank">
+								<span class="title">착공신고</span>
+								[2018-01-02]
+							</a>
+							<p>
+								무인민원발급기 세무 지방세 납부/환급 민방위 민방위일정 교육 문화행사 어르신 정보화 교육 자치회관 프로그램 동작구 교육시설 통합도서관 평생학습관 복지 출산지원 양육지원 동작구육아종합지원센터 어르신복지 노인생활지원 공휴일.야간진료 의료기관 복지정보포털(복지로)...<br> 대표포털 &gt; 종합민원 &gt; 분야별 민원안내 &gt; 건축 &gt; 착공신고
+							</p>
+							<p>
+								<i class="ico-home"></i>대표홈페이지>종합민원....
+							</p>
+						</li>
+					</ul>
+					<p><a href="" title="웹페이지 더보기 " class="btnMore"> 더보기 </a></p>
+				</div>
+				<!-- //웹페이지 -->
+				<hr>
+				<!-- 게시판 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>게시판<span class="txt">[ 총 <strong>436</strong> 건 ]</span> </h3>
+					</div>
+					<ul class="list">
+						<li>
+							<a href="" class="linker" target="_blank">
+								<span class="title">착공신고</span>
+								[2018-01-02]
+							</a>
+							<p>
+								무인민원발급기 세무 지방세 납부/환급 민방위 민방위일정 교육 문화행사 어르신 정보화 교육 자치회관 프로그램 동작구 교육시설 통합도서관 평생학습관 복지 출산지원 양육지원 동작구육아종합지원센터 어르신복지 노인생활지원 공휴일.야간진료 의료기관 복지정보포털(복지로)...<br> 대표포털 &gt; 종합민원 &gt; 분야별 민원안내 &gt; 건축 &gt; 착공신고
+							</p>
+						</li>
+					</ul>
+					<p><a href="" title="게시판 더보기 " class="btnMore"> 더보기 </a></p>
+				</div>
+				<!-- //게시판 -->
+				<hr>
+				<i class="icon icofolder"></i> 기타
+				<i class="icon icohwp"></i> hwp
+				<i class="icon icoimg"></i> 이미지
+				<i class="icon icopdf"></i> pdf
+				<i class="icon icoppt"></i> ppt
+				<i class="icon icoword"></i> word
+				<i class="icon icoxls"></i> xls
+				<!-- 첨부파일 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>첨부파일<span class="txt">[ 총 <strong>419</strong> 건 ]</span> </h3>
+					</div>
+					<ul class="list">
+						<li>
+							<a href="" class="linker">
+								<i class="icon icohwp"></i>
+								<span class="title">위임장(자동차 등록민원)</span>
+								[11776 byte – 2018-07-12]
+							</a>
+							<a class="docview" href="" title="위임장(자동차 등록민원).hwp 빠른보기" target="_blank"><span class="sr-only">위임장(자동차 등록민원).hwp 빠른보기</span></a>
+						</li>
+						<li>
+							<a href="" class="linker">
+								<i class="icon icoxls"></i>
+								<span class="title">위임장(<mark>자동차</mark> 등록민원)</span>
+								[11776 byte – 2018-07-12]
+								<a class="docview" href="" title="위임장(자동차 등록민원).hwp 빠른보기" target="_blank"><span class="sr-only">위임장(자동차 등록민원).hwp 빠른보기</span></a>
+							</a>
+						</li>
+						<li>
+							<a href="" class="linker">
+								<i class="icon icopdf"></i>
+								<span class="title">위임장(<mark>자동차</mark> 등록민원)</span>
+								[11776 byte – 2018-07-12]
+								<a class="docview" href="" title="위임장(자동차 등록민원).hwp 빠른보기" target="_blank"><span class="sr-only">위임장(자동차 등록민원).hwp 빠른보기</span></a>
+							</a>
+						</li>
+						<li>
+							<a href="" class="linker">
+								<i class="icon icofolder"></i>
+								<span class="title">위임장(<mark>자동차</mark> 등록민원)</span>
+								[11776 byte – 2018-07-12]
+								<a class="docview" href="" title="위임장(자동차 등록민원).hwp 빠른보기" target="_blank"><span class="sr-only">위임장(자동차 등록민원).hwp 빠른보기</span></a>
+							</a>
+						</li>
+					</ul>
+					<p><a href="" title="첨부파일 더보기 " class="btnMore"> 더보기 </a></p>
+				</div>
+				<!-- //첨부파일 -->
+				<hr>
+				<!-- 강좌 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>강좌<span class="txt">[ 총 <strong>267</strong> 건 ]</span> </h3>
+					</div>
+					<div class="classList">
+						<ul>
+							<li>
+								<div class="set">
+									<a href="#">
+										<span class="tit">헬스(일반)</span>
+										<span class="bage">진행중</span>
+									</a>
+									<span><i class="la la-calendar-o"></i> 교육기간 : 02.01 ~ 02.30 [월~금]</span>
+									<span><i class="la la-calendar-check-o visible-xs"></i><i class="vline hidden-xs"></i> 접수기간 : 01.25 ~ 01.31</span>
+									<span><i class="la la-user"></i> 교육대상 : 성인</span>
+									<span><i class="la la-won"></i> 금액 : 40,000</span>
+									<span><i class="la la-phone"></i> 02-1234-5678</span>
+								</div>
+								<p>
+									내용 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vero delectus asperiores nostrum consectetur, suscipit distinctio quae quo animi numquam obcaecati, error repellendus, sit fuga qui earum. Labore, esse, consectetur!
+								</p>
+							</li>
+							<li>
+								<div class="set">
+									<a href="#">
+										<span class="tit">헬스(일반)</span>
+										<span class="bage">진행중</span>
+									</a>
+									<span><i class="la la-calendar-o"></i> 교육기간 : 02.01 ~ 02.30 [월~금]</span>
+									<span><i class="la la-calendar-check-o visible-xs"></i><i class="vline hidden-xs"></i> 접수기간 : 01.25 ~ 01.31</span>
+									<span><i class="la la-user"></i> 교육대상 : 성인</span>
+									<span><i class="la la-won"></i> 금액 : 40,000</span>
+									<span><i class="la la-phone"></i> 02-1234-5678</span>
+								</div>
+								<p>
+									내용 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vero delectus asperiores nostrum consectetur, suscipit distinctio quae quo animi numquam obcaecati, error repellendus, sit fuga qui earum. Labore, esse, consectetur!
+								</p>
+							</li>
+						</ul>
+					</div>
+					<p><a href="" title="강좌 더보기 " class="btnMore"> 더보기 </a></p>
+				</div>
+				<!-- //강좌 -->
+				<hr>
+				<!-- 검색결과 없음 -->
+				<div class="sectionSch">
+					<div class="hgroup">
+						<h3>검색결과 없는경우 통합예약<span class="txt">[ 총 <strong>0</strong> 건 ]</span> </h3>
+					</div>
+					<!-- 검색결과 없는경우 -->
+					<div class="nodata">
+						검색 결과가 없습니다.
+					</div>
+					<!-- //검색결과 없는경우	 -->
+				</div>
+				<!-- //검색결과 없음 -->
+			</div>
+			<!-- //left Container -->
+		</div>
+	</div>
+</div>
+<div id="footer">
+	footer
+</div>
+<!-- <div class="konan-autocomplete" style="position: absolute; background: white;  z-index: 501; width: 279px; top: 121px; left: 876.328px;">
+	<div class="konan-autocomplete-header" style="display: none;">현재 자동완성 기능을 사용하고 계십니다.</div>
+	<ul id="ui-id-1" class="ui-menu ui-widget ui-widget-content" tabindex="0">
+		<li class="ui-menu-item ui-state-focus" id="ui-id-14" tabindex="-1"><a><strong>4</strong></a></li>
+		<li class="ui-menu-item" id="ui-id-15" tabindex="-1"><a><strong>4</strong>44</a></li>
+		<li class="ui-menu-item" id="ui-id-16" tabindex="-1"><a><strong>4</strong>동</a></li>
+		<li class="ui-menu-item" id="ui-id-17" tabindex="-1"><a><strong>4</strong>분기</a></li>
+		<li class="ui-menu-item" id="ui-id-18" tabindex="-1"><a><strong>4</strong>경로</a></li>
+		<li class="ui-menu-item" id="ui-id-19" tabindex="-1"><a><strong>4</strong>동주민</a></li>
+		<li class="ui-menu-item" id="ui-id-20" tabindex="-1"><a><strong>4</strong>동도서</a></li>
+		<li class="ui-menu-item" id="ui-id-21" tabindex="-1"><a><strong>4</strong>회</a></li>
+		<li class="ui-menu-item" id="ui-id-22" tabindex="-1"><a><strong>4</strong>3</a></li>
+		<li class="ui-menu-item" id="ui-id-23" tabindex="-1"><a><strong>4</strong>8</a></li>
+	</ul>
+	<div class="konan-autocomplete-footer"><span></span><span class="pull-right"><a data-toggle="disable">끄기</a></span></div>
+</div> -->
+<script src="/static/commons/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+@import "../..//bos/scss/breakpoint";
+@import "var";
+
+#fBannerSet{
+	.fbanner{
+		max-width: $mw;
+		margin:0 auto;
+	}
+	a{
+		font-size: 15px;
+	}
+}
+.flinkList{
+	background-color: #5c6979;
+	clear: both;
+	position: relative;
+	z-index: 20;
+	@include breakpoint($sm){
+		margin:0;
+		.container{padding:0;}
+	}
+
+	.container>div{
+		width: 50%;
+		@include breakpoint($smd){ 
+			width: 100%;
+		}
+		float: left; 
+	}
+	color:#fff;
+	a{
+		color:#fff;
+		line-height: 52px;
+	}
+	.serviceList{
+		position: relative;
+		background-color: #495564;
+		h3{
+			display: inline-block;
+			font-size: 16px;
+			font-weight: normal;
+			float: left;
+			line-height: 52px;
+			width: 85px;
+			text-align:center;
+			@include breakpoint($sm){
+				display:none;
+			}
+			@include breakpoint($xl){
+				width:106px;
+				text-align:left;
+				padding-left:23px;
+			}
+		}
+		button{
+			position: absolute; width: 45px; height: 52px;
+			&.b-left{
+				left: 85px;
+				@include breakpoint($sm){left:0;}
+				@include breakpoint($lg){left:106px;}
+				&:before{
+					content:"\f111";
+					@include la;
+					font-size: 24px;
+				}
+			}
+			&.b-right{
+				right: 0;
+				&:before{
+					content:"\f112";
+					@include la;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	.weSite{
+		>ul>li{
+			display: inline-block;
+			width: calc(100% / 3);
+			float:left;
+			position:relative;
+			>a{
+				display:block;
+				padding-left: 20px;
+				&:after{
+					content:"\f113";
+					@include la;
+					float: right;
+					margin-right:10px;
+					display: inline-block;
+					transition: all .25s ;
+				}
+				@include breakpoint($sm){
+					padding-left:5px;
+					font-size:15px;
+					text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+				}
+			}
+			&.on{
+				>a{
+					background-color:#495564;
+					&:after{
+						transform:rotate(180deg);
+					}
+				}
+				ul{display:block;}
+			}
+			&:last-child ul{
+				@include breakpoint($sm){
+					left:inherit;
+					right:0;
+				}
+			}
+			ul{
+				background-color:#495564;
+				position:absolute;
+				bottom:52px;
+				left:0;
+				width:100%;
+				display:none;
+				@include breakpoint($sm){
+					width:190px;
+					box-shadow: 0 -1px 1px 0 hsla(0,0%,0%,.55);
+				}
+				li{
+					a{
+						line-height:1.6;
+						display:block;
+						padding:8px 0 8px 20px;
+						font-size:0.9em;
+						&:hover,
+						&:focus {
+							background-color:#5c6979;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+.flinkList #serviceSlide a{ color: $color_lightgray; }
+#serviceSlide{
+	margin:0 45px;
+	float: left;
+	width: calc(100% - 90px - 85px);
+	overflow: hidden;
+	text-align: center;
+	color: $color_lightgray;
+	@include breakpoint($sm){
+		width:calc(100% - 90px);
+		margin:0 45px;
+	}
+	@include breakpoint($lg){
+		width: calc(100% - 90px - 106px);
+	}
+	.items{
+		display: inline-block; float: left; 
+		a{display:block;white-space:nowrap;padding-left:25px;padding-right:25px; }
+	}
+}
+#footerAd{
+	padding:60px 10px 10px;
+	position:relative;
+	z-index: 10;
+	width:100%;
+	@include breakpoint($md){
+		height:80px;
+		padding:0 90px 0 0;
+	}
+	.footerAd-ctrl{
+		position:absolute;
+		z-index:2;
+		right:0;
+		top:10px;
+		@include breakpoint($md){
+			//top:10px;
+		}
+
+		a{float:left;img{vertical-align:top;}}
+		button{
+			padding:0;
+			width:30px;
+			height:60px;
+			float:left;
+			background:none;
+			font-size: 28px;
+			// &:last-child{border-right:none;}
+			span{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+			&.footerAd_pre {	}
+			&.footerAd_play { display:none;	}
+			&.footerAd_stop { 	}
+			&.footerAd_next {		}
+		}
+	}
+	.footerAd-list{
+		overflow: hidden;
+		width: 100%;
+		height: 80px;
+		.item{
+			text-align:center;
+			float: left;
+			height: 80px;
+			a{
+				// display:inline-block;
+				display:block;
+				// border:1px solid #fff;
+				height:80px;
+				text-align:center;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				img{
+					width:auto;
+					display:inline;
+					max-width:100%;
+				}
+			}
+		}
+	}
+}
+
+#footer{
+	clear:both;
+	color: $color_lightgray;
+	background-color: #364150;
+	.favSiteServiceSet{
+		text-align:center;
+		margin-top:45px;
+		margin-bottom:20px;
+		.toggle{
+			display:inline-block;
+			margin: 0 auto;
+			&:after {
+				content: '';
+				font-family:'FontAwesome';
+				font-size:24px;
+				width:39px;
+				text-align:right;
+				display:inline-block;
+			}
+		}
+	}
+	.ft{
+		padding:0;
+		.set{
+			margin: 0 auto;
+			max-width:$mw;
+		}
+		.fsite{
+			margin:11px;
+			margin-bottom:0;
+			div{
+				margin-bottom:2px;
+				position:relative;
+				padding-right:100px+2;
+				select{
+					width:100%;
+					height:40px;
+					border:1px solid #b8c4e4;
+					line-height:40px;
+					padding-left:20px;
+					background-color:#fff;
+					position:relative;
+				}
+				button{
+					position:absolute;
+					right:0;
+					top:0;
+					margin-left:2px;
+					height:40px;
+					width:100px;
+					background-color:#20409a;
+					color:#fff;
+					text-align:center;
+				}
+			}
+			@include breakpoint($lg){
+				margin:0;
+				float:right;
+				div{
+					float:left;
+					padding-right:0;
+					margin-left:2px;
+					select{
+						width:170px;
+						float:left;
+					}
+					button{
+						position:static;
+						margin-left:-1px;
+					}
+				}
+			}
+			*{vertical-align:top;}
+		}
+	}
+	.footerSet{
+		position:relative;
+		max-width:$mw;
+		min-height:180px;
+			margin: 0 11px;
+			padding:20px 0 0 0;
+		@include breakpoint($lg){
+			margin: 0 auto;
+			padding:0 20px 0 20px;
+		}
+		@include breakpoint($xl){
+		}
+		nav{
+			@include breakpoint($sm){
+				padding-bottom:10px;
+			}
+			@include breakpoint($lg){
+				padding-top: 10px;
+			}
+			@include clearfix;
+			ul>li:first-child a{
+				color:#fdaa8d;
+				@include breakpoint($md){padding-left: 0; }
+			}
+			@include breakpoint($sm){
+				li{display:inline-block;}
+			}
+			a{
+				position:relative;
+				color:#fff;
+				padding:0 15px;
+				font-size:15px;
+				line-height:30px;
+				@include breakpoint($md){
+					float:left;
+					line-height:46px;
+				}
+				&::before {
+					content: '';
+					position:absolute;
+					left:0;
+					top:16px;
+					height:15px;
+					@include breakpoint($md){
+						border-left:1px solid #555d69;
+					}
+				}
+			}
+			li:first-child a:before{display:none;}
+		}
+		address{
+			line-height:1.71;
+			font-size:0.93em;
+			font-style:normal;
+			letter-spacing:-0.8px;
+			p{
+				margin-bottom:10px;
+			}
+			display:block;
+			clear:both;
+		}
+		.ftset{
+			position:inherit;
+			top:inherit;
+			right:inherit;
+			width:100%;
+			@include breakpoint($xl){
+				position:absolute;
+				top:80px;
+				right:0;
+				width:120px;
+			}
+			.ftcon{
+				@include breakpoint($md){
+					float:right;
+				}
+				@include breakpoint($xl){
+					float:right;
+				}
+				.markset{
+					#qrcode{float:left;margin-right:10px;}
+					img{float:left;height:70px;}
+					img+img{margin-left:10px;}
+				}
+				@include breakpoint($xl){
+					// display:block;
+				}
+			}
+		}
+	}
+	.bottomset{
+		@include clearfix();
+		padding-bottom:40px;
+		.copyright{
+			float:left;
+			padding-top:7px;
+		}
+		.markSet{
+			position:relative;
+			padding-top:10px;
+			@include breakpoint($lg){
+				padding:0;
+				float:right;
+			}
+			ul{@include clearfix();}
+			.wamark{
+				background:none;
+				display:block;
+				img{height:50px;}
+				@include breakpoint($lg){
+					position:absolute;
+					right:20px;
+					top:-50px - 15;
+					
+				}
+			}
+			li{
+				float:left;
+				height:41px;
+				display:inline;
+				background:url(/static/portal/img/main/footerMarkSet.png) 0 0 no-repeat;
+				margin-left:4px;
+				&.i1{width:142px;}
+				&.i2{width:138px;background-position:-146px 0;}
+				&.i3{width:127px;background-position:-288px 0;}
+				&.i4{width:131px;background-position:right 0;}
+
+			}
+			@include breakpoint($sm){
+				clear:both;
+				padding-top:15px;
+				.wamark{text-align:center;padding-bottom:5px;height:auto;}
+				text-align:center;
+				li{
+					display:inline-block;
+					float:none;
+					margin:0 5px 5px 0 ;
+				}
+			}
+		}
+	}
+}

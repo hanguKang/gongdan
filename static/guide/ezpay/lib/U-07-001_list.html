@@ -1,0 +1,80 @@
+<div class="mobiletab">
+	<form action="">
+		<select name="mobileTab" title="메뉴선택">
+			<option value="">회원가입</option>
+			<option value="">수강신청 변경 / 취소</option>
+			<option value="">강사 / 강좌 / 특강</option>
+			<option value="">공연 / 행사</option>
+			<option value="">기타</option>
+		</select>
+		<button type="submit" class="b-go" >이동</button>
+	</form>
+</div>
+<div class="tab">
+  <div class="tab-list len5">
+    <div class="item on "><a href="" title="현재 선택"><span>회원가입</span> </a> </div>
+    <div class="item"> <a href=""> <span>수강신청 변경 / 취소</span> </a> </div>
+    <div class="item"> <a href=""> <span>강사 / 강좌 / 특강</span> </a> </div>
+    <div class="item"> <a href=""> <span>공연 / 행사</span> </a> </div>
+    <div class="item"> <a href=""> <span>기타</span> </a> </div>
+  </div>
+</div>
+<dl id="faqList" class="faqList">
+	<dt class="on open">
+		<button type="button" aria-label="답변 열기">
+			<span class="qna_img"><span class="sr-only">질문</span></span> <span>인터넷 접수시 회원가입이 꼭 필요한가요? 그리고 가입절차는 어떻게 됩니까?</span>
+		</button>
+	</dt>
+	<dd>
+		<span class="qna_img"><span class="sr-only">답변</span></span>
+		한줄 답변.
+	</dd>
+	<dt>
+		<button type="button" aria-label="답변 열기">
+			<span class="qna_img"><span class="sr-only">질문</span></span> <span> 아이디와 비밀번호 확인은 어떻게 하나요?</span>
+		</button>
+	</dt>
+	<dd>
+		<span class="qna_img"><span class="sr-only">답변</span></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tenetur explicabo sequi pariatur, perferendis voluptates suscipit odit ipsa dicta perspiciatis, totam quasi autem dolorem. Sed earum dolore quasi quisquam sit.
+	</dd>
+</dl>
+<!-- faqList -->
+<script>
+	$(function(){
+		//faq
+		var article = $('.faqList dt>button');
+		article.each(function(index, el) {
+			$(this).click(function(event) {
+				if ($(this).parent().hasClass('open')) {
+					$(this).parent().removeClass('open').next().hide();
+					$(this).attr('aria-label', '답변 열기')
+				} else {
+					$(this).parent().addClass('open').next().show();
+					$(this).attr('aria-label', '답변 닫기')
+				}
+			});
+			$(this).parent().removeClass('open').next().hide();
+		});
+		//article.eq(0).trigger('click');
+	})
+</script>
+<!-- paging -->
+<div class="paginationSet">
+	<ul class="pagination pagination-centered">
+		<li class="i first"><span class="s"><span>처음 <span class="t">목록으로 이동</span></span></span></li>
+		<li class="i prev"><span class="s"><span>이전 <span class="t">목록으로 이동</span></span></span></li>
+		<li><a href=""><span>1</span></a></li>
+		<li><a href=""><span>2</span></a></li>
+		<li><a href=""><span>3</span></a></li>
+		<li><a href=""><span>4</span></a></li>
+		<li><a href=""><span>5</span></a></li>
+		<li><a href=""><span>6</span></a></li>
+		<li><a href=""><span>7</span></a></li>
+		<li><a href=""><span>8</span></a></li>
+		<li><a href=""><span>9</span></a></li>
+		<li class="active"><span><em title="현재페이지"><span>10</span></em></span></li>
+		<li class="i next"><a title="마지막 페이지로 이동" href=""><span class="s"><span>다음 <span class="t">목록으로 이동</span></span></span></a></li>
+		<li class="i end"><a title="다음 10페이지 목록으로 이동" href=""><span class="s"><span>마지막<span class="t">목록으로 이동</span></span></span></a></li>
+	</ul>
+</div>
+<!-- //paging -->

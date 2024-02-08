@@ -1,0 +1,330 @@
+
+// 콘텐츠 불릿
+
+/* 1 **************************************************/
+#content>h2,
+#content>form>h2,
+.bu1{
+	@include bu1();
+	&+p{
+		// margin-top:-15px;
+	}
+	>span{
+		font-size:$defaultfontsize;
+		font-weight:normal;
+		font-family:$fontSet;
+	}
+	>a{
+		font-weight:normal;
+	}
+}
+#content>h2+p{
+	margin:20px 0 20px 20px;
+	@include bu-arr;
+	&.n{
+		background:none;
+		margin-left:0 !important;
+		padding-left:0 !important;
+		@include breakpoint($md){
+			padding-left:0 !important;
+			margin-left:22px !important;
+		}
+	}
+}
+/* 2 **************************************************/
+#content>h3,
+#content>form>h3{
+	@include bu2;
+	.row &{margin-top:0;}
+	&+.n+.list-num,
+	&+.list-num
+	{
+		margin-left:11px;
+	}
+	>span{
+		font-size:$defaultfontsize;
+		font-weight:normal;
+		font-family:$fontSet;
+	}
+	&.bu2-txt{
+		font-size:18px;
+		color:$sitecolor;
+		margin:30px 0 20px $m1;
+		padding:0;
+		background:none;
+		font-weight:bold;
+		// font-family:inherit;
+		&+p{padding-left:0;background:none;}
+	}
+}
+#content>.bu2,
+#content>h2+p.bu2,
+.bu2{
+	@include bu2();
+}
+/* 3 **************************************************/
+#content>h4,
+#content>form>h4{
+	@include bu2();
+	margin:15px 0 15px 20px;
+	font-weight:normal;
+	text-indent:0 !important;
+	&+.table{margin-top:0;}
+}
+.bu3{
+	@include bu3();
+}
+#content>h3+p{
+	@extend .bu3;
+	margin-left:$m1;
+	&.n{
+		background:none;padding-left:0;
+		margin-left:11px;
+	}
+	&+.list{margin-top:15px;}
+}
+/* 4 **************************************************/
+.bu4{
+	@include bu4();
+}
+/* 5 **************************************************/
+#content>h5
+{
+	font-size:1em;
+}
+
+.bu{
+	>h2{
+		@include bu0;
+	}
+	>h3{
+		@include bu1;
+	}
+	>h4{
+		@include bu2;
+	}
+}
+.bu-dash{@include bu-dash;}
+.bu-arr{
+	@include bu-arr;
+	.list+&{margin-top:25px;}
+	&+.table{margin-top:20px;}
+}
+
+// 좌측 여백
+.m1{
+	@include breakpoint($md){
+		margin-left:$m1;
+	}
+}
+.m2{
+	margin-left:$m2;
+}
+dl.m1{
+	*{margin-bottom:5px;}
+}
+
+// 리스트타입
+.list{
+	margin-left:20px;
+	>li{
+		@include bu3;
+		// margin:6px 0;
+		>ul{
+			>li{
+				padding-left:12px;
+				position:relative;
+				&:before {
+					content: '- ';
+					position:absolute;
+					left:0;top:0;
+				}
+				>ul,
+				>ol{
+					>li{
+						text-indent:-16px;
+						padding-left:16px;
+						&:before {
+							content: '· ';
+							display:inline;
+						}
+					}
+				}
+
+			}
+			&.none{
+				li{
+					&:before {display:none}
+				}
+			}
+			&.num,
+			&.number{
+				>li{
+					text-indent:-20px;
+					padding-left:20px;
+					&:before {display:none}
+				}
+			}
+		}
+		
+		.mw{
+			margin-left:-20px-14;
+		}
+	}
+	>li+li{
+		margin-top:12px;
+	}
+	.table{margin-top:5px;margin-bottom:0;}
+	[class^=b-]{
+		min-height:inherit;
+		&.b-down{
+			margin:-3px 0 0 0;
+			padding:4px 8px;
+		}
+	}
+	.bu-arr+&{margin-top:20px;}
+}
+.list1{
+	&.type{
+		>li{margin-bottom:12px;}
+	}
+
+	>li{
+		text-indent:-16px;
+		padding-left:16px;
+		&:before {
+			content: '- ';
+		}
+		>ul{
+			>li{text-indent:-16px;padding-left:16px;
+				&:before {
+					content: 'ㆍ';
+				}
+			}
+		}
+	}
+	&.none{
+		li{
+			&:before {display:none}
+		}
+	}
+}
+dl.list{
+	margin:0;
+	dt{
+		@include bu3;
+	}
+	dd{
+		margin-left:10px;
+		text-indent:-16px;
+		padding-left:16px;
+		&:before {
+			content: '- ';
+		}
+	}
+}
+.list2{
+	margin-top:10px;
+	li{ 
+		text-indent:-16px;
+		padding-left:16px;
+		&:before {
+			content: '- ';
+		}
+	}
+}
+.list3{
+	li{
+		text-indent:-18px;
+		padding-left:18px;
+		li{
+			text-indent:0;
+			padding-left:12px;
+			position:relative;
+			&:before {
+				position:absolute;
+				left:0;top:0;
+				content: '- ';
+			}
+		}
+	}
+}
+.list-star{
+	@include m1;
+	margin-top:10px;
+	margin-bottom:10px;
+	li{
+		text-indent:-18px;
+		padding-left:18px;
+	}
+}
+.bu-star{
+	text-indent:-18px;
+	padding-left:18px;	
+	color:#20409a;
+	font-weight:400;
+	.list+&{
+		margin-top:10px;
+		@include m1;
+	}
+}
+strong.bu-star{display:inline-block;}
+.list-num{
+	margin-left:20px;
+	h2+p+&,
+	h3+p+&,
+	h4+&{
+		@include m1;
+		>li{margin-bottom:10px}
+	}
+	&.type>li{margin-bottom:20px}
+	li{
+		padding-left:16px;
+		text-indent:-16px;
+		*{text-indent:0;}
+	}
+}
+.list-num1{
+	margin-left:20px;
+	&.type{
+		>li{margin-bottom:20px}
+	}
+	li{
+		padding-left:20px;
+		text-indent:-20px;
+	}
+}
+.list-dl{
+	@include m1;
+	dt{
+		@include bu3;
+	}
+	dd{
+		margin-left:10px;
+		text-indent:-16px;
+		padding-left:16px;
+		&:before {
+			content: '- ';
+		}
+	}
+	dl+dl,
+	dd+dt{
+		margin-top:16px;
+	}
+}
+.list-img{
+	@include m1();
+}
+.list + .inforbox{margin-top:10px}
+.table .list-num1{margin-left:0}
+p+.table{margin-top:0;}
+
+.list-dec{
+	list-style-type: decimal;
+	padding-left:30px;
+}
+.bu-t2{
+	font-family:'Noto Sans';font-weight: 500;
+	font-size:18px;
+	color:$sitecolor;
+}

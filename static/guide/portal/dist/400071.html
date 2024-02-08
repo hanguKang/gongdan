@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>성북구 도시관리공단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/static/portal/css/default.css">
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css">
+<script src="/static/jslibrary/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1de64e791fefa8b262b3f40c83d76ee3&libraries=services"></script>
+<script src="/static/portal/js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+<script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+</div>
+<div id="wrap">
+	<div id="globalWarp">
+		<div class="container">
+			<div class="familySet">
+				<ul>
+					<li class="f1 on"><a title="선택됨" href="">성북구도시관리공단</a></li>
+					<li class="f2"><a href="">온라인예약</a></li>
+					<li class="f3"><a href="">통합주차</a></li>
+				</ul>
+			</div>
+			<div class="global">
+				<ul class="mynav">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">사이트맵</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="top">
+			<div class="container">
+				<p class="logo"><a href="/"><span class="sr-only">성북구도시관리공단</span></a></p>
+				<div id="subtsh">
+					<form action="">
+						<fieldset>
+							<legend class="sr-only">통합검색</legend>
+							<select name="" title="검색어 구분">
+								<option value="">통합검색</option>
+							</select>
+							<input type="text" title="검색어">
+							<button><span class="sr-only">검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="gnb">
+				<button type="button" class="gnbClose"><span class="sr-only">메뉴 닫기</span></button>
+				<ul>
+					<li><a href="" >고객소통</a></li>
+					<li><a href="" >체육시설</a></li>
+					<li><a href="" >복지시설</a></li>
+					<li><a href="" >알림마당</a></li>
+					<li><a href="" >사회혁신경영</a></li>
+					<li><a href="" >공단소개</a></li>
+				</ul>
+				<div id="allmenu">
+					<button type="button" class="gnbOpen"><span class="sr-only">메뉴 전체보기</span></button>
+				</div>
+			</nav>
+		</div>
+		<script>
+			$('.gnbOpen').click(function(event) {
+				$('#gnb').addClass('mobileOn')
+			});
+			$('.gnbClose').click(function(event) {
+				$('#gnb').removeClass('mobileOn')
+			});
+			var gnbDepth1=$('#gnb>ul a')
+			gnbDepth1.click(function(event) {
+				if ($(window).size()>992) {
+					if ($(this).next().has('ul').length){
+						$(this).parent().toggleClass('on');
+						event.preventDefault();
+					}
+				}
+			});
+			$('.familySetOpen').click(function(event) {
+				$('.familySet').addClass('mobileOn')
+			});
+			$('.familySetClose').click(function(event) {
+				$('.familySet').removeClass('mobileOn')
+			});
+		</script>
+	</header><!-- //header -->
+
+	<!-- container -->
+	<div id="container"> 
+		<nav class="lnb size8 d-200188">
+			<h2>고객소통</h2>
+			<ul>
+				<li class="on"> <a href="">menu1</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu2</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu3</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu4</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="">menu5</a>
+					<div>
+						<ul>
+							<li class="on"> <a href=""> <span>submenu1</span> </a> </li>
+							<li> <a href=""> <span>submenu2</span> </a> </li>
+							<li> <a href=""> <span>submenu3</span> </a> </li>
+							<li> <a href=""> <span>submenu4</span> </a> </li>
+							<li> <a href=""> <span>submenu5</span> </a> </li>
+							<li> <a href=""> <span>submenu6</span> </a> </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>menu1</h1>
+				<p> 
+					<span class="home"><span class="sr-only">HOME</span></span> <span>&gt;</span> 
+					<span class="t">menu1</span> <span>&gt;</span> 
+					<span class="t">submenu1</span> <span>&gt;</span> 
+					<span class="t on">d2submenu1</span> 
+				</p>
+
+				<div class="utilSet">
+					<div class="layoutSnsWrap"> <a href="#" class="sns-tweeter" target="_blank" onClick="twitterOpen('');return false;" title="새창열림"><span class="hidden">트위터 공유</span></a> <a href="#" class="sns-facebook" target="_blank" onClick="facebookOpen('');return false;" title="새창열림"><span class="hidden">페이스북 공유</span></a> <a href="#" class="sns-kakaostory" target="_blank" onClick="kakaoOpen('공지사항(목록) < 광진소식 < 광진소개 <  포털사이트'); return false;" title="새창열림"><span class="hidden">카카오스토리 공유</span></a> </div>
+					<button type="button" class="btn-print"><span class="sr-only">프린트하기</span></button>
+				</div>
+			</div>
+			
+			
+			<div id="content"> 
+				<!-- content -->
+
+<div class="guidelines">
+<h2 class=bu1>제1장 총 칙</h2>
+<h3 class="bu2">제1조(목적)</h3>
+<p class="n">이 지침은 영상정보처리기기 설치 및 운영에 있어 성북구도시관리공단이 준수할 사항을 정함으로써 업무의 적정한 수행을 도모하고 국민의 권익 보장에 이바지함을 목적으로 한다.</p>
+<h3 class="bu2">제2조(정의)</h3>
+<p class="n">이 지침에서 사용하는 용어의 정의는 다음과 같다.</p>
+<p>1. “영상정보처리기기"라 함은 일정한 공간에 설치된 촬영기기로 수집한 화상정보를 폐쇄적인 유ㆍ무선 전송로를 통하여 전송함으로써 특정인만이 수신할 수 있는 통신장비 일체로서 폐쇄회로텔레비전(Closed Circuit Television)을 말한다.</p>
+<p>2. “폐쇄회로텔레비젼”(Closed Circuit Television, 이하 CCTV라 한다) 이라 함은 일정한 공간에 설치된 촬영기기로 수집한 영상정보를 폐쇄적인 유ㆍ무선 전송로를 통하여 특정인만 수신할 수 있는 시스템을 말한다.</p>
+<p>3. “영상정보”라 함은 특정 목적을 위하여 영상정보처리기기로 촬영하여 광(光) 또는 전자적 방식으로 처리되는 모든 영상을 말한다.</p>
+<p>4. “개인영상정보”라 함은 영상정보처리기기에 의하여 촬영ㆍ처리되는 영상정보 중 개인의 초상, 행동 등 사생활과 관련된 영상으로서 해당 개인의 동일성 여부를 식별할 수 있는 정보를 말한다.</p>
+<p>5. “정보주체”라 함은 영상정보에 의하여 식별되는 사람으로서, 당해 영상정보의 주체가 되는 자연인을 말한다.</p>
+<p>6. “처리”라 함은 영상정보처리기기에 의하여 수집되는 영상정보를 입력ㆍ저장ㆍ편집ㆍ 삭제 및 재생 그 밖에 이와 유사한 행위로서, 수집을 제외한 영상정보의 취급을 말한다.</p>
+<h3 class="bu2">제3조(적용범위)</h3>
+<p>① 건물 내ㆍ외부에서 발생될 수 있는 시설물관리, 시설안전, 화재 및 범죄예방 등과 재난취약지역의 감시 및 관리 업무를 위해 설치ㆍ운영 하는 영상정보처리기기와 이로 인해 영상정보의 수집ㆍ처리되는 영상정보의 보호에 관하여 적용한다.</p>
+<p>② 성북구도시관리공단에서 설치ㆍ운영하는 영상정보처리기기로서 모조카메라를 부착한 경우에도 실제 영상정보의 취급여부를 불문하고 본 지침을 적용한다.</p>
+<h3 class="bu2">제4조(영상정보의 보호원칙)</h3>
+<p>① 각 부서의 장은 영상정보처리기기 설치목적에 부합하는 필요 최소한의 범위 안에서 영상정보를 수집하여야 한다.</p>
+<p>② 각 부서의 장은 제1항의 설치목적을 정보주체가 명확히 인식할 수 있도록 하여야 하며, 영상정보를 그 목적 이외의 용도로 활용하여서는 아니된다.</p>
+<p>③ 각 부서의 장은 영상정보의 정확성 및 최신성을 확보하여 이를 안전하게 관리하도록 노력하여야 한다.</p>
+<p>④ 각 부서의 장은 영상정보의 취급에 관한 일반사항을 공개하고, 영상정보에 대한 정보주체의 권리를 보장하여야 한다.</p>
+<h2 class=bu1>제2장 영상정보처리기기의 설치 및 준수사항</h2>
+<h3 class="bu2">제5조(설치목적, 지침의 공고 등)</h3>
+<p>① 영상정보처리기기의 설치목적과 운영책임자 등은 다음 각 호와 같다.</p>
+<p>1. 영상정보처리기기의 설치목적은 시설관리, 이용객안전, 주차관리 등 을 위해서이다.</p>
+<p>2. 영상정보처리기기 시설은 각 설치부서에서 담당하며 운영책임자는 각 설치 부서장으로 한다.</p>
+<p>3. 영상정보처리기기 촬영시간은 24시간이며, 영상정보는 통제구역에서 14~30일간 보관되며, 보관 및 삭제는 자동으로 이루어진다.</p>
+<p>4. 영상정보는 각 부서별 통제구역에서 재생되며 담당자와 당직자 이외 에는 통제구역 출입이 금지된다.</p>
+<p>② 본 지침을 공단 홈페이지에 게시하여 공표한다.</p>
+<h3 class="bu2">제6조(책임자의 지정)</h3>
+<p>① 이사장은 영상정보처리기기 영상정보에 대한 안전한 관리를 위해 총괄 책임자와 운영책임자를 지정하여야 한다.</p>
+<p>② 영상정보처리기기 총괄책임자는 개인정보보호책임자(CPO, Chief PrivacyOffice)으로 지정하며, 운영책임자는 CCTV설치 운영 부서의 장을 지정 한다.</p>
+<p>③ 각 사업장의 운영책임자는 사업장의 CCTV 설치와 운영, CCTV 관련 민원의 접수 및 처리, 영상정보의 수집ㆍ처리 등에 업무를 총괄한다.</p>
+<h3 class="bu2">제7조(사전의견수렴)</h3>
+<p>① 영상정보처리기기 설치ㆍ운영 부서의 장은 일반 공공장소에 영상정보 처리기기를 설치하는 경우 행정예고, 공청회, 설문조사 중 하나를 택일 하여 의견수렴 후 설치하여야 한다.</p>
+<p>② 일반인의 자유로운 출입이 제한되는 시설 또는 장소에 영상정보처리기 기를 설치하는 경우 관련 공무원, 직원 등의 대표로 구성되는 위원회 심의를 거쳐 설치한다.</p>
+<p>③ 국가중요시설, 보안목표시설에 영상정보처리기기를 설치하는 경우 해당 시설의 관리자, 또는 관련 전문가의 의견수렴을 거쳐 설치한다.</p>
+<p>④ 제1항에 따른 공청회의 절차 등에 관하여 본 지침에서 정하지 않은 사 항은 [행정절차법]을 준용한다.</p>
+<h3 class="bu2">제8조(안내판의 설치)</h3>
+<p>① 영상정보처리기기 설치ㆍ운영 부서의 장은 영상정보처리기기를 설치할 경우 정보주체가 화상정보 수집에 대하여 인식 할 수 있도록 다음 각 호의 사항을 기재한 안내판을 설치하는 등 필요한 조치를 취하여야 한다.</p>
+<p>1. 설치의 목적 및 장소</p>
+<p>2. 촬영범위 및 시간</p>
+<p>3. 담당부서, 운영책임관 및 연락처</p>
+<p>② 안내판은 촬영범위 내에서 정보주체가 알아보기 쉬운 장소에 누구라도 용이하게 판독할 수 있도록 영상정보처리기기를 설치한 장소마다 설치 하여야 한다.</p>
+<p>③ 제1항에도 불구하고 공공기관의 건물 안에 다수의 영상정보처리기기를 설치한 경우에는 출입구 등 잘 보이는 곳에 해당 시설 또는 장소 전체 가 영상정보처리기기 설치 지역임을 표시하는 안내판을 설치할 수 있다.</p>
+<p>④ 제1항에도 불구하고 국가중요시설, 보안목표시설 등 안내판의 설치로 인해 보안취약점 노출이 우려되는 곳에는 안내판을 설치하지 않을 수 있으며, 개인정보침해 위험이 적거나 안내판 설치가 어려운 경우 등은 인터넷 홈페이지에 관련 사실을 게재하는 것을 대체할 수 있다.</p>
+<h2 class=bu1>제3장 영상정보 취급시 준수사항</h2>
+<h3 class="bu2">제9조(수집의 제한)</h3>
+<p>① 영상정보처리기기에 의하여 영상정보를 수집하는 경우에는 그 설치목 적을 넘어 카메라를 임의로 조작하거나 다른 곳을 비추어서는 아니 되 며, 설치 목적과 관계없는 영상정보를 수집하기 위하여 회전ㆍ확대 (zoom-in) 기능을 사용하여서는 아니 된다.</p>
+<p>② 영상정보처리기기에 의하여 영상정보를 수집하는 경우에는 녹음기능을 사용하여서는 아니 된다. 다만 「통신비밀보호법」을 준수하여 적법한 절차에 따라 이루어지는 감청에 대하여 다른 법률에 특별한 지침이 있 는 때에는 그러하지 아니한다.</p>
+<h3 class="bu2">제10조(처리의 제한)</h3>
+<p>① 정보주체의 영상정보는 영상정보처리기기의 설치 목적 외의 용도로 활 용되거나 접근 권한을 부여받은 자 이외의 타인에게 열람ㆍ제공되어서 는 아니 된다.</p>
+<p>② 정보주체 또는 제3자에게 처리정보를 이용하게 하거나 제공하는 경우, 업무수행에 필요한 최소한의 범위로 그 이용 또는 제공을 제한하여야 한다.</p>
+<p>③ 다음 각 호에 해당하는 경우에는 개인정보파일의 보유목적 외의 목적 으로 처리 정보를 이용하게 하거나 제공할 수 있다. 다만, 정보주체 또 는 제3자의 권리와 이익을 부당하게 침해할 우려가 있다고 인정되는 때에는 그러하지 아니 한다.</p>
+<p>1. 정보주체의 동의가 있거나 정보주체에게 열람ㆍ제공하는 경우</p>
+<p>2. 공공기관의 개인정보보호에 관한 법률 제20조에 따른 공공기관 개인 정보보호심의 위원회의 심의를 거친 경우</p>
+<p>3. 조약, 기타 국제협정의 이행을 위하여 외국정보 또는 국제기구에 제 공하는 경우</p>
+<p>4. 통계작성 및 학술연구 등의 목적을 위한 경우로서 특정 개인을 식별 할 수 없는 형태로 제공하는 경우</p>
+<p>5. 정보주체가 의사표시를 할 수 없는 상태이거나 동의를 할 수 없는 경 우로서 정보주체 외의 자에게 제공하는 것이 명백히 정보주체에게 이익이 된다고 인정되는 경우</p>
+<p>6. 범죄의 수사와 공소의 제기 및 유지에 필요한 경우</p>
+<p>7. 법원의 재판업무수행을 위하여 필요한 경우</p>
+<p>8. 그 밖에 책임관이 필요하다고 인정하는 경우</p>
+<h3 class="bu2">제11조(영상정보의 이용 및 제공)</h3>
+<p>① 영상정보를 이용하거나 제공받고자 하는 기관은 이용 목적 및 이용 하 고자 하는 처리정보의 범위를 명시하여 영상정보를 보유하고 있는 부 서의 장에게 문서로 요청하여야 한다.</p>
+<p>② 제1항에 따라 처리정보를 이용하게 하거나 제공하는 경우에는 다음 각 호의 사항을 처리정보이용ㆍ제공 대장에 기록하고 이를 관리하여야 한다.</p>
+<p>1. 개인정보파일의 명칭</p>
+<p>2. 이용하거나 제공받는 기관의 명칭</p>
+<p>3. 이용 또는 제공의 목적</p>
+<p>4. 법령상 이용 또는 제공 근거가 있는 경우에는 그 근거</p>
+<p>5. 이용 또는 제공을 요청하는 정보의 항목</p>
+<p>6. 이용 또는 제공의 주기와 형태</p>
+<p>7. 이용 또는 제공의 기간이 정하여져 있는 경우에는 그 기간</p>
+<h3 class="bu2">제12조(보호조치 등)</h3>
+<p>① 영상정보처리기기 설치ㆍ운영 부서의 장은 영상정보처리기기에 의하여 전송되는 영상정보가 실제로 열람ㆍ재생되는 장소를 출입제한구역으로 지정하고 접근 권한이 부여된 자 외의 출입을 통제하여야 한다.</p>
+<p>② 영상정보로의 접근권한은 영상정보처리기기를 운영ㆍ관리하는 지정된 관리자 및 책임자 등 최소한의 인원으로 제한하여야 한다.</p>
+<p>③ 관리자와 책임자는 영상정보처리기기의 정상 작동 여부를 일정하게 점 검하고 기록된 자료를 정확히 관리하여야 한다.</p>
+<p>④ 영상정보를 처리하거나 영상정보파일을 송수신하는 경우 영상정보가 분실ㆍ도난ㆍ유출ㆍ변조 또는 훼손되지 아니하도록 안전성 확보에 필 요한 조치를 강구하여야 한다.</p>
+<p>⑤ 네트워크 카메라를 설치하여 영상정보를 수집ㆍ전송하는 경우 네트워 크 카메라 IP에 대한 관리 및 접근통제, 네트워크를 통한 영상정보 전 송시 암호화 등의 보호조치를 마련하여야 한다.</p>
+<h3 class="bu2">제13조(열람 등의 요청)</h3>
+<p>① 정보주체는 영상정보를 보유하고 있는 부서의 장에게 영상정보의 존재 확인 및 열람삭제를 요청할 수 있다.</p>
+<p>② 제1항에 따른 요청을 받은 부서의 장은 이에 대하여 지체 없이 필요한 조치를 취해야 한다.</p>
+<p>③ 제2항의 규정에도 불구하고 다음 각 호에 해당하는 경우, 부서의 장은 이를 거부할 수 있다.</p>
+<p class="n">이 경우 10일 이내에 거부사유 및 불복방법을 정보주체에게 통지(정보 통신망 포함) 하여야 한다.</p>
+<p>1. 범죄수사ㆍ공소유지ㆍ재판수행에 중대한 지장을 초래하는 경우</p>
+<p>2. 특정 정보주체의 화상정보만을 삭제하는 것이 기술적으로 현저히 곤 란한 경우</p>
+<p>3. 제1항에 따른 요청에 필요한 조치를 취함으로써 타인의 사생활권이 침해될 우려가 큰 경우</p>
+<p>4. 기타 열람 등의 요청을 거절할 만한 정당한 공익적 사유가 있는 경우</p>
+<h3 class="bu2">제14조(보유 및 삭제)</h3>
+<p class="n">영상정보처리기기에 의하여 수집된 영상정보는 규정에 명시한 보유기간이 만료한 즉시 삭제하여야 한다. 다만, 해당기관의 특성에 따라 보유목적의 달성을 위한 최소한의 기간을 산정하기 곤란한 때에는 보유기간을 영상정보 수집 후 30일 이내로 한다.
+	<br>
+	단, 보육시설의 육아종합지원센터는 영유아보호법 제15조의4(폐쇄회로 텔레비전의 설치 등)에 의하여 어린이집을 설치ㆍ운영하는 자로써 폐쇄회로 텔레비전에 기록된 영상정보를 60일 이상 보관하도록 한다. (개정2016.06.20.)
+</p>
+
+<h2 class=bu1>제4장 보 칙</h2>
+<h3 class="bu2">제15조(사무의 위탁)</h3>
+<p class="n">책임관은 CCTV 설치ㆍ운영ㆍ유지보수ㆍ관리 등 관련 사무를 위탁하는 경우에 화상정보가 오ㆍ남용 되지 않도록 필요한 안전조치를 취하고 수탁자에 대하여 관련법규를 준수하도록 관리ㆍ감독하여야 한다.</p>
+<p class="n">수탁자는 화상정보에 대한 불법적 접근 및 변조ㆍ누출ㆍ훼손 등에 대비하여 기술적ㆍ관리적 안전조치를 강구하여야 한다.</p>
+<h3 class="bu2">제16조(비밀유지 의무)</h3>
+<p class="n">화상정보를 처리하거나 처리하였던 자 또는 CCTV 시스템을 유지ㆍ보수를 하거나 하면서 알게 된 화상정보를 누설 또는 부당한 목적을 위하여 사용하여서는 아니 된다.</p>
+<h2 class=bu1>부 칙</h2>
+<p class="n">이 지침은 이사장 방침 후 즉시 시행한다.</p>
+</div>			
+
+			
+			<div class="satisfactionSet box">
+				<div class="satisfact">
+					<h3>페이지 만족도</h3>
+					<div>
+						<label for="sati1"><input type="radio" name="satisfact" id="sati1"><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+						<label for="sati2"><input type="radio" name="satisfact" id="sati2"><span class="icon-star4"><span class="hidden">만족</span></span></label>
+						<label for="sati3"><input type="radio" name="satisfact" id="sati3"><span class="icon-star3"><span class="hidden">보통</span></span></label>
+						<label for="sati4"><input type="radio" name="satisfact" id="sati4"><span class="icon-star2"><span class="hidden">불만</span></span></label>
+						<label for="sati5"><input type="radio" name="satisfact" id="sati5"><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+					</div>
+				</div>
+				<div class="oneCmtSet">
+					<label for="ONLCMT">한줄의견</label>
+					<div class="oneCmts">
+						<textarea name="" id="ONLCMT" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다."></textarea>
+					</div>
+					<a href="" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+				</div>
+			</div>
+
+
+			<!-- //content -->
+			</div>
+			<!-- admSet --> 
+			<div class="admSet"> 				
+				<form name="stsfdgForm" id="stsfdgForm" method="post">
+					<input type="hidden" name="menuNo" value="200190">
+					<div class="pageComment">
+						<div class="row">
+							<div class="col-sm-10 col-md-11">
+								<input type="hidden" name="userNm" value="">
+								<input type="text" name="opinionCn" title="한줄의견" maxlength="100" placeholder="해당 콘텐츠에 대한 평가 및 오타, 개선사항을 자유롭게 써 주시기 바랍니다.">
+								<p>* 로그인 후 등록이 가능합니다</p>
+							</div>
+							<div class="col-sm-2 col-md-1">
+								<button>등록</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- //admSet --> 
+		</main>
+	</div>
+
+	<!-- //container -->
+
+
+
+
+</div>
+<!-- //wrap -->
+<footer id="footer">
+	<div class="ft">
+		<div class="set">
+		</div>
+	</div>
+	<div class="footerSet">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">배너광장</a></li>
+				<li><a href="#">회원약관</a></li>
+				<li><a href="#">이메일추출방지정책</a></li>
+				<li><a href="#">고객서비스헌장</a></li>
+				<li><a href="#">뷰어다운로드</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+		</nav>
+		<div class="ftset">
+			<div class="ftcon">
+				<div class="markset">
+					<img src="/static/portal/img/common/mark-webacc.png" alt="WA품질인증마크">
+				</div>
+			</div>
+		</div>
+		<address>
+			<p>
+				공단본부 : 서울특별시 성북구 화랑로 18자길 13(상월곡동 24-348), 전화번호 : 02-962-2082<br>
+				성북종합레포츠타운 02-6917-1100, 개운산스포츠센터 02-925-9960, 북악골프연습장 02-919-4040, 구민체육관팀 02-909-3497, 거주자주차팀 02-914-2008,<br>
+				공영주차장팀 02-6925-0023, 청사관리팀 02-2241-4701, 아이조아팀 02-918-8080, 부모아이지원팀 02-6959-8256
+			</p>
+			<em>&copy; 2011 성북구도시관리공단 ALL RIGHTS RESERVED. home@gongdan.co.kr</em>
+		</address>
+	</div>
+</footer>
+<script src="/static/portal/js/common.js"></script>
+<script src="/static/commons/global.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script>
+$('*').each(function(index) {
+	if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+	if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+});
+</script>
+<![endif]-->
+</body>
+</html>

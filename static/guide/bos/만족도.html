@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>공단에 바란다상세보기</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="/static/jslibrary/bootstrap/css/bootstrap.css" />
+<!-- <link rel="stylesheet" href="/static/jslibrary/bootstrap/css/bootstrap-theme.css" /> -->
+<link rel="stylesheet" href="/static/jslibrary/jquery-ui/jquery-ui.css">
+<link rel="stylesheet" href="/static/font/NotoSans/notosans.css" />
+<link rel="stylesheet" href="/static/font/nanumgothic/nanumgothic.css" />
+<link rel="stylesheet" href="/static/commons/css/common.css" />
+<link rel="stylesheet" href="/static/bos/css/bossub.css" />
+<script src="/static/jslibrary/jquery-1.12.2.min.js"></script>
+<script src="/static/jslibrary/bootstrap/js/bootstrap.js"></script>
+<script src="/static/jslibrary/bootstrap/respond.min.js"></script>
+<script src="/static/jslibrary/jquery-ui/jquery-ui.js"></script>
+<script src="/static/jslibrary/jquery.highlight-4.js"></script>
+<script src="/static/jslibrary/jquery.maskedinput.min.js"></script>
+<script src="/static/jslibrary/base64.js"></script>
+<script src="/static/jslibrary/miya_validator.js"></script>
+<script src="/static/bos/js/boscommon.js"></script>
+<script src="/static/commons/commons.js"></script>
+<script src="/static/jslibrary/ssl.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="/static/jslibrary/selectivizr-min.js"></script>
+<script src="/static/jslibrary/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="skip">
+		<a href="#content">본문내용 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+	</div>
+	<div id="wrap">
+		<div id="header_wrap">
+			<div class="header">
+				<h1><a href="/bos/main/main.do">
+					<img src="/cmmn/file/imageSrc.do?fileStreCours=8786ae6d53a8f8cb813c5ba11ef2cee7&streFileNm=0fc292ff80a6fbb69cfc29f1e86c94ed6a7ff77472074eb1dad6fba65becd736" alt="로고 이미지" width="110" height="40"/>
+						</a></h1>
+				<div class="user">
+					<em>
+						[구민체육관팀]관리자</em>
+					님으로 로그인 하셨습니다.<!-- 로그인 접속IP:192.168.0.64 -->
+					<!-- <a href="javascript:openPopup();" class="btn btn-xs btn-success"><i class="fa fa-wrench"></i> 내정보수정</a> -->
+					<a href="/bos/member/admin/logout.do" class="btn btn-xs btn-info"><i class="fa fa-power-off"></i> 로그아웃</a>
+				<a href=""  class="btn b-select btn-xs">홈페이지</a>
+				</div>
+				<div class="util">
+					<div class="btn-group">
+						<a href="/bos/auth/auth/list.do?menuNo=100005" ><i class="fa fa-cogs"></i> 관리자</a>
+			 			<a href="/bos/bbs/B0000001/list.do?menuNo=101002" class='on'><i class="fa fa-home"></i> 성북구도시공단관리</a>
+			 			<a href="/portal/main/main.do" target="_blank" ><i class="fa fa-home"></i> 홈페이지</a>
+			 			<a href="/bos/progrm/tmplat/reservation/list.do?menuNo=100129" ><i class="fa fa-home"></i> 교육</a>
+			 			</div>
+					</div>
+			</div>
+			<div id="gnb">
+			<ul class="gnb_width">
+		 	<li >
+		 			<a href="/bos/bbs/B0000001/list.do?menuNo=101002" >열린경영</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			<li class='on'>
+		 			<a href="/bos/bbs/B0000028/list.do?menuNo=101004" >참여마당</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			<li >
+		 			<a href="/bos/bbs/B0000014/list.do?menuNo=101013" >알림마당</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			<li >
+		 			<a href="/bos/bbs/B0000021/list.do?optn1=09&menuNo=101026" >체육시설</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			<li >
+		 			<a href="/bos/singl/contents/ready.do?menuNo=101131" >복지시설</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			<li class='pr0'>
+		 			<a href="/bos/singl/contents/ready.do?menuNo=101161" >공단소개</a>
+		 			<ul style="display:none;">
+		 				<li></li>
+		 			</ul>
+		 		</li>
+			</ul>
+			</div>
+			</div>
+		<div id="container">
+			<div id="lnb">
+				<h2>참여마당</h2>
+				<!-- <p><input type="text" name="searchTxt" id="searchTxt" value="" /> <label for="search"><a id="search" href="#search">조회</a></label></p> -->
+		<ul class="lnbNav">
+		 	<li class='on'
+>
+					<div>
+		 			<a href="/bos/bbs/B0000028/list.do?menuNo=101004">공단에 바란다</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/bbs/B0000029/list.do?menuNo=101005">이사장과의 대화</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/qestnar/qustnr/list.do?menuNo=101180">설문조사</a>
+		 			<ol>
+		 		<li
+>
+				 			<a href="/bos/qestnar/qustnr/list.do?menuNo=101180" data-question="/bos/qestnar/qustnr/list.do?menuNo=101180">설문조사</a>
+				 			</li>
+					<li
+>
+				 			<a href="/bos/qestnar/qesitmGrp/list.do?menuNo=101181" data-question="/bos/qestnar/qesitmGrp/list.do?menuNo=101181">설문문항그룹</a>
+				 			</li>
+					</ol>
+				</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/bbs/B0000012/list.do?menuNo=101007">FAQ</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/bbs/B0000013/list.do?menuNo=101008">유실물센터</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/bbs/B0000030/list.do?menuNo=101009">Q&A</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/bbs/B0000031/list.do?menuNo=101010">친절/불친절</a>
+		 			</div>
+					</li>
+				<li
+>
+					<div>
+		 			<a href="/bos/cvpl/reqst/list.do?menuNo=101011">제안하기</a>
+		 			</div>
+					</li>
+				</ul>
+		</div>
+			<div id="content">
+				<div class="hgroup clearfix">
+					<h1>공단에 바란다</h1>
+					<div class="fr">
+						<a href="/bos/siteManage/siteHpcm/view.do?pGroupId=bbs&amp;pSrvcId=PG0027&amp;pMethodId=view&amp;pMenuNo=101004&amp;viewType=BODY" class="b-help" title="도움말 새창열림" target="_blank" onclick="window.open(this.href, 'siteHpcm', 'resizable=1, scrollbars=1, width=1280,height=800'); return false;">도움말</a>
+						<a
+							class="b-print"
+							href="/cmmn/bosForPrint.jsp"
+							id="print" title="새창"
+							onclick="window.open(this.href, 'printPage', 'width=1024,height=640,scrollbars,toolbar,status=no,resizable=no');return false;">
+							<span >인쇄하기</span>
+						</a>
+					</div>
+				</div>
+<script>
+	function del(){
+		var form = $("#board")[0];
+		form.action = "/bos/bbs/B0000028/delete.do";
+		form.submit();
+	}
+	function delReply(){
+		if (!confirm('정말로 답변삭제 하시겠습니까?')) {
+			return;
+		}
+		var form = $("#replyBoard")[0];
+		form.action = "/bos/bbs/B0000028/delete.do";
+		form.submit();
+	}
+	function restore(){
+		var form = $("#board")[0];
+		form.action = "/bos/bbs/B0000028/restore.do";
+		form.submit();
+	}
+	function delPermanently(){
+		var form = $("#board")[0];
+		form.action = "/bos/bbs/B0000028/delPermanently.do";
+		form.submit();
+	}
+	function replyStsfdg() {
+		var optn3 = "4";
+		if(optn3 != ""){
+			alert("이미 등록하셨습니다.");
+			return false;
+		}
+		if ($("input[id^=replySati]:checked").size() == 0) {
+			$("input[id^=replySati]").eq(0).focus();
+			alert("페이지만족도를 선택해 주세요.");
+			return false;
+		}
+		if ($("#ONLCMT_my").val() == "") {
+			$("#ONLCMT_my").focus();
+			alert("한줄의견을 입력해 주세요.");
+			return false;
+		}
+		var url = "/portal/bbs/B0000028/stsfdgInsert.json";
+		var params = $('#replyStsfdgForm').serialize();
+		$.post(url,params,function(data) {
+			if (data.resultCode == "success") {
+				alert("만족도 의견이 등록되었습니다.");
+				$("#replyStsfdgForm")[0].reset();
+				location.reload();
+			}
+			else {
+				alert("페이지만족도 의견등록 오류입니다.");
+			}
+		},"json");
+		return false;
+	}
+</script>
+<form id="board" name="board" method="post" enctype="multipart/form-data" action="">
+	<input type="hidden" name="pageQueryString" value="menuNo=101004&pageIndex=1"/>
+	<input type="hidden" name="nttId" value="64" />
+	<input type="hidden" name="bbsId" value="B0000028" />
+	<input type="hidden" id="atchFileId0" name="atchFileId" value="">
+<div class="view">
+		<dl>
+			<dt>상태</dt>
+			<dd>
+						처리완료
+			</dd>
+			<dt>답변방식</dt>
+			<dd>
+						게시판
+			</dd>
+		</dl>
+		<dl>
+			<dt>사업장</dt>
+			<dd>
+        			공단
+			</dd>
+			<dt>등록일</dt>
+			<dd>2019-02-26 11:19</dd>
+		</dl>
+		<dl>
+			<dt>게시물제목</dt>
+			<dd>
+				&lt;&gt;&lt;&gt;333
+			</dd>
+		</dl>
+		<dl>
+			<dt>작성자</dt>
+			<dd>
+				관리자
+			</dd>
+			<dt>휴대전화</dt>
+			<dd>
+			</dd>
+		</dl>
+		<dl>
+			<dt>전화번호</dt>
+			<dd>
+			</dd>
+			<dt>이메일 주소</dt>
+			<dd>
+				test@naver.com
+			</dd>
+		</dl>
+		<dl>
+			<dt>게시글내용</dt>
+			<dd>
+				<div id="dbdata">
+					<p>&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;</p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><span style="font-size: 36pt;">엔터 테스트</span></p>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>공개여부</dt>
+			<dd>
+						공개
+			</dd>
+			<dt>조회수</dt>
+			<dd>
+				72
+			</dd>
+		</dl>
+		<dl>
+			<dt>첨부파일</dt>
+			<dd>
+<script>
+	function delFile(atchFileId, fileSn, bbsId){
+		if (!confirm('파일을 삭제하시겠습니까?')) {
+			return;
+		}
+		$.getJSON(
+				"/bos/cmmn/file/deleteFileInfs.json",
+				{atchFileId : atchFileId, fileSn : fileSn, bbsId : bbsId},
+				function(data)
+				{
+					var jdata = data.resultCode;
+		            if( jdata == 'success' ) {
+		            	alert("성공적으로 삭제하였습니다.");
+		            	$(".fileFormArea").show();
+		            	$("#realfile_"+fileSn).html("");
+		            	fileNum--;
+		            }
+		            else alert("삭제에 실패하였습니다.");
+				}
+			);
+	}
+	function convert(_atchFileId, _fileSn)
+	{
+		$("#loading").show();
+		$.getJSON(
+				"/cmm/dozen/convert.json",
+				{atchFileId : _atchFileId, fileSn : _fileSn},
+				function(data){
+					var _result = data.result;
+					var _status = data.status;
+					var msg;
+					if( _result && _status == '0' ){
+						msg = "성공적으로 이미지 변경되었습니다.";
+						$("#span"+_fileSn).html(
+								"<a href='/cmm/dozen/view.do?atchFileId="+_atchFileId+"&fileSn="+_fileSn+"' target='_blank'>" +
+								"빠른보기" +
+								"</a>");
+					}
+					else{
+						if( _status == '1' )
+							msg = "원본파일 경로가 잘못되었습니다.";
+						else if( _status == '2' )
+							msg = "파일에 암호가 있어 변환에 실패하였습니다.";
+						else if( _status == '3' )
+							msg = "파일이 존재하지 않습니다.";
+						else if( _status == '4' )
+							msg = "적합한 변환기를 찾지 못하였습니다.";
+						else if( _status == '5' )
+							msg = "잘못된 요청입니다. 연동규격 위반입니다.";
+						else if( _status == '6' )
+							msg = "PDF 생성에 실패하였습니다. 요청하신 경로에 동일한이름의 PDF가 존재합니다";
+						else if( _status == '7' )
+							msg = "변환 요청 제한시간이 만료되었습니다. (기본값 : 120초)";
+						else if( _status == '8' )
+							msg = "라이선스 파일이 존재하지 않거나 만료되었습니다.";
+						else if( _status == '9' )
+							msg = "알수없는 오류입니다.";
+						else if( _status == '99' )
+							msg = "저장경로 네트워크 설정이 잘못되었습니다.";
+						else
+							msg = "이미지 변환에 실패하였습니다.";
+						$("#span"+_fileSn).html(
+								"<a href=\"javascript:convert('"+_atchFileId+"','"+_fileSn+"');\">" +
+								"이미지변환하기" +
+								"</a>");
+					}
+					$("#loading").hide();
+					alert(msg);
+				}
+			);
+	}
+</script>
+<div id="loading" style="display: none"><p><img src="/static/commons/img/ajax-loader.gif" alt="">이미지변환중입니다.</p></div>
+				등록된 첨부파일이 없습니다.
+			</dd>
+		</dl>
+		<dl>
+			<dt>최종수정일</dt>
+			<dd>2019-02-28 17:34</dd>
+		</dl>
+</div>
+</form>
+<div class="btnSet">
+	<div class="fr">
+		<a class="b-edit" href="/bos/bbs/B0000028/forUpdate.do?nttId=64&menuNo=101004&pageIndex=1"><span>수정</span></a>
+		<a class="b-del" href="javascript:del();" onclick="return confirm('정말로 삭제하시겠습니까?');"><span>삭제</span></a>
+		<a class="b-list" href="/bos/bbs/B0000028/list.do?menuNo=101004&pageIndex=1"><span>목록</span></a>
+	</div>
+</div>
+<form id="replyBoard" name="replyBoard" method="post" enctype="multipart/form-data" action="">
+	<input type="hidden" name="pageQueryString" value="menuNo=101004&pageIndex=1"/>
+	<input type="hidden" name="nttId" value="94" />
+	<input type="hidden" name="bbsId" value="B0000028" />
+	<input type="hidden" name="parntsNo" value="64" />
+	<input type="hidden" id="atchFileId0" name="atchFileId" value="304bd6f210614709ac7474f7c1a3c5d4">
+	<h2>답변</h2>
+	<div class="view">
+				<dl>
+					<dt style="width:15%">답변제목</dt>
+					<dd>
+						공단에 바란다 답변 테스트 )(&lt;&gt;
+					</dd>
+				</dl>
+				<dl>
+					<dt>답변내용</dt>
+					<dd>
+						<div id="dbdata">
+									<p>공단에 바란다 답변 테스트 )(&lt;&gt;<br></p><p><br></p><p><br></p><p><br></p><p>공단에 바란다 답변 테스트 )(&lt;&gt;<br></p><p><br></p><p><br></p><p><br></p><p>공단에 바란다 답변 테스트 )(&lt;&gt;<br></p>
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>작성자</dt>
+					<dd>
+						관리자
+					</dd>
+				</dl>
+					<dl>
+						<dt>첨부파일</dt>
+						<dd>
+<script>
+	function delFile(atchFileId, fileSn, bbsId){
+		if (!confirm('파일을 삭제하시겠습니까?')) {
+			return;
+		}
+		$.getJSON(
+				"/bos/cmmn/file/deleteFileInfs.json",
+				{atchFileId : atchFileId, fileSn : fileSn, bbsId : bbsId},
+				function(data)
+				{
+					var jdata = data.resultCode;
+		            if( jdata == 'success' ) {
+		            	alert("성공적으로 삭제하였습니다.");
+		            	$(".fileFormArea").show();
+		            	$("#realfile_"+fileSn).html("");
+		            	fileNum--;
+		            }
+		            else alert("삭제에 실패하였습니다.");
+				}
+			);
+	}
+	function convert(_atchFileId, _fileSn)
+	{
+		$("#loading").show();
+		$.getJSON(
+				"/cmm/dozen/convert.json",
+				{atchFileId : _atchFileId, fileSn : _fileSn},
+				function(data){
+					var _result = data.result;
+					var _status = data.status;
+					var msg;
+					if( _result && _status == '0' ){
+						msg = "성공적으로 이미지 변경되었습니다.";
+						$("#span"+_fileSn).html(
+								"<a href='/cmm/dozen/view.do?atchFileId="+_atchFileId+"&fileSn="+_fileSn+"' target='_blank'>" +
+								"빠른보기" +
+								"</a>");
+					}
+					else{
+						if( _status == '1' )
+							msg = "원본파일 경로가 잘못되었습니다.";
+						else if( _status == '2' )
+							msg = "파일에 암호가 있어 변환에 실패하였습니다.";
+						else if( _status == '3' )
+							msg = "파일이 존재하지 않습니다.";
+						else if( _status == '4' )
+							msg = "적합한 변환기를 찾지 못하였습니다.";
+						else if( _status == '5' )
+							msg = "잘못된 요청입니다. 연동규격 위반입니다.";
+						else if( _status == '6' )
+							msg = "PDF 생성에 실패하였습니다. 요청하신 경로에 동일한이름의 PDF가 존재합니다";
+						else if( _status == '7' )
+							msg = "변환 요청 제한시간이 만료되었습니다. (기본값 : 120초)";
+						else if( _status == '8' )
+							msg = "라이선스 파일이 존재하지 않거나 만료되었습니다.";
+						else if( _status == '9' )
+							msg = "알수없는 오류입니다.";
+						else if( _status == '99' )
+							msg = "저장경로 네트워크 설정이 잘못되었습니다.";
+						else
+							msg = "이미지 변환에 실패하였습니다.";
+						$("#span"+_fileSn).html(
+								"<a href=\"javascript:convert('"+_atchFileId+"','"+_fileSn+"');\">" +
+								"이미지변환하기" +
+								"</a>");
+					}
+					$("#loading").hide();
+					alert(msg);
+				}
+			);
+	}
+</script>
+<ul style="list-style-type:none;" class="filelist">
+		<li>
+					<div id="realfile_1">
+						<a href="/bos/cmmn/file/fileDown.do?menuNo=101004&atchFileId=304bd6f210614709ac7474f7c1a3c5d4&fileSn=1&bbsId="  class="ico_file">
+							테스트파일.hwp [8,704byte]
+						</a>
+						<button type="button" onclick="delFile('304bd6f210614709ac7474f7c1a3c5d4', '1', '');" class="btn btn-danger btn-sm" title="테스트파일.hwp 삭제"> <!-- //LJM -->
+							<span class="sr-only">테스트파일.hwp 삭제</span>
+							<i class="fa fa-trash-o" aria-hidden="true"></i>
+						</button>
+					</div>
+		</li>
+</ul>
+<div id="loading" style="display: none"><p><img src="/static/commons/img/ajax-loader.gif" alt="">이미지변환중입니다.</p></div>
+						</dd>
+					</dl>
+				<dl>
+					<dt>등록일</dt>
+					<dd>2019-02-28 17:34</dd>
+				</dl>
+				<dl>
+					<dt>최종수정일</dt>
+					<dd>2019-02-28 17:34</dd>
+				</dl>
+	</div>
+	<div class="btnSet">
+		<a class="b-edit" href="/bos/bbs/B0000028/forUpdateRe.do?nttId=94&parntsNo=64&menuNo=101004&pageIndex=1"><span>답변수정</span></a>
+		<button type="button" class="b-del" onclick="delReply();">답변삭제</button>
+	</div>
+</form>
+<form name="replyStsfdgForm" id="replyStsfdgForm" method="post" >
+<input type="hidden" name="nttId" value="64" />
+<input type="hidden" name="bbsId" value="B0000028" />
+<div class="satisfactionSet box">
+	<div class="satisfact">
+		<h3>만족도</h3>
+		<div>
+			<label for="replySati1"><input type="radio" name="optn3" id="replySati1" value="5" ><span class="icon-star5"><span class="hidden">매우만족</span></span></label>
+			<label for="replySati2"><input type="radio" name="optn3" id="replySati2" value="4"  checked><span class="icon-star4"><span class="hidden">만족</span></span></label>
+			<label for="replySati3"><input type="radio" name="optn3" id="replySati3" value="3" ><span class="icon-star3"><span class="hidden">보통</span></span></label>
+			<label for="replySati4"><input type="radio" name="optn3" id="replySati4" value="2" ><span class="icon-star2"><span class="hidden">불만</span></span></label>
+			<label for="replySati5"><input type="radio" name="optn3" id="replySati5" value="1" ><span class="icon-star1"><span class="hidden">매우불만</span></span></label>
+		</div>
+	</div>
+	<div class="oneCmtSet">
+		<label for="ONLCMT_my">한줄의견</label>
+		<div class="oneCmts">
+			<textarea name="optn4" id="ONLCMT_my" placeholder="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다." title="본인인증 및 소셜인증 후, 의견을 제시할 수 있습니다.">11111</textarea>
+		</div>
+		<a href="javascript:void(0);" onclick="replyStsfdg();" class="b-btn"><span class="fa fa-write"></span> 의견등록</a>
+	</div>
+</div>
+</form>
+<form name="cmmntForm" id="cmmntForm" method="post" action="">
+	<div class="reComentSubmit view">
+		<input type="hidden" name="bbsId" value="B0000028" />
+		<input type="hidden" name="nttId" value="64" />
+		<input type="hidden" name="cmSe" value="B0000028" />
+		<input type="hidden" name="viewType" value="CONTBODY" />
+		<dl>
+			<dt><label for="nttCn"><span class="req"><span>필수입력</span></span>댓글쓰기</label></dt>
+			<dd>
+				<textarea class="w100p characterLen" name="nttCn" id="nttCn" data-lensize="2000" cols="30" rows="3" title="댓글입력" placeholder="댓글입력"></textarea>
+				<span class="characterLenDeco"></span>
+				<button class="b-reg w100p mt5" id="comentBtn">등록</button>
+			</dd>
+		</dl>
+		<script>
+		$(function() {
+			$('.characterLen').each(function(index, el) {
+				$(this).keyup(function (e){
+					var selfintroduction = $(this).val();
+					var str = $(this).val();
+					var limit = $(this).data().lensize;
+					$(this).next().html(selfintroduction.length + '/'+limit+'자 이내 입력');
+					if(selfintroduction.length >= 2000){
+						alert("글자수는 "+limit+"자를 초과할수 없습니다.");
+						$(this).val(str.substring(0,limit))
+					}
+				})
+				.next().html($(this).data().lensize+'자 이내 입력')
+			});
+		});
+		</script>
+	</div>
+	<h2 class="screen_out">전체 댓글</h2>
+	<div class="reComentList" id="commentList">
+	</div>
+</form>
+<script>
+var v_bbsId = "B0000028";
+var v_nttId = "64";
+function commentList(p_bbsId, p_nttId) {
+	var url = "/bos/bbs/bbsCm/list.do";
+	var params = $("#cmmntForm").serialize();
+	$.post(url,params,function(data) {
+		$("#commentList").html(data);
+		btnclassSetting();
+	},"html");
+}
+commentList(v_bbsId, v_nttId);
+$("#comentBtn").click(function() {
+	if ($("#nttCn").val() == "") {
+		alert("댓글 내용을 입력해주세요.");
+		$("#nttCn").focus();
+		return false;
+	}
+	if (!confirm("댓글을 등록하시겠습니까?")) return false;
+	var url = "/bos/bbs/bbsCm/insert.json";
+	var params = $("#cmmntForm").serialize();
+	$.post(url,params,function(data) {
+		if (data.resultCode == "success") {
+			alert("댓글이 등록되었습니다.");
+			$("#cmmntForm")[0].reset();
+			commentList(v_bbsId, v_nttId);
+			return false;
+		}
+		else {
+			alert("댓글등록이 실패하였습니다.");
+			return false;
+		}
+	},"json");
+	return false;
+});
+</script>
+</div>
+		</div>
+	</div>
+<div id="footer">
+		<p><strong>유-씨엠에스 v2.0 (U-CMS v2.0)</strong></p>
+		<p >[08301]서울 구로구 가마산로25길 9-9 (구로동)  KM타워 3층,9층 (주)유앤피플 , TEL : 02)0000-0000 </p>
+		<em>Copyright 2016. UNPEOPLE all rights reserved.</em>
+</div>
+<!--[if lte IE 7]>
+<script>
+//<![CDATA[
+	$('*').each(function(index) {
+		if ($(this).css("overflow")=="hidden"){ $(this).css("zoom",1)}
+		if ($(this).css("display")=="inline-block"){ $(this).css("display",'inline'); $(this).css("zoom",1)}
+	});
+//]]>
+</script>
+<![endif]-->
+<script src="/static/jslibrary/clipboard.min.js"></script>
+<div class="posr" style="position: relative;">
+	<button type=button class="btn soucecopy" aria-label="copyed!" data-clipboard-text="*/WEB-INF/jsp/bos/bbs/PG0027/Read.jsp">
+		*/WEB-INF/jsp/bos/bbs/PG0027/Read.jsp
+	</button>
+	<button type=button class="btn soucecopy" aria-label="copyed!" data-clipboard-text="WEB-INF/jsp/bos/bbs/PG0027/Read.jsp">
+		WEB-INF/jsp/bos/bbs/PG0027/Read.jsp
+	</button>
+	<script>
+		$('.soucecopy').bind('focusout mouseleave',  function(event) {
+			$(this).removeClass('tooltipped tooltipped-n')
+		});
+		var clipboard = new Clipboard('.soucecopy');
+		clipboard.on('success', function(e) {
+			$(e.trigger).addClass('tooltipped tooltipped-n')
+			e.clearSelection();
+		});
+		clipboard.on('error', function(e) {
+			$(e.trigger).attr('aria-label','복사실패');
+			$(e.trigger).addClass('tooltipped tooltipped-n')
+		});
+	</script>
+</div>
+<div class="loading" id="loadingDiv" style="display:none;">
+	<div class="spinner">
+	  <div class="bounce1"></div>
+	  <div class="bounce2"></div>
+	  <div class="bounce3"></div>
+	</div>
+	<p><br><span id="loadingDivTxt">게시물 저장 중입니다.</span></p>
+</div>
+</body>
+</html>

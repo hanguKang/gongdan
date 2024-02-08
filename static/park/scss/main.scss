@@ -1,0 +1,487 @@
+@import url(/static/commons/css/common.css);
+@import url(/static/commons/css/grids.css);
+@import url(/static/park/css/footer.css);
+
+@import "static/bos/scss/breakpoint";
+@import "var";
+
+@import "static/portal/scss/form";//폼 관련 input,select
+// @import "layout";
+@import url(/static/park/css/layout.css);
+
+@import "sprite1";
+@include sprites($spritesheet-sprites);
+.icon {
+  display: inline-block;
+}
+body{
+	overflow-x:hidden;
+}
+
+#content{
+	float: left;
+	width: 100%;
+	clear: both;
+	.img img{
+		@include breakpoint($sm){ max-width: 100%; }
+	}
+	
+}
+
+
+#visualSet {
+	// height: 320px;
+	@include breakpoint($md){ height: 270px; }
+	@include breakpoint($lg){ height: 420px; }
+	@include breakpoint(992px 1276px){ height: 320px; }
+	position: relative;
+	overflow: hidden;
+	@include breakpoint($sm){
+		margin-bottom:15px;
+	}
+	.ctrl{
+		position: absolute; 
+		z-index: 1;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -570px;
+		
+		@include breakpoint($md){ margin-left: -360px; }
+		@include breakpoint($lg){ margin-left: -570px; }
+		@include breakpoint(992px 1276px){ margin-left: -470px; }
+		button{
+			padding:0;
+			color:#fff;
+			font-size: 24px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			background-color: $btnbgcolor;
+			margin-right: -3px;
+		}
+		@include breakpoint($sm){
+			margin-left: 0px;
+			left: 2%;
+			bottom:10px;
+			button{
+				line-height:25px;
+				width:25px;
+				height:25px;
+				overflow:hidden;
+			}
+		}
+	}
+	.visualSlide{
+		.items{ 
+			@include breakpoint($lg){
+				max-width:1600px;
+			}
+			width:100%;
+			max-width:100vw;
+			float:left;
+			// display: inline-block;
+			// float: left;
+			a{
+				display:block;
+				height: 420px;
+				width: 100%;
+				width:100vw;
+			}
+			.bg{ 
+				display: block;
+				width:100%;
+				height:300px;
+				background-position: 50% 0;
+				background-repeat: no-repeat;
+				@include breakpoint($lg){	width: 100%;height: 100%;	}
+				@include breakpoint($md){ background-size: auto 100%; }
+				@include breakpoint(992px 1276px){ background-size: auto 320px; }
+				@include breakpoint($xs){ background-size: auto 40%; }
+			}
+			@include breakpoint($sm){
+				a{
+					border:1px solid #000;
+					height:auto;
+					.bg{
+						height:auto;
+						background-size:cover;
+						&:before {
+							content: '';
+							display:block;
+							padding-top:38%;
+							height:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#parkingProcess {
+	h2{
+		color: #4c6aa2;
+		font-size: 24px;
+		text-align: center;
+		padding-top: 37px;
+		padding-bottom: 18px;
+	}
+	.parkingProBg{
+		background: url(/static/park/img/main/parkingprocessBg.gif);
+		clear: both;
+		width: 100%;
+		float: left;
+		border-radius: 200px;
+		border:1px solid #dadada;
+		margin-bottom: 32px;
+
+		@include breakpoint($smd){ border-radius: 10px; 
+			a{display: inline-block; padding-left: 5%;}
+		}
+		@include breakpoint($sm){ border-radius: 10px; }
+		@include breakpoint($xs){ padding-left: 5%; }
+		img{
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			margin:14px 18px;
+			@include breakpoint(max-width 1279px){
+				margin:14px 10px;
+				max-width: 60px;
+			}
+		}
+	}
+	.badge{
+		display: block;
+		width: 26px;
+		height: 26px;
+		line-height: 26px;
+		background-color: #4c6aa2;
+		color: #fff;
+		border-radius:15px;
+		clear: both;
+		margin-bottom: 5px;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.info{
+		display:block;
+		float: left;
+	}
+	ul {	}
+	li{
+		display: inline-block; 
+		float: left;
+		width: 25%;
+		@include breakpoint($sm){
+			width: 100%;
+		}
+		@include breakpoint($md){
+			width: 50%;
+		}
+		@include breakpoint($lg){
+			width: 25%;
+		}
+		a{
+			display: block;
+			font-size: 15px;
+			line-height: 20px;
+			@include breakpoint(max-width 1279px){
+				font-size: 13px;
+				line-height: 16px;
+			}
+		}
+	}
+}
+
+#lastest1 {
+	height: 230px;
+	margin-bottom: 4px;
+	.infomation{
+		width: 100%;
+		@include breakpoint($md){ width: 49%;	}
+		@include breakpoint($lg){ width: 558px;	}
+		@include breakpoint(992px 1276px){ width:49%;	}
+		float: left;
+		>div{
+			width: 48%;
+			@include breakpoint($lg){ width: 48%;	}
+			height: 300px;
+			float: left;
+			padding:0;
+		}
+	}
+}
+
+.popupZoneSet{
+	position: relative;
+	overflow: hidden;
+	.ctrl{
+		button{position: absolute; z-index: 10; bottom: 0;width: 50px;height: 50px; background-color: rgba(0, 102, 180, 0.5); color:#fff; font-size: 24px;
+			&.popupZoneRt{right: 0;}
+		}
+	}
+	.popupZone{
+		.items{
+			float: left;
+			width: 267px;
+		}
+	}
+}
+.box1 .more { position: absolute; top:0; right: 0; width: 50px; height: 40px; 
+	font-size: 24px; text-align: right;line-height: 48px;
+	&.on{display: block;}
+}
+
+.boxList .box1 { 
+	width: 49%;
+	margin-right: 2%;
+	&.faqTabs{
+		margin-right: 0;
+	}
+	@include breakpoint($sm){ margin-right: 0; width: 100%; }
+	@include breakpoint(992px 1276px){ width:49%; margin-right: 2%; }
+	position: relative;
+	float: left;
+	&:before{content:""; width: 100%;height: 1px;border-bottom:1px solid #ddd; display: block;
+		position: absolute;top: 50px;z-index: -1;
+	}
+	&:after{content:""; width: 100%;height: 200px; display: block;}
+	h3 { 
+		font-size: 20px; 
+		margin-top: 0; 
+		display:block;
+		border-bottom:2px solid #5c6979;
+		a { 
+			font-weight: 600;
+			@include breakpoint($smd){padding: 0 3px;}
+			color:#666; 
+			letter-spacing:-2px;
+			@include breakpoint($smd){font-size: 15px;}
+			line-height: 50px;
+			display: inline-block;
+			//&.on {font-size: 20px; font-weight: 600; color:#222; border-bottom:2px solid #f00;}
+		}
+	}
+	&.imgBx>ul{
+		top: 71px;
+		>li a{
+			line-height: 30px;
+			img{max-width: 100%;}
+		}
+	}
+	>ul { 
+		display:none; 
+		position: absolute;
+		top: 68px;
+		width: 100%;
+		height: 220px;
+		&.on{display: block;}
+		>li{width: 100%; position: relative;
+			float: left;
+			a { 
+				display:block; 
+				float: left; 
+				width: 100%;
+				font-size: 16px;
+				@include breakpoint($smd){ font-size: 14px;}
+				line-height: 34px; 
+			}
+		}
+	}
+	.title{
+		padding-right: 80px; 
+		position: relative;
+		width: 100%;
+		display: block;float: left;
+		&:before{
+			margin-left: 10px;
+			content:'•';
+			float: left;
+			margin-right: 5px;
+		}
+		.con{
+			&:hover,
+			&:focus{ text-decoration: underline;}
+			@include ellipsis; max-width: 90%; float: left;
+			@include breakpoint($smd){ max-width: 74%;}
+			@include breakpoint($lg){ max-width: 80%; }
+			@include breakpoint($sm){ max-width: 76%; }
+			@include breakpoint($xs){ max-width: 70%; }
+		}
+		.new{
+			background: url(/static/commons/img/new.gif) no-repeat left top;
+			width:41px;
+			height:22px;
+			float: left;
+			margin-left: 2px;
+			margin-top: 8px;
+			display:inline-block;
+			@include breakpoint($lg) {
+				margin-top: 3px;
+			}
+		}
+	}
+	.date{display: block;color:#7f7f7f; font-size: 14px; position: absolute; right: 0;top: 0; line-height: 34px;}
+	.desc{height: 37px;overflow: hidden;line-height: 19px;display: inline-block;}
+}
+
+.boxList .box1.imgBx, 
+.imageBox {
+	margin-right: 0;
+	>ul>li{
+		display: inline-block;
+		float: left;
+		width: 25%;
+		text-align: center;
+		padding:0 2px;
+		a{
+			word-break: keep-all;
+			@include breakpoint($lg){font-size: 14px;}
+			@include breakpoint($md){font-size: 12px;}
+		}
+		.img{
+			display: block;
+			clear: both;
+		}
+	}
+}
+
+#cardBox {
+	margin-bottom: 51px;	
+	@include breakpoint($sm){margin-bottom: 0;}
+	h3 { 
+		font-size: 20px; 
+		margin-top: 0; 
+		display:block;
+		border-bottom:2px solid #5c6979;
+		a { 
+			padding: 0 12px; 
+			letter-spacing: -1px;
+			color:#666; 
+			letter-spacing:-2px;
+			font-size: 18px;
+			@include breakpoint($smd){padding: 0 3px;font-size: 15px;}
+			line-height: 50px;
+			display: inline-block;
+			font-weight: normal;
+			&.on {font-size: 20px; font-weight: 600; color:#222;}
+		}
+	}
+
+	.more { 
+		position: absolute; top:0; right: 0; width: 50px; height: 40px; 
+		font-size: 24px; 
+		text-align: right;
+		line-height: 48px;
+		&.on{display: block;}
+	}
+	.container>div{
+		width: 31.3333%;
+		float: left;
+		margin-right: 2%;
+		position: relative;
+		@include breakpoint($sm){ width: 100%; margin-right: 0; }
+		&:last-child{
+			margin-right: 0;
+			width: 33.3333%;
+			text-align: right;
+			@include breakpoint($sm){ width: 100%; margin-right: 0; }
+		}
+
+		&.imageBox>ul>li{
+			width:33.3333%;
+			@include breakpoint($xs){ font-size: 12px; }
+		}
+		@include breakpoint($xs){ margin-bottom: 30px; }
+	}
+	h3{ letter-spacing: -1px; color:#fff; margin-bottom: 15px; }
+	.cardBox1 {
+	}
+	.cardBox2 {
+
+	}
+	.cardBox3 {
+		@include breakpoint($sm){ 
+			a{display: block; margin-top: 20px;margin-bottom: 20px;}
+		}
+		.img img{ width: 100%; }
+	}
+	.img img{max-width: 100%}
+}
+
+#missing{
+	clear: both;
+	text-align: center;
+	background: url(/static/park/img/main/missingBg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	padding-top: 25px;
+	h2{
+		font-size: 20px;
+	}
+	h2+p{
+		font-size: 12px;
+		margin-bottom: 18px;
+	}
+	ul{
+		margin-bottom: 30px;
+		float: left;
+		width: 100%;
+		li{
+			display: inline-block;
+			float: left;
+			width: 12.5%;
+			line-height: 24px;
+			text-align: center;
+			font-size: 14px;
+			@include breakpoint($md){ width: 25%; margin-right: 0; }
+			@include breakpoint($lg){ width: 12.5%; margin-right: 0; }
+			@include breakpoint($sm){ width: 50%; margin-right: 0; }
+			.img{
+				display: block;
+				clear: both;
+			}
+			.info{
+				clear: both;
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+
+
+#goLinkSet {
+	height: 220px;
+	ul{margin:0 -1%;}
+	li{
+		width: 48%; 
+		height: 90px;
+		float: left; margin:0 1% 10px 1%; 
+		&.goLink1{ background:#f0eeef url(/static/park/img/main/goLink1.jpg) no-repeat; background-size: 100% 100%; }
+		&.goLink2{ background:#edeef2 url(/static/park/img/main/goLink2.jpg) no-repeat; background-size: 100% 100%; }
+		&.goLink3{ background:#f0eeef url(/static/park/img/main/goLink3.jpg) no-repeat; background-size: 100% 100%; }
+		&.goLink4{ background:#edeef2 url(/static/park/img/main/goLink4.jpg) no-repeat; background-size: 100% 100%; }
+		a{
+			display: block; height: 90px; line-height: 90px; padding-left: 40px;
+			font-size: 20px;
+			letter-spacing: -3px;
+			font-weight: 600;
+			&:after{
+				content:'';
+				display: inline-block;
+				vertical-align: middle;
+				width: 58px;
+				height: 18px;
+				background: url(/static/park/img/main/arrow.png) no-repeat 0 -2px; 
+			}
+		}
+	}
+}
+#fBannerSet {
+	height: 132px;
+	clear: both;
+	border-top:1px solid #dcdcdc;
+}
+

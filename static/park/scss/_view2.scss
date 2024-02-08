@@ -1,0 +1,64 @@
+.img{
+	img{
+		vertical-align:top;
+	}
+}
+.noimg{
+	border:1px solid $bdcolor;
+	background: url(/static/portal/img/common/noimg.png) center center no-repeat;
+	background-size:116px;
+	padding-top:70%;
+	display:block;
+	@include breakpoint($sm){
+		background-size:auto 50%;
+	}
+}
+.view2{
+	margin-bottom:20px;
+	.img{
+		img{}
+	}
+	.subject{
+		font-size:22px;
+		margin-bottom:12px;
+	}
+	.infor{
+		dl{
+			display:table-row;
+			>*{
+				display:table-cell;
+				padding-bottom:10px;
+			}
+		}
+		dt{
+			white-space:nowrap;
+			color:#424f88;
+			font-weight:bold;
+			&:before {
+				content: '';
+				width:4px;
+				height:4px;
+				display:inline-block;
+				overflow:hidden;
+				border-radius:50%;
+				background-color:#666;
+				vertical-align:middle;
+				margin-right:6px;
+			}
+			position:relative;
+			padding-right:8px;
+			&:after {
+				content: ':';
+				position:absolute;
+				right:0;
+				top:0;
+			}
+		}
+		dd{
+			padding-left:10px;
+		}
+	}
+	p{
+		color:#424f88;
+	}
+}

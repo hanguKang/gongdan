@@ -1,0 +1,228 @@
+.viewt{
+	border-top:2px solid $bdtopcolor;
+	border-bottom:1px solid $bdtopcolor;
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	margin-bottom:10px;
+	margin:40px 0;
+	position:relative;
+	font-size:15px;
+	h2+&,
+	h3+&,
+	h4+&{margin-top:0;}
+	@include breakpoint(768px){
+		padding:0;
+	}
+	.subject{
+		border-bottom:1px solid $bdcolor;
+		padding:14px 0;
+		position:relative;
+		font-size:22px;
+		font-weight:bold;
+		// text-align:center;
+		line-height:1.5;
+		@include breakpoint($smd){
+			font-size:17px;
+		}
+		.status{
+			padding:6px 15px;
+			border-radius:4px;
+			font-size:15px;
+			color:#fff;
+			font-weight:normal;
+			line-height:1;
+			display:inline-block;
+			vertical-align:middle;
+			background-color:#f76627;
+			&.end{background-color:#7f7f7f;}
+		}
+	}
+	.subtitle{font-size:16px;margin-bottom:10px;}
+	>dl>*{
+		display:block;
+		border:none;
+	}
+	@include breakpoint(max-width 767px){
+		>dl{
+			clear:both;
+			overflow:hidden;
+			// background-color:$viewheadBgcolor;
+			position:relative;
+			&:before {
+				content: '';
+				position:absolute;
+				z-index:-1;
+				width:25%;
+				height:100%;
+				background-color:$viewheadBgcolor;
+				top:0;
+				left:-1px;
+				border-right:1px solid $bdcolor;
+			}
+			dt,dd{
+				float:left;
+				border-top:1px solid $bdcolor;
+				padding:15px 0;
+				line-height:1.3;
+			}
+			dt{
+				width:25%;
+				text-align:center;
+				clear:both;
+			}
+			dd{
+				padding-left:10px;
+				width:75%;
+			}
+			&.wide{
+				&:before {
+					display:none;
+					content: '';
+				}
+				dd{width:100%;padding:10px;}
+			}
+		}
+		.subject+dl>dt:first-child,
+		.subject+dl>dt:first-child+dd{
+			border-top:none;
+		}
+		dl.long{
+			border-top:1px solid $bdcolor;
+			>*{
+				width:auto;
+				display:inline-block;
+				border:none;
+			}
+			dt{padding-right:10px;}
+		}
+	}
+	@include breakpoint($md){
+		>dl{
+			display:table;
+			width:100%;
+			table-layout:fixed;
+			>*{
+				display:table-cell;
+				float:none;
+				vertical-align:middle;
+				border-bottom:1px solid $bdcolor;
+			}
+		}
+	}
+	>dl{
+		dt{
+			position:relative;
+			color:#222;
+			background-color:$viewheadBgcolor;
+			border-left:1px solid $bdcolor;
+			border-right:1px solid $bdcolor;
+			&:first-child{border-left:none;}
+			&:last-child{border-right:none;}
+			@include breakpoint($md){
+				width:120px;
+				text-align:center;
+				padding-top:14px;
+				padding-bottom:14px;
+				@include breakpoint($lg){
+					width:200px;
+				}
+			}
+		}
+		dd{
+			padding-left:25px;
+			padding-right:25px;
+			&.vab{				
+				padding-top:10px;
+				padding-bottom:10px;
+				a{vertical-align:bottom;}
+			}
+			@include breakpoint($md){
+				padding-top:14px;
+				padding-bottom:14px;
+			}
+		}
+		&:last-child > *{border-bottom:none;}
+		@include breakpoint($sm){
+			dd+dt{border-left:none;}
+		}
+	}
+	.dbData{
+		border:none;
+	}
+}
+.viewt.dtmin > dl dt{
+	@include breakpoint($md){
+		width:160px; 
+	}
+}
+
+.dbData2{
+	.viewt{
+		margin:20px 0;
+		@include breakpoint($sm){
+			dt{width:100%;border:none;padding:10px 0;text-align:left;}
+			dd{width:100%;border:none;background:none;padding:10px 0;}
+			dl:before{display:none;}
+		}
+		@include breakpoint($md){
+			dd.iw{
+				width:235px;
+				padding-right:0;
+				img{width:100%;}
+			}
+		}
+	}
+}
+.view-addimg{
+	overflow:hidden;
+	border:1px solid $bdcolor;
+	border-width:1px 0;
+	>.l{
+		>.viewt{
+			border-top:none;
+		}
+	}
+	>.r{
+		text-align:center;
+		padding:10px 0;
+	}
+	@include breakpoint($md){
+		display:table;
+		width:100%;
+		>.l{
+			display:table-cell;
+			>.viewt{
+				border-top:none;
+				height:230px;
+				border:none;
+				margin:0;
+				>dl{
+					display:table-row;
+				}
+
+			}
+		}
+		>.r{
+			display:table-cell;
+			width:27.5%;
+			text-align:center;
+			vertical-align:middle;
+			border-left:1px solid $bdcolor;
+		}
+	}
+}
+.viewt-style1{
+	margin-bottom:40px;
+	.viewt{
+		margin:0 0 30px;
+		border-bottom-color:$bdcolor;
+	}
+	.view-addimg{
+
+		margin-top:20px;
+		.viewt{border-width:1px;}
+	}
+	strong{color:#20409a;}
+
+}
